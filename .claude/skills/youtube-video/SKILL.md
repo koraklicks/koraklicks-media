@@ -60,3 +60,11 @@ Load the `newsroom-rules` skill first, then read `references/video-formats.md`.
 - Music: only the generated track from `music.py`, or a file the owner has rights to. Never use commercial songs.
 - Rendering needs Python Playwright (Chromium) and ffmpeg. Install them if missing (`pip install playwright`, then install Chromium with Playwright).
 - Example storyboard: `examples/example-storyboard.json`.
+
+
+## Daily story + short (vertical)
+
+For the noon "top matches today" and the night "today's results" pieces, use
+`python3 .claude/skills/youtube-video/scripts/story_short.py spec.json OUT_DIR` (spec format in the script's docstring).
+It writes `<slug>-story.jpg` (1080x1920 still for Instagram/Facebook stories) and `<slug>-short.mp4`
+(~15 s vertical video with original music for Reels, TikTok and YouTube Shorts). Check a few frames before publishing.
