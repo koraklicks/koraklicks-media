@@ -6,6 +6,7 @@ cleans the list up and turns repeated lessons into rules in `newsroom-rules`.
 Newest first.
 
 ## 11 Oct 2026 (first day)
+- **Score cards in an RTL row put the wrong number next to each team (first render showed الزمالك beside the 1).** In an RTL team row with an LTR score, write the score as away-home ("1 - 0" for الزمالك 0-1 الأهلي), and check each team sits next to its own goals before hosting. Long Arabic Yallakora URLs fail in WebFetch (too long): use gate.ahram.org.eg pages or search titles instead.
 - **Playwright cards fell back to a serif font because `set_content` pages can't load `file://` fonts.** Embed the bundled woff2 fonts as base64 `data:` URLs in `@font-face`, and look at the card before hosting.
 - **The bundled `cairo-arabic-800` font has no space, colon or «·» glyphs, so a source line in it shows empty boxes.** Use Lalezar for every Arabic line on cards (source line too), write sources in Arabic letters with «،» between them, and look at the rendered card before hosting it.
 - **Big results were held for lack of BBC/Sky/official pages, so nothing went out at Liverpool–City half-time.** From now on, match facts are confirmed by two of Sofascore, 365Scores, FilGoal and Yallakora. Don't wait for anything else.
