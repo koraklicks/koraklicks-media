@@ -57,3 +57,10 @@ named `KK-[ID]-[platform]-[size]`, attached to the story card under `Visual:`.
 ## Performance standards
 - Thumbnails and covers: maximum 4 words, giant score or number, high contrast, KK logo small.
 - Make carousels for lists and stats (they get saved), and 7–20 s Reels/TikToks with a loopable ending (`newsroom-rules` → `references/growth-playbook.md`).
+
+
+## Fonts (always)
+Google Fonts are blocked in the sandbox. Use the bundled brand fonts with `@font-face` + local file URLs:
+`.claude/skills/youtube-video/assets/fonts/` — Lalezar (Arabic display), Cairo 800/900 (Arabic text), Anton (numbers/Latin), Space Mono (labels).
+Never fall back to DejaVu or system fonts; if a font fails to load, fix the path before publishing.
+For vertical stories/shorts use `.claude/skills/youtube-video/scripts/story_short.py`.
