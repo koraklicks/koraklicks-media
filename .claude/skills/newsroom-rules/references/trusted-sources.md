@@ -44,6 +44,7 @@ Credit them in «📌 المصدر:» (e.g. «📌 المصدر: Sofascore · ي
 If they disagree on a goal, scorer or minute, wait until they agree.
 These services are for match data only. Transfer news, injuries, statements and off-pitch stories
 still need an official source or two Tier-1 outlets.
+Always check the page shows **today's date** and the right match (FilGoal's matches page can show a cached older day). Reading tips: Yallakora `yallakora.com/match-center` and FilGoal `filgoal.com/matches/` read well; Sofascore and 365Scores are app-like pages, so use their match pages or web search.
 If a site blocks reading, use the next one on the list; use web search results for the same match as a fallback.
 
 ## Owner additions
