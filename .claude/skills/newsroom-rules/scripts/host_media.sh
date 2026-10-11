@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Upload images/videos to the public media branch and print one public URL per file.
 # Usage: host_media.sh FILE [FILE...]
-# Files go to branch "media" of github.com/Mohamed-koraklikcs/koraklicks-media, folder YYYY-MM-DD/.
+# Files go to branch "media" of github.com/koraklicks/koraklicks-media, folder YYYY-MM-DD/.
 # Files older than 14 days are removed from the branch to keep it small (Metricool keeps its own copy).
 set -euo pipefail
-REPO_SLUG="Mohamed-koraklikcs/koraklicks-media"
+REPO_SLUG="koraklicks/koraklicks-media"
 DIR="${KK_MEDIA_DIR:-/tmp/kk-media}"
 if [ ! -d "$DIR/.git" ]; then
   git clone -q --depth 1 --branch media "https://github.com/$REPO_SLUG" "$DIR" >&2

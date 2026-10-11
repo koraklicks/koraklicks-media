@@ -37,7 +37,7 @@ If a value here stops working, call `getBrandSettings` and use what it returns.
 - **Facebook:** text-only POST is allowed; REEL needs a video.
 - **YouTube:** video + `title` + `madeForKids: false` + `category: "SPORTS"`. **Only after the owner approved this exact video.**
 - `media` must be **public URLs**. Get them by uploading the finished files to the brand media repo
-  (github.com/Mohamed-koraklikcs/koraklicks-media):
+  (github.com/koraklicks/koraklicks-media):
   `bash .claude/skills/newsroom-rules/scripts/host_media.sh card.jpg reel.mp4`
   It prints one `https://raw.githubusercontent.com/.../media/...` URL per file (branch `media`, kept 14 days); pass those in `media`
   (and a cover image URL in `videoThumbnailUrl` when useful). Metricool copies the file to its own storage.
