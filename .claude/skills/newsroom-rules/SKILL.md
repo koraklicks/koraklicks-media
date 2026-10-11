@@ -106,3 +106,10 @@ Draft: [Arabic text, once written]
 Visual: [template + filled fields, once designed]
 Approvals: editor ✔/✘ · boss ✔/✘ · owner (UNCONFIRMED only) ✔/✘
 ```
+
+
+## Speed over perfection for match data (owner decision, 11 Oct 2026)
+- Match facts (scores, scorers, cards, line-ups, kick-off times) are confirmed by **two of Sofascore, 365Scores, FilGoal, Yallakora** (see trusted-sources). Do not hold a result waiting for BBC/Sky/official pages.
+- Publish a big-match result within ~10 minutes of full time, and the half-time score at half-time. Don't hold big results for a round-up; round-ups are only for smaller matches.
+- Line-ups come out about 60 minutes before kick-off: post them as soon as two live-score sources (or the club) show them.
+- If a fetch is blocked, move on to the next source instead of waiting; never skip a big match because one site timed out.
