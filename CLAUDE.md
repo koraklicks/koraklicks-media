@@ -1,7 +1,8 @@
 # Kora Klicks (كورة كليكس) newsroom
 
 This repo runs the Kora Klicks AI newsroom. Agents are in `.claude/agents/`, skills in `.claude/skills/`.
-Start every task by loading the `newsroom-rules` skill.
+Start every task by loading the `newsroom-rules` skill and reading `LESSONS.md` (mistakes we already made and the rule for each).
+If you hit a new problem during a run, add one line to the top section of `LESSONS.md` (date · what happened · the rule from now on) and commit it with the log.
 
 ## Hard rules (owner decisions)
 - Confirmed news (official source, or two independent Tier-1 outlets) is published automatically, always with «📌 المصدر:».
