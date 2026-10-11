@@ -76,6 +76,12 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#050608;color:#E
 .list .row{margin-top:18px}
 .list .team{font-size:62px;width:300px}
 .list .mid{font-size:120px}
+.list.cp .it{padding:16px 0}
+.list.cp .comp{font-size:30px}
+.list.cp .row{margin-top:4px}
+.list.cp .team{font-size:56px;width:340px;white-space:nowrap}
+.list.cp .mid{font-size:100px}
+.list.cp .note{margin-top:26px}
 """.replace("FONTS", FONTS.as_uri())
 
 
@@ -103,9 +109,11 @@ def page(spec, body, bars=0):
 
 def still_html(spec):
     items = "".join(f'<div class=it>{item_block(it)}</div>' for it in spec["items"])
-    body = (f'<div class=c style="top:300px"><div class=big style="font-size:150px">{E(spec["title"])}</div>'
+    cp = len(spec["items"]) > 3  # 4-5 matches: compact rows, block moved up so the CTA clears the footer
+    up = 90 if cp else 0
+    body = (f'<div class=c style="top:{300 - up}px"><div class=big style="font-size:150px">{E(spec["title"])}</div>'
             f'{"<div class=sub>"+E(spec["subtitle"])+"</div>" if spec.get("subtitle") else ""}</div>'
-            f'<div class="c list" style="top:{640 if spec.get("subtitle") else 560}px">{items}'
+            f'<div class="c list{" cp" if cp else ""}" style="top:{(640 if spec.get("subtitle") else 560) - up}px">{items}'
             f'{"<div class=note style=color:#00C853;font-family:LZ;font-size:64px>"+E(spec["cta"])+"</div>" if spec.get("cta") else ""}</div>')
     return page(spec, body)
 
