@@ -6,7 +6,8 @@ Start every task by loading the `newsroom-rules` skill.
 ## Hard rules (owner decisions)
 - Confirmed news (official source, or two independent Tier-1 outlets) is published automatically, always with «📌 المصدر:».
 - Unconfirmed news is **never** published without the owner's ✅. List it for the owner and stop there.
-- YouTube uploads and anything involving money (sponsors, prices, paid credits) need the owner's ✅.
+- Long YouTube videos and anything involving money (sponsors, prices, paid credits) need the owner's ✅.
+  The daily story + short Shorts (noon fixtures, night results) are published to YouTube Shorts automatically (owner decision, 11 Oct 2026).
 - Calm tone, mostly Egyptian dialect. No فرم / سحق / اكتسح / فضيحة. No betting or gambling promotion.
 - No match footage, licensed photos only, no real club crests. Never invent numbers or metrics.
 - No voice-over on videos unless the owner asks; use the original music from `music.py`.
