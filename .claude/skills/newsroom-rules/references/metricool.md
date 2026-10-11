@@ -35,7 +35,7 @@ If a value here stops working, call `getBrandSettings` and use what it returns.
 - **Instagram:** needs at least one image (POST/carousel) or a video (REEL). Set `isAiGenerated: true` for AI-made images.
 - **TikTok:** needs an image or video. `isAigc: true` for AI-edited videos.
 - **Facebook:** text-only POST is allowed; REEL needs a video.
-- **YouTube:** video + `title` + `madeForKids: false` + `category: "SPORTS"`. **Only after the owner approved this exact video.**
+- **YouTube:** video + `title` + `madeForKids: false` + `category: "SPORTS"`. **Long videos: only after the owner approved this exact video.** Daily story Shorts (noon fixtures, night results) go out automatically (`type: "short"`).
 - `media` must be **public URLs**. Get them by uploading the finished files to the brand media repo
   (github.com/koraklicks/koraklicks-media):
   `bash .claude/skills/newsroom-rules/scripts/host_media.sh card.jpg reel.mp4`
