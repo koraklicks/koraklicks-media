@@ -59,8 +59,15 @@ named `KK-[ID]-[platform]-[size]`, attached to the story card under `Visual:`.
 - Make carousels for lists and stats (they get saved), and 7–20 s Reels/TikToks with a loopable ending (`newsroom-rules` → `references/growth-playbook.md`).
 
 
-## Fonts (always)
-Google Fonts are blocked in the sandbox. Use the bundled brand fonts with `@font-face` + local file URLs:
-`.claude/skills/youtube-video/assets/fonts/` — Lalezar (Arabic display), Cairo 800/900 (Arabic text), Anton (numbers/Latin), Space Mono (labels).
-Never fall back to DejaVu or system fonts; if a font fails to load, fix the path before publishing.
-For vertical stories/shorts use `.claude/skills/youtube-video/scripts/story_short.py`.
+## Fonts and card checks (firm rules, from the 11 Oct review)
+Google Fonts are blocked in the sandbox. Use the bundled brand fonts in
+`.claude/skills/youtube-video/assets/fonts/` — Lalezar (every Arabic line on cards, source line included),
+Anton (numbers/Latin), Space Mono (labels). Do not use the bundled `cairo-arabic-800` for text lines:
+it has no space, colon or «·» glyphs.
+- Playwright `set_content` pages cannot load `file://` fonts: embed each woff2 as a base64 `data:` URL in `@font-face`,
+  and set the body font to `Lalezar, Anton` so digits never fall back to serif. Never publish a card in DejaVu or a system font.
+- RTL team row with an LTR score: write the digits away-home («1 - 0» for الزمالك 0-1 الأهلي) and check each team sits next to its own goals.
+- Write home × away exactly as Yallakora/FilGoal list it.
+- Sources on cards in Arabic letters, separated by «،».
+- Look at every rendered card/story still before hosting it. If anything is cut, overlapping or in the wrong font, fix and re-render.
+For vertical stories/shorts use `.claude/skills/youtube-video/scripts/story_short.py` (compact list for 4–5 items).

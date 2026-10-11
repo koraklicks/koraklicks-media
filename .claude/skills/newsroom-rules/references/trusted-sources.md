@@ -47,6 +47,19 @@ still need an official source or two Tier-1 outlets.
 Always check the page shows **today's date** and the right match (FilGoal's matches page can show a cached older day). Reading tips: Yallakora `yallakora.com/match-center` and FilGoal `filgoal.com/matches/` read well; Sofascore and 365Scores are app-like pages, so use their match pages or web search.
 If a site blocks reading, use the next one on the list; use web search results for the same match as a fallback.
 
+### Reading tips (tested on 11 Oct 2026, unattended runs)
+- **Search first, then fetch only URLs that came back in WebSearch results.** Typed URLs to FilGoal, Yallakora,
+  Sky Sport Italia, legaseriea.it, premierleague.com, BBC and ESPN timed out (permission) all day; curl to them is blocked by the proxy.
+  Don't retry a blocked site: move to the next source at once.
+- **Never take a score from a page that still shows a live minute.** Sofascore (`/lineups/embed` and often the slug page),
+  365Scores, FotMob and Sky Sport Italia live pages stay cached pre-match or mid-match; 365Scores header and summary disagreed (0-2 vs 0-1).
+- **Full time, fastest sources that worked:** FilGoal `filgoal.com/matches?date=YYYY-MM-DD` opened from a search result (check the date;
+  the undated page showed the day before); Al-Ahram gate (`gate.ahram.org.eg`, Tier 1) HT/FT reports ~10 min after the whistle for
+  Egyptian matches (search «بوابة الأهرام» + teams + النتيجة); Sky Sports news reports and `sofascore.com/news` reports; club sites'
+  post-match reports (juventus.com, mancity.com via its Yahoo syndication, cpfc.co.uk); spl.com.sa highlight pages for the Saudi league.
+- Long Arabic Yallakora/Masrawy URLs are too long for WebFetch: use the search-result title, or the Ahram gate page.
+- Scorers/minutes that only one source gives are left out; numbers like table points or «القمة N» only when an approved source gives them.
+
 ## Owner additions
 
 The owner may add or demote sources at any time. Keep this list as the single truth; agents do

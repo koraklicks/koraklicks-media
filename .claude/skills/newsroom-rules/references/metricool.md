@@ -23,7 +23,7 @@ If a value here stops working, call `getBrandSettings` and use what it returns.
 |---|---|
 | Publish now / at a time | `createScheduledPost` (date ≥ now + 2 min for "now") |
 | Best slot when no urgency | `getBestTimeToPostByNetwork` |
-| Check what is already queued (avoid duplicates) | `getScheduledPosts` |
+| Check what is already queued or posted (avoid duplicates) | `getScheduledPosts` from **00:00 Cairo today** to now+3 h, in chunks of ~6 h (a whole day is too big for one call). Also run `scripts/already_posted.sh TEAM...` |
 | Fix a queued post | `updateScheduledPost` |
 | Performance data | `getAnalyticsAvailableMetrics`, then `getAnalyticsDataByMetrics` |
 
@@ -35,7 +35,14 @@ If a value here stops working, call `getBrandSettings` and use what it returns.
 - **Instagram:** needs at least one image (POST/carousel) or a video (REEL). Set `isAiGenerated: true` for AI-made images.
 - **TikTok:** needs an image or video. `isAigc: true` for AI-edited videos.
 - **Facebook:** text-only POST is allowed; REEL needs a video.
-  The page is new: Facebook rate-limits frequent posting (error 400 "We limit how often you can post"). Keep Facebook to about one post per hour, combine small results into one round-up, prioritise big matches, and after a rate-limit error wait about 2 hours, then simply try the next important post (don't wait for some other Facebook post to succeed first). Big results (derbies, top-league clashes) always get a Facebook post.
+  The page is new: Facebook rate-limits frequent posting (error 400 "We limit how often you can post").
+  **What happened on 11 Oct:** 5 feed posts in 88 min (14:03–15:31) went through, then every feed post and reel failed for the rest
+  of the day (15:51, 16:21, 20:02, 20:21, 22:22, 23:59), even 2–4 h apart. **Facebook Stories never failed.**
+  Firm rules:
+  - Before any Facebook FEED post, read the last Facebook feed post time from `getScheduledPosts`: never two feed posts less than **60 min** apart,
+    and never more than **2 in any 3 h**. Morning catch-up results go to X/Instagram and a Facebook Story, not a burst of feed posts.
+  - Big results (derbies, top-league clashes) always go to Facebook: as a **Story right away** (works during a block) and as the feed post when the cadence allows.
+  - After a rate-limit error, the next Facebook feed try is ≥ 2 h later and only for a big result; don't stop Facebook for the day.
 - **YouTube:** video + `title` + `madeForKids: false` + `category: "SPORTS"`. **Long videos: only after the owner approved this exact video.** Daily story Shorts (noon fixtures, night results) go out automatically (`type: "short"`).
 - `media` must be **public URLs**. Get them by uploading the finished files to the brand media repo
   (github.com/koraklicks/koraklicks-media):

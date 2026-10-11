@@ -56,7 +56,8 @@ Load the `newsroom-rules` skill first and enforce it on every agent.
    - 🔴 breaking: X first within minutes, then Facebook and Instagram story, TikTok if visual.
    - 🟡 normal: Facebook + Instagram feed + X; TikTok for the day's best 2–3 stories.
    - ⚪ filler: round-ups and engagement posts in quiet hours.
-   - Kill duplicates, low-value stories and anything off-brand.
+   - Kill duplicates, low-value stories and anything off-brand. Duplicate check is mandatory before every post: `scripts/already_posted.sh` + `getScheduledPosts` from 00:00 today (see `run-newsroom` step 3).
+   - Morning catch-up: cover **every** Tier A result of the previous evening that is not in the log yet (on 11 Oct Saturday's Alavés–Atlético was never posted).
 3. **Produce**: send to writer → editor → creative. Return work to the agent if the editor fails it.
 4. **Gate**:
    - CONFIRMED + editor ✔ → approve and send to publishers immediately, with source credit.

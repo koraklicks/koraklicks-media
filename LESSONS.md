@@ -2,24 +2,23 @@
 
 Every run reads this file before starting work and follows it. When a run hits a new problem,
 it adds one line here (date · what happened · the rule from now on). The end-of-day review
-cleans the list up and turns repeated lessons into rules in `newsroom-rules`.
+cleans the list up and turns repeated lessons into rules in the skill/agent files.
 Newest first.
 
-## 11 Oct 2026 (first day)
-- **11 Oct 23:50: the results story with 5 matches overflowed (5th match cut, source line on top of the list) and music.py failed on a missing `soundfile` module.** `story_short.py` now uses a compact list for 4–5 items; always look at the story still before hosting, and run `pip install soundfile --break-system-packages` if music.py fails.
-- **11 Oct 23:10: the 22:22 Facebook feed post (Zamalek–Ahly FT) failed with the rate limit again, so the biggest result of the day never reached the Facebook feed, and live pages (365Scores, FotMob, Sky Sport Italia, FilGoal without a date) stayed cached pre-match.** Check the FB feed status in `getScheduledPosts` at the start of every run and retry the missing big result first once 2 h have passed; for FT confirmation use post-match report pages (Sky Sports news, sofascore.com/news, club websites) from WebSearch, not live pages.
-- **Sofascore and 365Scores lagged or contradicted themselves at full time (Sofascore stuck at 4' on Zamalek–Ahly and 90+7' on Betis; 365Scores header 0-2 vs summary 0-1).** For FT, read FilGoal `filgoal.com/matches?date=YYYY-MM-DD` (open it from a WebSearch result) first, and for SPL use spl.com.sa highlight/report pages (official) as the second source.
-- **Zamalek–Ahly FT run: FilGoal/Sofascore pages stayed cached at a live minute and Yallakora's match page showed no events, so FT confirmation came from the Al-Ahram gate FT report (fetches fine, posted ~10 min after the whistle) plus FilGoal's score and Yallakora's scorer headline.** For Egyptian matches, search «بوابة الأهرام» + the result straight after FT and fetch the gate.ahram.org.eg link from the results; leave out numbers (table points, «القمة N») that approved sources don't give or that disagree.
-- **Unattended runs could not open FilGoal, Yallakora or Sky Sport Italia (WebFetch permission timeouts, curl blocked by the proxy), and a Sofascore embed page stayed cached at 89'.** Search first and fetch only URLs that come back in WebSearch results (those open fine); for Sofascore use the match slug page (e.g. sofascore.com/de/sassuolo-milan/RdbsTfb), not the `/lineups/embed` page, and never post a score from a page that still shows a live minute.
-- **Score cards in an RTL row put the wrong number next to each team (first render showed الزمالك beside the 1).** In an RTL team row with an LTR score, write the score as away-home ("1 - 0" for الزمالك 0-1 الأهلي), and check each team sits next to its own goals before hosting. Long Arabic Yallakora URLs fail in WebFetch (too long): use gate.ahram.org.eg pages or search titles instead.
-- **Playwright cards fell back to a serif font because `set_content` pages can't load `file://` fonts.** Embed the bundled woff2 fonts as base64 `data:` URLs in `@font-face`, and look at the card before hosting.
-- **The bundled `cairo-arabic-800` font has no space, colon or «·» glyphs, so a source line in it shows empty boxes.** Use Lalezar for every Arabic line on cards (source line too), write sources in Arabic letters with «،» between them, and look at the rendered card before hosting it.
-- **Big results were held for lack of BBC/Sky/official pages, so nothing went out at Liverpool–City half-time.** From now on, match facts are confirmed by two of Sofascore, 365Scores, FilGoal and Yallakora. Don't wait for anything else.
-- **The line-ups task started 5 minutes before kick-off, so Liverpool's XI and the Zamalek–Ahly XIs were late.** Line-ups come out about 60 minutes before kick-off. Start line-up tasks at kick-off − 45 min, and post as soon as two sources show them.
-- **A run that hasn't published 10 minutes before kick-off is too slow.** Post the line-ups as text on X and Facebook first (fast), then do the card for Instagram and stories.
-- **Facebook rate-limited the new page after many posts in a row (error 400).** Keep about one Facebook post per hour. Combine small results. After an error, wait about 2 hours, then try the next important post. Don't stop Facebook for the rest of the day.
-- **Cards came out in DejaVu because Google Fonts is blocked.** Always use the bundled fonts in `.claude/skills/youtube-video/assets/fonts/`.
-- **Our «يوم الكبار» story wrote «الأهلي × الزمالك», but Zamalek was the home side.** Always write home × away exactly as Yallakora or FilGoal list it.
-- **FilGoal's matches page sometimes shows an older day.** Check the page date before taking any score.
-- **Many sites time out (premierleague.com, BBC, legaseriea.it, ESPN).** Don't retry the same site. Move to the next source on the list straight away.
-- **Holding a big result for a round-up delays it.** Big matches go out alone within 10 minutes. Round-ups are for small matches only.
+## Open lessons
+
+- **12 Oct review · Como 0-0 Roma (17:15 and 00:20) and Crystal Palace 3-1 Forest (18:36 and 23:20) were each published twice, and the Zamalek–Ahly line-ups went out twice on X (20:02, 20:20).** A run trusted an earlier "not yet posted" note and checked Metricool only for the last few hours. → Firm rule now in `run-newsroom` step 3 and `live-match` step 3: run `scripts/already_posted.sh <teams>` and check `getScheduledPosts` from 00:00 today before every post.
+- **12 Oct review · Facebook feed: 5 posts in 88 min in the morning, then every feed post and reel failed for 9 hours, so Zamalek 0-2 Ahly and Liverpool 0-3 City never reached the feed. Stories always worked.** → Firm rule now in `references/metricool.md`: ≥ 60 min between feed posts, max 2 in any 3 h, big results as a Facebook Story right away.
+- **12 Oct review · Half-time was late or missing on both big matches (Liverpool–City HT never posted; Zamalek–Ahly HT 15 min late) because live pages were cached.** → `live-match` step 3: HT within 5 min; if live pages are cached, use a searched HT report (Ahram gate for Egypt, Sky/BBC report pages for England).
+- **12 Oct review · Saturday's Alavés 2-1 Atlético was never posted; the morning catch-up took only 3 Saturday games.** → `boss.md`: the morning run covers every Tier A result of the previous evening that is not in the log.
+- **12 Oct review · Posts made by the line-ups task (20:20–20:21) and a manual Palmer post (morning) are not in the log.** → Every task and the owner session log every post with its plannerUrl; the review counts from Metricool, not only the log.
+- **11 Oct · Line-up tasks started 5 min before kick-off (Liverpool XI 5 min after kick-off, Zamalek–Ahly XIs posted by the owner by hand).** Happened twice in one day → now firm: the match planner creates line-up tasks at kick-off − 45 min (planner prompt updated 11 Oct 16:43) and `live-match` step 3 says post text on X first if late.
+- **11 Oct · music.py failed on a missing `soundfile` module.** Run `pip install soundfile --break-system-packages` if music.py fails.
+- **11 Oct · Unconfirmed stories sit in the queue all day (KK-20261011-04 Danilo Pereira, 13:58 → midnight).** Re-list them once in the owner report; after 24 h with no official statement, propose ❌.
+
+## Became rules (removed from this list on 12 Oct)
+- Speed rule for match data (two of Sofascore/365Scores/FilGoal/Yallakora), big results alone within 10 min, no waiting for BBC/Sky → `newsroom-rules` SKILL.md.
+- Facebook rate limit → `references/metricool.md`.
+- Fonts, base64 `@font-face`, Lalezar on every Arabic line, RTL score order, home × away order, look before hosting → `agents/creative.md`.
+- Source reading tips (search first, cached live pages, FilGoal date, Ahram gate, Sky/club reports, long URLs, unsupported numbers like «القمة N») → `references/trusted-sources.md`.
+- Story with 5 matches overflowing → fixed in `story_short.py` (compact list for 4–5 items).
