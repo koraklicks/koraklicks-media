@@ -31,9 +31,20 @@ established track record, fan pages, "مصادر خاصة" reports, screenshots 
 
 ## Live-score data
 
-Use official match centres first (league sites, club live text). Cross-check with at least one
-established live-score service. If two sources disagree on a goal or a scorer, wait until they
-agree before posting it.
+Owner-approved live-score services (added 11 Oct 2026), for live scores, line-ups, goals, scorers,
+cards, final results and fixture times:
+- **Sofascore** (sofascore.com)
+- **365Scores** (365scores.com)
+- **FilGoal** (filgoal.com), Arabic
+- **Yallakora** (yallakora.com), Arabic; best for the Egyptian league
+
+Rule for match facts (scores, goals, scorers, red cards, kick-off times, line-ups):
+**two of these four agree = CONFIRMED** (or one of them plus an official club/league source).
+Credit them in «📌 المصدر:» (e.g. «📌 المصدر: Sofascore · يلاكورة»).
+If they disagree on a goal, scorer or minute, wait until they agree.
+These services are for match data only. Transfer news, injuries, statements and off-pitch stories
+still need an official source or two Tier-1 outlets.
+If a site blocks reading, use the next one on the list; use web search results for the same match as a fallback.
 
 ## Owner additions
 
