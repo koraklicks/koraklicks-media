@@ -1,0 +1,20 @@
+{
+  "_note": "Written form on screen -> how the voice should say it. Add names the voice mispronounces. Tashkeel (harakat) helps TTS a lot. Longest matches are replaced first.",
+  "_examples_below": "Edit freely; these are starting points to test, not verified pronunciations for every engine.",
+  "مرموش": "مَرْمُوش",
+  "صلاح": "صَلاح",
+  "الأهلي": "الأهْلي",
+  "الزمالك": "الزَّمالِك",
+  "الهلال": "الهِلال",
+  "النصر": "النَّصْر",
+  "الاتحاد": "الاتِّحاد",
+  "ريال مدريد": "ريال مَدْريد",
+  "برشلونة": "بَرْشَلونة",
+  "مانشستر سيتي": "مانشِسْتَر سيتي",
+  "ليفربول": "ليفَرْبول",
+  "أرسنال": "آرْسِنال",
+  "يوفنتوس": "يوفِنْتوس",
+  "إنتر": "إنْتَر",
+  "VAR": "الفار",
+  "FT": "نهاية الماتش"
+}

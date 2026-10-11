@@ -1,0 +1,15 @@
+{
+  "slug": "example-roundup",
+  "episode": "مثال توضيحي · Example",
+  "format": "europe-roundup",
+  "scenes": [
+    {"type": "intro", "duration": 5, "title": "ملخص الجولة [00]", "subtitle": "الدوريات الأوروبية الكبرى", "date": "[التاريخ]"},
+    {"type": "section", "duration": 3, "title": "الدوري الإنجليزي", "subtitle": "الجولة [00]"},
+    {"type": "result", "duration": 7, "competition": "الدوري الإنجليزي · الجولة [00]", "home": "الفريق أ", "away": "الفريق ب", "home_score": 2, "away_score": 1, "scorers_home": ["اللاعب 1 · 23'", "اللاعب 2 · 77'"], "scorers_away": ["اللاعب 3 · 41'"], "note": "مباراة الجولة 🔥", "source": "الموقع الرسمي للدوري"},
+    {"type": "table", "duration": 7, "title": "ترتيب القمة", "rows": [{"pos": 1, "team": "الفريق أ", "played": 8, "points": 20, "highlight": true}, {"pos": 2, "team": "الفريق ج", "played": 8, "points": 18}, {"pos": 3, "team": "الفريق د", "played": 8, "points": 17}, {"pos": 4, "team": "الفريق ب", "played": 8, "points": 15}], "source": "الموقع الرسمي للدوري"},
+    {"type": "stat", "duration": 5, "value": "12", "label": "هدف لهدّاف الدوري لحد دلوقتي", "sub": "[اسم اللاعب]"},
+    {"type": "headline", "duration": 7, "index": 1, "tag": "أهم خبر", "title": "عنوان الخبر بالعامية في سطرين بالكتير", "body": "سطر أو اتنين بالتفاصيل المؤكدة بس، من غير أي تخمين.", "source": "[اسم المصدر]"},
+    {"type": "list", "duration": 7, "title": "ركن العرب 🌍", "items": ["[لاعب عربي] سجّل هدف الفوز", "[لاعب عربي] صنع هدفين", "[لاعب عربي] كان أساسي 90 دقيقة"]},
+    {"type": "outro", "duration": 5, "title": "شكراً للمشاهدة", "cta": "اشترك وفعّل الجرس 🔔", "handles": "@koraklicks"}
+  ]
+}
