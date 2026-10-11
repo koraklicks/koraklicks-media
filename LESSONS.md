@@ -6,6 +6,7 @@ cleans the list up and turns repeated lessons into rules in `newsroom-rules`.
 Newest first.
 
 ## 11 Oct 2026 (first day)
+- **The bundled `cairo-arabic-800` font has no space, colon or «·» glyphs, so a source line in it shows empty boxes.** Use Lalezar for every Arabic line on cards (source line too), write sources in Arabic letters with «،» between them, and look at the rendered card before hosting it.
 - **Big results were held for lack of BBC/Sky/official pages, so nothing went out at Liverpool–City half-time.** From now on, match facts are confirmed by two of Sofascore, 365Scores, FilGoal and Yallakora. Don't wait for anything else.
 - **The line-ups task started 5 minutes before kick-off, so Liverpool's XI and the Zamalek–Ahly XIs were late.** Line-ups come out about 60 minutes before kick-off. Start line-up tasks at kick-off − 45 min, and post as soon as two sources show them.
 - **A run that hasn't published 10 minutes before kick-off is too slow.** Post the line-ups as text on X and Facebook first (fast), then do the card for Instagram and stories.
