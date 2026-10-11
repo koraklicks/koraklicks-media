@@ -6,8 +6,11 @@
 set -euo pipefail
 REPO_SLUG="koraklicks/koraklicks-media"
 DIR="${KK_MEDIA_DIR:-/tmp/kk-media}"
+# The repo was renamed; sessions may only be authorised for the old name, so try both.
+GIT_URLS=("https://github.com/$REPO_SLUG" "https://github.com/Mohamed-koraklikcs/koraklicks-media")
 if [ ! -d "$DIR/.git" ]; then
-  git clone -q --depth 1 --branch media "https://github.com/$REPO_SLUG" "$DIR" >&2
+  for u in "${GIT_URLS[@]}"; do git clone -q --depth 1 --branch media "$u" "$DIR" >&2 2>/dev/null && break; done
+  [ -d "$DIR/.git" ] || { echo "cannot reach the media repo" >&2; exit 1; }
 else
   git -C "$DIR" pull -q --rebase origin media >&2 || true
 fi
@@ -27,5 +30,6 @@ for d in "$DIR"/20??-??-??; do
   [ -d "$d" ] && [[ "$(basename "$d")" < "$CUTOFF" ]] && git -C "$DIR" rm -rq "$(basename "$d")"
 done
 git -C "$DIR" -c user.name="Kora Klicks Newsroom" -c user.email="noreply@anthropic.com" commit -qm "Media $DAY" >&2
-git -C "$DIR" push -q origin HEAD:media >&2
+ok=0; for u in "${GIT_URLS[@]}"; do git -C "$DIR" push -q "$u" HEAD:media >/dev/null 2>&1 && { ok=1; break; }; done
+[ $ok = 1 ] || { echo "push failed" >&2; exit 1; }
 printf '%s\n' "${URLS[@]}"
