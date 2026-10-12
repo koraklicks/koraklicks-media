@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **13 Oct 00:20 · The repo clone started on a detached HEAD, so `git pull --rebase` failed and the first push was rejected (non-fast-forward).** → If `git pull --rebase` says "not currently on a branch", run `git fetch origin main && git checkout -B main origin/main` and cherry-pick the log commit before pushing.
+
 - **13 Oct 00:05 · Coventry–Newcastle / Levante–Sevilla FT: the `#fragment` trick no longer refreshed pages (FilGoal strip, So3ody, Korabia returned the same 90+5' snapshot for 10+ min; `?r=N` query strings did not help either); the Belgian broadcaster Sporza match page (sporza.be/nl/sport/voetbal/~ID, found by searching «sporza <home> <away>») showed «afgelopen» + all scorers right after the whistle.** → For EPL/LaLiga FT, search «sporza <home> <away>» early as the FT-status check, paired with the FilGoal/365Scores score; a late-goal match (stoppage-time equaliser) stays on HOLD until two sources agree.
 
 - **12 Oct 23:51 · Torino–Udinese FT: all four approved services + Tuttosport/ToroNews/Sky stayed cached (pre-match to 2nd-half 46'); the English/Italian search «<home> <away> full time <scorer names>» returned Football Italia, Calciomercato/Goal and Virgilio «risultato finale» FT pages within ~5 min of the whistle, but none of these is on the Tier-1 list, so FilGoal's live 2-1 + several non-Tier-1 FT reports was used (as for Atalanta–Venezia).** → For Serie A FT, at the whistle search with the scorer names + «finale»/«full time» and pair with the FilGoal matches page; owner to decide whether Football Italia / Goal-Calciomercato count as a Tier-1 FT report for Serie A.
