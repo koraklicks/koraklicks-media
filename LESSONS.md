@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **12 Oct 23:51 · Torino–Udinese FT: all four approved services + Tuttosport/ToroNews/Sky stayed cached (pre-match to 2nd-half 46'); the English/Italian search «<home> <away> full time <scorer names>» returned Football Italia, Calciomercato/Goal and Virgilio «risultato finale» FT pages within ~5 min of the whistle, but none of these is on the Tier-1 list, so FilGoal's live 2-1 + several non-Tier-1 FT reports was used (as for Atalanta–Venezia).** → For Serie A FT, at the whistle search with the scorer names + «finale»/«full time» and pair with the FilGoal matches page; owner to decide whether Football Italia / Goal-Calciomercato count as a Tier-1 FT report for Serie A.
+
 - **12 Oct 23:20 · القوة الجوية × العين (ACLE) FT: 365Scores/Sofascore/Yallakora fixtures stayed cached at HT/71' 15 min after FT, but the FilGoal homepage `filgoal.com/?top=true` with a new `#fragment` showed «انتهت» 1-4, and the Iraqi News Agency report (via Hathalyoum) came up for «القوة الجوية يخسر أمام العين».** → For ACLE FT, fetch the FilGoal homepage strip with a fresh `#fragment` first; pair it with the national news agency/AFC report.
 
 - **12 Oct 23:12 · Al Nassr–Neftchi (ACLE) kick-off was delayed ~1 h (security alert in Riyadh) but the 23:05 FT task was planned from the original 21:15 KO; search «<home> <away> kickoff delayed» found it.** → FT/HT tasks first confirm the match actually kicked off on time (search the teams + "delayed"/«تأجيل») and re-arm themselves (send_later) for the new FT time instead of ending.
