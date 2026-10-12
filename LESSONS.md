@@ -7,6 +7,7 @@ Newest first.
 
 ## Open lessons
 
+- **12 Oct 15:27 · The owner posted on the Facebook page by hand and it worked, so the page itself is not restricted; the block is on posting through Metricool (the app).** → Facebook FEED is un-paused: try ONE feed post for the next big result tonight (Pyramids or Al Nassr). If it fails again with error 400, stop feed/reels and tell the owner to reconnect Facebook inside Metricool. Stories continue as normal.
 - **12 Oct · The 08:47 match planner stalled ~6 h; today's live tasks were created only at 15:15.** → Every newsroom run from 12:00 checks that today's log has a "Live-coverage plan"; if not, it builds the plan itself (fixtures from FilGoal/Yallakora, create the one-off tasks) before anything else.
 - **12 Oct · FilGoal/Yallakora still timed out after the site permissions were added, because runs don't start inside the repo.** → Run `bash scripts/setup_session.sh` first in every run.
 - **12 Oct · Facebook FEED and REELS still fail with error 400 after 10+ h; Stories work.** → Feed/Reels paused until the owner checks the page in Meta Business Suite; keep posting Facebook Stories.
