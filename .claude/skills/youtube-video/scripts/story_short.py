@@ -82,6 +82,11 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#050608;color:#E
 .list.cp .team{font-size:56px;width:340px;white-space:nowrap}
 .list.cp .mid{font-size:100px}
 .list.cp .note{margin-top:26px}
+.fig{font-family:AN,LZ;line-height:1;color:#00C853;direction:ltr;text-align:right;margin-top:20px}
+.fl{font-family:LZ,AN;font-size:72px;line-height:1.2;margin-top:24px}
+.list .fl{font-size:56px;margin-top:14px}
+.list .fig{margin-top:10px}
+.hk{font-family:AN,LZ;font-size:300px;line-height:1;color:#00C853;direction:ltr;text-align:right;margin-top:30px}
 """.replace("FONTS", FONTS.as_uri())
 
 
@@ -91,7 +96,16 @@ def mid_text(it):
     return E(it.get("time", ""))
 
 
+def fact_block(it, size=230):
+    # «رقم اليوم» item: a giant number/word (Anton) + a Lalezar line under it
+    return (f'<div class=comp>{E(it.get("comp",""))}</div>'
+            f'<div class=fig style="font-size:{size}px">{E(it["big"])}</div>'
+            f'<div class=fl>{E(it.get("line",""))}</div>')
+
+
 def item_block(it):
+    if "big" in it:
+        return fact_block(it, 150)
     return (f'<div class=comp>{E(it.get("comp",""))}</div>'
             f'<div class=row><div class=team>{E(it["home"])}</div><div class=mid>{mid_text(it)}</div>'
             f'<div class="team a">{E(it["away"])}</div></div>')
@@ -119,9 +133,18 @@ def still_html(spec):
 
 
 def video_html(spec, durs):
-    sc = [f'<div class=scene><div class=c style="top:640px"><div class=big>{E(spec["title"])}</div>'
-          f'{"<div class=sub>"+E(spec["subtitle"])+"</div>" if spec.get("subtitle") else ""}<div class=acc></div></div></div>']
+    if spec.get("hook"):  # fact-first intro: the key number is on screen from frame 1
+        sc = [f'<div class=scene><div class=c style="top:430px"><div class=big style="font-size:150px">{E(spec["title"])}</div>'
+              f'<div class=hk>{E(spec["hook"])}</div>'
+              f'{"<div class=fl>"+E(spec["hook_line"])+"</div>" if spec.get("hook_line") else ""}<div class=acc></div></div></div>']
+    else:
+        sc = [f'<div class=scene><div class=c style="top:640px"><div class=big>{E(spec["title"])}</div>'
+              f'{"<div class=sub>"+E(spec["subtitle"])+"</div>" if spec.get("subtitle") else ""}<div class=acc></div></div></div>']
     for it in spec["items"]:
+        if "big" in it:
+            sc.append(f'<div class=scene><div class=c style="top:520px">{fact_block(it)}'
+                      f'{"<div class=note>"+E(it["note"])+"</div>" if it.get("note") else ""}<div class=acc></div></div></div>')
+            continue
         if "home_score" in it:
             core = (f'<div class=sb><div class=ln><span class=nm>{E(it["home"])}</span><span class=sc>{it["home_score"]}</span></div>'
                     f'<div class=ln><span class=nm>{E(it["away"])}</span><span class=sc>{it["away_score"]}</span></div></div>')
