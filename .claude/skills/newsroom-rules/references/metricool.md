@@ -41,6 +41,7 @@ If a value here stops working, call `getBrandSettings` and use what it returns.
   Firm rules:
   - Before any Facebook FEED post, read the last Facebook feed post time from `getScheduledPosts`: never two feed posts less than **60 min** apart,
     and never more than **2 in any 3 h**. Morning catch-up results go to X/Instagram and a Facebook Story, not a burst of feed posts.
+  - **Daily budget (owner decision 12 Oct 2026): max 4–5 Facebook FEED posts a day, only for big matches/stories.** Everything else goes to Facebook as a Story. Count today's Facebook feed posts in `getScheduledPosts` before posting.
   - Big results (derbies, top-league clashes) always go to Facebook: as a **Story right away** (works during a block) and as the feed post when the cadence allows.
   - After a rate-limit error, the next Facebook feed try is ≥ 2 h later and only for a big result; don't stop Facebook for the day.
 - **YouTube:** video + `title` + `madeForKids: false` + `category: "SPORTS"`. **Long videos: only after the owner approved this exact video.** Daily story Shorts (noon fixtures, night results) go out automatically (`type: "short"`).

@@ -39,7 +39,7 @@ cards, final results and fixture times:
 - **Yallakora** (yallakora.com), Arabic; best for the Egyptian league
 
 Rule for match facts (scores, goals, scorers, red cards, kick-off times, line-ups):
-**two of these four agree = CONFIRMED** (or one of them plus an official club/league source).
+**two of these four agree = CONFIRMED**, or one of them plus an official club/league source, **or one of them plus one Tier-1 full-time report** (e.g. SPA/واس, الأهرام, Sky, beIN, BBC, ESPN) — owner decision 12 Oct 2026.
 Credit them in «📌 المصدر:» (e.g. «📌 المصدر: Sofascore · يلاكورة»).
 If they disagree on a goal, scorer or minute, wait until they agree.
 These services are for match data only. Transfer news, injuries, statements and off-pitch stories
