@@ -28,3 +28,8 @@ metadata:
 7. After the last match: an evening round-up per league (carousel on IG, one post on FB, one tweet on X).
 
 For coverage that must keep running while the owner is away, set this skill up as a scheduled task during match windows (e.g. every 10–15 minutes from kickoff to full time) using the session's scheduling tools.
+
+8. **Growth add-ons for BIG matches** (see `newsroom-rules` → `references/growth-playbook.md` §0):
+   - Pre-match (≈ 3 h before kick-off, or at line-ups time if later): «توقعوا النتيجة» post on X + Instagram and a Facebook Story.
+   - Full time: within 15 min also make a result short with `story_short.py` (kind "results", one match) and publish it as Instagram Reel, Facebook Reel, TikTok and YouTube Short (#Shorts in the title), plus a «مين نجم الماتش؟» question as the first comment.
+   - Egyptian clubs (Al Ahly, Zamalek, Pyramids) always count as big matches.

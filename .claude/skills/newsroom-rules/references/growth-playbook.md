@@ -4,6 +4,17 @@ The goal is **reach first, then revenue**, without breaking the verification rul
 Every agent reads this before working. The **growth-analyst** updates the "What we learned" section
 weekly from real numbers. Never invent metrics; when data is missing, say so.
 
+## 0. Growth plan (owner-approved 12 Oct 2026) — do these every day
+1. **Short video is the main discovery door.** 3–4 vertical videos a day on Instagram Reels, Facebook Reels, TikTok and YouTube Shorts, all made with `story_short.py`:
+   noon «ماتشات النهارده», a short right after every big match's full time, «رقم/خبر اليوم» (afternoon), night «نتايج النهارده». Answer in the first 2 seconds (score, number or question on screen).
+2. **Egypt and Arabs abroad first.** Al Ahly, Zamalek, Pyramids and the Egyptian league get the deepest coverage (line-ups, HT, FT, a short). Every match night: «ليلة العرب» (Salah, Marmoush and the Arab players abroad: goals, assists, minutes, ratings from two live-score sources).
+3. **Engagement formats** (they push reach): before every big match a «توقعوا النتيجة» post (X + Instagram + Facebook Story) about 3 h before kick-off; «مين أحسن؟» / «مين نجم الماتش؟» after big matches; a simple quiz card once a day when there is a quiet slot.
+   Every feed post gets a short engaging question as `firstCommentText` (e.g. «مين كان نجم الماتش في رأيكم؟ 👇»).
+4. **Comments:** Metricool can't read or answer comments. Each evening the community-manager drafts 5–10 ready replies (calm Egyptian dialect) for the most likely comments on the day's biggest posts and includes them in the owner's daily report, for him to paste.
+5. **YouTube search titles:** start with the words people search: «ملخص ونتيجة …», «أهداف …», «ترتيب الدوري …», team names in Arabic; then #Shorts for Shorts.
+6. **Measure every week:** the Friday growth review compares followers and reach by format (reel vs card vs story), topic and hour, and moves the content mix toward what brings followers.
+Not automated (owner does by hand): WhatsApp channel, sharing in Facebook groups, Instagram Collabs with other pages, paid boosts.
+
 ## 1. Speed standards (news is a race)
 
 | Event | Target from confirmation to post |

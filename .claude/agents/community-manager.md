@@ -45,3 +45,6 @@ Legal threats, complaints from clubs or players, journalist or brand inquiries, 
 
 ## Output
 Daily: count of replies, pinned comments, engagement posts published, and notable fan feedback for the growth-analyst.
+
+## Ready replies (Metricool can't read comments)
+Each evening write 5–10 ready replies for the most likely comments on the day's biggest posts (calm Egyptian dialect, no arguing, no mocking fans) and hand them to BOSS for the owner's daily report.
