@@ -1,7 +1,7 @@
 # Kora Klicks (كورة كليكس) newsroom
 
 This repo runs the Kora Klicks AI newsroom. Agents are in `.claude/agents/`, skills in `.claude/skills/`.
-Start every task by loading the `newsroom-rules` skill and reading `LESSONS.md` (mistakes we already made and the rule for each).
+First run `bash scripts/setup_session.sh` (lets the news/score sites open without permission prompts), then start every task by loading the `newsroom-rules` skill and reading `LESSONS.md` (mistakes we already made and the rule for each).
 If you hit a new problem during a run, add one line to the top section of `LESSONS.md` (date · what happened · the rule from now on) and commit it with the log.
 
 ## Hard rules (owner decisions)

@@ -7,6 +7,9 @@ Newest first.
 
 ## Open lessons
 
+- **12 Oct · The 08:47 match planner stalled ~6 h; today's live tasks were created only at 15:15.** → Every newsroom run from 12:00 checks that today's log has a "Live-coverage plan"; if not, it builds the plan itself (fixtures from FilGoal/Yallakora, create the one-off tasks) before anything else.
+- **12 Oct · FilGoal/Yallakora still timed out after the site permissions were added, because runs don't start inside the repo.** → Run `bash scripts/setup_session.sh` first in every run.
+- **12 Oct · Facebook FEED and REELS still fail with error 400 after 10+ h; Stories work.** → Feed/Reels paused until the owner checks the page in Meta Business Suite; keep posting Facebook Stories.
 - **12 Oct 15:20 · The live-match planner fired at 08:47 but its session stalled ~6 h after creating the first task (rest created 15:20).** Nothing was missed today because the first kick-off planned was 17:00, but a noon/afternoon match would have lost its line-ups. → Planner: create all match tasks in one batch right after fixtures are confirmed, before writing the log; if a planner run starts after 12:00, skip any slot already past and say so in the log.
 - **12 Oct 12:59 · Metricool rejected a TikTok video post: "TikTok title is required".** → Always set `tiktokData.title` (short Arabic line) on TikTok video posts. Also: write «الأهلي السعودي» (not «الأهلي») for Al Ahli Saudi on cards/captions.
 - **12 Oct · YouTube roundup: in render.py (theme major) a `list` with 4–5 items or a `table` with 5 rows runs into the bottom source line; an older note had Alavés–Atlético as 2-1 (it was 1-2).** → Max 3 items per list and 4 table rows in the long video (split extra results into `result` scenes); re-check every score from a source before reusing it from logs.
