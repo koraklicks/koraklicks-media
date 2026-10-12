@@ -31,7 +31,7 @@ If a value here stops working, call `getBrandSettings` and use what it returns.
 
 - `providers` network names: `facebook`, `instagram`, `twitter` (X), `tiktok`, `youtube`.
 - Always include the `<network>Data` object for each provider (empty `{}` if nothing to set).
-- **X:** one single post, never a thread. Don't cut the text yourself; if Metricool returns a length error, send it back to the writer.
+- **X:** one single post, never a thread. Check the length with `scripts/x_len.py` (≤ 250) before sending; if it is over, the writer shortens it (names go on the card).
 - **Instagram:** needs at least one image (POST/carousel) or a video (REEL). Set `isAiGenerated: true` for AI-made images.
 - **TikTok:** needs an image or video. `isAigc: true` for AI-edited videos.
 - **Facebook:** text-only POST is allowed; REEL needs a video.
@@ -43,6 +43,8 @@ If a value here stops working, call `getBrandSettings` and use what it returns.
     and never more than **2 in any 3 h**. Morning catch-up results go to X/Instagram and a Facebook Story, not a burst of feed posts.
   - **Daily budget (owner decision 12 Oct 2026): max 4–5 Facebook FEED posts a day, only for big matches/stories.** Everything else goes to Facebook as a Story. Count today's Facebook feed posts in `getScheduledPosts` before posting.
   - Big results (derbies, top-league clashes) always go to Facebook: as a **Story right away** (works during a block) and as the feed post when the cadence allows.
+  - **12 Oct:** after ~20 h of no feed tries (Stories only), the 22:06 feed post (Pyramids 4-1) and the 23:27 one (Al Ain 1-4) both went
+    through, and Reels were queued at 01:10 and 02:30 under the 2-per-3 h rule. So the cadence works: keep it, don't burst.
   - After a rate-limit error, the next Facebook feed try is ≥ 2 h later and only for a big result; don't stop Facebook for the day.
 - **YouTube:** video + `title` + `madeForKids: false` + `category: "SPORTS"`. **Long videos: only after the owner approved this exact video.** Daily story Shorts (noon fixtures, night results) go out automatically (`type: "short"`).
 - `media` must be **public URLs**. Get them by uploading the finished files to the brand media repo

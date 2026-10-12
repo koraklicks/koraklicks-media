@@ -17,8 +17,12 @@ metadata:
    `getScheduledPosts` from 00:00 today: if this stage (line-ups / HT / FT) is already out — by another task or by the owner — don't post it again
    (on 11 Oct the Zamalek–Ahly line-ups went out twice on X). Log every post you make with its plannerUrl, line-ups included.
    Timing (firm): line-ups task at kick-off − 45 min; if a run starts later, post the line-ups as text on X first, then the card.
-   Half-time: post within 5 min of the HT whistle; if the live pages are cached, use a search for a HT report (Al-Ahram gate for Egypt,
-   Sky Sports/BBC report pages for England) instead of waiting. Full time: within 10 min.
+   Half-time (firm, missed or late on 11 AND 12 Oct): start searching at kick-off + 44 min, not at the whistle, using the
+   HT/FT playbook in `references/trusted-sources.md` (per competition). Post as soon as two approved sources agree; if after
+   HT + 10 min only one source has it, skip HT and put the effort into FT. Full time: within 10 min.
+   Kick-off check: HT/FT tasks first confirm the match kicked off on time (search teams + "delayed"/«تأجيل»); if not, re-arm
+   themselves (send_later) for the new time.
+   Every post gets a question (line-ups: «توقعكم للنتيجة؟ 👇», HT: «الشوط التاني هيجيب إيه؟ 👇»), on X in the text, elsewhere as `firstCommentText`.
 4. For each covered match, run this loop until full time:
    - Line-ups (≈60 min before): writer + creative (News template, «التشكيل الرسمي») → X, IG Story, FB.
    - KICKOFF / GOAL / RED CARD / HT: live card (two-source rule) → writer (one line) → creative (Live template; «هدف! GOAL» banner for goals) → **X thread first**, then IG Story, then update the single FB match post.
@@ -30,6 +34,8 @@ metadata:
 For coverage that must keep running while the owner is away, set this skill up as a scheduled task during match windows (e.g. every 10–15 minutes from kickoff to full time) using the session's scheduling tools.
 
 8. **Growth add-ons for BIG matches** (see `newsroom-rules` → `references/growth-playbook.md` §0):
-   - Pre-match (≈ 3 h before kick-off, or at line-ups time if later): «توقعوا النتيجة» post on X + Instagram and a Facebook Story.
+   - Pre-match (≈ 3 h before kick-off, or at line-ups time if later): a separate «توقعوا النتيجة» post on X + Instagram and a Facebook Story.
+     Not made on 12 Oct for Pyramids, Al Nassr or Al Ahli Saudi (only the noon fixtures card asked «توقعاتكم إيه؟»). So: any newsroom
+     run that sees a big match kicking off within 1–4 h and no «توقعوا» post for it in the log/getScheduledPosts makes it right away.
    - Full time: within 15 min also make a result short with `story_short.py` (kind "results", one match) and publish it as Instagram Reel, Facebook Reel, TikTok and YouTube Short (#Shorts in the title), plus a «مين نجم الماتش؟» question as the first comment.
    - Egyptian clubs (Al Ahly, Zamalek, Pyramids) always count as big matches.

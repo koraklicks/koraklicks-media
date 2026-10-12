@@ -21,6 +21,7 @@ metadata:
    - check `getScheduledPosts` from **00:00 Cairo today** (not just the last few hours), searching the text for the team names;
    - never trust a "not yet posted" note from an earlier run: the log entries with a plannerUrl are the truth.
    If it was posted, only a missing network or a new stage (HT → FT) may go out.
+   Also check the growth plan for the next 4 h: a big match without its «توقعوا النتيجة» post → make it now (live-match step 8).
 4. Enforce the gate on every story:
    - CONFIRMED (official source or two Tier-1 sources) + editor pass → publish now, with `📌 المصدر:`.
    - UNCONFIRMED → owner approval queue only. Never publish without the owner's ✅.

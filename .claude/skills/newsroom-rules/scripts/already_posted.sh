@@ -3,7 +3,10 @@
 # Usage: bash .claude/skills/newsroom-rules/scripts/already_posted.sh TERM [TERM...]
 #   TERM = team or player names, Arabic and/or English (e.g. كومو Como روما Roma)
 # Searches today's and yesterday's Cairo logs (logs/YYYY-MM-DD.md) for every line that
-# mentions any term. Lines with a plannerUrl / PUBLISHED are marked "POSTED".
+# mentions any term. A line is "POSTED" only when it is a real post line: it has a plannerUrl
+# (openWithPostUuid) or it is a STATUS line saying PUBLISHED. CHECK / HOLD / WAIT / SKIPPED /
+# LEFT OUT / plan lines that merely contain the word "PUBLISHED" are "seen" (fixed 13 Oct:
+# CHECK lines like "all PUBLISHED except ..." gave false POSTED hits three times on 12 Oct).
 # Exit code 1 = at least one POSTED line found -> do NOT post the story again
 # (only a different stage is allowed, e.g. FT after HT, or a missing network).
 set -euo pipefail
@@ -16,7 +19,9 @@ found=0
 for f in "logs/$yday.md" "logs/$today.md"; do
   [ -f "$f" ] || continue
   while IFS= read -r line; do
-    if echo "$line" | grep -qE 'openWithPostUuid|PUBLISHED'; then
+    if echo "$line" | grep -qE ' · (CHECK|HOLD|WAIT|SKIPPED|LEFT OUT|NOT TOUCHED|SCAN|FIXTURES[^·]*|NOTE) · '; then
+      echo "seen    $f: $line"
+    elif echo "$line" | grep -qE 'openWithPostUuid|· STATUS ·.*PUBLISHED'; then
       echo "POSTED  $f: $line"; found=1
     else
       echo "seen    $f: $line"

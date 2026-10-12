@@ -60,6 +60,25 @@ If a site blocks reading, use the next one on the list; use web search results f
 - Long Arabic Yallakora/Masrawy URLs are too long for WebFetch: use the search-result title, or the Ahram gate page.
 - Scorers/minutes that only one source gives are left out; numbers like table points or «القمة N» only when an approved source gives them.
 
+### HT/FT playbook per competition (firm; built from 12 Oct, when 12+ lessons were about cached pages)
+General (all competitions):
+- Open only URLs that a WebSearch returned; typed URLs time out ("permission request not answered").
+- **Never take FT from a page that shows a live minute, even 90+**: on 12 Oct 365Scores froze at 90+1 (1-2) when the real FT was 3-1,
+  and Korabia/365Scores froze at 82' (1-0) when the real FT was 1-1. Wait for «انتهت»/«Final»/«FT»/«afgelopen».
+- A page from search that looks stale: re-fetch it with a new `#fragment` (e.g. `#t2`) to beat the 15-min cache; every 2 min from FT − 5.
+  (Stopped working for some pages late on 12 Oct; then switch source instead of retrying.)
+- So3ody and Korabia use one data feed: they count as ONE source, and neither is on the approved list (owner question pending).
+- Kick-off time and opponent names come from FilGoal/Yallakora/the club, never only from listing sites (12 Oct: «الشرقية للدخان»
+  was really «إنبي», «استقلال خوزستان» was really «الاستقلال»).
+
+| Competition | HT (start at KO + 44) | FT (start at the whistle) |
+|---|---|---|
+| EGY | search «بوابة الأهرام <teams> نهاية الشوط الأول» (Tier 1) + FilGoal team page `filgoal.com/teams/ID` from search | English search «365scores ar football match <home> <away>» → 365Scores + Sofascore pages (often FT within 5 min); FilGoal today-strip on any `filgoal.com/articles/N` page from search |
+| ACLE / Saudi | Al Riyadiyah match centre `matches.arriyadiyah.com/matches/ID` (search «نتيجة مباراة X و Y arriyadiyah»); Kooora team «مباريات» page | AFC report title search «MD<n>: <home> <score> <away>» (the-afc.com = official, publish alone); FilGoal homepage strip with a fresh `#fragment`; Kooora team page «انتهت»; national news agency (SPA, INA/واع, WAM) |
+| Serie A | 365Scores/FilGoal team page | Italian search «<home>-<away> risultato finale» or English «<home> <away> full time <scorers>» + FilGoal team/matches page |
+| EPL / LaLiga | Sky/BBC live report from search | search «sporza <home> <away>» (shows «afgelopen» + scorers right after the whistle) + FilGoal strip/365Scores |
+| Saudi/ACLE line-ups | Al Riyadiyah match centre (Tier 1) or the club's official X post + one more outlet with the same XI | — |
+
 ## Owner additions
 
 The owner may add or demote sources at any time. Keep this list as the single truth; agents do

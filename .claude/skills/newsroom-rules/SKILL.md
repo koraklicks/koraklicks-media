@@ -95,7 +95,7 @@ Publishing tools, brand id, handles and posting rules: `references/metricool.md`
 Every agent passes work on as a **story card**:
 
 ```
-ID: KK-[YYYYMMDD]-[nn]
+ID: KK-[YYYYMMDD]-[HHMM] (Cairo time the story card is opened, e.g. KK-20261012-2202; add -b if taken)
 Type: news | live | result | feature
 Competition: EPL | LALIGA | SERIEA | SPL | EGY | UCL | UEL | UECL | CAFCL | CAFCC | ACLE | ARABCC | CWC | CUP | NT-[team] | WC | AFCON | ASIAN | ARABCUP | EURO | UNL | COPA
 Status: CONFIRMED | UNCONFIRMED | REJECTED
@@ -107,6 +107,9 @@ Visual: [template + filled fields, once designed]
 Approvals: editor ✔/✘ · boss ✔/✘ · owner (UNCONFIRMED only) ✔/✘
 ```
 
+
+Why HHMM, not a running number: scheduled tasks run in parallel in separate sessions and can't see each
+other's unpushed logs, so on 12 Oct six IDs were used twice (-06, -10, -13, -15, -16, -17). Old IDs stay as they are.
 
 ## Speed over perfection for match data (owner decision, 11 Oct 2026)
 - Match facts (scores, scorers, cards, line-ups, kick-off times) are confirmed by **two of Sofascore, 365Scores, FilGoal, Yallakora** (see trusted-sources). Do not hold a result waiting for BBC/Sky/official pages.
