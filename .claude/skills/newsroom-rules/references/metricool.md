@@ -47,6 +47,7 @@ If a value here stops working, call `getBrandSettings` and use what it returns.
     through, and Reels were queued at 01:10 and 02:30 under the 2-per-3 h rule. So the cadence works: keep it, don't burst.
   - After a rate-limit error, the next Facebook feed try is ≥ 2 h later and only for a big result; don't stop Facebook for the day.
 - **YouTube:** video + `title` + `madeForKids: false` + `category: "SPORTS"`. **Long videos: only after the owner approved this exact video.** Daily story Shorts (noon fixtures, night results) go out automatically (`type: "short"`).
+  YouTube channel is phone-verified (13 Oct 2026): **always send a custom thumbnail** (`videoThumbnailUrl`, a 1280×720 JPG in the brand look with the main result/headline) on long videos; for Shorts use `videoCoverMilliseconds` at the frame that shows the key fact.
 - `media` must be **public URLs**. Get them by uploading the finished files to the brand media repo
   (github.com/koraklicks/koraklicks-media):
   `bash .claude/skills/newsroom-rules/scripts/host_media.sh card.jpg reel.mp4`
