@@ -71,6 +71,8 @@ It writes `<slug>-story.jpg` (1080x1920 still for Instagram/Facebook stories) an
 
 ## Motion-graphics shorts with music and memes (owner request 13 Oct 2026)
 
+**Owner approved this style (13 Oct 11:46): `motion_short.py` is the DEFAULT for every Reel/Short/TikTok** (results, fixtures, numbers, Arab players, memes). Use `story_short.py` only for the Story still.
+
 `scripts/motion_short.py spec.json OUT_DIR [--theme dark|light] [--mood fun|drive|anthem|dark] [--preview]`
 makes a 15–30 s vertical short with kinetic text, beat-synced camera punches, flashes, pops and whooshes on original
 music (music.py; `fun` mood = bouncy pluck track for memes). Scene types: `hook`, `versus`, `score`, `stat`, `expect`

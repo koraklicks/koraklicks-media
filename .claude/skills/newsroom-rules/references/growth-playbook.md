@@ -76,3 +76,5 @@ video length) on at least 5 posts against a comparable control, then keep the wi
 ## 8. What we learned (updated weekly by the growth-analyst)
 
 - _No data yet._
+
+- **Video style (owner ✅ 13 Oct 2026):** all Reels/Shorts/TikToks are made with `motion_short.py` (motion graphics + original music + beat-synced effects), memes included (one a day max, friendly humour). Alternate the dark and light looks.
