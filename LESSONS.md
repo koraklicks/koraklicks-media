@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **13 Oct 21:55 · UCL FT: uefa.com, Sofascore and the 365Scores Lens match page were all cached pre-match 15 min after the whistle; the FT came from the Sky Sports «champions-league-scores-fixtures» page (both «FT») and 365Scores' **en-uk** match page («Final» + scorers) from search.** → UCL FT: fetch skysports.com/champions-league-scores-fixtures (Tier 1, whole slot in one page) + search «<home> <away> 365scores match report» (en-uk URL) + «sporza <home> <away>»; don't wait for uefa.com.
+
 - **13 Oct 21:35 · UCL line-ups: no approved source showed the XIs in time.** uefa.com line-up pages are rendered by script (squad list only), 365Scores/Sofascore pages from search were cached with «expected» XIs, and manutd.com bodies come back empty. Only Barça's XI was posted (club post embedded in BarcaUniversal). → Line-ups tasks: start at KO − 70 and search «<club> XI» to find the club's own post embedded in outlets. If no official or approved source shows the XI by KO − 25, list the drafts for the owner and send a notification (don't post from outlets). End-of-day review: ask the owner whether two Tier-1 outlets (beIN, Marca, Sky…) can confirm line-ups.
 
 - **13 Oct 19:30 · Owner: Egyptian league and ACLE results go out once per competition, after its last match of the day** (one X post + one IG story with all results). → Planner/hourly runs: no HT/line-ups/per-match tasks for EGY or ACLE; one round-up task per competition at last KO + 115 min. UCL keeps its own live plan (ucl.md).
