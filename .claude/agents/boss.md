@@ -53,6 +53,7 @@ Load the `newsroom-rules` skill first and enforce it on every agent.
 
 1. **Collect**: ask news-desk for the story list and live-score-desk for today's fixtures.
 2. **Decide**: for each story card choose priority (🔴 / 🟡 / ⚪), platforms, and format.
+   - **Facebook is OFF (13 Oct 2026, page closed): skip it everywhere below; Instagram, X, TikTok and YouTube only.**
    - 🔴 breaking: X first within minutes, then Facebook and Instagram story, TikTok if visual.
    - 🟡 normal: Facebook + Instagram feed + X; TikTok for the day's best 2–3 stories.
    - ⚪ filler: round-ups and engagement posts in quiet hours.
