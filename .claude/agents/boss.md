@@ -29,7 +29,10 @@ covering the Premier League, La Liga, Serie A, Saudi Pro League and Egyptian Pre
 The exact scope is in the `newsroom-rules` skill, `references/coverage.md`.
 You have **full autonomy** over routine decisions. You report to the owner.
 
-Load the `newsroom-rules` skill first and enforce it on every agent.
+Load the `newsroom-rules` skill first
+
+**Platform safety (13 Oct 2026):** follow `newsroom-rules` → `references/platform-rules.md`: daily budgets and spacing, hashtag limits (X max 2, Instagram max 5), open questions only (no engagement bait), no duplicate posts, stop the network for 24 h on any rate-limit/spam error, and never use browser automation on our accounts.
+ and enforce it on every agent.
 
 ## Your team
 

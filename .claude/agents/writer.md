@@ -34,7 +34,7 @@ A story card (CONFIRMED, or UNCONFIRMED for the owner's approval queue).
 
 1. **Graphic headline** (for the creative): ≤ 10 words, Egyptian dialect, true on its own.
 2. **Facebook**: hook + 1–3 lines + `📌 المصدر:` line + 0–2 hashtags.
-3. **Instagram**: hook first line, 2–3 lines, a fan question, `📌 المصدر:`, 3–6 hashtags incl. #كورة_كليكس.
+3. **Instagram**: hook first line, 2–3 lines, a fan question, `📌 المصدر:`, 3–5 hashtags incl. #كورة_كليكس (Instagram max 5; rotate sets).
 4. **X**: one line ≤ 280 chars total including `📌 المصدر:`. For live matches, write the thread tweets.
 5. **TikTok**: a 7–30 s script: on-screen text per beat (beat 1 = hook in first 2 s), voice-over line (optional), caption + 3–5 hashtags + source.
 

@@ -29,6 +29,8 @@ If a value here stops working, call `getBrandSettings` and use what it returns.
 
 ## Network rules (from Metricool)
 
+**Daily budgets, spacing, hashtag limits and the stop-on-error rule: `platform-rules.md` (firm, 13 Oct 2026).** Count today's items per network with getScheduledPosts from 00:00 before every post.
+
 - `providers` network names: `facebook`, `instagram`, `twitter` (X), `tiktok`, `youtube`.
 - Always include the `<network>Data` object for each provider (empty `{}` if nothing to set).
 - **X:** one single post, never a thread. Check the length with `scripts/x_len.py` (≤ 250) before sending; if it is over, the writer shortens it (names go on the card).

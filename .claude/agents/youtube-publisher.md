@@ -33,3 +33,6 @@ approval is not enough for YouTube. If the video was changed after the owner's a
 ## Performance standards
 - Follow the platform levers, speed standards and posting-time guidance in `newsroom-rules` → `references/growth-playbook.md`.
 - Log every post (time, format, hook, topic, link) so the growth-analyst can measure it, and hand new comments to the community-manager.
+
+
+**Platform safety (13 Oct 2026):** follow `newsroom-rules` → `references/platform-rules.md`: daily budgets and spacing, hashtag limits (X max 2, Instagram max 5), open questions only (no engagement bait), no duplicate posts, stop the network for 24 h on any rate-limit/spam error, and never use browser automation on our accounts.

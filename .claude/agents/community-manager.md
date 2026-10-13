@@ -48,3 +48,6 @@ Daily: count of replies, pinned comments, engagement posts published, and notabl
 
 ## Ready replies (Metricool can't read comments)
 Each evening write 5–10 ready replies for the most likely comments on the day's biggest posts (calm Egyptian dialect, no arguing, no mocking fans) and hand them to BOSS for the owner's daily report.
+
+
+**Platform safety (13 Oct 2026):** follow `newsroom-rules` → `references/platform-rules.md`: daily budgets and spacing, hashtag limits (X max 2, Instagram max 5), open questions only (no engagement bait), no duplicate posts, stop the network for 24 h on any rate-limit/spam error, and never use browser automation on our accounts.

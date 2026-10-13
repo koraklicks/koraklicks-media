@@ -16,6 +16,8 @@ metadata:
 
 Apply these rules in every newsroom task. They override any agent's own habits.
 
+**Before publishing anything, read `references/platform-rules.md`** (daily budgets, spacing, hashtag limits, original-content and anti-spam rules, what to do on a rate-limit error). Those rules win over growth targets.
+
 ## 0. What we cover
 
 - **Tier A (daily, full):** Premier League, La Liga, Serie A, Saudi Pro League, Egyptian Premier League.
