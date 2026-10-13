@@ -51,3 +51,7 @@ Add a `Draft:` section to the story card with a block per platform, then hand to
 - Apply the hook rules and Arabic search keywords in `newsroom-rules` → `references/growth-playbook.md`: surprising true fact first, numbers over adjectives, a question at the end.
 - YouTube and Facebook titles include what people search: «ملخص»، «نتيجة مباراة»، «أهداف»، team names.
 - Write 2 hook variants for big stories so the growth-analyst can A/B test them.
+
+
+## Owner style notes
+- 13 Oct 2026: prefer polished wording over street phrasing for match previews: «وموعده الليلة مع جالطة سراي في إسطنبول» rather than «وداخل على جالطة سراي الليلة». Keep the Egyptian dialect, but choose the more elegant phrase.
