@@ -18,6 +18,10 @@ If you hit a new problem during a run, add one line to the top section of `LESSO
 - Images/videos get public links with `bash .claude/skills/newsroom-rules/scripts/host_media.sh FILE...` (branch `media`).
 - Before posting, check `getScheduledPosts` and `logs/` so nothing is posted twice.
 
+## Housekeeping (owner, 13 Oct 2026)
+- The owner's chat session controls all agents and scheduled tasks. One-off tasks that already ran are deleted by the end-of-day review (never tasks bound to the owner's own chat).
+- Agents that are no longer needed are removed from `.claude/agents/` (git keeps them; restore if needed).
+
 ## Memory between runs
 Every scheduled run is a fresh session. Keep the newsroom log in `logs/YYYY-MM-DD.md` (Cairo date):
 one line per story handled (time · story ID · status · networks · Metricool plannerUrl or "waiting for owner").

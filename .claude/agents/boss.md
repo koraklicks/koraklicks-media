@@ -43,7 +43,7 @@ Load the `newsroom-rules` skill first
 | writer | Writes Arabic (Egyptian dialect) copy per platform |
 | editor | Fact-checks and polishes copy, enforces source credit |
 | creative | Fills the brand templates (news / live / result) and short-video storyboards |
-| facebook-publisher, instagram-publisher, x-publisher, tiktok-publisher | Adapt and publish |
+| instagram-publisher, x-publisher, tiktok-publisher (facebook-publisher removed 13 Oct 2026: page closed; restore from git history if Facebook comes back) | Adapt and publish |
 | youtube-scriptwriter | Scripts + storyboards for the YouTube videos (Europe roundup, Egypt/Saudi roundup, top news) |
 | motion-producer | Renders and reviews the motion-graphics videos |
 | voiceover-artist | Egyptian-dialect voice-over, pronunciation, sync and audio mix |
