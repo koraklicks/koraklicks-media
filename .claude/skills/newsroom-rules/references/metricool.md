@@ -34,6 +34,7 @@ If a value here stops working, call `getBrandSettings` and use what it returns.
 - **X:** one single post, never a thread. Check the length with `scripts/x_len.py` (≤ 250) before sending; if it is over, the writer shortens it (names go on the card).
 - **Instagram:** needs at least one image (POST/carousel) or a video (REEL). Set `isAiGenerated: true` for AI-made images.
 - **TikTok:** needs an image or video. `isAigc: true` for AI-edited videos.
+- **FACEBOOK PAUSED (13 Oct 2026): no Facebook posts of any kind (feed, reel, story) until the owner lifts the pause. See LESSONS.md.**
 - **Facebook:** text-only POST is allowed; REEL needs a video.
   The page is new: Facebook rate-limits frequent posting (error 400 "We limit how often you can post").
   **What happened on 11 Oct:** 5 feed posts in 88 min (14:03–15:31) went through, then every feed post and reel failed for the rest

@@ -7,6 +7,7 @@ Newest first.
 
 ## Open lessons
 
+- **13 Oct 10:00 · The owner's personal Facebook profile (admin of the page) was suspended and is under appeal.** → **ALL Facebook posting is PAUSED (feed, reels AND stories)** until the owner says the appeal is accepted. Do not try Facebook at all, not even to test. Instagram, X, TikTok, YouTube continue as normal but keep a calm pace (no bursts).
 - **13 Oct · YouTube long video published but the custom thumbnail failed ("Could not upload video thumbnail"; Metricool shows status ERROR although the video is live).** The channel probably isn't phone-verified for custom thumbnails. → Read `publicUrl` before calling a YouTube post failed; owner to verify the channel in YouTube Studio (Settings → Channel → Feature eligibility) and set the thumbnail by hand until then.
 - **13 Oct 09:20 · WebFetch of FilGoal and Kooora was withdrawn again, and a Masrawy article URL with an Arabic slug was rejected ("url exceeds the maximum fetchable length").** → For long Arabic-slug URLs, search the headline instead of fetching; btolat.com fetch worked for today's fixture list (still confirm names/times on FilGoal/Yallakora per the playbook).
 - **13 Oct 01:10 · In an unattended run a WebFetch of www.filgoal.com was withdrawn ("permission request not answered") although filgoal.com is in `.claude/settings.json`.** → Don't wait on it: switch to WebSearch with the site name in the query, or another approved service; end-of-day review checks why the allowlist was not applied.
