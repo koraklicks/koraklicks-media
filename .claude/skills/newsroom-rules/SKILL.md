@@ -21,6 +21,7 @@ Apply these rules in every newsroom task. They override any agent's own habits.
 - **Tier A (daily, full):** Premier League, La Liga, Serie A, Saudi Pro League, Egyptian Premier League.
 - **Tier B (important matches only):** Champions League / Europa / Conference, CAF and AFC club competitions, Arab Club Champions Cup, Club World Cup, domestic cups; Arab national teams (all official matches), European national teams (big matches), Brazil and Argentina; World Cup, AFCON, Asian Cup, Arab Cup, Euro, Nations League, Copa América.
 - What makes a Tier B match "important" and the priority order: `references/coverage.md`.
+- **Champions League matchdays = Tier A** (owner, 13 Oct 2026): follow `references/ucl.md`.
 
 ## 1. The verification gate (the most important rule)
 

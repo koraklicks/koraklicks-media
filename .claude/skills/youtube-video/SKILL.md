@@ -68,3 +68,22 @@ For the noon "top matches today" and the night "today's results" pieces, use
 `python3 .claude/skills/youtube-video/scripts/story_short.py spec.json OUT_DIR` (spec format in the script's docstring).
 It writes `<slug>-story.jpg` (1080x1920 still for Instagram/Facebook stories) and `<slug>-short.mp4`
 (~15 s vertical video with original music for Reels, TikTok and YouTube Shorts). Check a few frames before publishing.
+
+## Motion-graphics shorts with music and memes (owner request 13 Oct 2026)
+
+`scripts/motion_short.py spec.json OUT_DIR [--theme dark|light] [--mood fun|drive|anthem|dark] [--preview]`
+makes a 15–30 s vertical short with kinetic text, beat-synced camera punches, flashes, pops and whooshes on original
+music (music.py; `fun` mood = bouncy pluck track for memes). Scene types: `hook`, `versus`, `score`, `stat`, `expect`
+(expectation vs reality), `when` («لما…»), `chat` (fans' group chat), `pov`, `list`, `cta`. Spec format is in the
+script's docstring. Always run `--preview` first and look at the sheet (one frame per scene), then render the video.
+It writes `<slug>-short.mp4` and `<slug>-cover.jpg` (use the cover as Story/thumbnail).
+
+Two looks side by side (neither replaces the other):
+- `--theme dark` = the cinematic house look: night results, FT shorts, «ليلة الأبطال».
+- `--theme light` = bright version (ice/mint/sky, black wordmark): daytime previews, fixtures, memes, tables.
+  `story_short.py` also takes `--theme light`. Aim for about half of the day's shorts in each look.
+
+Memes: original typographic + emoji jokes about the fan experience (late kick-offs, last-minute goals, predictions
+gone wrong, the group chat during the match). Never mock a club, player or fan base, never use film/series stills
+or other people's photos, no crests, no betting; chat names are invented generic first names. Facts on screen
+(scores, times, numbers) still need sources. One meme short a day at most; big-match days are the best fit.

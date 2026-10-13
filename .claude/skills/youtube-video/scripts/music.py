@@ -21,6 +21,7 @@ MOODS = {  # chord roots (semitones from A2 = 110 Hz) and chord quality, one cho
     "drive":  [(0, "m"), (-4, "M"), (3, "M"), (-2, "M")],   # Am F C G
     "dark":   [(0, "m"), (-4, "M"), (-2, "M"), (-5, "m")],   # Am F G Em
     "anthem": [(-4, "M"), (3, "M"), (-2, "M"), (0, "m")],    # F C G Am
+    "fun":    [(3, "M"), (-2, "M"), (0, "m"), (-4, "M")],    # C G Am F, bouncy pluck lead (memes, light shorts)
 }
 
 
@@ -99,6 +100,25 @@ def riser(n):
         seg = sosfilt(butter(2, [fc * 0.7, min(fc * 1.4, 18000)], "band", fs=SR, output="sos"), noise[a:b])
         out[a:b] = seg
     return out * (t / t[-1]) ** 2
+
+
+def pop(n=int(0.12 * SR)):
+    """short bubbly 'pop' for meme captions / chat bubbles"""
+    t = np.arange(n) / SR
+    f = 900 + 1400 * np.exp(-t * 60)
+    return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 38)
+
+
+def whoosh(n=int(0.45 * SR)):
+    t = np.arange(n) / SR
+    x = riser(n) * np.sin(np.pi * t / t[-1])
+    return x / (np.abs(x).max() + 1e-9)
+
+
+def pluck(freq, n):
+    t = np.arange(n) / SR
+    x = (np.sin(2 * np.pi * freq * t) + 0.35 * np.sin(4 * np.pi * freq * t) + 0.15 * np.sin(6 * np.pi * freq * t))
+    return x * np.exp(-t * 9) * np.minimum(1, t / 0.003)
 
 
 def add(buf, x, at, gain=1.0):
@@ -187,14 +207,32 @@ def main():
         nn = int(bar * SR)
         pad = sum(saw(hz(root + iv + 12), nn, 0.01) for iv in (0, third, 7, 12)) / 4
         add(synth, lp(pad, 700 if in_intro else 1400) * env(nn, 0.25, 9, 0.8), tb, 0.10)
+        if a.mood == "fun":  # 16th-note pluck arpeggio, two octaves up
+            arp = (0, third, 7, 12, 7, third, 0, 7)
+            for step in range(16):
+                ts = tb + step * beat / 4
+                if ts >= total or ts >= outro_start + bar or (in_intro and step % 2):
+                    continue
+                add(synth, pluck(hz(root + 24 + arp[step % 8]), int(0.25 * SR)), ts, 0.16)
 
     # fx: intro riser into the first cut, impacts + short risers on every scene change, final hit
     if len(starts) > 1:
         add(fx, riser(int(intro_end * SR)), 0, 0.35)
-    for st in starts[1:]:
-        add(fx, impact(), st, 0.7)
-        rl = min(beat * 2, 1.2)
-        add(fx, riser(int(rl * SR)), max(0, st - rl), 0.22)
+    P, WH = pop(), whoosh()
+    for k, st in enumerate(starts):
+        sc = sb["scenes"][k]
+        kind = sc.get("sfx", "impact")
+        if k > 0:
+            if kind == "impact":
+                add(fx, impact(), st, 0.7)
+                rl = min(beat * 2, 1.2)
+                add(fx, riser(int(rl * SR)), max(0, st - rl), 0.22)
+            elif kind == "whoosh":
+                add(fx, WH, max(0, st - 0.3), 0.45)
+            elif kind == "pop":
+                add(fx, P, st, 0.5)
+        for pt in sc.get("pops", []):  # extra pops inside the scene (seconds from scene start)
+            add(fx, P, st + float(pt), 0.45)
     add(fx, impact(), outro_start + bar, 0.8)
 
     music = drums * 0.9 + (bass + synth) * pump + fx

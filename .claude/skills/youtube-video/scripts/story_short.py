@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Kora Klicks vertical story + short (1080x1920) in the cinematic "major" look.
 
-  python3 story_short.py spec.json OUT_DIR [--fps 30] [--bpm 124] [--mood drive]
+  python3 story_short.py spec.json OUT_DIR [--fps 30] [--bpm 124] [--mood drive] [--theme dark|light]
+
+--theme light (or "theme": "light" in the spec) = the bright version of the same template, used side by side
+with the dark one (daytime fixtures/previews, tables); dark stays the default for nights/results.
 
 spec.json:
 {
@@ -90,6 +93,18 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#050608;color:#E
 """.replace("FONTS", FONTS.as_uri())
 
 
+LIGHT = {"#050608": "#F3F8FC", "#0e1c27": "#DDF5E7", "#E3F4FF": "#0B1620", "#8A97A3": "#5B6B7A",
+         "#00C853": "#00A84F", "#22272E": "#D5E0EA", "#0f1419": "#E6EFF7", "opacity:.06": "opacity:.03",
+         "kora-klicks-wordmark-transparent-ice.svg": "kora-klicks-wordmark-transparent-black.svg"}
+
+
+def themed(html_text, theme):
+    if theme == "light":
+        for a, b in LIGHT.items():
+            html_text = html_text.replace(a, b)
+    return html_text
+
+
 def mid_text(it):
     if "home_score" in it:
         return f'{it["away_score"]} - {it["home_score"]}'  # LTR display: away left, home right (RTL layout)
@@ -175,8 +190,10 @@ def main():
     ap.add_argument("spec"); ap.add_argument("out_dir")
     ap.add_argument("--fps", type=int, default=30); ap.add_argument("--bpm", type=float, default=124)
     ap.add_argument("--mood", default="drive")
+    ap.add_argument("--theme", choices=["dark", "light"])
     a = ap.parse_args()
     spec = json.loads(Path(a.spec).read_text(encoding="utf-8"))
+    theme = a.theme or spec.get("theme", "dark")
     out = Path(a.out_dir).resolve(); out.mkdir(parents=True, exist_ok=True)
     slug = spec["slug"]
     n = len(spec["items"]) + 2
@@ -189,8 +206,8 @@ def main():
 
     from playwright.sync_api import sync_playwright
     frames = out / f"{slug}-frames"; frames.mkdir(exist_ok=True)
-    (out / f"{slug}-still.html").write_text(still_html(spec), encoding="utf-8")
-    (out / f"{slug}-video.html").write_text(video_html(spec, durs), encoding="utf-8")
+    (out / f"{slug}-still.html").write_text(themed(still_html(spec), theme), encoding="utf-8")
+    (out / f"{slug}-video.html").write_text(themed(video_html(spec, durs), theme), encoding="utf-8")
     total = sum(durs); nf = int(round(total * a.fps))
     with sync_playwright() as p:
         b = p.chromium.launch()

@@ -10,6 +10,9 @@
 | SPL | Saudi Pro League (دوري روشن) |
 | EGY | Egyptian Premier League |
 
+**UEFA Champions League on matchdays counts as Tier A** (owner, 13 Oct 2026): every match at least as a result, big ones fully live.
+Plan, calendar, Arab-player list and the matchday package: `references/ucl.md`.
+
 ## Tier B: important matches only (big games, finals, knockouts, Arab clubs/players)
 
 **Club competitions**

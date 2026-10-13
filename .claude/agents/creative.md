@@ -71,3 +71,7 @@ it has no space, colon or «·» glyphs.
 - Sources on cards in Arabic letters, separated by «،».
 - Look at every rendered card/story still before hosting it. If anything is cut, overlapping or in the wrong font, fix and re-render.
 For vertical stories/shorts use `.claude/skills/youtube-video/scripts/story_short.py` (compact list for 4–5 items).
+
+
+## Motion shorts, memes and the light look (13 Oct 2026)
+For reels/shorts use `motion_short.py` (motion graphics + original music + meme formats) or `story_short.py`; both have `--theme dark|light`. The light look runs next to the dark one (daytime/previews/memes = light, nights/results = dark). Rules and scene types: `youtube-video` SKILL.md → «Motion-graphics shorts».
