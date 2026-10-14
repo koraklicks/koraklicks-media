@@ -22,6 +22,15 @@ If you hit a new problem during a run, add one line to the top section of `LESSO
 - The owner's chat session controls all agents and scheduled tasks. One-off tasks that already ran are deleted by the end-of-day review (never tasks bound to the owner's own chat).
 - Agents that are no longer needed are removed from `.claude/agents/` (git keeps them; restore if needed).
 
+## Token economy (owner, 14 Oct 2026: runs hit the account usage limit on 13–14 Oct)
+- Do the work yourself in the main session. Don't spawn subagents (the BOSS → desks chain) for routine runs; read an agent file only when you need its rules.
+- Read only what you need: `grep` today's log and LESSONS.md for your matches/stage instead of reading whole files; open a reference file only for the section you need.
+- Metricool `getScheduledPosts`: ask for the shortest window that answers the question (usually the last 3 h); run `already_posted.sh` first. Full-day pulls are very large.
+- Web: WebSearch first (site name in the query), at most ~6 searches per story; WebFetch only URLs from the results, with a short focused prompt. Stop as soon as the source rule is met.
+- Facts already CONFIRMED in today's log are not re-verified. If nothing new: stop with one line.
+- Videos: one `--preview` check, then one render. No re-renders for small cosmetic changes.
+- Short log lines (≤ 250 chars) and short summaries.
+
 ## Memory between runs
 Every scheduled run is a fresh session. Keep the newsroom log in `logs/YYYY-MM-DD.md` (Cairo date):
 one line per story handled (time · story ID · status · networks · Metricool plannerUrl or "waiting for owner").
