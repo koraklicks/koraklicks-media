@@ -7,6 +7,7 @@ Newest first.
 
 ## Open lessons
 
+- **15 Oct 00:20 · Typed «17 goals» in a TikTok caption; real total was 22 (6+7+9).** → Add up goal totals in code (python) before writing them in a caption.
 - **14 Oct 21:35 · City×PSG XI was on mancity.com (18:45) but search only showed old fixtures.** → For line-ups fetch the club's match-preview page and follow its «team news» link; for the other club search «<club> XI» on realmadrid.com/asroma.com. Only Yahoo/SB Nation/voetbalwedden for Roma×Real → HOLD.
 - **14 Oct 16:05 · ACLE East 13:00 KO: 2 h after FT still no AFC report; Sofascore/365Scores/ESPN pages fetched stale (pre-match), only search titles showed FT (365Scores «5 - 1 … Match Report», ESPN «Final Score»).** → For Asian midday matches use search-result titles of approved/Tier-1 pages as the FT evidence (state it in the log); owner question: may JP/KR national outlets (Football Channel, Gekisaka, Yonhap) count as Tier 1 for ACLE East?
 - **14 Oct review · TikTok views collapsed on 13 Oct: 0, 1, 0 and 22 views on the four videos (Metricool posts), vs 899 views on 11 Oct; Instagram reels on the same content got 37–102.** → Not a rule yet: keep TikTok at ≤ 4 videos/day, each with its own facts and angle (no near-identical result shorts the same day), and the owner checks the TikTok app inbox/Account status for a warning. If 14 Oct is also near zero, tell the owner at once.
