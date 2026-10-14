@@ -75,7 +75,7 @@ It writes `<slug>-story.jpg` (1080x1920 still for Instagram/Facebook stories) an
 
 `scripts/motion_short.py spec.json OUT_DIR [--theme dark|light] [--mood fun|drive|anthem|dark] [--preview]`
 makes a 15–30 s vertical short with kinetic text, beat-synced camera punches, flashes, pops and whooshes on original
-music (music.py; `fun` mood = bouncy pluck track for memes). Scene types: `hook`, `versus`, `score`, `stat`, `expect`
+music (music.py; `fun` mood = bouncy pluck track for memes; `phonk` mood = drift-phonk style cowbell + 808, use `--bpm 140`, popular in football edits — demo 14 Oct, waiting for the owner OK before daily use). Scene types: `hook`, `versus`, `score`, `stat`, `expect`
 (expectation vs reality), `when` («لما…»), `chat` (fans' group chat), `pov`, `list`, `cta`. Spec format is in the
 script's docstring. Always run `--preview` first and look at the sheet (one frame per scene), then render the video.
 It writes `<slug>-short.mp4` and `<slug>-cover.jpg` (use the cover as Story/thumbnail).

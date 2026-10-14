@@ -22,6 +22,7 @@ MOODS = {  # chord roots (semitones from A2 = 110 Hz) and chord quality, one cho
     "dark":   [(0, "m"), (-4, "M"), (-2, "M"), (-5, "m")],   # Am F G Em
     "anthem": [(-4, "M"), (3, "M"), (-2, "M"), (0, "m")],    # F C G Am
     "fun":    [(3, "M"), (-2, "M"), (0, "m"), (-4, "M")],    # C G Am F, bouncy pluck lead (memes, light shorts)
+    "phonk":  [(0, "m"), (0, "m"), (-4, "M"), (-5, "m")],    # drift-phonk style (cowbell + 808), use --bpm 140
 }
 
 
@@ -121,6 +122,56 @@ def pluck(freq, n):
     return x * np.exp(-t * 9) * np.minimum(1, t / 0.003)
 
 
+def square(freq, n):
+    t = np.arange(n) / SR
+    return np.sign(np.sin(2 * np.pi * freq * t))
+
+
+def cowbell(semi, n=int(0.22 * SR)):
+    """phonk cowbell: two detuned squares, band-passed, fast decay; semi = semitones from A4"""
+    k = 2 ** (semi / 12)
+    t = np.arange(n) / SR
+    x = (square(587 * k, n) + square(845 * k, n)) * 0.5
+    x = sosfilt(butter(2, [500, 4500], "band", fs=SR, output="sos"), x)
+    return x * np.exp(-t * 16) * np.minimum(1, t / 0.002)
+
+
+def bass808(semi, n):
+    """808 with a short pitch drop and saturation; semi from A1 (55 Hz)"""
+    t = np.arange(n) / SR
+    f = 55 * 2 ** (semi / 12) * (1 + 1.0 * np.exp(-t * 40))
+    x = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 1.6) * np.minimum(1, t / 0.003)
+    return np.tanh(2.6 * x)
+
+
+def phonk_parts(total, intro_end, outro_start, beat, bar, chords):
+    n = int((total + 0.05) * SR)
+    drums, bass, lead = np.zeros(n), np.zeros(n), np.zeros(n)
+    K, C, H = kick(), clap(), hat()
+    st = beat / 4                                   # 16th note
+    melody = {0: 0, 3: 3, 6: 7, 8: 5, 10: 3, 12: 0, 14: -2}
+    for k in range(int(total / bar) + 1):
+        tb = k * bar
+        root = chords[k % len(chords)][0]
+        in_intro, in_end = tb < intro_end, tb >= outro_start + bar
+        for step, semi in melody.items():
+            ts = tb + step * st
+            if ts < total:
+                add(lead, cowbell(semi + root), ts, 0.35 if in_intro else 0.5)
+        if in_intro or in_end:
+            continue
+        for step in (0, 6, 10):                     # kick + 808 pattern
+            ts = tb + step * st
+            add(drums, K, ts, 0.8)
+            add(bass, bass808(root, int(min(4 * st if step else 6 * st, 0.9) * SR)), ts, 0.75)
+        add(drums, C, tb + 8 * st, 0.75)            # half-time clap on beat 3
+        for step in range(16):                      # hats, with a 32nd roll at the end of every 2nd bar
+            add(drums, H, tb + step * st, 0.16 if step % 2 == 0 else 0.09)
+            if k % 2 == 1 and step >= 13:
+                add(drums, H, tb + step * st + st / 2, 0.08)
+    return drums, bass, lead
+
+
 def add(buf, x, at, gain=1.0):
     i = int(at * SR)
     if i >= len(buf):
@@ -214,6 +265,10 @@ def main():
                 if ts >= total or ts >= outro_start + bar or (in_intro and step % 2):
                     continue
                 add(synth, pluck(hz(root + 24 + arp[step % 8]), int(0.25 * SR)), ts, 0.16)
+
+    if a.mood == "phonk":  # replace the house arrangement with the phonk one
+        drums, bass, synth = phonk_parts(total, intro_end, outro_start, beat, bar, chords)
+        pump = np.ones(n)
 
     # fx: intro riser into the first cut, impacts + short risers on every scene change, final hit
     if len(starts) > 1:
