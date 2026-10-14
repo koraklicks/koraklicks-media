@@ -75,7 +75,7 @@ It writes `<slug>-story.jpg` (1080x1920 still for Instagram/Facebook stories) an
 
 `scripts/motion_short.py spec.json OUT_DIR [--theme dark|light] [--mood fun|drive|anthem|dark] [--preview]`
 makes a 15–30 s vertical short with kinetic text, beat-synced camera punches, flashes, pops and whooshes on original
-music (music.py; `fun` mood = bouncy pluck track for memes; `phonk` mood = drift-phonk style cowbell + 808, use `--bpm 140`, popular in football edits — demo 14 Oct, waiting for the owner OK before daily use). Scene types: `hook`, `versus`, `score`, `stat`, `expect`
+music (music.py; `fun` mood = bouncy pluck track for memes; `phonk` mood = drift-phonk style cowbell + 808, use `--bpm 140`, popular in football edits — approved by the owner 14 Oct). Scene types: `hook`, `versus`, `score`, `stat`, `expect`
 (expectation vs reality), `when` («لما…»), `chat` (fans' group chat), `pov`, `list`, `cta`. Spec format is in the
 script's docstring. Always run `--preview` first and look at the sheet (one frame per scene), then render the video.
 It writes `<slug>-short.mp4` and `<slug>-cover.jpg` (use the cover as Story/thumbnail).
@@ -89,3 +89,15 @@ Memes: original typographic + emoji jokes about the fan experience (late kick-of
 gone wrong, the group chat during the match). Never mock a club, player or fan base, never use film/series stills
 or other people's photos, no crests, no betting; chat names are invented generic first names. Facts on screen
 (scores, times, numbers) still need sources. One meme short a day at most; big-match days are the best fit.
+
+
+## Music plan (owner ✅ 14 Oct 2026)
+1. **Automatic, every short:** our own code-made music only. Rotate the styles so shorts don't sound the same:
+   `phonk` (`--bpm 140`, football-edit style) for results and big-match shorts, `fun` for memes, `drive`/`anthem` for
+   fixtures, numbers and roundups. Never put a real song or a "trending sound" file inside our MP4 (copyright: muted
+   audio, claims, strikes).
+2. **Trending sound, by hand, once a day:** for the day's «TREND-SOUND» match (see growth-playbook §0), render with
+   `--also-silent` and send `<slug>-short-nomusic.mp4` to Instagram REEL and TikTok with `autoPublish: false`. Metricool
+   pushes it to the owner's phone; he adds a trending sound from the app's library and posts. YouTube and X get the
+   normal version automatically. Tell the owner in the run summary: «فيه ريل مستنيك تضيف عليه صوت ترند».
+   (Instagram audio can't be added through the API since the Facebook profile was lost: tested 14 Oct.)

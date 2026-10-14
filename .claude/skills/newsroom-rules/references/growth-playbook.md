@@ -78,3 +78,5 @@ video length) on at least 5 posts against a comparable control, then keep the wi
 - _No data yet._
 
 - **Video style (owner ✅ 13 Oct 2026):** all Reels/Shorts/TikToks are made with `motion_short.py` (motion graphics + original music + beat-synced effects), memes included (one a day max, friendly humour). Alternate the dark and light looks.
+
+- **TREND-SOUND match (owner ✅ 14 Oct 2026):** the match planner (or the UCL desk on UCL days) picks ONE match a day (Egyptian clubs first, then the biggest UCL/top-league match) and writes `TREND-SOUND: <match>` in today's plan. That match's full-time short goes to Instagram Reel + TikTok as a no-music version with autoPublish false so the owner adds a trending sound by hand (`youtube-video` SKILL.md → Music plan). All other shorts use our own music, styles rotated (phonk / fun / drive / anthem).

@@ -42,3 +42,4 @@ For coverage that must keep running while the owner is away, set this skill up a
      run that sees a big match kicking off within 1–4 h and no «توقعوا» post for it in the log/getScheduledPosts makes it right away.
    - Full time: within 15 min also make a result short with `story_short.py` (kind "results", one match) and publish it as Instagram Reel, Facebook Reel, TikTok and YouTube Short (#Shorts in the title), plus a «مين نجم الماتش؟» question as the first comment.
    - Egyptian clubs (Al Ahly, Zamalek, Pyramids) always count as big matches.
+   - If today's plan says `TREND-SOUND: <this match>`: render the FT short with `motion_short.py --also-silent`; publish the `-nomusic` version to Instagram REEL and TikTok with `autoPublish: false` (owner adds a trending sound in the app) and the normal version to YouTube Short automatically. Say it in the summary. Other FT shorts: `--mood phonk --bpm 140`.

@@ -265,6 +265,8 @@ def main():
     ap.add_argument("--theme", choices=list(THEMES)); ap.add_argument("--mood")
     ap.add_argument("--fps", type=int, default=30); ap.add_argument("--bpm", type=float, default=124)
     ap.add_argument("--preview", action="store_true", help="only write <slug>-sheet.jpg (one frame per scene) to check the layout fast")
+    ap.add_argument("--also-silent", action="store_true",
+                    help="also write <slug>-short-nomusic.mp4 (no audio) for the owner to add a trending sound by hand in the app")
     a = ap.parse_args()
     spec = json.loads(Path(a.spec).read_text(encoding="utf-8"))
     theme = a.theme or spec.get("theme", "dark")
@@ -331,7 +333,13 @@ def main():
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-framerate", str(a.fps), "-i", str(frames / "%05d.jpg"),
                     "-i", str(music), "-c:v", "libx264", "-pix_fmt", "yuv420p", "-preset", "medium", "-crf", "20",
                     "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(mp4)], check=True)
-    print(json.dumps({"short": str(mp4), "cover": str(out / f"{slug}-cover.jpg"), "theme": theme, "mood": mood,
+    silent = None
+    if a.also_silent:
+        silent = out / f"{slug}-short-nomusic.mp4"
+        subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(mp4), "-c:v", "copy", "-an",
+                        "-movflags", "+faststart", str(silent)], check=True)
+    print(json.dumps({"short": str(mp4), "short_nomusic": str(silent) if silent else None,
+                      "cover": str(out / f"{slug}-cover.jpg"), "theme": theme, "mood": mood,
                       "duration_s": round(total, 2), "scene_durations": durs}, ensure_ascii=False))
 
 
