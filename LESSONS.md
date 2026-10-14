@@ -7,6 +7,7 @@ Newest first.
 
 ## Open lessons
 
+- **14 Oct 16:05 · ACLE East 13:00 KO: 2 h after FT still no AFC report; Sofascore/365Scores/ESPN pages fetched stale (pre-match), only search titles showed FT (365Scores «5 - 1 … Match Report», ESPN «Final Score»).** → For Asian midday matches use search-result titles of approved/Tier-1 pages as the FT evidence (state it in the log); owner question: may JP/KR national outlets (Football Channel, Gekisaka, Yonhap) count as Tier 1 for ACLE East?
 - **14 Oct review · TikTok views collapsed on 13 Oct: 0, 1, 0 and 22 views on the four videos (Metricool posts), vs 899 views on 11 Oct; Instagram reels on the same content got 37–102.** → Not a rule yet: keep TikTok at ≤ 4 videos/day, each with its own facts and angle (no near-identical result shorts the same day), and the owner checks the TikTok app inbox/Account status for a warning. If 14 Oct is also near zero, tell the owner at once.
 - **13 Oct 23:50 · «نتايج النهارده»: YouTube was already at 5/5 Shorts, so the night results short went to 01:45 next day.** → Night results short: schedule it on the next Cairo day (≈ 01:45, ≥ 60 min after «ليلة الأبطال»); the story still goes right away. Owner proposal in the 13 Oct review: keep one Short slot free for the night.
 - **13 Oct 23:50 · ACLE round-up: search results mixed in last season's identical fixture (AFC report «MD2: Al Ittihad 0-1 Shabab Al Ahli» = 30 Sep 2025).** → For a repeat fixture, check the date on the AFC report/match page before using it. Al-Ahram gate reports ACLE matches with Arab clubs ~20 min after FT.
