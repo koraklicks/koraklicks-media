@@ -23,6 +23,11 @@ they win over growth targets. Sources were checked on 13 Oct 2026 (list at the e
 | YouTube | **5 Shorts** + long videos only with owner ✅ | ≥ 60 min apart | 3–5; never more than 15 tags/hashtags |
 | X | **25 posts** | ≥ 10 min apart; live matches max 6 per hour | **max 2** |
 
+**Check before every post (firm, 13 Oct review):** save the getScheduledPosts JSON (00:00 of the Cairo day → 06:00 next day) to a file
+and run `python3 scripts/budget_check.py FILE YYYY-MM-DD --add instagram:REEL@YYYY-MM-DDTHH:MM` (network:type@time of the post you plan).
+If it prints SPACING / STORIES / OVER, move the post later. On 13 Oct the feed→reel gaps were 25, 14 and 28 min and 5 IG stories went out in 47 min
+(23:54–00:41) because parallel tasks did not see each other's slots; midnight does not reset spacing.
+
 When the budget is tight, keep (in order): Egyptian clubs/players → UCL big matches → Saudi big four → other Tier A →
 everything else goes to a round-up or a Story. A round-up beats five separate posts.
 12 Oct had 37 Instagram items in one day and 9 TikToks: that is above these budgets. Don't repeat it.

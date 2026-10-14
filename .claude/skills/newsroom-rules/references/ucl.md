@@ -60,14 +60,14 @@ Egyptian players in Europe get full coverage in any UEFA competition.
 | Matchday 12:47 | Noon fixtures story/short leads with the UCL night | existing noon task |
 | Matchday ~15:30 | Fun short (`motion_short.py`, meme/versus format, light tone) about the night's top match | UCL desk (one-off) |
 | KO − 3 h | «توقعوا النتيجة» for the top 1–3 matches (X + IG + IG Story) | one-off |
-| KO − 45 | Line-ups of BIG matches; flag Arab/Egyptian starters («حكيمي أساسي») | one-off |
-| KO + 50 | Half-time of BIG matches | one-off |
-| KO + 110 | FT for BIG matches (post + result short + «مين نجم الماتش؟»); FT round-up for the rest of the slot | one-off |
-| 00:07 | «ليلة الأبطال» results story + short (top 5 on screen, all results in the caption) + «العرب في الأبطال» line | one-off |
+| KO − 70 → KO − 25 | Line-ups of BIG matches; flag Arab/Egyptian starters («حكيمي أساسي»). Search «<club> XI» for the club's own post embedded in outlets; uefa.com line-up pages are script-rendered (squad list only). No official/approved XI by KO − 25 → drafts to the owner + notification | one-off |
+| KO + 40 | Half-time of BIG matches (keep a running goal note from KO; search «<home> <away> half-time» + beIN/NBC live blogs; skip at HT + 10) | one-off |
+| KO + 110 | FT for BIG matches: X + IG feed card first; the result REEL ≥ 30 min after the feed card. Sources in order: yallakora.com/tour-fixtures/105 + skysports.com/champions-league-scores-fixtures, «sofascore news <home> <away>», 365Scores en-uk report. FT round-up for the rest of the slot | one-off |
+| 00:20 (22:00-slot nights) | «ليلة الأبطال» results story + short (top 5 on screen, all results in the caption) + «العرب في الأبطال» line. First read the FT task's posts (getScheduledPosts + log) and any running FT re-check: **once the round-up X post is out, no separate X post repeats a score in it** (re-check tasks then add an IG story only) | one-off |
 | Next day 10:51 | League-phase table card (top 8 + cut lines) from uefa.com, plus «رقم الجولة» stat | UCL desk |
 | Thursday after MD | Long YouTube video «ملخص جولة دوري الأبطال» → **owner ✅ before upload** | UCL desk (Thursday) |
 
-The 23:22 «ليلة العرب» and 23:47 «نتايج النهارده» tasks leave UCL matches that kick off at 22:00 to «ليلة الأبطال» (00:07).
+The 23:22 «ليلة العرب» and 23:47 «نتايج النهارده» tasks leave UCL matches that kick off at 22:00 to «ليلة الأبطال» (00:20).
 
 ## Tone and look
 

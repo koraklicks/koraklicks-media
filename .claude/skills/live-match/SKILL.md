@@ -16,12 +16,15 @@ metadata:
 3. Before posting anything for a match, run `bash .claude/skills/newsroom-rules/scripts/already_posted.sh <teams>` and check
    `getScheduledPosts` from 00:00 today: if this stage (line-ups / HT / FT) is already out — by another task or by the owner — don't post it again
    (on 11 Oct the Zamalek–Ahly line-ups went out twice on X). Log every post you make with its plannerUrl, line-ups included.
-   Timing (firm): line-ups task at kick-off − 45 min; if a run starts later, post the line-ups as text on X first, then the card.
-   Half-time (firm, missed or late on 11 AND 12 Oct): start searching at kick-off + 44 min, not at the whistle, using the
+   Timing (firm): line-ups task at kick-off − 70 min (UCL: see ucl.md; no official/approved XI by KO − 25 → drafts to the owner, never from outlets); if a run starts later, post the line-ups as text on X first, then the card.
+   Half-time (firm, missed or late on 11, 12 AND 13 Oct): the HT task fires at kick-off + 40 min (not later) and searches from then, using the
    HT/FT playbook in `references/trusted-sources.md` (per competition). Post as soon as two approved sources agree; if after
    HT + 10 min only one source has it, skip HT and put the effort into FT. Full time: within 10 min.
    Kick-off check: HT/FT tasks first confirm the match kicked off on time (search teams + "delayed"/«تأجيل»); if not, re-arm
    themselves (send_later) for the new time.
+   Egyptian league + ACLE (owner, 13 Oct 19:30): results ONCE per competition after its last match (one X post + one IG story); no HT, line-ups or per-match posts for them.
+   No repeated scores on X (firm, 13 Oct): before any FT post, check whether a round-up already carried that score
+   (getScheduledPosts + log). If yes, the late per-match result goes to an IG story only, not to X again.
    Every post gets a question (line-ups: «توقعكم للنتيجة؟ 👇», HT: «الشوط التاني هيجيب إيه؟ 👇»), on X in the text, elsewhere as `firstCommentText`.
 4. For each covered match, run this loop until full time:
    - Line-ups (≈60 min before): writer + creative (News template, «التشكيل الرسمي») → X, IG Story, FB.

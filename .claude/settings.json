@@ -57,7 +57,14 @@
       "WebFetch(domain:the-afc.com)",
       "WebFetch(domain:www.the-afc.com)",
       "WebFetch(domain:fifa.com)",
-      "WebFetch(domain:www.fifa.com)"
+      "WebFetch(domain:www.fifa.com)",
+      "WebFetch(domain:btolat.com)",
+      "WebFetch(domain:www.btolat.com)",
+      "WebFetch(domain:match.uefa.com)",
+      "WebFetch(domain:sporza.be)",
+      "WebFetch(domain:www.sporza.be)",
+      "WebFetch(domain:kooora.com)",
+      "WebFetch(domain:www.kooora.com)"
     ]
   }
 }
