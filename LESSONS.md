@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **15 Oct 20:25 · SPL round-up: 3 matches, only 1 FT on a single approved source (Sofascore); 365Scores/ESPN/Sofascore pages for the other two were pre-match/HT snapshots ~2 h after FT; no Saudi Tier-1 report (SPA/Al Riyadiyah) found.** → Owner question: may one approved service (Sofascore FT + scorers) alone confirm Saudi league FTs? Until then Saudi round-ups need Sofascore/365Scores/Al Riyadiyah FT pair, else HOLD.
+
 - **15 Oct 19:20 · كوبس×طرابزون XI: out 18:34 on 5 Turkish outlets (Salah starter) but Sofascore/365Scores/FilGoal/Yallakora pages had no XI in search/fetch, club site + uefa.com lineups URL blocked → HOLD.** → For Turkish clubs search «<club> ilk 11 belli oldu» to find the XI fast, then look for a second approved source; if none by KO − 25, drafts to owner. Owner question: may dunya.com / haber61 / TRT Spor count as Tier 1 for line-ups?
 
 - **15 Oct 11:00 · uefa.com/…/standings WebFetch withdrawn (permission unanswered), so no table card.** → Add uefa.com standings to `.claude/settings.json` allowlist; until then table card HOLD, never self-computed.
