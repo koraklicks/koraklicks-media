@@ -7,10 +7,12 @@ Newest first.
 
 ## Open lessons
 
+- **15 Oct review · ACL2 Arab-clubs round-up (fired 23:10) left no log line and its run still showed PENDING the next morning; 6 Arab-club matches got no post.** → Every round-up task writes one log line in its first 5 min («started …») and one at the end, even if nothing is found; the review checks `last_run` of every one-off and lists stuck ones.
+- **15 Oct review · TikTok near zero for the 2nd day: 4 videos on 14 Oct = 11 views in total (13 Oct: 4 videos ≈ 23).** → Condition from the 14 Oct lesson met: owner told at once. Keep ≤ 4 TikToks/day, each with its own facts and angle (no two shorts of the same score); proposal to the owner: 2/day until he checks TikTok Account status.
+- **15 Oct review · Usage limit again (REPEATED 13 Oct): no runs 10:12–14:20, so the noon fixtures story (14:35), the UCL desk (10:51) and the EGY+SPL video (12:00) were lost or late.** → Token economy (14 Oct 14:28) is the fix; the first run after a gap does the noon story first if it is still before 16:00.
 - **15 Oct 00:20 · Typed «17 goals» in a TikTok caption; real total was 22 (6+7+9).** → Add up goal totals in code (python) before writing them in a caption.
 - **14 Oct 21:35 · City×PSG XI was on mancity.com (18:45) but search only showed old fixtures.** → For line-ups fetch the club's match-preview page and follow its «team news» link; for the other club search «<club> XI» on realmadrid.com/asroma.com. Only Yahoo/SB Nation/voetbalwedden for Roma×Real → HOLD.
 - **14 Oct 16:05 · ACLE East 13:00 KO: 2 h after FT still no AFC report; Sofascore/365Scores/ESPN pages fetched stale (pre-match), only search titles showed FT (365Scores «5 - 1 … Match Report», ESPN «Final Score»).** → For Asian midday matches use search-result titles of approved/Tier-1 pages as the FT evidence (state it in the log); owner question: may JP/KR national outlets (Football Channel, Gekisaka, Yonhap) count as Tier 1 for ACLE East?
-- **14 Oct review · TikTok views collapsed on 13 Oct: 0, 1, 0 and 22 views on the four videos (Metricool posts), vs 899 views on 11 Oct; Instagram reels on the same content got 37–102.** → Not a rule yet: keep TikTok at ≤ 4 videos/day, each with its own facts and angle (no near-identical result shorts the same day), and the owner checks the TikTok app inbox/Account status for a warning. If 14 Oct is also near zero, tell the owner at once.
 - **13 Oct 23:50 · «نتايج النهارده»: YouTube was already at 5/5 Shorts, so the night results short went to 01:45 next day.** → Night results short: schedule it on the next Cairo day (≈ 01:45, ≥ 60 min after «ليلة الأبطال»); the story still goes right away. Owner proposal in the 13 Oct review: keep one Short slot free for the night.
 - **13 Oct 23:50 · ACLE round-up: search results mixed in last season's identical fixture (AFC report «MD2: Al Ittihad 0-1 Shabab Al Ahli» = 30 Sep 2025).** → For a repeat fixture, check the date on the AFC report/match page before using it. Al-Ahram gate reports ACLE matches with Arab clubs ~20 min after FT.
 - **13 Oct 22:40 · EGY round-up: the 20:00 results were on Yallakora FT articles within 15 min, but the Tier-1 Ahram report came only at 22:43 and was found at 23:52 → those two results went out ~2 h after FT.** → Round-up tasks for late EGY matches: run at last KO + 125 and search «بوابة الأهرام الجولة <n> <teams>» first and again every 10 min; publish the confirmed part and list the rest for the owner. Owner question pending: may Yallakora FT + Vetogate/btolat confirm EGY scores?
@@ -31,6 +33,13 @@ Newest first.
 - **11 Oct · Unconfirmed stories sit in the queue all day.** → Re-list them once in the owner report; after 24 h with no official statement, propose ❌.
 
 ## Became rules (moved out of this list)
+15 Oct review (day 14 Oct):
+- Line-ups late/missing — **REPEATED (11, 13, 14 Oct)**: 14 Oct lean plan fired at KO − 45, Real's XI never posted → `ucl.md`: task at KO − 70, never later than KO − 60; planners copy times from the table.
+- «ليلة الأبطال» at 00:07 again (fixed to 00:20 on 13 Oct) and parallel with the FT-big task → `ucl.md`: planners copy the table; one short per match per night.
+- Spacing after a reschedule — **REPEATED (13 Oct)**: YT Shorts 01:03 and 01:20 → `ucl.md`: re-run `budget_check.py` for every network of a moved package.
+- LASK 3-6 Liverpool confirmed 22:15 but «no card tool found», posted 00:38 → `ucl.md` «Card tools» + «post in the same run».
+- 6 of 9 UCL 22:00/19:45 results left HOLD overnight (pages stale) — **REPEATED (FT slow 12, 13 Oct)** → `ucl.md`: Sofascore «Full time» + ESPN «Final Score», date in the query, next-morning catch-up row.
+- TikTok views lesson (14 Oct review) → replaced by the 15 Oct line above.
 14 Oct review (day 13 Oct):
 - HT missed for all three big UCL matches — **REPEATED (11, 12, 13 Oct)** → `live-match` step 3 + `ucl.md`: HT task fires at KO + 40, running goal note from KO, live-blog searches.
 - Line-ups: only Barça's XI out, Atlético–United and Arsenal–Lille never posted — **REPEATED (11 Oct late)** → `ucl.md` + `live-match`: line-ups task KO − 70, search «<club> XI» for the club post, by KO − 25 drafts to the owner + notification.
