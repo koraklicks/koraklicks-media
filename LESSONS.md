@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **15 Oct 20:45 · كوبس×طرابزون HT 0-2: only 365Scores team page showed «Halftime 0-2» (no scorers); Sofascore cached at 37' (0-1, Onuachu 3' assist Salah); the 44' Salah goal only on Turkish live blogs (Hürriyet, T24, 61saat, Habertürk) → HT HOLD, 2nd approved source missing.** → For Turkish clubs the 365Scores team «matches» page updates at HT fastest; Sofascore needs a 2nd refresh. Owner question (repeat of 19:20): may Hürriyet/Habertürk/NTV/TRT Spor count as Tier 1 for Turkish-club matches?
+
 - **15 Oct 20:25 · SPL round-up: 3 matches, only 1 FT on a single approved source (Sofascore); 365Scores/ESPN/Sofascore pages for the other two were pre-match/HT snapshots ~2 h after FT; no Saudi Tier-1 report (SPA/Al Riyadiyah) found.** → Owner question: may one approved service (Sofascore FT + scorers) alone confirm Saudi league FTs? Until then Saudi round-ups need Sofascore/365Scores/Al Riyadiyah FT pair, else HOLD.
 
 - **15 Oct 19:20 · كوبس×طرابزون XI: out 18:34 on 5 Turkish outlets (Salah starter) but Sofascore/365Scores/FilGoal/Yallakora pages had no XI in search/fetch, club site + uefa.com lineups URL blocked → HOLD.** → For Turkish clubs search «<club> ilk 11 belli oldu» to find the XI fast, then look for a second approved source; if none by KO − 25, drafts to owner. Owner question: may dunya.com / haber61 / TRT Spor count as Tier 1 for line-ups?
