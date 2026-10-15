@@ -7,6 +7,7 @@ Newest first.
 
 ## Open lessons
 
+- **15 Oct · Salah goal+assist (KuPS 2-4 Trabzonspor) and 3 SPL results held all night: approved live services were stale/unreadable, so nothing was published.** → After FT+60, search for Tier-1 match reports by name (beIN Sports, Goal, ESPN, Sky) instead of only live-score pages; beIN + Goal reports = confirmed. Egyptian player news never waits for the next day.
 - **15 Oct 21:50 · كوبس×طرابزون FT (≈21:40): only Fanatik live blog showed FT 4-2; Sky/FotMob/ESPN/uefa.com/Sofascore pages stayed stale (61'/84') 10+ min after the whistle; WebSearch index lagged ~15 min → HOLD again.** → For Turkish clubs search «<club> maç sonucu» + fetch the club's own post-match page (trabzonspor.org.tr) and NTV/aspor FT report; owner question (3rd time today): may Fanatik/NTV/Hürriyet/Habertürk count as Tier 1 for Turkish-club matches?
 
 - **15 Oct 20:45 · كوبس×طرابزون HT 0-2: only 365Scores team page showed «Halftime 0-2» (no scorers); Sofascore cached at 37' (0-1, Onuachu 3' assist Salah); the 44' Salah goal only on Turkish live blogs (Hürriyet, T24, 61saat, Habertürk) → HT HOLD, 2nd approved source missing.** → For Turkish clubs the 365Scores team «matches» page updates at HT fastest; Sofascore needs a 2nd refresh. Owner question (repeat of 19:20): may Hürriyet/Habertürk/NTV/TRT Spor count as Tier 1 for Turkish-club matches?
