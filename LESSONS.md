@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **15 Oct 11:00 · uefa.com/…/standings WebFetch withdrawn (permission unanswered), so no table card.** → Add uefa.com standings to `.claude/settings.json` allowlist; until then table card HOLD, never self-computed.
+
 - **15 Oct review · ACL2 Arab-clubs round-up (fired 23:10) left no log line and its run still showed PENDING the next morning; 6 Arab-club matches got no post.** → Every round-up task writes one log line in its first 5 min («started …») and one at the end, even if nothing is found; the review checks `last_run` of every one-off and lists stuck ones.
 - **15 Oct review · TikTok near zero for the 2nd day: 4 videos on 14 Oct = 11 views in total (13 Oct: 4 videos ≈ 23).** → Condition from the 14 Oct lesson met: owner told at once. Keep ≤ 4 TikToks/day, each with its own facts and angle (no two shorts of the same score); proposal to the owner: 2/day until he checks TikTok Account status.
 - **15 Oct review · Usage limit again (REPEATED 13 Oct): no runs 10:12–14:20, so the noon fixtures story (14:35), the UCL desk (10:51) and the EGY+SPL video (12:00) were lost or late.** → Token economy (14 Oct 14:28) is the fix; the first run after a gap does the noon story first if it is still before 16:00.
