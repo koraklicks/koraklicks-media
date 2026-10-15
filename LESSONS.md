@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **15 Oct 19:20 · كوبس×طرابزون XI: out 18:34 on 5 Turkish outlets (Salah starter) but Sofascore/365Scores/FilGoal/Yallakora pages had no XI in search/fetch, club site + uefa.com lineups URL blocked → HOLD.** → For Turkish clubs search «<club> ilk 11 belli oldu» to find the XI fast, then look for a second approved source; if none by KO − 25, drafts to owner. Owner question: may dunya.com / haber61 / TRT Spor count as Tier 1 for line-ups?
+
 - **15 Oct 11:00 · uefa.com/…/standings WebFetch withdrawn (permission unanswered), so no table card.** → Add uefa.com standings to `.claude/settings.json` allowlist; until then table card HOLD, never self-computed.
 
 - **15 Oct review · ACL2 Arab-clubs round-up (fired 23:10) left no log line and its run still showed PENDING the next morning; 6 Arab-club matches got no post.** → Every round-up task writes one log line in its first 5 min («started …») and one at the end, even if nothing is found; the review checks `last_run` of every one-off and lists stuck ones.
