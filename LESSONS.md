@@ -7,6 +7,7 @@ Newest first.
 
 ## Open lessons
 
+- **16 Oct 21:08 · FT round-up: Pyramids 1-0 confirmed by Ahram Online + Goal English pages (found via «<teams> result report» English search, 2 h after FT); Qadsiah 2-1 Abha only ESPN title + non-approved sites; APR×Zamalek nothing indexed.** → For CAF/Saudi FTs search English «<home> <away> result report <date>» extended mode; Ahram Online/Goal pairs count as 2 Tier-1.
 - **15 Oct · Salah goal+assist (KuPS 2-4 Trabzonspor) and 3 SPL results held all night: approved live services were stale/unreadable, so nothing was published.** → After FT+60, search for Tier-1 match reports by name (beIN Sports, Goal, ESPN, Sky) instead of only live-score pages; beIN + Goal reports = confirmed. Egyptian player news never waits for the next day.
 - **15 Oct 21:50 · كوبس×طرابزون FT (≈21:40): only Fanatik live blog showed FT 4-2; Sky/FotMob/ESPN/uefa.com/Sofascore pages stayed stale (61'/84') 10+ min after the whistle; WebSearch index lagged ~15 min → HOLD again.** → For Turkish clubs search «<club> maç sonucu» + fetch the club's own post-match page (trabzonspor.org.tr) and NTV/aspor FT report; owner question (3rd time today): may Fanatik/NTV/Hürriyet/Habertürk count as Tier 1 for Turkish-club matches?
 
