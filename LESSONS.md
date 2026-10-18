@@ -7,6 +7,10 @@ Newest first.
 
 ## Open lessons
 
+- **17 Oct review · Saturday with 5 PL + Liga/Serie A/SPL matches: noon story listed 4, only those 4 results posted at 23:14 (Ahly FT ≈17:50 → 5 h late), no XI/HT/predictions; Everton×Chelsea, City×Ipswich (Marmoush), Newcastle×Villa, SPL MD9 matches of 17 Oct not covered.** → Root cause = no live plan (rule now in `run-newsroom` 2b). Noon story takes its matches from the plan; the night results task covers every Tier A FT of the day (up to 5, Egypt/Arabs first), not only the noon list.
+- **17 Oct review · Cycles 13:07, 15:07, 17:07 left no log line on 16 AND 17 Oct; end-of-day reviews for 15 and 16 Oct left no report (one-offs were never cleaned).** → REPEATED (13 Oct). Every run logs a «started» line first; the review lists runs with no line and tells the owner.
+- **17 Oct review · APR×Zamalek (CAF CC, 16 Oct) never published; Qadsiah 2-1 Abha held 43 h (confirmed only on 18 Oct by 365Scores league page + ESPN).** → Any Al Ahly/Zamalek/Pyramids result missing after FT+3 h: search «<club> result report» in English + «الزمالك <opponent> نتيجة» extended mode, and the club's own site; never let it pass the next morning.
+- **17 Oct · ليلة العرب skipped with one confirmed item (Ezzalzouli goal).** → One confirmed Arab goal/assist is enough for an X post + IG story (no short); short only with ≥ 2 rows.
 - **18 Oct 11:42 · EGY+SPL video: the 14 Oct edition was lost and no video existed for 4 days; 365Scores league page (`365scores.com/en-us/football/league/saudi-league-649`) gave all SPL MD9 scores + top-7 table in one fetch, where match pages were stale.** → For SPL round results fetch that 365Scores league page first, then pair each score with an ESPN «Final Score» or Goal title.
 
 
@@ -48,6 +52,8 @@ Newest first.
 - **11 Oct · Unconfirmed stories sit in the queue all day.** → Re-list them once in the owner report; after 24 h with no official statement, propose ❌.
 
 ## Became rules (moved out of this list)
+18 Oct review (day 17 Oct):
+- Live plan missing — **REPEATED (12, 13, 16, 17, 18 Oct)**; cycles read «From 12:00» and on 17 Oct skipped it as «only evening matches left» → `run-newsroom` step 2b: any cycle from 09:00 builds it if `PLAN` is missing, never skipped.
 15 Oct review (day 14 Oct):
 - Line-ups late/missing — **REPEATED (11, 13, 14 Oct)**: 14 Oct lean plan fired at KO − 45, Real's XI never posted → `ucl.md`: task at KO − 70, never later than KO − 60; planners copy times from the table.
 - «ليلة الأبطال» at 00:07 again (fixed to 00:20 on 13 Oct) and parallel with the FT-big task → `ucl.md`: planners copy the table; one short per match per night.

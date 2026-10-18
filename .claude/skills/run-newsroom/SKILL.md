@@ -16,6 +16,11 @@ metadata:
 2. Hand control to the **boss** agent with this brief:
    - Scope: the argument if given (one story, link, league, competition or national team); otherwise a full cycle for the whole coverage map (`newsroom-rules` → `references/coverage.md`): Tier A leagues, plus important Tier B club and national-team matches, covering the last few hours.
    - Steps: news-desk (find + verify) and live-score-desk (today's fixtures/results) in parallel → BOSS decides priority and platforms → writer → editor → creative → platform publishers.
+2b. **Live-coverage plan check (firm rule, review 18 Oct: no plan on 16, 17 and 18 Oct, REPEATED from 12–13 Oct).**
+   Any scheduled cycle from 09:00 on: `grep -c "PLAN" logs/<today>.md`. If 0, the 08:47 planner failed: build the plan NOW
+   (same steps as the planner; `list_triggers` recurring false first), before news. «Only evening matches left» is never a
+   reason to skip: every remaining big match still gets line-ups / FT tasks and every other Tier A slot a FT round-up task.
+   Every cycle writes one log line, even «NO NEW», so a silent run is visible.
 3. **No duplicates (firm rule, after 11 Oct: Como–Roma and Palace–Forest each went out twice).** Before writing any result or story:
    - run `bash .claude/skills/newsroom-rules/scripts/already_posted.sh <team names in Arabic and English>` (today's + yesterday's log);
    - check `getScheduledPosts` from **00:00 Cairo today** (not just the last few hours), searching the text for the team names;
