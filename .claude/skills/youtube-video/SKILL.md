@@ -58,7 +58,7 @@ Load the `newsroom-rules` skill first, then read `references/video-formats.md`.
 
 - Owner decision (11 Oct 2026): videos use **original music and no voice-over** by default, so the on-screen text must tell the whole story.
 - Music: only the generated track from `music.py`, or a file the owner has rights to. Never use commercial songs.
-- House track (owner, 18 Oct 2026): the owner's own Suno instrumental «Match Result Reveal» (suno.com/s/YgLEDAblzay1Mr0g) at `.claude/assets/music/house.mp3`. `music.py` loops/trims it to the video length automatically (same call, timing still from the storyboard); `--generated` forces the code-made track (e.g. the phonk TREND-SOUND style).
+- House track (owner, 18 Oct 2026): the owner's own Suno instrumental «Match Result Reveal» (suno.com/s/YgLEDAblzay1Mr0g) at `.claude/assets/music/house.mp3`. `music.py` loops/trims it to the video length automatically (same call, timing still from the storyboard); used for every video (owner 18 Oct: «التراك الجديد كل حاجه»); `--generated` only for tests.
 - Rendering needs Python Playwright (Chromium) and ffmpeg. Install them if missing (`pip install playwright`, then install Chromium with Playwright).
 - Example storyboard: `examples/example-storyboard.json`.
 
@@ -100,13 +100,9 @@ It writes `<stem>-yt.mp4` («اعمل لايك 👍 · اشترك 🔔», for Yo
 Instagram Reel + TikTok post). Vertical: banner for the last 2.8 s; landscape: 4 s at ~30 % and the last 6 s. Length and music unchanged.
 Long videos: send the owner the `-yt.mp4` for approval. Generic calls only, never conditional bait («لايك لو…»).
 
-## Music plan (owner ✅ 14 Oct 2026)
-1. **Automatic, every short:** our own code-made music only. Rotate the styles so shorts don't sound the same:
-   `phonk` (`--bpm 140`, football-edit style) for results and big-match shorts, `fun` for memes, `drive`/`anthem` for
-   fixtures, numbers and roundups. Never put a real song or a "trending sound" file inside our MP4 (copyright: muted
-   audio, claims, strikes).
-2. **Trending sound, by hand, once a day:** for the day's «TREND-SOUND» match (see growth-playbook §0), render with
-   `--also-silent` and send `<slug>-short-nomusic.mp4` to Instagram REEL and TikTok with `autoPublish: false`. Metricool
-   pushes it to the owner's phone; he adds a trending sound from the app's library and posts. YouTube and X get the
-   normal version automatically. Tell the owner in the run summary: «فيه ريل مستنيك تضيف عليه صوت ترند».
-   (Instagram audio can't be added through the API since the Facebook profile was lost: tested 14 Oct.)
+## Music plan (owner ✅ 18 Oct 2026, replaces the 14 Oct plan)
+**One track for everything:** every video (all shorts, story shorts, long videos, Reels, TikTok, YouTube) uses the owner's
+house track «Match Result Reveal» (`.claude/assets/music/house.mp3`), picked up automatically by `music.py`.
+No phonk/fun/drive rotation, no `--generated`, no «TREND-SOUND» no-music version any more. If `house.mp3` is missing,
+`music.py` falls back to its own code-made music: say so once in the run summary. Never put a real song or a trending
+sound file inside our MP4.

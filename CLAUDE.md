@@ -17,7 +17,7 @@ If you hit a new problem during a run, add one line to the top section of `LESSO
 - Through the Metricool connector, brand `7358209`, timezone Africa/Cairo. Details: `.claude/skills/newsroom-rules/references/metricool.md`.
 - Images/videos get public links with `bash .claude/skills/newsroom-rules/scripts/host_media.sh FILE...` (branch `media`).
 - Before posting, check `getScheduledPosts` and `logs/` so nothing is posted twice.
-- Every video gets the like/subscribe/follow end card (owner, 18 Oct 2026): `python3 .claude/skills/youtube-video/scripts/endcard.py VIDEO.mp4 OUT_DIR --theme dark|light` → `-yt.mp4` for YouTube (Shorts and long videos), `-social.mp4` for the Instagram Reel + TikTok post (incl. the TREND-SOUND no-music file, `--only social`). Same length and music; never post the plain file.
+- Every video gets the like/subscribe/follow end card (owner, 18 Oct 2026): `python3 .claude/skills/youtube-video/scripts/endcard.py VIDEO.mp4 OUT_DIR --theme dark|light` → `-yt.mp4` for YouTube (Shorts and long videos), `-social.mp4` for the Instagram Reel + TikTok post. Same length and music; never post the plain file.
 
 ## Housekeeping (owner, 13 Oct 2026)
 - The owner's chat session controls all agents and scheduled tasks. One-off tasks that already ran are deleted by the end-of-day review (never tasks bound to the owner's own chat).
