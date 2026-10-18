@@ -35,7 +35,7 @@ look. They never contain match footage or broadcast clips (copyright strikes / C
 
 ## YouTube metadata (the writer delivers it with every script)
 
-- **Title** ≤ 70 characters, Egyptian dialect, honest, e.g. «ملخص الجولة 8 من الدوري الإنجليزي والليجا والكالتشيو | كورة كليكس»
+- **Title** ≤ 70 characters, Egyptian dialect, honest, team/competition names first (growth-playbook §0.5), e.g. «ملخص الجولة 8 من الدوري الإنجليزي والليجا والكالتشيو | كورة كليكس»
 - **Description**: 2-line summary, then **chapters** with timestamps (`00:00 المقدمة` …) built from scene durations, then «المصادر:» with every source used, then hashtags (3–5).
 - **Tags**: 10–15 (league names in Arabic and English, team names, «ملخص», «كورة كليكس»).
 - **Thumbnail**: the render's thumbnail frame, or the creative's custom 1280×720 thumbnail (big score or face-free headline, ≤ 5 words, brand colours).

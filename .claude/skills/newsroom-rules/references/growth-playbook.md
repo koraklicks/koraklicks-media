@@ -11,7 +11,12 @@ weekly from real numbers. Never invent metrics; when data is missing, say so.
 3. **Engagement formats** (they push reach): before every big match a «توقعوا النتيجة» post (X + Instagram + Facebook Story) about 3 h before kick-off; «مين أحسن؟» / «مين نجم الماتش؟» after big matches; a simple quiz card once a day when there is a quiet slot.
    Every feed post gets a short engaging question as `firstCommentText` (e.g. «مين كان نجم الماتش في رأيكم؟ 👇»).
 4. **Comments:** Metricool can't read or answer comments. Each evening the community-manager drafts 5–10 ready replies (calm Egyptian dialect) for the most likely comments on the day's biggest posts and includes them in the owner's daily report, for him to paste.
-5. **YouTube search titles:** start with the words people search: «ملخص ونتيجة …», «أهداف …», «ترتيب الدوري …», team names in Arabic; then #Shorts for Shorts.
+5. **YouTube search titles (owner ✅ 18 Oct, from YouTube Analytics 11–18 Oct: Shorts feed 88.9% of views, search 6.5%, suggested = longest watch):**
+   - Start with the two team names exactly as Egyptians search them («طرابزون وكوبس», «النصر و نيفتشي», «بيراميدز …»), then «نتيجة», the score and the scorer/star names; competition name next («دوري أبطال أوروبا»). Then #Shorts for Shorts.
+   - Same words in the first line of the description and 5–8 tags (both team names, competition, star players, «نتيجة ماتش …»).
+   - «ملخص الجولة» is fine for our round-ups (they summarise results). **Never «أهداف …» / «ملخص المباراة» / «شاهد الأهداف» on a graphics-only video**: viewers expect footage, swipe away and YouTube treats it as misleading metadata (platform-rules §3). Use «مين سجّل في …؟» or «نتيجة وأهداف … بالأرقام» only when the video really lists every scorer.
+   - Every Short: the fact on screen in the first 2 s (score/number/name), no slow intro; the like + subscribe end card (`endcard.py`).
+   - Feed «Suggested»: keep one long video per round (Europe, UCL, Egypt+Saudi); the owner links each Short to the related long video in YouTube Studio (Shorts «Related video») and adds playlists per competition.
 6. **Measure every week:** the Friday growth review compares followers and reach by format (reel vs card vs story), topic and hour, and moves the content mix toward what brings followers.
 Not automated (owner does by hand): WhatsApp channel, sharing in Facebook groups, Instagram Collabs with other pages, paid boosts.
 

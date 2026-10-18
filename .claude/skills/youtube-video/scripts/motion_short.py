@@ -200,7 +200,7 @@ def scene_html(s):
     if t == "cta":
         return (f'<div class=c style="top:640px"><div class=huge style="color:var(--acc);font-size:170px">{words(s["text"])}</div>'
                 f'{A("up", 0.5, cls="sub", inner=E(s.get("sub","")))}'
-                f'{A("up", 0.8, cls="sub", extra="style=font-family:SM;font-size:40px;color:var(--fg);direction:ltr;text-align:right;margin-top:60px", inner="FOLLOW @koraklicks")}'
+                f'{A("up", 0.8, cls="sub", extra="style=font-family:SM;font-size:40px;color:var(--fg);direction:ltr;text-align:right;margin-top:60px", inner="@koraklicks")}'
                 f'{A("bounce", 1.0, inner="<span class=arrow>👇</span>")}</div>')
     raise SystemExit(f"unknown scene type {t}")
 

@@ -169,7 +169,7 @@ def video_html(spec, durs):
         sc.append(f'<div class=scene><div class=c style="top:520px"><div class=comp>{E(it.get("comp",""))}</div>{core}'
                   f'{"<div class=note>"+E(it["note"])+"</div>" if it.get("note") else ""}<div class=acc></div></div></div>')
     sc.append(f'<div class=scene><div class=c style="top:700px"><div class=big style="color:#00C853;font-size:170px">{E(spec.get("cta",""))}</div>'
-              f'<div class=sub>{E(spec.get("cta_sub",""))}</div><div class=sub style="font-family:SM;font-size:40px;color:#E3F4FF;direction:ltr;text-align:right;margin-top:60px">FOLLOW @koraklicks</div></div></div>')
+              f'<div class=sub>{E(spec.get("cta_sub",""))}</div><div class=sub style="font-family:SM;font-size:40px;color:#E3F4FF;direction:ltr;text-align:right;margin-top:60px">@koraklicks</div></div></div>')
     js = """<script>
 const D=%s, T=D.reduce((a,b)=>a+b,0);
 const S=[...document.querySelectorAll('.scene')], B=[...document.querySelectorAll('.bars b')], G=document.getElementById('ghost');

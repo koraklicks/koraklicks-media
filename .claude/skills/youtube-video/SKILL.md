@@ -91,6 +91,14 @@ or other people's photos, no crests, no betting; chat names are invented generic
 (scores, times, numbers) still need sources. One meme short a day at most; big-match days are the best fit.
 
 
+## End card: like + subscribe / follow (owner request 18 Oct 2026)
+
+After the final render of ANY video (long video, short, reel, story short), run
+`python3 .claude/skills/youtube-video/scripts/endcard.py VIDEO.mp4 OUT_DIR --theme dark|light` (match the video's look).
+It writes `<stem>-yt.mp4` («اعمل لايك 👍 · اشترك 🔔», for YouTube) and `<stem>-social.mp4` («اعمل لايك ❤️ · فولو ➕», for the
+Instagram Reel + TikTok post). Vertical: banner for the last 2.8 s; landscape: 4 s at ~30 % and the last 6 s. Length and music unchanged.
+Long videos: send the owner the `-yt.mp4` for approval. Generic calls only, never conditional bait («لايك لو…»).
+
 ## Music plan (owner ✅ 14 Oct 2026)
 1. **Automatic, every short:** our own code-made music only. Rotate the styles so shorts don't sound the same:
    `phonk` (`--bpm 140`, football-edit style) for results and big-match shorts, `fun` for memes, `drive`/`anthem` for
