@@ -11,7 +11,7 @@ If you hit a new problem during a run, add one line to the top section of `LESSO
   The daily story + short Shorts (noon fixtures, night results) are published to YouTube Shorts automatically (owner decision, 11 Oct 2026).
 - Calm tone, mostly Egyptian dialect. No فرم / سحق / اكتسح / فضيحة. No betting or gambling promotion.
 - No match footage, licensed photos only, no real club crests. Never invent numbers or metrics.
-- No voice-over on videos unless the owner asks; use the original music from `music.py`.
+- No voice-over on videos unless the owner asks. Music (owner, 18 Oct 2026): the owner's Suno track «Match Result Reveal» (`.claude/assets/music/house.mp3`); `music.py` uses it automatically when the file exists, else its own code-made music.
 
 ## Publishing
 - Through the Metricool connector, brand `7358209`, timezone Africa/Cairo. Details: `.claude/skills/newsroom-rules/references/metricool.md`.

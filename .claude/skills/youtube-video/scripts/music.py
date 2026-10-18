@@ -180,6 +180,9 @@ def add(buf, x, at, gain=1.0):
     buf[i:j] += x[: j - i] * gain
 
 
+HOUSE_DIR = Path(__file__).resolve().parents[3] / "assets" / "music"
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("storyboard"); ap.add_argument("out_dir")
@@ -187,6 +190,9 @@ def main():
     ap.add_argument("--mood", choices=list(MOODS), default="drive")
     ap.add_argument("--grid", type=int, default=2, help="snap scenes to multiples of this many bars")
     ap.add_argument("--seed", type=int, default=1)
+    ap.add_argument("--track", help="owner track (mp3/wav) to use instead of the generated music; default: "
+                    ".claude/assets/music/house.* if it exists")
+    ap.add_argument("--generated", action="store_true", help="ignore the house track, use the code-made music")
     a = ap.parse_args()
     global rng
     rng = np.random.default_rng(a.seed)
@@ -302,10 +308,17 @@ def main():
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(raw), "-af",
                     f"loudnorm=I=-14:TP=-1.5:LRA=9,aresample={SR},atrim=0:{total:.3f}", str(final)], check=True)
     raw.unlink()
+    track = None if a.generated else (Path(a.track) if a.track else next(iter(sorted(HOUSE_DIR.glob("house.*"))), None))
+    if track:  # owner's track (18 Oct 2026): loop/trim to the video length, short fade in, fade out at the end
+        fo = min(2.5, total / 4)
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-stream_loop", "-1", "-i", str(track), "-af",
+                        f"atrim=0:{total:.3f},afade=t=in:d=0.15,afade=t=out:st={total - fo:.3f}:d={fo:.3f},"
+                        f"loudnorm=I=-14:TP=-1.5:LRA=9,aresample={SR}", "-ac", "2", str(final)], check=True)
     sb["audio"] = final.name
     timed = out / f"{slug}-timed.json"
     timed.write_text(json.dumps(sb, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(json.dumps({"music": str(final), "timed_storyboard": str(timed), "bpm": a.bpm, "mood": a.mood,
+    print(json.dumps({"music": str(final), "track": str(track) if track else "generated",
+                      "timed_storyboard": str(timed), "bpm": a.bpm, "mood": a.mood,
                       "duration_s": round(total, 2), "scene_durations": [s["duration"] for s in sb["scenes"]]},
                      ensure_ascii=False))
 

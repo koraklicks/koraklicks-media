@@ -58,6 +58,7 @@ Load the `newsroom-rules` skill first, then read `references/video-formats.md`.
 
 - Owner decision (11 Oct 2026): videos use **original music and no voice-over** by default, so the on-screen text must tell the whole story.
 - Music: only the generated track from `music.py`, or a file the owner has rights to. Never use commercial songs.
+- House track (owner, 18 Oct 2026): the owner's own Suno instrumental «Match Result Reveal» (suno.com/s/YgLEDAblzay1Mr0g) at `.claude/assets/music/house.mp3`. `music.py` loops/trims it to the video length automatically (same call, timing still from the storyboard); `--generated` forces the code-made track (e.g. the phonk TREND-SOUND style).
 - Rendering needs Python Playwright (Chromium) and ffmpeg. Install them if missing (`pip install playwright`, then install Chromium with Playwright).
 - Example storyboard: `examples/example-storyboard.json`.
 
