@@ -22,6 +22,12 @@ metadata:
    HT + 10 min only one source has it, skip HT and put the effort into FT. Full time: within 10 min.
    Kick-off check: HT/FT tasks first confirm the match kicked off on time (search teams + "delayed"/«تأجيل»); if not, re-arm
    themselves (send_later) for the new time.
+   FT not confirmed = re-arm, never HOLD-and-stop (firm, review 19 Oct: Forest 0-1 Arsenal held 20:35 → posted 23:55; Real 4-1 Sevilla
+   never posted; REPEATED FT-slow 12–15 Oct). If the FT task can't confirm, it arms `send_later` +25 min with the facts found so far
+   (max 2 retries). Search order for league FTs: «<home> <away> final score» (ESPN title) + «<home> <away> player ratings» (Goal) +
+   «<home> <away> result report» (Sky/BBC/NBC); two Tier-1 titles/reports with the same score = CONFIRMED (log which).
+   PL/La Liga line-ups: if Sofascore/365Scores show only «probable», search «<home> <away> confirmed line-ups» for Sky Sports / BBC /
+   the club's X post (premierleague.com match centre); two Tier-1 = CONFIRMED.
    Egyptian league + ACLE (owner, 13 Oct 19:30): results ONCE per competition after its last match (one X post + one IG story); no HT, line-ups or per-match posts for them.
    No repeated scores on X (firm, 13 Oct): before any FT post, check whether a round-up already carried that score
    (getScheduledPosts + log). If yes, the late per-match result goes to an IG story only, not to X again.

@@ -20,7 +20,13 @@ metadata:
    Any scheduled cycle from 09:00 on: `grep -c "PLAN" logs/<today>.md`. If 0, the 08:47 planner failed: build the plan NOW
    (same steps as the planner; `list_triggers` recurring false first), before news. «Only evening matches left» is never a
    reason to skip: every remaining big match still gets line-ups / FT tasks and every other Tier A slot a FT round-up task.
-   Every cycle writes one log line, even «NO NEW», so a silent run is visible.
+   Every cycle FIRST appends `HH:MM · — · STARTED · cycle` and pushes it (silent cycles 13, 16, 17, 18 Oct), then ends with one result line, even «NO NEW».
+   **The plan covers the FULL slate (review 19 Oct, REPEATED 17 Oct):** on 18 Oct the plan (built ~14:30, no log line) had only
+   Forest×Arsenal + Real×Sevilla; Juventus×Lazio, Brighton×Palace, Bournemouth×Sunderland and 5 La Liga/Serie A matches got nothing.
+   Take the day's list from a full schedule page (FilGoal/Yallakora match centre, or livesoccertv.com/schedules/<YYYY-MM-DD>/ —
+   its times are US Eastern: Cairo = ET + 7 h in Oct) and write it into the log as ONE line
+   `PLAN · <home×away HH:MM> | … · tasks: <list>` before creating tasks. The noon story and the night results task read that line.
+   Log times are Cairo (`TZ=Africa/Cairo date +%H:%M`), never UTC.
 3. **No duplicates (firm rule, after 11 Oct: Como–Roma and Palace–Forest each went out twice).** Before writing any result or story:
    - run `bash .claude/skills/newsroom-rules/scripts/already_posted.sh <team names in Arabic and English>` (today's + yesterday's log);
    - check `getScheduledPosts` from **00:00 Cairo today** (not just the last few hours), searching the text for the team names;

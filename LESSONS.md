@@ -7,8 +7,11 @@ Newest first.
 
 ## Open lessons
 
-- **17 Oct review · Saturday with 5 PL + Liga/Serie A/SPL matches: noon story listed 4, only those 4 results posted at 23:14 (Ahly FT ≈17:50 → 5 h late), no XI/HT/predictions; Everton×Chelsea, City×Ipswich (Marmoush), Newcastle×Villa, SPL MD9 matches of 17 Oct not covered.** → Root cause = no live plan (rule now in `run-newsroom` 2b). Noon story takes its matches from the plan; the night results task covers every Tier A FT of the day (up to 5, Egypt/Arabs first), not only the noon list.
-- **17 Oct review · Cycles 13:07, 15:07, 17:07 left no log line on 16 AND 17 Oct; end-of-day reviews for 15 and 16 Oct left no report (one-offs were never cleaned).** → REPEATED (13 Oct). Every run logs a «started» line first; the review lists runs with no line and tells the owner.
+- **19 Oct review · Real 4-1 Sevilla (FT ≈23:55) never posted: FT task held at 00:12 (pages stale) and nothing was re-armed; the night results task (23:47) ran before it ended.** → FT tasks re-arm themselves +25 min (max 2), rule now in `live-match`. Any FT still HOLD at midnight is the first job of the 01:07 cycle.
+- **19 Oct review · Forest×Arsenal XI held (only outlets; Sofascore «probable», arsenal.com unreadable) while Real's XI came from realmadrid.com.** → PL XI: search «<home> <away> confirmed line-ups» for Sky/BBC + the club's X post; two Tier-1 = confirmed (`live-match`).
+- **19 Oct review · Noon fixtures post and results reel had empty firstCommentText; Real XI feed post too.** → Every feed post AND reel gets the open question as `firstCommentText` (growth-playbook §0.3), no exceptions.
+- **19 Oct review · Owner track `.claude/assets/music/house.mp3` still missing (only README), so shorts use code-made music.** → Owner to upload; tasks keep using music.py fallback, never download from suno.
+
 - **17 Oct review · APR×Zamalek (CAF CC, 16 Oct) never published; Qadsiah 2-1 Abha held 43 h (confirmed only on 18 Oct by 365Scores league page + ESPN).** → Any Al Ahly/Zamalek/Pyramids result missing after FT+3 h: search «<club> result report» in English + «الزمالك <opponent> نتيجة» extended mode, and the club's own site; never let it pass the next morning.
 - **17 Oct · ليلة العرب skipped with one confirmed item (Ezzalzouli goal).** → One confirmed Arab goal/assist is enough for an X post + IG story (no short); short only with ≥ 2 rows.
 - **18 Oct 11:42 · EGY+SPL video: the 14 Oct edition was lost and no video existed for 4 days; 365Scores league page (`365scores.com/en-us/football/league/saudi-league-649`) gave all SPL MD9 scores + top-7 table in one fetch, where match pages were stale.** → For SPL round results fetch that 365Scores league page first, then pair each score with an ESPN «Final Score» or Goal title.
@@ -52,6 +55,10 @@ Newest first.
 - **11 Oct · Unconfirmed stories sit in the queue all day.** → Re-list them once in the owner report; after 24 h with no official statement, propose ❌.
 
 ## Became rules (moved out of this list)
+19 Oct review (day 18 Oct):
+- Partial slate — **REPEATED (17, 18 Oct)**: plan/noon/night covered 4 of 12 Tier A matches (Juventus×Lazio, Brighton×Palace, Bournemouth×Sunderland + 5 Liga/Serie A missed) → `run-newsroom` 2b: full-slate PLAN line from a full schedule page; noon + night tasks read it.
+- Silent cycles — **REPEATED (13, 16, 17, 18 Oct)**: 13:07, 15:07, 17:07, 19:07 left no line on 18 Oct; the plan tasks were created ~14:30 with no PLAN line → `run-newsroom` 2b (log + push a «started» line first) + `scripts/missing_runs.py` in every review.
+- FT slow / HOLD-and-stop — **REPEATED (12–15 Oct, 18 Oct)** → `live-match`: FT re-arm +25 min, Tier-1 title search order.
 18 Oct review (day 17 Oct):
 - Live plan missing — **REPEATED (12, 13, 16, 17, 18 Oct)**; cycles read «From 12:00» and on 17 Oct skipped it as «only evening matches left» → `run-newsroom` step 2b: any cycle from 09:00 builds it if `PLAN` is missing, never skipped.
 15 Oct review (day 14 Oct):
