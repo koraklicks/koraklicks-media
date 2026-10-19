@@ -7,8 +7,9 @@ Newest first.
 
 ## Open lessons
 
-- **19 Oct review · Real 4-1 Sevilla (FT ≈23:55) never posted: FT task held at 00:12 (pages stale) and nothing was re-armed; the night results task (23:47) ran before it ended.** → FT tasks re-arm themselves +25 min (max 2), rule now in `live-match`. Any FT still HOLD at midnight is the first job of the 01:07 cycle.
-- **19 Oct review · Forest×Arsenal XI held (only outlets; Sofascore «probable», arsenal.com unreadable) while Real's XI came from realmadrid.com.** → PL XI: search «<home> <away> confirmed line-ups» for Sky/BBC + the club's X post; two Tier-1 = confirmed (`live-match`).
+- **20 Oct review · Trabzonspor 2-0 Beşiktaş (19 Oct 20:00, Salah starred; AA + Hürriyet + Fotomaç) got NOTHING: not in the noon fixtures, «ليلة العرب» said «no Arab player found».** → `coverage.md` «Arab stars' clubs» list (Salah → Trabzonspor) is checked every day by planner, noon and «ليلة العرب».
+- **20 Oct review · Al Fayha 2-3 Al Ahli Saudi (FT ≈20:00, Fox «Final Score») never searched; the 23:12 cycle looked only at Spurs×Coventry and Hilal×Hazm.** → A cycle with no PLAN still checks every match from the noon story that has passed FT+30, oldest first.
+- **20 Oct review · Night results task (23:47) ran while Spurs×Coventry (22:00 KO) was still live → «نتايج النهارده» skipped (REPEATED 18 Oct, owner proposal pending).** → Until the owner moves it: the 01:07 cycle publishes the late FTs + the results story if 23:47 skipped.
 - **19 Oct review · Noon fixtures post and results reel had empty firstCommentText; Real XI feed post too.** → Every feed post AND reel gets the open question as `firstCommentText` (growth-playbook §0.3), no exceptions.
 - **19 Oct review · Owner track `.claude/assets/music/house.mp3` still missing (only README), so shorts use code-made music.** → Owner to upload; tasks keep using music.py fallback, never download from suno.
 
@@ -55,6 +56,10 @@ Newest first.
 - **11 Oct · Unconfirmed stories sit in the queue all day.** → Re-list them once in the owner report; after 24 h with no official statement, propose ❌.
 
 ## Became rules (moved out of this list)
+20 Oct review (day 19 Oct):
+- Live plan missing — **REPEATED 6th time (12, 13, 16, 17, 18, 19 Oct)**: 09:20/11:12 deferred to a «still running» planner, 13:15 «noon ran», 19:12/21:09 STARTED and died → `run-newsroom` 2b «No excuses» (PLAN slate line pushed before tasks) + `missing_runs.py` prints STUCK cycles.
+- Partial slate — **REPEATED (17, 18, 19 Oct)**: noon had 3 matches; Salah's Trabzonspor×Beşiktaş, Getafe×Rayo, Monza×Cagliari, Parma×Torino missing → `coverage.md` «Arab stars' clubs» + growth-playbook §0.2.
+- 19 Oct review lines «Real FT re-arm» and «PL XI» → already rules in `live-match` (moved here).
 19 Oct review (day 18 Oct):
 - Partial slate — **REPEATED (17, 18 Oct)**: plan/noon/night covered 4 of 12 Tier A matches (Juventus×Lazio, Brighton×Palace, Bournemouth×Sunderland + 5 Liga/Serie A missed) → `run-newsroom` 2b: full-slate PLAN line from a full schedule page; noon + night tasks read it.
 - Silent cycles — **REPEATED (13, 16, 17, 18 Oct)**: 13:07, 15:07, 17:07, 19:07 left no line on 18 Oct; the plan tasks were created ~14:30 with no PLAN line → `run-newsroom` 2b (log + push a «started» line first) + `scripts/missing_runs.py` in every review.

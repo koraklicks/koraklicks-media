@@ -13,7 +13,7 @@ metadata:
 
 Ask the **boss** agent to compile, from the newsroom log of the day, a one-page Arabic report:
 
-0. **Silent runs:** `python3 scripts/missing_runs.py logs/<day>.md`; list every MISSING cycle in the report (review 19 Oct).
+0. **Silent runs:** `python3 scripts/missing_runs.py logs/<day>.md`; list every MISSING and STUCK cycle in the report (review 19 Oct; STUCK added 20 Oct).
 1. **ملخص**: total stories found / published / waiting / rejected.
 2. **⏳ مستني موافقتك**: every unconfirmed story still in the queue (approval-queue format). Put this first if not empty.
 3. **✅ اللي اتنشر**: a table per platform (Facebook, Instagram, X, TikTok): ID, headline, time, link.

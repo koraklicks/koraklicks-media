@@ -41,6 +41,15 @@ Cover a Tier B match if at least one is true:
 
 Everything else in Tier B: result only, included in a round-up, or skipped.
 
+## Arab stars' clubs (check every day, review 20 Oct)
+
+On 19 Oct Trabzonspor 2-0 Beşiktaş (Salah starred, 20:00 Cairo) got nothing: not in the noon fixtures, not in «ليلة العرب».
+The planner and the noon/«ليلة العرب» tasks search the fixtures of these clubs every day and treat each match as a big match
+(XI, FT, «ليلة العرب» row):
+- Mohamed Salah → Trabzonspor (Turkish Süper Lig; Turkish-source tips in `trusted-sources.md` / LESSONS 15 Oct).
+- Other stars (Marmoush, Hakimi, Mahrez, Brahim Díaz, Amrabat …): confirm their current club once a week (growth review) and add a line here.
+Never guess a player's club from memory; transfers change it.
+
 ## Priority weighting when time is short
 
 1. Egyptian and Saudi clubs and the Egyptian/Saudi national teams

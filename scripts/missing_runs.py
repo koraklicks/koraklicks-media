@@ -6,6 +6,7 @@ The 2-hour cycle runs at 01:07 and 09:07-23:07 every 2 h (Cairo). A cycle counts
 logged if a log line containing «cycle» starts with a Cairo time within 0-45 min after the slot, or a
 line mentions the slot in UTC as «cycle HH:08Z». Review 19 Oct: 13:07/15:07/17:07/19:07
 on 18 Oct were silent (3rd day running).
+Also prints STUCK for «STARTED · cycle» lines with no result line within 60 min.
 """
 import re
 import sys
@@ -30,6 +31,16 @@ def main(path):
         if not hit:
             missing.append(slot)
     print("MISSING " + ", ".join(missing) if missing else "OK all cycles logged")
+    # Review 20 Oct: 19:12 and 21:09 cycles on 19 Oct logged «STARTED · cycle» and then nothing (died mid-plan).
+    lines = re.findall(r"^- (\d{2}:\d{2}) · (.*)$", text, re.M)
+    stuck = []
+    for i, (t, rest) in enumerate(lines):
+        if "STARTED" in rest and "cycle" in rest:
+            later = [mins(t2) for t2, r2 in lines[i + 1:] if "STARTED" not in r2]
+            if not any(0 < m - mins(t) <= 60 for m in later):
+                stuck.append(t)
+    if stuck:
+        print("STUCK (STARTED, no result line within 60 min) " + ", ".join(stuck))
 
 
 if __name__ == "__main__":

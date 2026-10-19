@@ -27,6 +27,12 @@ metadata:
    its times are US Eastern: Cairo = ET + 7 h in Oct) and write it into the log as ONE line
    `PLAN · <home×away HH:MM> | … · tasks: <list>` before creating tasks. The noon story and the night results task read that line.
    Log times are Cairo (`TZ=Africa/Cairo date +%H:%M`), never UTC.
+   **No excuses (review 20 Oct, REPEATED 6th time):** on 19 Oct the 09:20/11:12 cycles skipped the plan because «the 08:47 planner
+   is still running», 13:15 skipped it because «noon ran», and 19:12/21:09 started building it and died with no line.
+   A planner «still running» is not a PLAN line: only `grep -c "PLAN"` > 0 counts. Build it in two pushes:
+   (1) one schedule search → append + push the `PLAN · …` slate line at once (before any task is created, so a run that dies
+   still leaves the slate for the next one); (2) then create the tasks and append `PLAN-TASKS · …`.
+   The slate always includes the matches of the Arab stars' clubs (`coverage.md` «Arab stars' clubs»), e.g. Trabzonspor (Salah).
 3. **No duplicates (firm rule, after 11 Oct: Como–Roma and Palace–Forest each went out twice).** Before writing any result or story:
    - run `bash .claude/skills/newsroom-rules/scripts/already_posted.sh <team names in Arabic and English>` (today's + yesterday's log);
    - check `getScheduledPosts` from **00:00 Cairo today** (not just the last few hours), searching the text for the team names;
