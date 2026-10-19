@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **20 Oct 01:20 · europe-roundup: render.py --preview of a 3:19 video took >10 min (shell timeout) and `.claude/assets/music/house.mp3` is missing (only README), so music.py fell back to generated music.** → Run long renders with nohup in the background; check layout with a scene-screenshot sheet from the render HTML (`seek(t)`) instead of a full preview. Owner: re-add house.mp3 to the repo if the Suno track should be used.
+
 - **20 Oct review · Trabzonspor 2-0 Beşiktaş (19 Oct 20:00, Salah starred; AA + Hürriyet + Fotomaç) got NOTHING: not in the noon fixtures, «ليلة العرب» said «no Arab player found».** → `coverage.md` «Arab stars' clubs» list (Salah → Trabzonspor) is checked every day by planner, noon and «ليلة العرب».
 - **20 Oct review · Al Fayha 2-3 Al Ahli Saudi (FT ≈20:00, Fox «Final Score») never searched; the 23:12 cycle looked only at Spurs×Coventry and Hilal×Hazm.** → A cycle with no PLAN still checks every match from the noon story that has passed FT+30, oldest first.
 - **20 Oct review · Night results task (23:47) ran while Spurs×Coventry (22:00 KO) was still live → «نتايج النهارده» skipped (REPEATED 18 Oct, owner proposal pending).** → Until the owner moves it: the 01:07 cycle publishes the late FTs + the results story if 23:47 skipped.
