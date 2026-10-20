@@ -33,6 +33,13 @@ metadata:
    (1) one schedule search → append + push the `PLAN · …` slate line at once (before any task is created, so a run that dies
    still leaves the slate for the next one); (2) then create the tasks and append `PLAN-TASKS · …`.
    The slate always includes the matches of the Arab stars' clubs (`coverage.md` «Arab stars' clubs»), e.g. Trabzonspor (Salah).
+   **Tasks must exist, not just be written (review 21 Oct):** on 20 Oct the PLAN line said «tasks: SPL FT round-up 00:30» but no
+   such task was ever created, and the 10:51 UCL desk died (run PENDING, no line, no task) so UCL MD3 night (PSG×Barça,
+   Liverpool×Villarreal, City×AEK…) got no XI, no FT, no «ليلة الأبطال»; 19:15/21:15/23:10 cycles all wrote «left to live/FT tasks».
+   Every cycle from 11:07: `python3 scripts/missing_runs.py logs/<today>.md` and `list_triggers` (recurring false, enabled) — a
+   PLAN/UCL task named in the log that is not in the list → create it now. On a UCL matchday (`ucl.md` calendar) with no
+   `UCL plan` line by the 11:07 cycle, the desk failed: create its one-off tasks yourself (ucl.md package, times from its table)
+   and log `UCL plan · …`. «Left to the FT task» is only valid after you have seen that task in `list_triggers`.
 3. **No duplicates (firm rule, after 11 Oct: Como–Roma and Palace–Forest each went out twice).** Before writing any result or story:
    - run `bash .claude/skills/newsroom-rules/scripts/already_posted.sh <team names in Arabic and English>` (today's + yesterday's log);
    - check `getScheduledPosts` from **00:00 Cairo today** (not just the last few hours), searching the text for the team names;

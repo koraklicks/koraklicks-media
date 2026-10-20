@@ -37,6 +37,10 @@ Classify every story before anything is written. Use the source tiers in
 | **مرفوض (REJECTED)** | Fake, satire, unsourced, or contradicted by an official source | Drop it. Log the reason. |
 
 Additional hard rules:
+- **Run `python3 scripts/source_check.py match|news <source> …` before every result/news post (firm, review 21 Oct: six
+  results on 20 Oct went out on btolat/101greatgoals/ajel/ysscores/AA/Hürriyet titles, REPEATED from 12–13 Oct).** HOLD = don't post;
+  sources not on the list never count, even three of them. Credit only the sources that passed.
+- Write «الأهلي السعودي» for Al Ahli Saudi, never bare «الأهلي» (that is Al Ahly Cairo) — repeated 20 Oct 09:25.
 - Live match events (goals, cards, final score) count as CONFIRMED only when they appear in an
   official match centre or at least two Tier-1 live-score sources.
 - Injuries, deaths, legal cases, arrests, and anything about a person's private life are

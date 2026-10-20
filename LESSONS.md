@@ -7,13 +7,16 @@ Newest first.
 
 ## Open lessons
 
-- **20 Oct 01:20 · europe-roundup: render.py --preview of a 3:19 video took >10 min (shell timeout) and `.claude/assets/music/house.mp3` is missing (only README), so music.py fell back to generated music.** → Run long renders with nohup in the background; check layout with a scene-screenshot sheet from the render HTML (`seek(t)`) instead of a full preview. Owner: re-add house.mp3 to the repo if the Suno track should be used.
+- **21 Oct review · UCL MD3 day 1 (PSG×Barça, Liverpool×Villarreal, City×AEK, Stuttgart×Atlético, 22:00) got only the noon short: the 10:51 UCL desk run hung (PENDING, no log line, no tasks); 19:15/21:15/23:10 cycles wrote «left to live/FT tasks» that never existed.** → `run-newsroom` 2b + `ucl.md` backstop: from 11:07 the cycle runs `missing_runs.py` (now checks UCL plan/«ليلة الأبطال») and `list_triggers`; no `UCL plan` line on a matchday → the cycle builds the UCL tasks. MD3 day 2 (Wed 21 Oct, Bayern×Arsenal) is the test.
+- **21 Oct review · PLAN (13:25) said «tasks: SPL FT round-up 00:30» but no task was created (list_triggers empty for 20 Oct); slate came from fbref «times unverified».** → A task named in PLAN must be seen in `list_triggers`; slate from FilGoal/Yallakora/365Scores league page, never fbref alone. Night results covered SPL by luck.
+- **21 Oct review · Home/away doubt: PLAN «Ettifaq×Ittihad», night short «الاتحاد 4-1 الاتفاق».** → Morning cycle: check order + score on the 365Scores SPL league page; if wrong, «تصحيح» on IG/TikTok/YT.
+- **19–21 Oct · Owner track `.claude/assets/music/house.mp3` still missing (only README) — 3rd review in a row; every short since 18 Oct used code-made music.** → Owner to upload; tasks keep the music.py fallback, never download from suno.
+
 
 - **20 Oct review · Trabzonspor 2-0 Beşiktaş (19 Oct 20:00, Salah starred; AA + Hürriyet + Fotomaç) got NOTHING: not in the noon fixtures, «ليلة العرب» said «no Arab player found».** → `coverage.md` «Arab stars' clubs» list (Salah → Trabzonspor) is checked every day by planner, noon and «ليلة العرب».
 - **20 Oct review · Al Fayha 2-3 Al Ahli Saudi (FT ≈20:00, Fox «Final Score») never searched; the 23:12 cycle looked only at Spurs×Coventry and Hilal×Hazm.** → A cycle with no PLAN still checks every match from the noon story that has passed FT+30, oldest first.
 - **20 Oct review · Night results task (23:47) ran while Spurs×Coventry (22:00 KO) was still live → «نتايج النهارده» skipped (REPEATED 18 Oct, owner proposal pending).** → Until the owner moves it: the 01:07 cycle publishes the late FTs + the results story if 23:47 skipped.
 - **19 Oct review · Noon fixtures post and results reel had empty firstCommentText; Real XI feed post too.** → Every feed post AND reel gets the open question as `firstCommentText` (growth-playbook §0.3), no exceptions.
-- **19 Oct review · Owner track `.claude/assets/music/house.mp3` still missing (only README), so shorts use code-made music.** → Owner to upload; tasks keep using music.py fallback, never download from suno.
 
 - **17 Oct review · APR×Zamalek (CAF CC, 16 Oct) never published; Qadsiah 2-1 Abha held 43 h (confirmed only on 18 Oct by 365Scores league page + ESPN).** → Any Al Ahly/Zamalek/Pyramids result missing after FT+3 h: search «<club> result report» in English + «الزمالك <opponent> نتيجة» extended mode, and the club's own site; never let it pass the next morning.
 - **17 Oct · ليلة العرب skipped with one confirmed item (Ezzalzouli goal).** → One confirmed Arab goal/assist is enough for an X post + IG story (no short); short only with ≥ 2 rows.
@@ -47,10 +50,10 @@ Newest first.
 - **13 Oct 11:00 · Meta permanently disabled the owner's personal Facebook profile (the page's only admin); the page is closed.** → **Facebook is OFF until the owner says otherwise**: no posts, tests or account/page changes; never suggest new accounts to get around the ban. If an Instagram post fails with an auth/permission/connection error, stop Instagram for that run and tell the owner at once (no retry loop). Platform rules: `references/platform-rules.md`.
 - **13 Oct · YouTube long video published but the custom thumbnail failed (status ERROR, video live).** → Read `publicUrl` before calling a YouTube post failed; owner to verify the channel in YouTube Studio (Settings → Channel → Feature eligibility).
 - **13 Oct · WebFetch of FilGoal/Kooora/Yallakora/btolat/Sky "withdrawn (permission request not answered)" in unattended runs, even for allowlisted domains (REPEATED 13 Oct 01:10, 09:20, 19:15, 23:56); long Arabic-slug URLs are rejected.** → Don't wait: switch to WebSearch with the site name in the query or the next source in the playbook. 14 Oct review added btolat, match.uefa.com, sporza, kooora to `.claude/settings.json`.
-- **13 Oct review (still open) · FTs confirmed with non-approved sources on 12 Oct.** → Until the owner decides, an FT needs an approved service showing «انتهت/FT», or an official/AFC report, plus a Tier-1 report; otherwise HOLD.
 - **13 Oct · The repo clone starts on a detached HEAD (REPEATED every review run).** → Run `git fetch origin main && git checkout -B main origin/main` first, then pull/rebase.
+- **20 Oct 01:20 · render.py --preview of a 3:19 video took >10 min (shell timeout).** → Long renders with nohup in the background; check layout with a scene-screenshot sheet (`seek(t)`).
+- **12 Oct · Metricool: "TikTok title is required".** → Always set `tiktokData.title`.
 - **12 Oct · Unconfirmed match results from one region only (Iranian outlets) stay HOLD.** → Morning run: search the AFC report title first.
-- **12 Oct · Metricool: "TikTok title is required".** → Always set `tiktokData.title`. Write «الأهلي السعودي» (not «الأهلي») for Al Ahli Saudi.
 - **12 Oct · render.py (theme major): a list with 4–5 items or a table with 5 rows hits the source line.** → Max 3 list items / 4 table rows; re-check every score from a source before reusing it from logs.
 - **12 Oct · Cairo font renders digits/Latin in serif on card lines.** → Numbers and source names in Arabic words on card lines.
 - **12 Oct · WebSearch with `allowed_domains` (4+ sports domains) → HTTP 400.** → Put the site name in the query instead.
@@ -58,6 +61,10 @@ Newest first.
 - **11 Oct · Unconfirmed stories sit in the queue all day.** → Re-list them once in the owner report; after 24 h with no official statement, propose ❌.
 
 ## Became rules (moved out of this list)
+21 Oct review (day 20 Oct):
+- Sources not on the list used for results — **REPEATED (12–13 Oct, 20 Oct ×6: btolat/101greatgoals/allfootballapp, ajel/ysscores/hihi2, AA/Hürriyet/Takvim, KingFut/Anews)** → new `scripts/source_check.py`, required in `newsroom-rules` §1.
+- «الأهلي» for Al Ahli Saudi — **REPEATED (12 Oct, 20 Oct 09:25 X)** → `newsroom-rules` §1.
+- Planner 08:47 dead again (ABANDONED 20 Oct; PLAN only at 13:25, after the noon story) — **REPEATED 7th day** → still owner proposal b (drop it; 09:07 cycle owns the plan).
 20 Oct review (day 19 Oct):
 - Live plan missing — **REPEATED 6th time (12, 13, 16, 17, 18, 19 Oct)**: 09:20/11:12 deferred to a «still running» planner, 13:15 «noon ran», 19:12/21:09 STARTED and died → `run-newsroom` 2b «No excuses» (PLAN slate line pushed before tasks) + `missing_runs.py` prints STUCK cycles.
 - Partial slate — **REPEATED (17, 18, 19 Oct)**: noon had 3 matches; Salah's Trabzonspor×Beşiktaş, Getafe×Rayo, Monza×Cagliari, Parma×Torino missing → `coverage.md` «Arab stars' clubs» + growth-playbook §0.2.

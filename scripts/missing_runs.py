@@ -7,6 +7,9 @@ logged if a log line containing «cycle» starts with a Cairo time within 0-45 m
 line mentions the slot in UTC as «cycle HH:08Z». Review 19 Oct: 13:07/15:07/17:07/19:07
 on 18 Oct were silent (3rd day running).
 Also prints STUCK for «STARTED · cycle» lines with no result line within 60 min.
+Also checks the daily pieces (review 21 Oct: on 20 Oct the 10:51 UCL desk died with no line and no
+UCL task was created, so the MD3 night got nothing): PLAN, noon, «رقم اليوم», «ليلة العرب», night
+results, and on UCL nights (a PLAN/noon line mentions UCL) the «UCL plan» and «ليلة الأبطال» lines.
 """
 import re
 import sys
@@ -43,5 +46,27 @@ def main(path):
         print("STUCK (STARTED, no result line within 60 min) " + ", ".join(stuck))
 
 
+DAILY = [  # (label, regex that proves the piece ran or was skipped with a line)
+    ("PLAN (planner 08:47 / cycle)", r"· PLAN ·"),
+    ("noon story 12:47", r"NOON|ماتشات النهارده|يوم الكبار"),
+    ("«رقم اليوم» 16:47", r"-NUM\b|رقم اليوم|خبر اليوم"),
+    ("«ليلة العرب» 23:22", r"LAYLAT-ARAB|ليلة العرب"),
+    ("night results 23:47", r"-RES\b|نتايج النهارده"),
+]
+UCL_DAILY = [
+    ("UCL plan (UCL desk 10:51)", r"UCL plan|UCL-PLAN"),
+    ("«ليلة الأبطال» 00:20", r"LAYLAT-ABTAL|ليلة الأبطال ·|«ليلة الأبطال» .*(PUBLISHED|SKIPPED)"),
+]
+
+
+def daily(text):
+    missing = [lab for lab, rx in DAILY if not re.search(rx, text)]
+    ucl_day = re.search(r"· PLAN ·.*UCL|NOON.*UCL", text)
+    if ucl_day:
+        missing += [lab for lab, rx in UCL_DAILY if not re.search(rx, text)]
+    print("DAILY MISSING " + ", ".join(missing) if missing else "OK daily pieces logged")
+
+
 if __name__ == "__main__":
     main(sys.argv[1])
+    daily(open(sys.argv[1], encoding="utf-8").read())

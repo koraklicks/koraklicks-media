@@ -3,6 +3,8 @@
 On UCL matchdays the Champions League is covered like a **Tier A** league: every match gets at least its result,
 the big ones get the full live package, and the night ends with a «ليلة الأبطال» story + short.
 The daily **«دوري الأبطال · ديسك»** task (10:51 Cairo) plans each matchday; the match planner (08:47) leaves UCL to it.
+**Backstop (review 21 Oct):** on 20 Oct (MD3 day 1) the desk run hung (PENDING) and left no line, so the night had no coverage.
+If there is no `UCL plan` line in today's log by the 11:07 cycle on a matchday, that cycle builds the UCL tasks itself (`run-newsroom` 2b).
 
 ## Calendar 2026/27 (official: uefa.com)
 
