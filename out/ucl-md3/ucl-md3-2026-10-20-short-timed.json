@@ -1,0 +1,48 @@
+{
+  "slug": "ucl-md3-2026-10-20-short",
+  "scenes": [
+    {
+      "type": "hook",
+      "duration": 1.935,
+      "sfx": "impact"
+    },
+    {
+      "type": "versus",
+      "duration": 3.871,
+      "sfx": "impact",
+      "pops": [
+        0.45
+      ]
+    },
+    {
+      "type": "versus",
+      "duration": 3.871,
+      "sfx": "impact",
+      "pops": [
+        0.45
+      ]
+    },
+    {
+      "type": "versus",
+      "duration": 3.871,
+      "sfx": "impact",
+      "pops": [
+        0.45
+      ]
+    },
+    {
+      "type": "versus",
+      "duration": 3.871,
+      "sfx": "impact",
+      "pops": [
+        0.45
+      ]
+    },
+    {
+      "type": "cta",
+      "duration": 3.871,
+      "sfx": "whoosh"
+    }
+  ],
+  "audio": "ucl-md3-2026-10-20-short-music.wav"
+}
