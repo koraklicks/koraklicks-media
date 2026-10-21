@@ -1,0 +1,18 @@
+{
+  "slug": "ucl-md3d2-como",
+  "scenes": [
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    }
+  ],
+  "audio": "ucl-md3d2-como-music.wav"
+}
