@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **22 Oct 00:40 · UCL MD3 day 2 FT: 90 min after the whistle only 2 of 9 results had an approved FT (uefa.com pages not updated until morning; Sky/ESPN/Fox pages cached on live minutes; search showed only titles).** → For the 00:20 package, fetch each club's report (`sofascore.com/news`, Sky `/report/` URL, beIN «ALL GOALS») instead of live pages; a title alone is one source; whatever is still HOLD at 01:00 goes to the 09:07 catch-up, never a second round-up the same night.
+
 - **21 Oct review · UCL MD3 day 1 (PSG×Barça, Liverpool×Villarreal, City×AEK, Stuttgart×Atlético, 22:00) got only the noon short: the 10:51 UCL desk run hung (PENDING, no log line, no tasks); 19:15/21:15/23:10 cycles wrote «left to live/FT tasks» that never existed.** → `run-newsroom` 2b + `ucl.md` backstop: from 11:07 the cycle runs `missing_runs.py` (now checks UCL plan/«ليلة الأبطال») and `list_triggers`; no `UCL plan` line on a matchday → the cycle builds the UCL tasks. MD3 day 2 (Wed 21 Oct, Bayern×Arsenal) is the test.
 - **21 Oct review · PLAN (13:25) said «tasks: SPL FT round-up 00:30» but no task was created (list_triggers empty for 20 Oct); slate came from fbref «times unverified».** → A task named in PLAN must be seen in `list_triggers`; slate from FilGoal/Yallakora/365Scores league page, never fbref alone. Night results covered SPL by luck.
 - **21 Oct review · Home/away doubt: PLAN «Ettifaq×Ittihad», night short «الاتحاد 4-1 الاتفاق».** → Morning cycle: check order + score on the 365Scores SPL league page; if wrong, «تصحيح» on IG/TikTok/YT.
