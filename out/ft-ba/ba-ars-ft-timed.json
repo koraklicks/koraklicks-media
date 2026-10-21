@@ -1,0 +1,18 @@
+{
+  "slug": "ba-ars-ft",
+  "scenes": [
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    }
+  ],
+  "audio": "ba-ars-ft-music.wav"
+}
