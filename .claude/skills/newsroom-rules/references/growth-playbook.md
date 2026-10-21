@@ -17,6 +17,12 @@ weekly from real numbers. Never invent metrics; when data is missing, say so.
    - «ملخص الجولة» is fine for our round-ups (they summarise results). **Never «أهداف …» / «ملخص المباراة» / «شاهد الأهداف» on a graphics-only video**: viewers expect footage, swipe away and YouTube treats it as misleading metadata (platform-rules §3). Use «مين سجّل في …؟» or «نتيجة وأهداف … بالأرقام» only when the video really lists every scorer.
    - Every Short: the fact on screen in the first 2 s (score/number/name), no slow intro; the like + subscribe end card (`endcard.py`).
    - Feed «Suggested»: keep one long video per round (Europe, UCL, Egypt+Saudi); the owner links each Short to the related long video in YouTube Studio (Shorts «Related video») and adds playlists per competition.
+7. **Viral rules (owner ✅ 21 Oct 2026, from the 9–20 Oct numbers):**
+   - **TikTok = PHOTO posts** for results and news (photos averaged 127 views vs 15 for videos; top TikToks: «ليفربول 0-3 مانشستر سيتي» 298, «الزمالك 0-2 الأهلي» 229). 3–5 JPGs 1080×1920 in one post: cover with the hook (score/number/name) + one slide per result/fact (`story_short.py` cards). TikTok video only for the morning round-up and memes.
+   - **Morning round-up Short at 10:00** for every league whose round finished the day before («أهم نتايج الجولة …», our top YouTube post: 390 views). Made by the 09:07 newsroom cycle (run-newsroom step 3b), YouTube Short + IG Reel; TikTok as photos. Night-of result Shorts stay only for BIG matches.
+   - **Egyptian / Arab angle first** in every caption and hook: Salah, Marmoush, Ahly, Zamalek, Pyramids, Arab players before anything else.
+   - **Comment bait on everything:** each post ends with one question («مين أحسن؟» / «توقعوا» / «اختار تشكيلتك» / «مين نجم الماتش؟») and the same question as `firstCommentText`.
+   - **First 2 seconds = the fact** (score, number, name or question on screen); no logo intro, no slow build-up.
 6. **Measure every week:** the Friday growth review compares followers and reach by format (reel vs card vs story), topic and hour, and moves the content mix toward what brings followers.
 Not automated (owner does by hand): WhatsApp channel, sharing in Facebook groups, Instagram Collabs with other pages, paid boosts.
 
@@ -81,7 +87,7 @@ Each week test **one** thing per platform (hook style, post length, carousel vs 
 video length) on at least 5 posts against a comparable control, then keep the winner here.
 
 **Week 17–23 Oct 2026** (judge on 48 h views in the 23 Oct review):
-- TikTok: 5 PHOTO posts (result/«رقم اليوم» cards, same captions) vs 5 motion videos on comparable stories. _Needs owner ✅ (13 Oct video-style rule)._ Until ✅: videos only.
+- TikTok: owner ✅ 21 Oct → PHOTO posts are the default for results/news (§0.7); measure photo views vs the 9–20 Oct video average (15).
 - Instagram: results as a 2–4 slide carousel (5 posts) vs single image (5 posts); max 2 single-image feed posts a day otherwise.
 - YouTube: one «أهم نتايج الجولة …» round-up Short per league the morning after each round, posted 10:00, vs night-of result Shorts.
 - X: no experiment (not measurable until X analytics data exists).

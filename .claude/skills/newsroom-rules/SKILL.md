@@ -25,6 +25,10 @@ Apply these rules in every newsroom task. They override any agent's own habits.
 - What makes a Tier B match "important" and the priority order: `references/coverage.md`.
 - **Champions League matchdays = Tier A** (owner, 13 Oct 2026): follow `references/ucl.md`.
 
+**Viral rules (owner ✅ 21 Oct 2026), apply to every post:** Egyptian/Arab angle first · the fact in the first line / first 2 s ·
+one question at the end + as `firstCommentText` · TikTok results/news as PHOTO posts (3–5 slides) · details in
+`references/growth-playbook.md` §0.7.
+
 ## 1. The verification gate (the most important rule)
 
 Classify every story before anything is written. Use the source tiers in

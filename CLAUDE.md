@@ -17,6 +17,7 @@ If you hit a new problem during a run, add one line to the top section of `LESSO
 - Through the Metricool connector, brand `7358209`, timezone Africa/Cairo. Details: `.claude/skills/newsroom-rules/references/metricool.md`.
 - Images/videos get public links with `bash .claude/skills/newsroom-rules/scripts/host_media.sh FILE...` (branch `media`).
 - Before posting, check `getScheduledPosts` and `logs/` so nothing is posted twice.
+- Viral rules (owner ✅ 21 Oct 2026; override any task prompt that sends a results/news short to TikTok): TikTok gets results and news as a PHOTO post (3–5 JPG slides), the video goes only to Reels + YouTube Shorts; Egyptian/Arab angle first; the fact in the first line / first 2 s; a question at the end + as firstCommentText; morning round-up Short at 10:00 after each league round. Details: growth-playbook.md §0.7.
 - Every video gets the like/subscribe/follow end card (owner, 18 Oct 2026): `python3 .claude/skills/youtube-video/scripts/endcard.py VIDEO.mp4 OUT_DIR --theme dark|light` → `-yt.mp4` for YouTube (Shorts and long videos), `-social.mp4` for the Instagram Reel + TikTok post. Same length and music; never post the plain file.
 
 ## Housekeeping (owner, 13 Oct 2026)
