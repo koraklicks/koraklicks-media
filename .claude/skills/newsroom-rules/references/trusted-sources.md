@@ -83,3 +83,9 @@ General (all competitions):
 
 The owner may add or demote sources at any time. Keep this list as the single truth; agents do
 not add sources on their own.
+
+- **Final score rule (owner ✅ 22 Oct 2026, after Ahly 3-3 Qanah was never posted on 21 Oct):** a FINAL SCORE is CONFIRMED when
+  any **two** of ESPN, Sky Sports, beIN Sports, Goal, FotMob, Yallakora, FilGoal show the **same** final score. A search-result
+  title or snippet that states the final score counts (no need to open a page that is still cached). Run
+  `python3 scripts/source_check.py ft "<source1>" "<source2>"` → PASS. Score only: scorers, red cards and any news still follow
+  the normal rules (name only the scorers both sources agree on, or none). Never from a page that shows a live minute.

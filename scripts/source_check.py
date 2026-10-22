@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Check a result/story's sources against trusted-sources.md BEFORE publishing.
 
-Usage: python3 scripts/source_check.py match "Sofascore" "ESPN"
+Usage: python3 scripts/source_check.py ft "ESPN" "FotMob"        (final score only, owner ✅ 22 Oct)
+       python3 scripts/source_check.py match "Sofascore" "ESPN"
        python3 scripts/source_check.py news "Sky Sports" "BBC Sport"
 Prints PASS or HOLD and why. Review 21 Oct: on 20 Oct six results went out on sources that
 are not on the list (btolat, 101greatgoals, allfootballapp, ajel, ysscores, hihi2, sabq, AA,
@@ -16,6 +17,10 @@ TIER1 = ["bbc", "sky", "athletic", "espn", "reuters", "ap ", "associated press",
          "bein", "le360", "hesport", "al kass", "الكأس", "ahram", "الأهرام", "spa", "واس", "riyadiyah",
          "الرياضية", "romano", "بي إن", "بي ان", "سكاي"]
 LIVE = ["sofascore", "365scores", "filgoal", "في الجول", "yallakora", "يلا كورة", "يلاكورة"]
+# Owner ✅ 22 Oct 2026: a FINAL SCORE (not scorers, not news) is CONFIRMED when any TWO of these show the
+# same final score. A search-result title/snippet that states the final score counts (no need to open a stale page).
+FT_OK = ["espn", "sky", "سكاي", "bein", "بي إن", "بي ان", "goal", "جول", "fotmob", "yallakora", "يلا كورة", "يلاكورة",
+         "filgoal", "في الجول"]
 OFFICIAL_HINTS = ["official", "رسمي", "uefa", "يويفا", "fifa", "caf", "afc", "club site", "الموقع الرسمي", "spl.com.sa"]
 
 
@@ -33,6 +38,13 @@ def kind(name):
 def main(mode, names):
     kinds = {nm: kind(nm) for nm in names}
     c = {k: sum(1 for v in kinds.values() if v == k) for k in ("official", "live", "tier1", "other")}
+    if mode == "ft":
+        n_ft = sum(1 for nm in names if any(h in nm.lower() for h in FT_OK))
+        ok = c["official"] >= 1 or n_ft >= 2
+        for nm in names:
+            print(f"  {nm}: {'ft-ok' if any(h in nm.lower() for h in FT_OK) else kinds[nm]}")
+        print(("PASS" if ok else "HOLD") + " · final score only: official, or 2 of ESPN/Sky/beIN/Goal/FotMob/Yallakora/FilGoal with the SAME score")
+        return 0 if ok else 1
     if mode == "match":
         ok = c["official"] >= 1 or c["live"] >= 2 or (c["live"] >= 1 and c["tier1"] >= 1) or c["tier1"] >= 2
         rule = "official, or 2 live services, or 1 live + 1 Tier-1, or 2 Tier-1"
@@ -48,6 +60,6 @@ def main(mode, names):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 3 or sys.argv[1] not in ("match", "news"):
+    if len(sys.argv) < 3 or sys.argv[1] not in ("ft", "match", "news"):
         sys.exit(__doc__)
     sys.exit(main(sys.argv[1], sys.argv[2:]))
