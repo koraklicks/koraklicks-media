@@ -263,7 +263,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("spec"); ap.add_argument("out_dir")
     ap.add_argument("--theme", choices=list(THEMES)); ap.add_argument("--mood")
-    ap.add_argument("--fps", type=int, default=30); ap.add_argument("--bpm", type=float, default=124)
+    ap.add_argument("--fps", type=int, default=30); ap.add_argument("--bpm", type=float, default=float(json.loads((HERE.parents[2] / "assets/music/house.json").read_text()).get("bpm", 124)) if (HERE.parents[2] / "assets/music/house.json").exists() else 124)
     ap.add_argument("--preview", action="store_true", help="only write <slug>-sheet.jpg (one frame per scene) to check the layout fast")
     ap.add_argument("--also-silent", action="store_true",
                     help="also write <slug>-short-nomusic.mp4 (no audio) for the owner to add a trending sound by hand in the app")

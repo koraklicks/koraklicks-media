@@ -308,10 +308,14 @@ def main():
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(raw), "-af",
                     f"loudnorm=I=-14:TP=-1.5:LRA=9,aresample={SR},atrim=0:{total:.3f}", str(final)], check=True)
     raw.unlink()
-    track = None if a.generated else (Path(a.track) if a.track else next(iter(sorted(HOUSE_DIR.glob("house.*"))), None))
-    if track:  # owner's track (18 Oct 2026): loop/trim to the video length, short fade in, fade out at the end
+    track = None if a.generated else (Path(a.track) if a.track else next(iter(sorted(p for p in HOUSE_DIR.glob("house.*") if p.suffix not in (".json", ".md"))), None))
+    if track:  # owner's track (18 Oct 2026; «Match Day Power» since 22 Oct): loop/trim to the video length, fade out at the end
         fo = min(2.5, total / 4)
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-stream_loop", "-1", "-i", str(track), "-af",
+        meta = track.with_suffix(".json")
+        info = json.loads(meta.read_text()) if meta.exists() else {}
+        # short videos start on the drop (full energy from frame 0); long ones that need most of the track start at 0
+        ss = float(info.get("drop_s", 0)) if total <= float(info.get("duration_s", 1e9)) - float(info.get("drop_s", 0)) else 0.0
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-stream_loop", "-1", "-ss", f"{ss:.2f}", "-i", str(track), "-af",
                         f"atrim=0:{total:.3f},afade=t=in:d=0.15,afade=t=out:st={total - fo:.3f}:d={fo:.3f},"
                         f"loudnorm=I=-14:TP=-1.5:LRA=9,aresample={SR}", "-ac", "2", str(final)], check=True)
     sb["audio"] = final.name

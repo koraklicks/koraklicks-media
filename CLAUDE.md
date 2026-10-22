@@ -7,11 +7,12 @@ If you hit a new problem during a run, add one line to the top section of `LESSO
 ## Hard rules (owner decisions)
 - Confirmed news (official source, or two independent Tier-1 outlets) is published automatically, always with «📌 المصدر:».
 - Unconfirmed news is **never** published without the owner's ✅. List it for the owner and stop there.
+- Long YouTube videos are PAUSED (owner 22 Oct 2026: 29 and 145 views, 11–57 s watched); instead, a round-up Short per league the morning after each round. Make a long video only if the owner asks.
 - Long YouTube videos and anything involving money (sponsors, prices, paid credits) need the owner's ✅.
   The daily story + short Shorts (noon fixtures, night results) are published to YouTube Shorts automatically (owner decision, 11 Oct 2026).
 - Calm tone, mostly Egyptian dialect. No فرم / سحق / اكتسح / فضيحة. No betting or gambling promotion.
 - No match footage, licensed photos only, no real club crests. Never invent numbers or metrics.
-- No voice-over on videos unless the owner asks. Music (owner, 18 Oct 2026): the owner's Suno track «Match Result Reveal» (`.claude/assets/music/house.mp3`); `music.py` uses it automatically when the file exists, else its own code-made music.
+- No voice-over on videos unless the owner asks. Music (owner, 22 Oct 2026): the owner's track «Match Day Power» (`.claude/assets/music/house.mp3`, in the repo) in EVERY video; `music.py` uses it automatically (Shorts start on the drop at 22 s). Never other music.
 
 ## Publishing
 - Through the Metricool connector, brand `7358209`, timezone Africa/Cairo. Details: `.claude/skills/newsroom-rules/references/metricool.md`.
