@@ -7,6 +7,7 @@ Newest first.
 
 ## Open lessons
 
+- **22 Oct · Noon list/PLAN had «Ahli SA×Khaleej 21:00 today» but FotMob + ESPN list it Fri 23 Oct 18:00 UTC.** → Night results task: check each planned match's date on FotMob/ESPN before expecting an FT; a match not played today is not a HOLD.
 
 - **22 Oct · UCL table card blocked: uefa.com standings page is script-rendered, WebFetch gets no rows.** → Owner to decide if two agreeing outlets (Sky Sports table + NBC Sports) may replace uefa.com for the table card; until then post nothing and notify.
 - **22 Oct 00:40 · UCL MD3 day 2 FT: 90 min after the whistle only 2 of 9 results had an approved FT (uefa.com pages not updated until morning; Sky/ESPN/Fox pages cached on live minutes; search showed only titles).** → For the 00:20 package, fetch each club's report (`sofascore.com/news`, Sky `/report/` URL, beIN «ALL GOALS») instead of live pages; a title alone is one source; whatever is still HOLD at 01:00 goes to the 09:07 catch-up, never a second round-up the same night.
