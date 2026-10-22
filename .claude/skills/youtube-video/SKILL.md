@@ -73,6 +73,11 @@ It writes `<slug>-story.jpg` (1080x1920 still for Instagram/Facebook stories) an
 ## Motion-graphics shorts with music and memes (owner request 13 Oct 2026)
 
 **Owner approved this style (13 Oct 11:46): `motion_short.py` is the DEFAULT for every Reel/Short/TikTok** (results, fixtures, numbers, Arab players, memes). Use `story_short.py` only for the Story still.
+**Fact in frame 0 (owner ✅ 22 Oct, YouTube data 11–19 Oct: Shorts were watched 1–3 s on average; the first 2–3 s showed a
+generic title «رقم اليوم»/«نتايج النهارده» + ⚽ and the number/score only at ~3 s):** `motion_short.py` now drops an opening
+`hook` scene when the next scene is a `stat`/`score`/`versus`/`list` (its words move into the top line) and the first scene starts
+fully drawn, so frame 0 = the score or the number. Put the fact in the YouTube title's first words too. Use `"keep_hook": true` only
+for memes/POV/chat. Best Shorts so far: «ليلة الأبطال» results 862 views, «رقم الجولة» 551, «أهم نتايج الجولة 8 من الليجا» 396.
 **TikTok exception (owner ✅ 21 Oct):** results and news go to TikTok as a PHOTO post (3–5 JPG slides), not as the video; see growth-playbook §0.7. The video still goes to Reels and YouTube Shorts.
 
 `scripts/motion_short.py spec.json OUT_DIR [--theme dark|light] [--mood fun|drive|anthem|dark] [--preview]`

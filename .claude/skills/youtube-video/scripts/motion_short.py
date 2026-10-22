@@ -228,10 +228,10 @@ const G=document.getElementById('ghost'), ST=document.getElementById('stage'), F
       STR=document.getElementById('stripes'), O1=document.getElementById('o1'), O2=document.getElementById('o2');
 const cl=x=>Math.min(Math.max(x,0),1), eo=x=>1-Math.pow(1-cl(x),3);
 const back=x=>{x=cl(x);const c1=1.9,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
-window.render=t=>{let s=0,acc=0;while(s<D.length-1&&t>=acc+D[s]){acc+=D[s];s++}const u=t-acc,d=D[s];
+window.render=t=>{let s=0,acc=0;while(s<D.length-1&&t>=acc+D[s]){acc+=D[s];s++}const d=D[s],u=t-acc,ua=u+(s===0?1.2:0);/* frame 0 already shows the fact */
  S.forEach(el=>el.style.opacity=0);const el=S[s];
  el.style.opacity=s<D.length-1?cl((d-u)/0.15):1;
- el.querySelectorAll('.a').forEach(k=>{const dl=+k.dataset.d||0,p=(u-dl),kind=k.dataset.a;let o=1,tr='';
+ el.querySelectorAll('.a').forEach(k=>{const dl=+k.dataset.d||0,p=(ua-dl),kind=k.dataset.a;let o=1,tr='';
   if(kind==='up'){o=eo(p/0.45);tr=`translateY(${(1-eo(p/0.45))*80}px)`}
   else if(kind==='pop'){o=cl(p/0.12);tr=`scale(${0.2+0.8*back(p/0.38)})`}
   else if(kind==='right'){o=cl(p/0.2);tr=`translateX(${(1-eo(p/0.5))*900}px)`}
@@ -274,6 +274,19 @@ def main():
     spec["_bpm"] = a.bpm
     out = Path(a.out_dir).resolve(); out.mkdir(parents=True, exist_ok=True)
     slug = spec["slug"]
+
+    # Fact first (owner ✅ 22 Oct, YouTube avg view 1-3 s): a generic opening «hook» title before the score/number
+    # made viewers swipe before the fact. Drop it and carry its words into the first fact scene's top line.
+    # Opt out with "keep_hook": true (memes, POV, chat formats).
+    sc0 = spec["scenes"][0] if spec["scenes"] else {}
+    if sc0.get("type") == "hook" and not spec.get("keep_hook") and len(spec["scenes"]) > 1 \
+            and spec["scenes"][1].get("type") in ("stat", "score", "versus", "list"):
+        nxt = spec["scenes"][1]
+        key = "title" if nxt["type"] == "list" else "comp"
+        if key == "comp":
+            nxt["comp"] = " · ".join(x for x in (sc0.get("text", ""), nxt.get("comp", "")) if x)
+        spec["scenes"].pop(0)
+        spec.setdefault("cover", 0)
 
     # storyboard for music.py: durations + sfx per scene (pops for chat bubbles / meme reveals)
     sb_scenes = []
