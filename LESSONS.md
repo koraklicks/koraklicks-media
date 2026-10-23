@@ -7,6 +7,7 @@ Newest first.
 
 ## Open lessons
 
+- **23 Oct growth review · 2 of 3 weekly experiments never ran (0 IG carousels, 0 YT 10:00 round-up Shorts) and 22 Oct TikTok results went out as VIDEO (8 views) against the photo rule.** → Planner/09:07 cycle: check playbook §7 each morning; TikTok = photo posts only (except round-up); round-up Short uses the owner's 22 Oct 2-of-list FT rule.
 - **22 Oct · Noon list/PLAN had «Ahli SA×Khaleej 21:00 today» but FotMob + ESPN list it Fri 23 Oct 18:00 UTC.** → Night results task: check each planned match's date on FotMob/ESPN before expecting an FT; a match not played today is not a HOLD.
 
 - **22 Oct · UCL table card blocked: uefa.com standings page is script-rendered, WebFetch gets no rows.** → Owner to decide if two agreeing outlets (Sky Sports table + NBC Sports) may replace uefa.com for the table card; until then post nothing and notify.
