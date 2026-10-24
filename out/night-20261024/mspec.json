@@ -1,0 +1,5 @@
+{"slug":"night-20261024-motion","theme":"dark","scenes":[
+{"type":"hook","text":"نتايج النهارده","sub":"السبت 24 أكتوبر","emoji":"⚽"},
+{"type":"score","comp":"الدوري الإنجليزي","home":"أستون فيلا","away":"مانشستر سيتي","home_score":2,"away_score":1,"note":"جاكسون سجل هدفين"},
+{"type":"score","comp":"الدوري الإنجليزي","home":"تشيلسي","away":"توتنهام","home_score":0,"away_score":2,"note":"هدف عكسي + تيل"},
+{"type":"cta","text":"أنهي نتيجة شدّتكم؟","sub":"اكتبوا رأيكم في الكومنتات"}]}
