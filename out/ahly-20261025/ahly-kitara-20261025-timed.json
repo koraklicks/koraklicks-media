@@ -1,0 +1,18 @@
+{
+  "slug": "ahly-kitara-20261025",
+  "scenes": [
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    }
+  ],
+  "audio": "ahly-kitara-20261025-music.wav"
+}
