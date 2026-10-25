@@ -1,0 +1,43 @@
+{
+  "slug": "today-2026-10-25",
+  "scenes": [
+    {
+      "type": "versus",
+      "duration": 3.664,
+      "sfx": "impact",
+      "pops": [
+        0.45
+      ]
+    },
+    {
+      "type": "versus",
+      "duration": 3.664,
+      "sfx": "impact",
+      "pops": [
+        0.45
+      ]
+    },
+    {
+      "type": "versus",
+      "duration": 3.664,
+      "sfx": "impact",
+      "pops": [
+        0.45
+      ]
+    },
+    {
+      "type": "versus",
+      "duration": 3.664,
+      "sfx": "impact",
+      "pops": [
+        0.45
+      ]
+    },
+    {
+      "type": "cta",
+      "duration": 3.664,
+      "sfx": "whoosh"
+    }
+  ],
+  "audio": "today-2026-10-25-music.wav"
+}
