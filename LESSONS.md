@@ -7,6 +7,7 @@ Newest first.
 
 ## Open lessons
 
+- **26 Oct · results task: story_short.py also writes a *-short.mp4 with the same slug as motion_short.py (overwritten, harmless); WebSearch gives titles only, the FilGoal /matches page listed all finished scores in one fetch.** → Night results: fetch filgoal.com/matches first for the slate, then pair each score with an ESPN/Sky title via "<score> report Sky Sports ESPN" extended search.
 - **25 Oct · Ahly×Kitara FT task (21:10) produced no post/log; cycle at 23:14 found the 4-0 confirmed (club site + Dostor) and published it 2 h late; also story_short title «الأهلي في المجموعات» wrapped to 2 lines.** → Cycles after a planned FT task: check its match first (log + Metricool); story_short titles ≤ 14 chars.
 - **25 Oct · story_short.py: a subtitle + 3-item results spec overlaps the first row, and «أهم نتايج الجولة 8» wraps to 2 lines.** → Results shorts: no subtitle, title ≤ 14 chars («نتايج الجولة 8»); check the story.jpg once before rendering the endcard.
 - **25 Oct · 24 Oct 23:55 HOLDs (Arsenal 2-0 Everton, Zamalek 1-0 APR) were OLD results: search titles were Sky 1 Mar 2015 and CAF 16 Oct first leg.** → A search-title score is never an FT: fetch the page and check the match date is today and the season is 2026/27 (CAF CL 2nd-leg ties have a first leg a week earlier) before treating it as a HOLD or posting.
