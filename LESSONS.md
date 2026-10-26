@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **26 Oct (owner) · The Clasico (Barça 1-2 Real, 25 Oct 23:00) was never posted: PLAN named «Clasico+late FT 01:00» but no task existed; the 23:47 night task ran while it was live; the 01:12 cycle's standard searches returned only old pages.** → Every BIG match in PLAN must have its own FT task in list_triggers. For FT results use WebSearch **mode "extended"** with an English query «<home> vs <away> <Month D, YYYY> final score report»: it returned the ESPN «Final Score» title + the club's official report at once when standard search returned only old pages.
+
 - **26 Oct · results task: story_short.py also writes a *-short.mp4 with the same slug as motion_short.py (overwritten, harmless); WebSearch gives titles only, the FilGoal /matches page listed all finished scores in one fetch.** → Night results: fetch filgoal.com/matches first for the slate, then pair each score with an ESPN/Sky title via "<score> report Sky Sports ESPN" extended search.
 - **25 Oct · Ahly×Kitara FT task (21:10) produced no post/log; cycle at 23:14 found the 4-0 confirmed (club site + Dostor) and published it 2 h late; also story_short title «الأهلي في المجموعات» wrapped to 2 lines.** → Cycles after a planned FT task: check its match first (log + Metricool); story_short titles ≤ 14 chars.
 - **25 Oct · story_short.py: a subtitle + 3-item results spec overlaps the first row, and «أهم نتايج الجولة 8» wraps to 2 lines.** → Results shorts: no subtitle, title ≤ 14 chars («نتايج الجولة 8»); check the story.jpg once before rendering the endcard.

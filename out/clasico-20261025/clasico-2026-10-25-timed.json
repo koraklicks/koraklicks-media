@@ -1,0 +1,26 @@
+{
+  "slug": "clasico-2026-10-25",
+  "scenes": [
+    {
+      "type": "score",
+      "duration": 3.664,
+      "sfx": "impact"
+    },
+    {
+      "type": "stat",
+      "duration": 3.664,
+      "sfx": "impact"
+    },
+    {
+      "type": "score",
+      "duration": 3.664,
+      "sfx": "impact"
+    },
+    {
+      "type": "cta",
+      "duration": 3.664,
+      "sfx": "whoosh"
+    }
+  ],
+  "audio": "clasico-2026-10-25-music.wav"
+}

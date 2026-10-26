@@ -89,3 +89,5 @@ not add sources on their own.
   title or snippet that states the final score counts (no need to open a page that is still cached). Run
   `python3 scripts/source_check.py ft "<source1>" "<source2>"` → PASS. Score only: scorers, red cards and any news still follow
   the normal rules (name only the scorers both sources agree on, or none). Never from a page that shows a live minute.
+
+- **FT search that works (26 Oct):** WebSearch with `mode: "extended"` and an English query `<home> vs <away> <Month D, YYYY> final score report` → ESPN «<A> x-y <B> (<date>) Final Score» title + club official report. Use it as the FIRST search for any FT, before Arabic queries. Standard mode keeps returning old/undated pages for results.
