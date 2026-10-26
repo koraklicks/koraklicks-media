@@ -36,7 +36,7 @@ If you hit a new problem during a run, add one line to the top section of `LESSO
 - Facts already CONFIRMED in today's log are not re-verified. If nothing new: stop with one line.
 - Videos: one `--preview` check, then one render. No re-renders for small cosmetic changes.
 - Short log lines (≤ 250 chars) and short summaries.
-- Models (owner ✅ 14 Oct): routine tasks run on `claude-sonnet-5-5`. Any one-off task you create: right after create_trigger, set `model: claude-sonnet-5-5` with update_trigger. Keep long YouTube videos, the end-of-day review and the growth review on the default (stronger) model.
+- Models (owner ✅ 14 Oct): routine tasks run on `claude-sonnet-5-5`. Any one-off task you create: right after create_trigger, set `model: claude-sonnet-5-5` with update_trigger. Keep long YouTube videos and the growth review on the default (stronger) model; the end-of-day review runs on Sonnet since 26 Oct (owner ✅, the stronger one kept hanging).
 
 ## Memory between runs
 Every scheduled run is a fresh session. Keep the newsroom log in `logs/YYYY-MM-DD.md` (Cairo date):

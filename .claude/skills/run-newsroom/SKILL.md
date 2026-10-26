@@ -46,6 +46,7 @@ metadata:
    - never trust a "not yet posted" note from an earlier run: the log entries with a plannerUrl are the truth.
    If it was posted, only a missing network or a new stage (HT → FT) may go out.
    Also check the growth plan for the next 4 h: a big match without its «توقعوا النتيجة» post → make it now (live-match step 8).
+3c. **«رقم الماتش» (09:07 cycle, owner ✅ 26 Oct):** for each Al Ahly / Zamalek / Pyramids match played yesterday, one confirmed number from that match (official or 2 Tier-1) → photo slides (TikTok + IG carousel) + short, scheduled 10:00 (growth-playbook §0.8). Skip if no confirmed number.
 3b. **Morning round-up (09:07 cycle only, owner ✅ 21 Oct):** for each league whose round finished yesterday and has no
    «أهم نتايج الجولة» post yet (already_posted.sh), make one round-up Short (`motion_short.py`, all results, top scorer/star)
    scheduled for **10:00** → YouTube Short + IG Reel (+ end card), and the same results as a TikTok PHOTO post (growth-playbook §0.7).
