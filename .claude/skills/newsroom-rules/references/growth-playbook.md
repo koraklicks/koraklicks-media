@@ -23,6 +23,17 @@ weekly from real numbers. Never invent metrics; when data is missing, say so.
    - **Egyptian / Arab angle first** in every caption and hook: Salah, Marmoush, Ahly, Zamalek, Pyramids, Arab players before anything else.
    - **Comment bait on everything:** each post ends with one question («مين أحسن؟» / «توقعوا» / «اختار تشكيلتك» / «مين نجم الماتش؟») and the same question as `firstCommentText`.
    - **First 2 seconds = the fact** (score, number, name or question on screen); no logo intro, no slow build-up.
+8. **Content plan (owner ✅ 26 Oct 2026, from the 9–25 Oct numbers: TikTok photo avg 534 vs video 4.8; top post «الأهلي 3-3 القناة» photos 947):**
+   - **Instagram carousel = the TikTok photo slides.** Every results/news photo post on TikTok also goes to Instagram as a carousel POST (same 3–5 JPG slides, `instagramData.type` POST with several media). Single images only when there is one fact.
+   - **Egyptian big-match package** (any Al Ahly / Zamalek / Pyramids match): predictions KO−3 h, line-ups, FT within 15 min (X + IG story + TikTok photos + IG carousel + Reel/Short), and «رقم الماتش» the next morning at 10:00 (one confirmed number from the match).
+   - **Weekly series, made by the 16:47 «رقم/خبر اليوم» task (it follows this calendar first; plain «رقم اليوم» on the other days or when the series item has no confirmed data):**
+     - Monday: «صلاح الأسبوع ده» — Salah's confirmed numbers this week (matches, goals, assists) as photo slides + short.
+     - Tuesday: «تشكيلة الجولة» — 11 best players of the weekend round in the big leagues + Egypt (from a source's published team of the week, e.g. WhoScored/Sofascore/league official; credit it; never our own invented ratings), carousel + TikTok photos.
+     - Wednesday: «مين أحسن؟» — two players or two teams side by side with confirmed season numbers, question in the caption.
+     - Thursday: «الترتيب بعد الجولة» — table card for the league with the most interesting race (official league site).
+     - UCL weeks: «ليلة الأبطال» and «رقم الجولة» stay as in ucl.md.
+   - **Comment questions:** «مين أحسن؟» / «توقّع النتيجة» / «سؤال الجولة» (text quiz, no player photos) at the end of every post and as firstCommentText. (Metricool cannot read comments, so we don't announce winners.)
+   - **Timing:** non-live posts at 10:00 or 18:00; results as soon as confirmed.
 6. **Measure every week:** the Friday growth review compares followers and reach by format (reel vs card vs story), topic and hour, and moves the content mix toward what brings followers.
 Not automated (owner does by hand): WhatsApp channel, sharing in Facebook groups, Instagram Collabs with other pages, paid boosts.
 

@@ -64,7 +64,12 @@
       "WebFetch(domain:sporza.be)",
       "WebFetch(domain:www.sporza.be)",
       "WebFetch(domain:kooora.com)",
-      "WebFetch(domain:www.kooora.com)"
+      "WebFetch(domain:www.kooora.com)",
+      "WebFetch(domain:site.api.espn.com)",
+      "WebFetch(domain:fotmob.com)",
+      "WebFetch(domain:www.fotmob.com)",
+      "WebFetch(domain:goal.com)",
+      "WebFetch(domain:www.goal.com)"
     ]
   }
 }

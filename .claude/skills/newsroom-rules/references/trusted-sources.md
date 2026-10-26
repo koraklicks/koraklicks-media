@@ -91,3 +91,8 @@ not add sources on their own.
   the normal rules (name only the scorers both sources agree on, or none). Never from a page that shows a live minute.
 
 - **FT search that works (26 Oct):** WebSearch with `mode: "extended"` and an English query `<home> vs <away> <Month D, YYYY> final score report` → ESPN «<A> x-y <B> (<date>) Final Score» title + club official report. Use it as the FIRST search for any FT, before Arabic queries. Standard mode keeps returning old/undated pages for results.
+- **ESPN scoreboard (free, once the owner allows `site.api.espn.com` in claude.ai Settings → Capabilities):** WebFetch
+  `https://site.api.espn.com/apis/site/v2/sports/soccer/<league>/scoreboard?dates=YYYYMMDD` (league: eng.1, esp.1, ita.1, ger.1, fra.1,
+  ksa.1, egy.1, uefa.champions, uefa.europa, caf.champions). A match with status «Full Time»/STATUS_FULL_TIME there = ESPN for the
+  final-score rule; still needs one more source of the 2-of list (or the official site). If the fetch says «not on allowlist», the
+  domain isn't allowed yet: use the extended search.

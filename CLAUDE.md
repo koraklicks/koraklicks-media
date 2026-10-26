@@ -7,6 +7,7 @@ If you hit a new problem during a run, add one line to the top section of `LESSO
 ## Hard rules (owner decisions)
 - Confirmed news (official source, or two independent Tier-1 outlets) is published automatically, always with «📌 المصدر:».
 - Unconfirmed news is **never** published without the owner's ✅. List it for the owner and stop there.
+  Owner away (26 Oct 2026): an item waiting for his ✅ for more than 24 h is cancelled automatically (log «EXPIRED»), never published.
 - Long YouTube videos are PAUSED (owner 22 Oct 2026: 29 and 145 views, 11–57 s watched); instead, a round-up Short per league the morning after each round. Make a long video only if the owner asks.
 - Long YouTube videos and anything involving money (sponsors, prices, paid credits) need the owner's ✅.
   The daily story + short Shorts (noon fixtures, night results) are published to YouTube Shorts automatically (owner decision, 11 Oct 2026).
@@ -18,6 +19,8 @@ If you hit a new problem during a run, add one line to the top section of `LESSO
 - Through the Metricool connector, brand `7358209`, timezone Africa/Cairo. Details: `.claude/skills/newsroom-rules/references/metricool.md`.
 - Images/videos get public links with `bash .claude/skills/newsroom-rules/scripts/host_media.sh FILE...` (branch `media`).
 - Before posting, check `getScheduledPosts` and `logs/` so nothing is posted twice.
+- Content plan (owner ✅ 26 Oct 2026): every TikTok photo post also goes to Instagram as a carousel; Egyptian big-match package; weekly series (Mon صلاح الأسبوع ده · Tue تشكيلة الجولة · Wed مين أحسن؟ · Thu الترتيب بعد الجولة) by the 16:47 task. Details: growth-playbook.md §0.8.
+- Watchdog task «الحارس» (09:37 + 17:37) checks tasks, creates missing FT tasks for BIG matches, catches up yesterday's missed big results, writes a short review if the end-of-day one is missing.
 - Viral rules (owner ✅ 21 Oct 2026; override any task prompt that sends a results/news short to TikTok): TikTok gets results and news as a PHOTO post (3–5 JPG slides), the video goes only to Reels + YouTube Shorts; Egyptian/Arab angle first; the fact in the first line / first 2 s; a question at the end + as firstCommentText; morning round-up Short at 10:00 after each league round. Details: growth-playbook.md §0.7.
 - Every video gets the like/subscribe/follow end card (owner, 18 Oct 2026): `python3 .claude/skills/youtube-video/scripts/endcard.py VIDEO.mp4 OUT_DIR --theme dark|light` → `-yt.mp4` for YouTube (Shorts and long videos), `-social.mp4` for the Instagram Reel + TikTok post. Same length and music; never post the plain file.
 
