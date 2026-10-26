@@ -2,6 +2,8 @@
 """List scheduled newsroom cycles that left no log line.
 
 Usage: python3 scripts/missing_runs.py logs/YYYY-MM-DD.md
+(27 Oct review: log lines now look like «- 09:17 (26 Oct) · cycle», the time may be followed by «(date)»;
+the old regex saw ALL cycles of 26 Oct as missing, «noon fixtures» was not recognised and «no UCL» counted as a UCL day.)
 The 2-hour cycle runs at 01:07 and 09:07-23:07 every 2 h (Cairo). A cycle counts as
 logged if a log line containing «cycle» starts with a Cairo time within 0-45 min after the slot, or a
 line mentions the slot in UTC as «cycle HH:08Z». Review 19 Oct: 13:07/15:07/17:07/19:07
@@ -25,7 +27,7 @@ def mins(t):
 
 def main(path):
     text = open(path, encoding="utf-8").read()
-    times = [mins(t) for t in re.findall(r"^- (\d{2}:\d{2}) ·.*\bcycle\b", text, re.M)]
+    times = [mins(t) for t in re.findall(r"^- (\d{2}:\d{2})(?: \([^)]*\))? ·.*\bcycle\b", text, re.M)]
     utc_cycles = {(int(h) + CAIRO_UTC_OFFSET) % 24 for h in re.findall(r"cycle (\d{2}):0\dZ", text)}
     missing = []
     for slot in SLOTS:
@@ -35,12 +37,12 @@ def main(path):
             missing.append(slot)
     print("MISSING " + ", ".join(missing) if missing else "OK all cycles logged")
     # Review 20 Oct: 19:12 and 21:09 cycles on 19 Oct logged «STARTED · cycle» and then nothing (died mid-plan).
-    lines = re.findall(r"^- (\d{2}:\d{2}) · (.*)$", text, re.M)
+    lines = re.findall(r"^- (\d{2}:\d{2})(?: \([^)]*\))? · (.*)$", text, re.M)
     stuck = []
     for i, (t, rest) in enumerate(lines):
         if "STARTED" in rest and "cycle" in rest:
             later = [mins(t2) for t2, r2 in lines[i + 1:] if "STARTED" not in r2]
-            if not any(0 < m - mins(t) <= 60 for m in later):
+            if not any(0 <= m - mins(t) <= 60 for m in later):
                 stuck.append(t)
     if stuck:
         print("STUCK (STARTED, no result line within 60 min) " + ", ".join(stuck))
@@ -48,7 +50,7 @@ def main(path):
 
 DAILY = [  # (label, regex that proves the piece ran or was skipped with a line)
     ("PLAN (planner 08:47 / cycle)", r"· PLAN ·"),
-    ("noon story 12:47", r"NOON|ماتشات النهارده|يوم الكبار"),
+    ("noon story 12:47", r"NOON|noon (story|fixtures)|ماتشات النهارده|يوم الكبار"),
     ("«رقم اليوم» 16:47", r"-NUM\b|رقم اليوم|خبر اليوم"),
     ("«ليلة العرب» 23:22", r"LAYLAT-ARAB|ليلة العرب"),
     ("night results 23:47", r"-RES\b|نتايج النهارده"),
@@ -61,7 +63,7 @@ UCL_DAILY = [
 
 def daily(text):
     missing = [lab for lab, rx in DAILY if not re.search(rx, text)]
-    ucl_day = re.search(r"· PLAN ·.*UCL|NOON.*UCL", text)
+    ucl_day = re.search(r"· PLAN ·.*(?<!no )UCL|NOON.*(?<!no )UCL", text)
     if ucl_day:
         missing += [lab for lab, rx in UCL_DAILY if not re.search(rx, text)]
     print("DAILY MISSING " + ", ".join(missing) if missing else "OK daily pieces logged")
