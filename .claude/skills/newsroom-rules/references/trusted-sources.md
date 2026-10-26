@@ -91,8 +91,10 @@ not add sources on their own.
   the normal rules (name only the scorers both sources agree on, or none). Never from a page that shows a live minute.
 
 - **FT search that works (26 Oct):** WebSearch with `mode: "extended"` and an English query `<home> vs <away> <Month D, YYYY> final score report` → ESPN «<A> x-y <B> (<date>) Final Score» title + club official report. Use it as the FIRST search for any FT, before Arabic queries. Standard mode keeps returning old/undated pages for results.
-- **ESPN scoreboard (free, once the owner allows `site.api.espn.com` in claude.ai Settings → Capabilities):** WebFetch
-  `https://site.api.espn.com/apis/site/v2/sports/soccer/<league>/scoreboard?dates=YYYYMMDD` (league: eng.1, esp.1, ita.1, ger.1, fra.1,
-  ksa.1, egy.1, uefa.champions, uefa.europa, caf.champions). A match with status «Full Time»/STATUS_FULL_TIME there = ESPN for the
-  final-score rule; still needs one more source of the 2-of list (or the official site). If the fetch says «not on allowlist», the
-  domain isn't allowed yet: use the extended search.
+- **ESPN scoreboard — FIRST stop for every final score (owner allowed site.api.espn.com on 26 Oct 2026; works from the shell):**
+  `python3 scripts/espn_scores.py YYYYMMDD [league …] [--team NAME]` → «home x-y away | STATUS_FULL_TIME | goals (minute scorer [team])».
+  Leagues: eng.1 esp.1 ita.1 ger.1 fra.1 ksa.1 tur.1 uefa.champions uefa.europa uefa.europa.conf caf.champions caf.confed afc.champions.
+  STATUS_FULL_TIME = ESPN for the final-score rule; add one more of the 2-of list (Sky/beIN/Goal/FotMob/Yallakora/FilGoal) or the
+  official site → `source_check.py ft "ESPN" "<2nd>"`. Dates are UTC: a 23:00 Cairo kick-off is on the same ESPN date; check the next date
+  if not found. **Egyptian Premier League is NOT on ESPN** → Yallakora/FilGoal/Ahram as before. Scorer minutes may differ by 1' from club
+  reports: prefer the club report.

@@ -41,6 +41,7 @@ Classify every story before anything is written. Use the source tiers in
 | **مرفوض (REJECTED)** | Fake, satire, unsourced, or contradicted by an official source | Drop it. Log the reason. |
 
 Additional hard rules:
+- **Final scores: run `python3 scripts/espn_scores.py YYYYMMDD <league>` FIRST** (ESPN, exact, all big leagues + UCL + CAF; not the Egyptian league).
 - **Final score (owner ✅ 22 Oct):** two of ESPN/Sky/beIN/Goal/FotMob/Yallakora/FilGoal with the same score = CONFIRMED (`source_check.py ft …`, search titles count; references/trusted-sources.md «Final score rule»).
 - **Run `python3 scripts/source_check.py match|news <source> …` before every result/news post (firm, review 21 Oct: six
   results on 20 Oct went out on btolat/101greatgoals/ajel/ysscores/AA/Hürriyet titles, REPEATED from 12–13 Oct).** HOLD = don't post;
