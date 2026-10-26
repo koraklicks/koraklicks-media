@@ -7,6 +7,7 @@ Newest first.
 
 ## Open lessons
 
+- **26 Oct · ليلة العرب: Ahram English/beIN/Goal pages blocked or stale, 365Scores cached pre-match; Salah role in Rizespor 3-4 Trabzonspor conflicted (Ahram "helps", Fanzword "blank").** → Rabia/En-Nesyri confirmed via ESPN API + Ahram Arabic title / le360 page (source_check PASS); a player whose contribution sources disagree is left out; check ESPN API first.
 - **26 Oct (owner) · The Clasico (Barça 1-2 Real, 25 Oct 23:00) was never posted: PLAN named «Clasico+late FT 01:00» but no task existed; the 23:47 night task ran while it was live; the 01:12 cycle's standard searches returned only old pages.** → Every BIG match in PLAN must have its own FT task in list_triggers. For FT results run `scripts/espn_scores.py` first (26 Oct: ESPN allowed); otherwise WebSearch **mode "extended"** with an English query «<home> vs <away> <Month D, YYYY> final score report»: it returned the ESPN «Final Score» title + the club's official report at once when standard search returned only old pages.
 
 - **26 Oct · results task: story_short.py also writes a *-short.mp4 with the same slug as motion_short.py (overwritten, harmless); WebSearch gives titles only, the FilGoal /matches page listed all finished scores in one fetch.** → Night results: fetch filgoal.com/matches first for the slate, then pair each score with an ESPN/Sky title via "<score> report Sky Sports ESPN" extended search.
