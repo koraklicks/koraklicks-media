@@ -1,0 +1,35 @@
+{
+  "slug": "matches-2026-10-27",
+  "scenes": [
+    {
+      "type": "versus",
+      "duration": 3.664,
+      "sfx": "impact",
+      "pops": [
+        0.45
+      ]
+    },
+    {
+      "type": "versus",
+      "duration": 3.664,
+      "sfx": "impact",
+      "pops": [
+        0.45
+      ]
+    },
+    {
+      "type": "versus",
+      "duration": 3.664,
+      "sfx": "impact",
+      "pops": [
+        0.45
+      ]
+    },
+    {
+      "type": "cta",
+      "duration": 3.664,
+      "sfx": "whoosh"
+    }
+  ],
+  "audio": "matches-2026-10-27-music.wav"
+}
