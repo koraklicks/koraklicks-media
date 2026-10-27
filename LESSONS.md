@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **27 Oct · night results at 23:50 Cairo: Roma, Dortmund, Torino, Arsenal still live; Abha 0-1 Faisaly had only ESPN (FilGoal /matches cached pre-match); ESPN vs FotMob disagreed on the Sassuolo 7' scorer.** → Results task: ESPN API first, FotMob page fetch is the fastest 2nd source; leave out scorers that disagree.
+
 - **26 Oct · night results: Qadsiah 1-1 Sadd had only ESPN API + Arab News (not an approved FT source); Goal/beIN title searches gave the 2nd source for the other three.** → Search «<teams> <score> Goal beIN» extended; a match with no 2nd approved source is left out and listed as HOLD.
 
 - **26 Oct · ليلة العرب: Ahram English/beIN/Goal pages blocked or stale, 365Scores cached pre-match; Salah role in Rizespor 3-4 Trabzonspor conflicted (Ahram "helps", Fanzword "blank").** → Rabia/En-Nesyri confirmed via ESPN API + Ahram Arabic title / le360 page (source_check PASS); a player whose contribution sources disagree is left out; check ESPN API first.
