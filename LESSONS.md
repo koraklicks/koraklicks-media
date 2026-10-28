@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **28 Oct review · Liverpool XI 21:50, Zamalek FT 22:05 and Serie A early FT 22:40 tasks left no log line and no post; the 4 results went out at 00:01 (~2 h late).** → Watchdog 09:37 checks the previous evening's XI/FT task logs and catches up; an FT task that cannot finish must still write a «HOLD/NOT RUN» line.
+
 - **28 Oct · night results task prompt says «short → TikTok», but the viral rule says TikTok = photo post.** → Follow the rule: TikTok gets story+scene JPGs (5 slides, with IG carousel); the video goes to IG Reel + YT Short only.
 
 - **28 Oct · «مين أحسن؟» player-stat comparison: ESPN stats page/API returned nothing readable, FotMob alone is one source.** → Wednesday series: pick the pair AFTER finding two approved sources (ESPN/Sky/beIN article with the numbers); otherwise skip with one line.
