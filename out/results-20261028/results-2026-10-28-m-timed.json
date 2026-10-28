@@ -1,0 +1,31 @@
+{
+  "slug": "results-2026-10-28-m",
+  "scenes": [
+    {
+      "type": "score",
+      "duration": 3.664,
+      "sfx": "impact"
+    },
+    {
+      "type": "score",
+      "duration": 3.664,
+      "sfx": "impact"
+    },
+    {
+      "type": "score",
+      "duration": 3.664,
+      "sfx": "impact"
+    },
+    {
+      "type": "score",
+      "duration": 3.664,
+      "sfx": "impact"
+    },
+    {
+      "type": "cta",
+      "duration": 3.664,
+      "sfx": "whoosh"
+    }
+  ],
+  "audio": "results-2026-10-28-m-music.wav"
+}
