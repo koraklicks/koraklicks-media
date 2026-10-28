@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **28 Oct · night results task prompt says «short → TikTok», but the viral rule says TikTok = photo post.** → Follow the rule: TikTok gets story+scene JPGs (5 slides, with IG carousel); the video goes to IG Reel + YT Short only.
+
 - **28 Oct · «مين أحسن؟» player-stat comparison: ESPN stats page/API returned nothing readable, FotMob alone is one source.** → Wednesday series: pick the pair AFTER finding two approved sources (ESPN/Sky/beIN article with the numbers); otherwise skip with one line.
 
 - **28 Oct · late-night FTs (KO ≥ 22:45) stayed HOLD at 01:15 because standard searches returned old pages; at 09:10 a single extended search "<teams> <competition> result report" gave Sky/beIN/ESPN titles at once.** → In the 01:xx cycle use extended mode first for late FTs; Sky title and URL can disagree on penalty score, so leave the shootout score out.
