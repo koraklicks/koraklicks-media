@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **28 Oct · «مين أحسن؟» player-stat comparison: ESPN stats page/API returned nothing readable, FotMob alone is one source.** → Wednesday series: pick the pair AFTER finding two approved sources (ESPN/Sky/beIN article with the numbers); otherwise skip with one line.
+
 - **28 Oct · late-night FTs (KO ≥ 22:45) stayed HOLD at 01:15 because standard searches returned old pages; at 09:10 a single extended search "<teams> <competition> result report" gave Sky/beIN/ESPN titles at once.** → In the 01:xx cycle use extended mode first for late FTs; Sky title and URL can disagree on penalty score, so leave the shootout score out.
 
 - **27 Oct review · Night results 00:05 went to TikTok as VIDEO (IG Reel + TikTok in one post) against the photo rule (REPEATED 22 Oct); Dortmund 2-2 Bremen / Fleetwood 1-1 Arsenal (22:45/23:00 KO) were still live at 23:55 so no FT; the 26 Oct review claimed EXPIRED lines that were not in the repo.** → Results = separate posts: TikTok photo slides, Reel/Short video elsewhere; on cup nights with KO ≥ 22:45 the 01:07 cycle posts the FTs; after writing EXPIRED/log lines, `git diff --stat` must show them before the push.
