@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **30 Oct · Nassr 5-3 stayed ESPN-only for 3 h in standard/Arabic searches; an English search limited to allowed_domains goal.com/skysports.com returned Goal's player-ratings page with the full score.** → For SPL/European FTs with one source, run an English `allowed_domains` search (goal.com, skysports.com, beinsports.com) with "<team> player ratings"/"report" before giving up; WebFetch the Goal page to read the score.
+
 - **29 Oct · Metricool createScheduledPost with Africa/Cairo scheduled everything +1 h (22:38 → 23:38) on the night Egypt's DST ends; the same minute given in timezone UTC landed correctly.** → Until 30 Oct (and re-check after any DST change): send publicationDate in UTC (Cairo−3 h until midnight 29→30 Oct, then Cairo−2 h) and check the returned Cairo time before moving on; fix with updateScheduledPost.
 
 - **29 Oct · Modern×Ahly line-ups task fired at KO−20 (not −70); FilGoal/Yallakora article URLs are too long for WebFetch and short FilGoal URLs need a permission prompt, so only headlines were readable.** → Line-ups task: search with allowed_domains filgoal.com/yallakora.com first; fetch the FilGoal related-link URL list from any short FilGoal page; if only headlines are readable, post only the facts both headlines show; proofread text before createScheduledPost (a garbled line was caught and fixed before it published).
