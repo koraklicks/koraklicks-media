@@ -1,0 +1,43 @@
+{
+  "slug": "big-day-2026-10-29-m",
+  "scenes": [
+    {
+      "type": "versus",
+      "duration": 3.664,
+      "sfx": "impact",
+      "pops": [
+        0.45
+      ]
+    },
+    {
+      "type": "versus",
+      "duration": 3.664,
+      "sfx": "impact",
+      "pops": [
+        0.45
+      ]
+    },
+    {
+      "type": "versus",
+      "duration": 3.664,
+      "sfx": "impact",
+      "pops": [
+        0.45
+      ]
+    },
+    {
+      "type": "versus",
+      "duration": 3.664,
+      "sfx": "impact",
+      "pops": [
+        0.45
+      ]
+    },
+    {
+      "type": "cta",
+      "duration": 3.664,
+      "sfx": "whoosh"
+    }
+  ],
+  "audio": "big-day-2026-10-29-m-music.wav"
+}
