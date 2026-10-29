@@ -1,0 +1,16 @@
+{
+  "slug": "ft-ahly-modern-20261029",
+  "scenes": [
+    {
+      "type": "score",
+      "duration": 3.664,
+      "sfx": "impact"
+    },
+    {
+      "type": "cta",
+      "duration": 3.664,
+      "sfx": "whoosh"
+    }
+  ],
+  "audio": "ft-ahly-modern-20261029-music.wav"
+}
