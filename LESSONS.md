@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **29 Oct · the 01:15 late-FT task left no log line or post again (Liverpool/City pens, Genoa, Monza went out at 09:30).** → 09:xx cycle checks late FTs first (ESPN API + extended search "<teams> result"); Sky titles say "fifth round", ESPN says "quarter-finals" for the same EFL Cup tie, so leave the round out.
+
 - **28 Oct review · Liverpool XI 21:50, Zamalek FT 22:05 and Serie A early FT 22:40 tasks left no log line and no post; the 4 results went out at 00:01 (~2 h late).** → Watchdog 09:37 checks the previous evening's XI/FT task logs and catches up; an FT task that cannot finish must still write a «HOLD/NOT RUN» line.
 
 - **28 Oct · night results task prompt says «short → TikTok», but the viral rule says TikTok = photo post.** → Follow the rule: TikTok gets story+scene JPGs (5 slides, with IG carousel); the video goes to IG Reel + YT Short only.
