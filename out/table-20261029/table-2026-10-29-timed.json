@@ -1,0 +1,21 @@
+{
+  "slug": "table-2026-10-29",
+  "scenes": [
+    {
+      "type": "list",
+      "duration": 5.496,
+      "sfx": "pop"
+    },
+    {
+      "type": "stat",
+      "duration": 3.664,
+      "sfx": "impact"
+    },
+    {
+      "type": "cta",
+      "duration": 3.664,
+      "sfx": "whoosh"
+    }
+  ],
+  "audio": "table-2026-10-29-music.wav"
+}
