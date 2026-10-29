@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **29 Oct · Modern×Ahly line-ups task fired at KO−20 (not −70); FilGoal/Yallakora article URLs are too long for WebFetch and short FilGoal URLs need a permission prompt, so only headlines were readable.** → Line-ups task: search with allowed_domains filgoal.com/yallakora.com first; fetch the FilGoal related-link URL list from any short FilGoal page; if only headlines are readable, post only the facts both headlines show; proofread text before createScheduledPost (a garbled line was caught and fixed before it published).
+
 - **29 Oct · the 01:15 late-FT task left no log line or post again (Liverpool/City pens, Genoa, Monza went out at 09:30).** → 09:xx cycle checks late FTs first (ESPN API + extended search "<teams> result"); Sky titles say "fifth round", ESPN says "quarter-finals" for the same EFL Cup tie, so leave the round out.
 
 - **28 Oct review · Liverpool XI 21:50, Zamalek FT 22:05 and Serie A early FT 22:40 tasks left no log line and no post; the 4 results went out at 00:01 (~2 h late).** → Watchdog 09:37 checks the previous evening's XI/FT task logs and catches up; an FT task that cannot finish must still write a «HOLD/NOT RUN» line.
