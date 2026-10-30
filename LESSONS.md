@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **30 Oct · WebFetch of btolat/dostor/masrawy listings works but they are not approved sources; Yallakora/FilGoal article URLs are too long, yet `yallakora.com/matches-center?date=MM%2FDD%2FYYYY` and the FilGoal championship page are short and readable.** → Fixtures task: confirm kick-offs with the Yallakora date URL + ESPN API/club site; use btolat/dostor only to find the slate. Egypt is UTC+2 from 30 Oct (Cairo = UTC+2).
+
 - **30 Oct · Nassr 5-3 stayed ESPN-only for 3 h in standard/Arabic searches; an English search limited to allowed_domains goal.com/skysports.com returned Goal's player-ratings page with the full score.** → For SPL/European FTs with one source, run an English `allowed_domains` search (goal.com, skysports.com, beinsports.com) with "<team> player ratings"/"report" before giving up; WebFetch the Goal page to read the score.
 
 - **29 Oct · Metricool createScheduledPost with Africa/Cairo scheduled everything +1 h (22:38 → 23:38) on the night Egypt's DST ends; the same minute given in timezone UTC landed correctly.** → Until 30 Oct (and re-check after any DST change): send publicationDate in UTC (Cairo−3 h until midnight 29→30 Oct, then Cairo−2 h) and check the returned Cairo time before moving on; fix with updateScheduledPost.
