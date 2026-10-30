@@ -90,6 +90,7 @@ Metricool best-time scores for 16–22 Oct (Metricool's model; our audience is s
 - **YouTube:** peak 16:00 every day (weekdays 14:00–16:00 also strong; 10:00 is a second peak). Weakest 01:00–03:00.
 - **X:** not available (best-times 403, impressions empty — same as 16 Oct).
 Our own posts: the TikTok photo posts that broke 300 views went out 14:12–23:20, so the format matters more than the hour at our size.
+Re-checked 30 Oct (23–29 Oct scores): unchanged — IG 10:00 (2nd 18:00), TikTok 10:00/12:00/18:00, YouTube 16:00 (10:00 second).
 Rule from now on: non-live content (رقم اليوم، ماتشات النهارده، round-ups) aims at 10:00 (IG/TikTok) and 16:00 for YouTube-only uploads; live/FT posts keep going out at once.
 
 ## 7. Experiments (always run one, one variable at a time)
@@ -108,7 +109,25 @@ video length) on at least 5 posts against a comparable control, then keep the wi
 - YouTube: one «أهم نتايج الجولة …» round-up Short per league round at 10:00 the morning after (EGY, SPL, PL, LaLiga, Serie A), vs the night-of result Shorts (16–20 Oct: 4 Shorts, 7–212 views, avg 94).
 - X: no experiment (not measurable).
 
+**Week 24–30 Oct 2026 — result (30 Oct review):**
+- TikTok: 12 photo posts (✅ target) avg 310 views (412 without the <24 h 29 Oct posts) vs 8 fixture VIDEOS avg 172. **Photo wins again**, but the 10:00 «ماتشات النهارده» kept going to TikTok as video.
+- Instagram carousel vs single: 6 carousels avg 9.8 views vs 1 single 11 → **no difference**; feed posts ≈ 1/8 of a Reel (avg 78). Owner asked whether to keep carousels (plan §0.8).
+- YouTube 10:00 round-up Short: ran once (25 Oct 08:24 PL round 8: 95) vs night-of results Shorts avg 50 → promising, carried over.
+
+**Week 31 Oct–6 Nov 2026** (judge on 48 h views in the 6 Nov review):
+- TikTok: «ماتشات النهارده» at 10:00 as a PHOTO post (cover + one slide per match), ≥ 5 posts, vs the 8 fixture videos of 23–29 Oct (avg 172).
+- Instagram: one match per Reel for BIG/Egyptian results (≥ 5) vs the multi-result night Reel (≥ 5); same 18:00/at-once timing.
+- YouTube: «أهم نتايج الجولة …» round-up Short at 10:00 the morning after each finished round (PL, LaLiga, Serie A, SPL, EGY; target ≥ 3) vs night-of results Shorts (avg 50).
+- X: no experiment (not measurable).
+
 ## 8. What we learned (updated weekly by the growth-analyst)
+
+### Week 23–29 Oct 2026 (vs 16–22 Oct)
+- **TikTok carried the brand:** 5,097 views on the week's posts (×2.2 vs 2,283), followers 4 → 6, interactions 34 vs 19. 12 photo posts avg 310; even fixture videos rose to avg 172 (from 4.8), so the account is now being pushed — keep daily output.
+- **Egyptian/Arab + big-match angle won:** top 3 = ليلة العرب (ربيعة/النصيري) 448, الأهلي 4-0 كيتارا 445, فيلا 2-1 سيتي 423; Clasico 417 (TikTok), 163 (IG, top Reel), 167 (YT, top Short with team names + score in the title).
+- **Instagram flat:** reach 1,530 vs 1,342 (+14%), Reels avg 78 vs 87, followers 18 → 18. Feed carousels 6–15 views each; fixture Reels 6–38 views (except Clasico day 109).
+- **YouTube:** subs 9 → 11; 15 Shorts 23–27 Oct avg 78 (night results Shorts the weakest, 25–40). 28–29 Oct not synced. Revenue 0. Long videos still paused.
+- **X:** 6 posts (19 before), impressions 0 → third week unmeasurable.
 
 ### Week 16–22 Oct 2026 (vs 9–15 Oct)
 - **TikTok photos confirmed (≈ ×110 per post):** 4 photo posts on 21 Oct = 2,134 views (الأهلي 3-3 القناة 947, كومو 4-1 يونايتد + ليل×جالاتاسراي 439, بايرن 2-2 أرسنال 413, رقم اليوم 40 هدف 335); 16 videos = 77 views total. TikTok followers 3 → 4.

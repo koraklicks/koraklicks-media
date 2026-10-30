@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **30 Oct growth review · the 10:00 «ماتشات النهارده» went to TikTok as VIDEO all week (8 posts, avg 172) while photo posts averaged 310; TikTok Creator Academy page is robots-blocked for WebFetch.** → 10:00 fixtures task: TikTok = photo post (cover + one slide per match), video only to Reel/Short; TikTok monetization thresholds: owner checks in the app (Creator tools) until an official page is readable.
+
 - **30 Oct · WebFetch of btolat/dostor/masrawy listings works but they are not approved sources; Yallakora/FilGoal article URLs are too long, yet `yallakora.com/matches-center?date=MM%2FDD%2FYYYY` and the FilGoal championship page are short and readable.** → Fixtures task: confirm kick-offs with the Yallakora date URL + ESPN API/club site; use btolat/dostor only to find the slate. Egypt is UTC+2 from 30 Oct (Cairo = UTC+2).
 
 - **30 Oct · Nassr 5-3 stayed ESPN-only for 3 h in standard/Arabic searches; an English search limited to allowed_domains goal.com/skysports.com returned Goal's player-ratings page with the full score.** → For SPL/European FTs with one source, run an English `allowed_domains` search (goal.com, skysports.com, beinsports.com) with "<team> player ratings"/"report" before giving up; WebFetch the Goal page to read the score.
