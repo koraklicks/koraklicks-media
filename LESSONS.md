@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **30 Oct night results · FilGoal /matches and FotMob match pages were cached pre-match (Ittihad Alexandria 0-0 stayed Yallakora-only); FilGoal's finished list did confirm the SPL FTs.** → Night results: ESPN API first, FilGoal /matches for SPL second source, Goal article via WebFetch for others; Egyptian-league FT with only Yallakora = HOLD.
+
 - **30 Oct growth review · the 10:00 «ماتشات النهارده» went to TikTok as VIDEO all week (8 posts, avg 172) while photo posts averaged 310; TikTok Creator Academy page is robots-blocked for WebFetch.** → 10:00 fixtures task: TikTok = photo post (cover + one slide per match), video only to Reel/Short; TikTok monetization thresholds: owner checks in the app (Creator tools) until an official page is readable.
 
 - **30 Oct · WebFetch of btolat/dostor/masrawy listings works but they are not approved sources; Yallakora/FilGoal article URLs are too long, yet `yallakora.com/matches-center?date=MM%2FDD%2FYYYY` and the FilGoal championship page are short and readable.** → Fixtures task: confirm kick-offs with the Yallakora date URL + ESPN API/club site; use btolat/dostor only to find the slate. Egypt is UTC+2 from 30 Oct (Cairo = UTC+2).
