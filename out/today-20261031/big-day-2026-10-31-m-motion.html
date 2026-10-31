@@ -1,0 +1,99 @@
+<html><head><meta charset=utf-8><style>
+@font-face{font-family:LZ;src:url(file:///home/claude/koraklicks-media/.claude/skills/youtube-video/assets/fonts/lalezar-arabic-400-normal.woff2)}
+@font-face{font-family:AN;src:url(file:///home/claude/koraklicks-media/.claude/skills/youtube-video/assets/fonts/anton-latin-400-normal.woff2)}
+@font-face{font-family:SM;src:url(file:///home/claude/koraklicks-media/.claude/skills/youtube-video/assets/fonts/space-mono-latin-700-normal.woff2)}
+@font-face{font-family:CA;src:url(file:///home/claude/koraklicks-media/.claude/skills/youtube-video/assets/fonts/cairo-arabic-800-normal.woff2)}
+@font-face{font-family:CA;src:url(file:///home/claude/koraklicks-media/.claude/skills/youtube-video/assets/fonts/cairo-latin-900-normal.woff2);unicode-range:U+0000-00FF}
+@font-face{font-family:EM;src:url(file:///home/claude/koraklicks-media/.claude/skills/youtube-video/assets/fonts/emoji/NotoColorEmoji.ttf)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg);color:var(--fg)}
+:root{--bg:#F3F8FC;--bg2:#DDF5E7;--bg3:#DCEBFA;--fg:#0B1620;--mute:#5B6B7A;--acc:#00A84F;--acc2:#2F80ED;--line:#D5E0EA;--card:#FFFFFF;--cardb:#E3ECF4;--ghost:#E6EFF7;--shadow:0 18px 50px rgba(20,60,90,.12);--bub:#FFFFFF;--bub2:#00A84F;--bub2fg:#ffffff;--flash:#ffffff}
+.stage{position:absolute;inset:0;transform-origin:50% 50%}
+.bg{position:absolute;inset:-60px;background:radial-gradient(ellipse at 20% 15%,var(--bg2) 0%,transparent 55%),radial-gradient(ellipse at 85% 80%,var(--bg3) 0%,transparent 55%),var(--bg)}
+.stripes{position:absolute;inset:-400px;opacity:.07;background:repeating-linear-gradient(-35deg,var(--acc) 0 4px,transparent 4px 90px)}
+.orb{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,var(--acc) 0%,transparent 70%);opacity:.10}
+.ghost{position:absolute;left:50%;top:52%;font-family:AN;font-size:330px;line-height:.8;color:var(--ghost);white-space:nowrap}
+.top{position:absolute;top:150px;left:80px;right:80px;display:flex;justify-content:space-between;align-items:center;z-index:5}
+.top img{height:54px}
+.lab{font-family:SM;font-size:24px;letter-spacing:.22em;color:var(--acc)}
+.bars{position:absolute;top:110px;left:80px;right:80px;display:flex;gap:10px;z-index:5}
+.bars i{flex:1;height:6px;background:var(--line);border-radius:3px;overflow:hidden;position:relative}
+.bars i b{position:absolute;inset:0;width:0;background:var(--fg)}
+.foot{position:absolute;bottom:160px;left:80px;right:80px;display:flex;justify-content:space-between;align-items:center;border-top:2px solid var(--line);padding-top:28px;z-index:5}
+.foot .h{font-family:SM;font-size:24px;color:var(--mute)}
+.foot .s{font-family:CA;font-size:28px;color:var(--mute);direction:rtl}
+.flash{position:absolute;inset:0;background:var(--flash);opacity:0;z-index:9;pointer-events:none}
+.scene{position:absolute;inset:0;opacity:0}
+.c{position:absolute;left:80px;right:80px;direction:rtl;text-align:right}
+.a{will-change:transform,opacity}
+.chip{display:inline-block;font-family:CA;font-size:36px;padding:10px 30px;border-radius:999px;background:var(--acc);color:#fff}
+.huge{font-family:LZ,EM;font-size:168px;line-height:1.08}
+.huge .w{display:inline-block;margin-left:26px}
+.sub{font-family:CA,EM;font-size:52px;color:var(--mute);margin-top:26px}
+.emo{font-family:EM;font-size:230px;line-height:1;display:inline-block}
+.comp{font-family:CA;font-size:40px;color:var(--mute)}
+.card{background:var(--card);border:2px solid var(--cardb);border-radius:40px;box-shadow:var(--shadow);padding:44px 50px}
+.vs-wrap{position:relative;margin-top:44px}
+.vs-wrap .card + .card{margin-top:150px}
+.tn{font-family:LZ;font-size:110px;line-height:1.1}
+.star{font-family:CA,EM;font-size:40px;color:var(--acc);margin-top:6px}
+.vs{position:absolute;left:50%;top:50%;width:170px;height:170px;margin:-85px 0 0 -85px;border-radius:50%;background:var(--acc);color:#fff;
+    font-family:AN;font-size:84px;line-height:170px;text-align:center;direction:ltr;z-index:3;box-shadow:0 0 0 14px var(--bg)}
+.tm{font-family:AN;font-size:200px;line-height:1;direction:ltr;text-align:right;margin-top:20px}
+.note{font-family:CA,EM;font-size:40px;color:var(--mute);margin-top:22px}
+.ln{display:flex;justify-content:space-between;align-items:center;direction:rtl;padding:18px 0}
+.ln + .ln{border-top:2px solid var(--line)}
+.ln .tn{font-size:100px}
+.sc{font-family:AN;font-size:190px;line-height:1;color:var(--fg)}
+.fig{font-family:AN;font-size:330px;line-height:1;color:var(--acc);direction:ltr;text-align:right}
+.fl{font-family:LZ,EM;font-size:80px;line-height:1.2;margin-top:10px}
+.panel{position:relative;height:520px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.panel + .panel{margin-top:40px}
+.panel .cap{font-family:LZ,EM;font-size:84px;line-height:1.15;flex:1}
+.panel .emo{font-size:250px}
+.panel.bad{background:var(--acc2);color:#fff;border-color:transparent}
+.tag{position:absolute;top:-26px;right:40px;font-family:SM;font-size:26px;letter-spacing:.2em;padding:8px 18px;border-radius:10px;background:var(--fg);color:var(--bg);direction:ltr}
+.phone{background:var(--card);border:2px solid var(--cardb);border-radius:56px;box-shadow:var(--shadow);overflow:hidden}
+.phone .hd{display:flex;align-items:center;gap:22px;padding:30px 40px;border-bottom:2px solid var(--line);font-family:CA,EM;font-size:42px;direction:rtl}
+.phone .av{width:76px;height:76px;border-radius:50%;background:var(--acc);display:flex;align-items:center;justify-content:center;font-family:EM;font-size:44px}
+.phone .bd{padding:30px 34px 40px;display:flex;flex-direction:column;gap:24px;min-height:860px}
+.bb{max-width:80%;padding:22px 30px;border-radius:34px;font-family:CA,EM;font-size:44px;line-height:1.35;background:var(--bub);border:2px solid var(--cardb)}
+.bb .nm{display:block;font-size:28px;color:var(--acc2)}
+.bb.r{align-self:flex-start;border-top-right-radius:8px}
+.bb.l{align-self:flex-end;background:var(--bub2);color:var(--bub2fg);border-color:transparent;border-top-left-radius:8px}
+.bb.l .nm{color:inherit;opacity:.75}
+.row{display:flex;align-items:center;justify-content:space-between;padding:26px 36px;margin-top:22px}
+.row .nm{font-family:LZ;font-size:80px}
+.row .cl{font-family:CA,EM;font-size:44px;color:var(--mute)}
+.row .e{font-family:EM;font-size:70px;margin-left:26px}
+.arrow{font-family:EM;font-size:120px;display:inline-block;margin-top:40px}
+</style></head><body><div class=stage id=stage><div class=bg></div><div class=stripes id=stripes></div><div class=orb id=o1></div><div class=orb id=o2></div><div class=ghost id=ghost>BIG DAY</div><div class=bars><i><b></b></i><i><b></b></i><i><b></b></i><i><b></b></i><i><b></b></i></div><div class=top><img src="file:///home/claude/koraklicks-media/.claude/assets/logo/kora-klicks-wordmark-transparent-black.svg"><span class=lab>MATCHDAY · SAT 31 OCT</span></div><div class=scene><div class=c style="top:400px"><div class="a comp" data-a="up" data-d="0" >يوم الكبار · الدوري الإنجليزي</div><div class=vs-wrap><div class="a card" data-a="right" data-d="0.05" ><div class=tn>تشيلسي</div></div><div class="a card" data-a="left" data-d="0.2" ><div class=tn>مانشستر يونايتد</div></div><div class="a vs" data-a="slam" data-d="0.45" >VS</div></div><div class="a tm" data-a="up" data-d="0.8" >14:30</div><div class="a note" data-a="up" data-d="1.0" >بتوقيت القاهرة</div></div></div><div class=scene><div class=c style="top:400px"><div class="a comp" data-a="up" data-d="0" >الدوري الألماني</div><div class=vs-wrap><div class="a card" data-a="right" data-d="0.05" ><div class=tn>بايرن ميونخ</div></div><div class="a card" data-a="left" data-d="0.2" ><div class=tn>بوروسيا دورتموند</div></div><div class="a vs" data-a="slam" data-d="0.45" >VS</div></div><div class="a tm" data-a="up" data-d="0.8" >19:30</div><div class="a note" data-a="up" data-d="1.0" >بتوقيت القاهرة</div></div></div><div class=scene><div class=c style="top:400px"><div class="a comp" data-a="up" data-d="0" >الدوري الإيطالي</div><div class=vs-wrap><div class="a card" data-a="right" data-d="0.05" ><div class=tn>ميلان</div></div><div class="a card" data-a="left" data-d="0.2" ><div class=tn>إنتر</div></div><div class="a vs" data-a="slam" data-d="0.45" >VS</div></div><div class="a tm" data-a="up" data-d="0.8" >21:45</div><div class="a note" data-a="up" data-d="1.0" >بتوقيت القاهرة</div></div></div><div class=scene><div class=c style="top:400px"><div class="a comp" data-a="up" data-d="0" >الدوري الإسباني</div><div class=vs-wrap><div class="a card" data-a="right" data-d="0.05" ><div class=tn>برشلونة</div></div><div class="a card" data-a="left" data-d="0.2" ><div class=tn>ألافيس</div></div><div class="a vs" data-a="slam" data-d="0.45" >VS</div></div><div class="a tm" data-a="up" data-d="0.8" >22:00</div><div class="a note" data-a="up" data-d="1.0" >بتوقيت القاهرة</div></div></div><div class=scene><div class=c style="top:640px"><div class=huge style="color:var(--acc);font-size:170px"><span class="a w" data-a="pop" data-d="0.05" >توقعاتكم</span><span class="a w" data-a="pop" data-d="0.16999999999999998" >إيه؟</span></div><div class="a sub" data-a="up" data-d="0.5" >اكتبوا النتيجة في الكومنتات</div><div class="a sub" data-a="up" data-d="0.8" style=font-family:SM;font-size:40px;color:var(--fg);direction:ltr;text-align:right;margin-top:60px>@koraklicks</div><div class="a " data-a="bounce" data-d="1.0" ><span class=arrow>👇</span></div></div></div><div class=foot><span class=h>@koraklicks</span><span class=s>المصدر: ESPN · يلا كورة</span></div></div><div class=flash id=flash></div><script>
+const D=[3.664, 3.664, 3.664, 3.664, 3.664], T=D.reduce((a,b)=>a+b,0), BEAT=0.458015;
+const S=[...document.querySelectorAll('.scene')], B=[...document.querySelectorAll('.bars b')];
+const G=document.getElementById('ghost'), ST=document.getElementById('stage'), F=document.getElementById('flash'),
+      STR=document.getElementById('stripes'), O1=document.getElementById('o1'), O2=document.getElementById('o2');
+const cl=x=>Math.min(Math.max(x,0),1), eo=x=>1-Math.pow(1-cl(x),3);
+const back=x=>{x=cl(x);const c1=1.9,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+window.render=t=>{let s=0,acc=0;while(s<D.length-1&&t>=acc+D[s]){acc+=D[s];s++}const d=D[s],u=t-acc,ua=u+(s===0?1.2:0);/* frame 0 already shows the fact */
+ S.forEach(el=>el.style.opacity=0);const el=S[s];
+ el.style.opacity=s<D.length-1?cl((d-u)/0.15):1;
+ el.querySelectorAll('.a').forEach(k=>{const dl=+k.dataset.d||0,p=(ua-dl),kind=k.dataset.a;let o=1,tr='';
+  if(kind==='up'){o=eo(p/0.45);tr=`translateY(${(1-eo(p/0.45))*80}px)`}
+  else if(kind==='pop'){o=cl(p/0.12);tr=`scale(${0.2+0.8*back(p/0.38)})`}
+  else if(kind==='right'){o=cl(p/0.2);tr=`translateX(${(1-eo(p/0.5))*900}px)`}
+  else if(kind==='left'){o=cl(p/0.2);tr=`translateX(${-(1-eo(p/0.5))*900}px)`}
+  else if(kind==='slam'){o=cl(p/0.08);tr=`scale(${p<0?3:1+2*Math.pow(1-cl(p/0.22),2)}) rotate(${(1-cl(p/0.22))*-12}deg)`}
+  else if(kind==='bounce'){o=cl(p/0.1);const b=p<0?0:Math.abs(Math.sin(p*6))*Math.exp(-p*2.4);tr=`scale(${0.3+0.7*back(p/0.45)}) translateY(${-b*60}px)`}
+  else if(kind==='bubble'){o=cl(p/0.1);tr=`scale(${0.4+0.6*back(p/0.3)})`;k.style.transformOrigin=k.classList.contains('l')?'0% 0%':'100% 0%'}
+  else if(kind==='shake'){o=cl(p/0.06);const a=p<0?0:Math.exp(-p*5);tr=`translateX(${Math.sin(p*70)*28*a}px) rotate(${Math.sin(p*55)*2.5*a}deg) scale(${1+0.12*a})`}
+  else if(kind==='count'){o=cl(p/0.1);const n=+k.dataset.n;k.textContent=Math.round(n*eo(p/0.8));tr=`scale(${1+0.25*Math.exp(-Math.max(p-0.8,0)*8)*(p>0.8?1:0)})`}
+  k.style.opacity=o;k.style.transform=tr;});
+ const bp=(t%BEAT)/BEAT, punch=t<D[0]?0:Math.exp(-bp*9);
+ ST.style.transform=`scale(${1+0.012*punch})`;
+ F.style.opacity=(s>0&&u<0.18)?0.35*(1-u/0.18):0;
+ B.forEach((b,i)=>{b.style.width=(i<s?100:i>s?0:Math.min(100,u/d*100))+'%'});
+ G.style.transform=`translate(${-50-6*t/T}%,-50%)`;
+ STR.style.transform=`translateX(${(t*40)%90}px)`;
+ O1.style.transform=`translate(${120+Math.sin(t*0.7)*80}px,${300+Math.cos(t*0.5)*60}px)`;
+ O2.style.transform=`translate(${520+Math.cos(t*0.6)*90}px,${1300+Math.sin(t*0.8)*70}px)`;};
+render(0);</script></body></html>
