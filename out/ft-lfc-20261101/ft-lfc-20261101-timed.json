@@ -1,0 +1,21 @@
+{
+  "slug": "ft-lfc-20261101",
+  "scenes": [
+    {
+      "type": "score",
+      "duration": 3.664,
+      "sfx": "impact"
+    },
+    {
+      "type": "score",
+      "duration": 3.664,
+      "sfx": "impact"
+    },
+    {
+      "type": "cta",
+      "duration": 3.664,
+      "sfx": "whoosh"
+    }
+  ],
+  "audio": "ft-lfc-20261101-music.wav"
+}
