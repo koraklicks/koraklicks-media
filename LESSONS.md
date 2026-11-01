@@ -7,6 +7,7 @@ Newest first.
 
 ## Open lessons
 
+- **1 Nov · Milan 3-1 Inter derby sat on HOLD (ESPN only) overnight and nobody retried, plus Spurs/Villa/Barça FT tasks left no log line; watchdog caught them 09:45.** → A HOLD on a BIG result must be retried the same night with WebSearch mode "extended" «<teams> <Month D, YYYY> final score report» (it returned beIN + Sofascore + club report at once); log every BIG match as POSTED/HOLD.
 - **31 Oct night results · Milan 3-1 Inter had ESPN only at 23:50 (Goal/beIN pages stale at 43', FotMob cached 0-0); task prompt says short → TikTok but viral rule = photo.** → Milan-Inter left out as HOLD for FT-D; TikTok got story + scene JPGs, video went to Reel + YT Short; spacing vs queued posts pushed slots to 01:10–01:30.
 
 - **30 Oct night results · FilGoal /matches and FotMob match pages were cached pre-match (Ittihad Alexandria 0-0 stayed Yallakora-only); FilGoal's finished list did confirm the SPL FTs.** → Night results: ESPN API first, FilGoal /matches for SPL second source, Goal article via WebFetch for others; Egyptian-league FT with only Yallakora = HOLD.
