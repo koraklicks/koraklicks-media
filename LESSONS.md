@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **1 Nov · Lazio 2-1 Cagliari stayed HOLD (ESPN only) at 18:05, but one WebSearch mode "extended" «<teams> final score report» at 19:10 returned Cagliari's official report + ANSA; also IG Reel «رقم اليوم» 18:20 ended ERROR/Fatal in Metricool.** → On a last-attempt HOLD, run the extended search before giving up; check getScheduledPosts statuses for ERROR after each video batch.
+
 - **1 Nov · motion_short `stat` line with digits inside Arabic text ("أول 37 دقيقة") rendered as "3 7" out of order; the `-pN.jpg` slides are written only by `--preview`, so a final render leaves stale slides after a spec edit.** → Keep digits out of stat lines (use words); after editing the spec re-run `--preview` and view p0 before hosting the slides.
 
 - **1 Nov · Milan 3-1 Inter derby sat on HOLD (ESPN only) overnight and nobody retried, plus Spurs/Villa/Barça FT tasks left no log line; watchdog caught them 09:45.** → A HOLD on a BIG result must be retried the same night with WebSearch mode "extended" «<teams> <Month D, YYYY> final score report» (it returned beIN + Sofascore + club report at once); log every BIG match as POSTED/HOLD.
