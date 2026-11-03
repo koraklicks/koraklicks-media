@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **3 Nov 21:30 · UCL XIs appeared ~21:00 only on Sports Mole/Infobae/eldesmarque/101greatgoals (not approved); uefa.com/bundesliga.com line-up pages show squads only, Sofascore/365Scores/FilGoal not reachable by search, allowed_domains filter gives PROXY_REJECTED.** → Start the XI task at KO−70 as planned, search `Sky Sports`/`Sofascore` + «team news» by name in the query (no domain filters); if only non-approved outlets have the XI at KO−25, list drafts for the owner.
+
 - **3 Nov 01:15 · ESPN scoreboard API: shortName "EVE @ NEW" with scores [0,1] — competitors[] order is home-first, NOT the shortName order; I nearly read Newcastle 1-0 Everton (real: 0-1, Sky).** → Read the score via competitors[].homeAway, never by position in shortName; check against a 2nd source before writing.
 
 - **1 Nov night results · I typed a TikTok caption with the score reversed («ريال مدريد 0-3 راسينغ») because ESPN lists the home team first (Racing 0-3 Real); caught on re-read and fixed with updateScheduledPost before 00:12.** → In captions write the winner first («X بيكسب Y 3-0»); re-read every caption against the spec before the next createScheduledPost.
