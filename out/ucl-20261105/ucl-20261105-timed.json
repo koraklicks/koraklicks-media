@@ -1,0 +1,30 @@
+{
+  "slug": "ucl-20261105",
+  "scenes": [
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    }
+  ],
+  "audio": "ucl-20261105-music.wav"
+}
