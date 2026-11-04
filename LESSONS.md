@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **4 Nov · UCL MD4 day-2 XI (18:35/20:50) and FT (21:35/23:55) tasks left no post and no log line; ESPN showed all 4 BIG games FT by 00:38.** → Every XI/FT task must append a POSTED/HOLD line even when it fails or times out; the 09:37 watchdog checks UCL FT first and posts from ESPN API + uefa.com.
+
 - **3 Nov 21:30 · UCL XIs appeared ~21:00 only on Sports Mole/Infobae/eldesmarque/101greatgoals (not approved); uefa.com/bundesliga.com line-up pages show squads only, Sofascore/365Scores/FilGoal not reachable by search, allowed_domains filter gives PROXY_REJECTED.** → Start the XI task at KO−70 as planned, search `Sky Sports`/`Sofascore` + «team news» by name in the query (no domain filters); if only non-approved outlets have the XI at KO−25, list drafts for the owner.
 
 - **3 Nov 01:15 · ESPN scoreboard API: shortName "EVE @ NEW" with scores [0,1] — competitors[] order is home-first, NOT the shortName order; I nearly read Newcastle 1-0 Everton (real: 0-1, Sky).** → Read the score via competitors[].homeAway, never by position in shortName; check against a 2nd source before writing.
