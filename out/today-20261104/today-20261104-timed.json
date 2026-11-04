@@ -1,0 +1,30 @@
+{
+  "slug": "today-20261104",
+  "scenes": [
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    }
+  ],
+  "audio": "today-20261104-music.wav"
+}
