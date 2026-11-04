@@ -1,0 +1,21 @@
+{
+  "slug": "mena-ahsan-20261104",
+  "scenes": [
+    {
+      "type": "stat",
+      "duration": 3.664,
+      "sfx": "impact"
+    },
+    {
+      "type": "list",
+      "duration": 3.664,
+      "sfx": "pop"
+    },
+    {
+      "type": "cta",
+      "duration": 3.664,
+      "sfx": "whoosh"
+    }
+  ],
+  "audio": "mena-ahsan-20261104-music.wav"
+}
