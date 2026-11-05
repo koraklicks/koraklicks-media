@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **5 Nov 17:00 · `host_media.sh` with 6 files (4 JPG + 2 MP4) hit the 2-min tool timeout in the foreground; the retry in the background finished in ~90 s.** → Run `host_media.sh` in the background writing to a file, then `sleep`/cat; don't wait on it in the foreground. Also: a `hook` scene before a `list` is merged by motion_short, and a 5-row list needs a one-line title or it overlaps the footer.
+
 - **5 Nov 01:15 · UCL MD4 day-2 FT tasks (21:35/23:55) and «ليلة الأبطال» 00:20 again left no post and no log line; the 2h cycle caught it at 01:15.** → The 2h cycle after midnight must check UCL FT first (espn_scores.py + getScheduledPosts 22–04h) and post one X + IG story round-up if empty.
 
 - **4 Nov · UCL MD4 day-2 XI (18:35/20:50) and FT (21:35/23:55) tasks left no post and no log line; ESPN showed all 4 BIG games FT by 00:38.** → Every XI/FT task must append a POSTED/HOLD line even when it fails or times out; the 09:37 watchdog checks UCL FT first and posts from ESPN API + uefa.com.
