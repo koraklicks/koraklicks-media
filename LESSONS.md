@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **5 Nov night · FT-UEL fired at 23:55 for 19:45 + 22:00 kick-offs; the 22:00 games (AZ-Juve, Leverkusen-Marseille) were still live, no retry, ESPN FT only at ~00:30; also the live planner hung 6 h so the daily story went out at 12:58 instead of ~10:00.** → An FT task covering a 22:00 KO runs at KO+2h10 (00:10) or re-arms +20 min while any BIG game is live; log a HOLD line per unfinished BIG game. If the planner is still pending at 09:30, the 2 h cycle builds PLAN itself.
+
 - **5 Nov night results · Ajax 6-1 (ESPN API + Sofascore only) and Trabzonspor 0-1 Freiburg (ESPN only; Goal article gives no score) had no second FT-list source at 23:55 even in extended search.** → Leave them as HOLD for FT-UEL; Sofascore alone does not pass the final-score rule, and a Goal headline without a score is not a second source.
 
 - **5 Nov 17:00 · `host_media.sh` with 6 files (4 JPG + 2 MP4) hit the 2-min tool timeout in the foreground; the retry in the background finished in ~90 s.** → Run `host_media.sh` in the background writing to a file, then `sleep`/cat; don't wait on it in the foreground. Also: a `hook` scene before a `list` is merged by motion_short, and a 5-row list needs a one-line title or it overlaps the footer.
