@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **5 Nov night results · Ajax 6-1 (ESPN API + Sofascore only) and Trabzonspor 0-1 Freiburg (ESPN only; Goal article gives no score) had no second FT-list source at 23:55 even in extended search.** → Leave them as HOLD for FT-UEL; Sofascore alone does not pass the final-score rule, and a Goal headline without a score is not a second source.
+
 - **5 Nov 17:00 · `host_media.sh` with 6 files (4 JPG + 2 MP4) hit the 2-min tool timeout in the foreground; the retry in the background finished in ~90 s.** → Run `host_media.sh` in the background writing to a file, then `sleep`/cat; don't wait on it in the foreground. Also: a `hook` scene before a `list` is merged by motion_short, and a 5-row list needs a one-line title or it overlaps the footer.
 
 - **5 Nov 01:15 · UCL MD4 day-2 FT tasks (21:35/23:55) and «ليلة الأبطال» 00:20 again left no post and no log line; the 2h cycle caught it at 01:15.** → The 2h cycle after midnight must check UCL FT first (espn_scores.py + getScheduledPosts 22–04h) and post one X + IG story round-up if empty.
