@@ -1,0 +1,26 @@
+{
+  "slug": "night-results-2026-11-05",
+  "scenes": [
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    }
+  ],
+  "audio": "night-results-2026-11-05-music.wav"
+}
