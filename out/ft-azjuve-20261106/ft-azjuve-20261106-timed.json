@@ -1,0 +1,16 @@
+{
+  "slug": "ft-azjuve-20261106",
+  "scenes": [
+    {
+      "type": "score",
+      "duration": 3.664,
+      "sfx": "impact"
+    },
+    {
+      "type": "cta",
+      "duration": 3.664,
+      "sfx": "whoosh"
+    }
+  ],
+  "audio": "ft-azjuve-20261106-music.wav"
+}

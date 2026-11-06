@@ -1,0 +1,18 @@
+{
+  "slug": "ft-azjuve-story",
+  "scenes": [
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    }
+  ],
+  "audio": "ft-azjuve-story-music.wav"
+}
