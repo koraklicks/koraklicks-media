@@ -7,6 +7,10 @@ Newest first.
 
 ## Open lessons
 
+- **6 Nov night · the 23:57 night-results task logged SKIPPED on ESPN-only finals (Everton, Venezia, Hamburg, Toulouse) with no retry; no post from 14:30 to 24:00.** → Before logging SKIPPED, re-arm once +25 min and run the extended search «<teams> final score report»; the 00:15 cycle must check it.
+
+- **6 Nov · Zamalek–Misr Lel Taamin (Egypt Cup 20:00) went HOLD at 12:58 (time only from Yallakora) and was never re-checked; no result post.** → A HOLD on an Egyptian match is re-checked by the 17:37 watchdog (time + result) and logged.
+
 - **6 Nov growth review · 1 Nov night: 4 TikTok result photos (187/0/19/5) and 3 one-match IG Reels (3–7 views) after 20:00, while combined results posts got 115–498.** → Night results = ONE combined post per platform (all FTs as slides/scenes); separate posts only for an Egyptian/Arab story or a big number.
 
 - **5 Nov night · FT-UEL fired at 23:55 for 19:45 + 22:00 kick-offs; the 22:00 games (AZ-Juve, Leverkusen-Marseille) were still live, no retry, ESPN FT only at ~00:30; also the live planner hung 6 h so the daily story went out at 12:58 instead of ~10:00.** → An FT task covering a 22:00 KO runs at KO+2h10 (00:10) or re-arms +20 min while any BIG game is live; log a HOLD line per unfinished BIG game. If the planner is still pending at 09:30, the 2 h cycle builds PLAN itself.
