@@ -91,6 +91,7 @@ Metricool best-time scores for 16–22 Oct (Metricool's model; our audience is s
 - **X:** not available (best-times 403, impressions empty — same as 16 Oct).
 Our own posts: the TikTok photo posts that broke 300 views went out 14:12–23:20, so the format matters more than the hour at our size.
 Re-checked 30 Oct (23–29 Oct scores): unchanged — IG 10:00 (2nd 18:00), TikTok 10:00/12:00/18:00, YouTube 16:00 (10:00 second).
+Re-checked 6 Nov (30 Oct–5 Nov scores): unchanged — IG 10:00 (2nd 18:00), TikTok 10:00/12:00/18:00, YouTube 16:00 (10:00 second).
 Rule from now on: non-live content (رقم اليوم، ماتشات النهارده، round-ups) aims at 10:00 (IG/TikTok) and 16:00 for YouTube-only uploads; live/FT posts keep going out at once.
 
 ## 7. Experiments (always run one, one variable at a time)
@@ -120,7 +121,27 @@ video length) on at least 5 posts against a comparable control, then keep the wi
 - YouTube: «أهم نتايج الجولة …» round-up Short at 10:00 the morning after each finished round (PL, LaLiga, Serie A, SPL, EGY; target ≥ 3) vs night-of results Shorts (avg 50).
 - X: no experiment (not measurable).
 
+**Week 31 Oct–6 Nov 2026 — result (6 Nov review):**
+- TikTok fixtures as PHOTO: 6 posts (✅ target). 31 Oct–4 Nov avg 359 (325/244/362/422/440; 5 Nov 91 still < 24 h) vs fixture VIDEOS 23–29 Oct avg 172 → **photo wins ×2.1. Keep.**
+- Instagram one-match Reels vs multi-result night Reel: 4 one-match result Reels avg 6 (ليفربول-أرسنال 6, يوفنتوس-نابولي 3, أتلتيك-سوسيداد 7, تشيلسي-يونايتد 8) vs 5 multi-result Reels avg 128 (115–168). **Multi-result wins ×20.** Exceptions that worked as single stories: number/Arab hooks (رونالدو 985 = 150, حكيمي هاتريك = 143).
+- YouTube 10:00 round-up Short: ran once again (1 Nov 09:05, «ديربي ميلان… ونتايج امبارح» 68) vs night-of results Shorts avg 90 (10 Shorts). Not better at n=1; third week under target.
+
+**Week 7–13 Nov 2026** (judge on 48 h views in the 13 Nov review):
+- TikTok: «رقم اليوم»/stat photo post at 18:00 (Metricool peak) on ≥ 3 days vs the 15:00–15:35 slot (30 Oct 471, 1 Nov 323, 5 Nov 113). Everything else unchanged.
+- Instagram: the multi-result night Reel at once (control, ≥ 3 nights) vs held to 10:00 next morning as «نتايج امبارح» (test, ≥ 3 nights), alternating nights. X/IG story still go out at once.
+- YouTube: «أهم نتايج الجولة …» round-up Short at 10:00 after each finished round (PL, LaLiga, Serie A, SPL, EGY; target ≥ 3, the 10:00 task must upload the Short, not only X/IG) vs night-of results Shorts (avg 90).
+- X: no experiment (still not measurable).
+
 ## 8. What we learned (updated weekly by the growth-analyst)
+
+### Week 30 Oct–5 Nov 2026 (vs 23–29 Oct)
+- **One results post per night, not one per match.** On 1 Nov the 4 TikTok result photos after 20:00 got 187/0/19/5 and the 3 one-match IG Reels 3–7, while every combined results post got 115–168 (IG) and 172–498 (TikTok). Rule: night results = ONE combined post per platform (all FTs as slides/scenes); a separate post only for an Egyptian/Arab story or a big number.
+- **Top 3 (all TikTok photo):** النصر 6-2 + نتايج النهارده 498 · رونالدو 985 هدف 471 · ليلة الكبار في دوري الأبطال 440. Saudi/Ronaldo and Arab-player angles keep winning (حكيمي هاتريك 380 TikTok / 143 IG).
+- **TikTok:** followers 7 → 10 (6 on 29 Oct). Views on the week's posts 5,515 vs 6,563 (4–5 Nov posts still young); video views in period 30 Oct–4 Nov 7,161 vs 6,252 (+15%). 22 posts (21 photo), photo avg 257 (dragged down by the 1 Nov night spam). Interactions 29 vs 37.
+- **Instagram:** followers 18 → 19 (first gain in 3 weeks). Views 2,103 vs 2,017 (+4%), reach 1,440 vs 1,557 (−8%). 23 Reels avg 74 (78 before); feed posts 21 vs 7 (TikTok→IG carousel rule), interactions 73 vs 61.
+- **YouTube:** subs 11 → 12. 18 Shorts 30 Oct–3 Nov avg 78 (= last week); channel views 30 Oct–3 Nov 1,478 vs 1,293 for 23–27 Oct (+14%, same 5 days). 4–5 Nov not synced. Best: رونالدو 985 200 · الشباب 6-1 الأهلي السعودي 194 · نتايج 31 Oct 183. Fixture Shorts weakest (5–68). Revenue 0.
+- **X:** fourth week unmeasurable (no impressions in Metricool).
+
 
 ### Week 23–29 Oct 2026 (vs 16–22 Oct)
 - **TikTok carried the brand:** 5,097 views on the week's posts (×2.2 vs 2,283), followers 4 → 6, interactions 34 vs 19. 12 photo posts avg 310; even fixture videos rose to avg 172 (from 4.8), so the account is now being pushed — keep daily output.
