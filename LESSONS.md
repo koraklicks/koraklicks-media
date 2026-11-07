@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **7 Nov night · `story_short.py` also writes `<slug>-short.mp4` in the same OUT_DIR, so a motion_short spec with slug «X-short» collides with it.** → Give the motion_short spec a different slug (e.g. `fulltime-DATE`).
+
 - **7 Nov 23:10 · FT-2 21:50 also left no post/log; standard searches return old seasons for FT lists, but an extended search with the full date + scorers found Sky/ESPN for Forest–City.** → For FT catch-up use extended mode with «date + score + scorers» in the query at once.
 
 - **7 Nov · FT-1 19:05 task left no post and no log line (Metricool 18–24h empty at 21:10); the 2h cycle caught it.** → Every FT task appends POSTED/HOLD even on failure; the 2h cycle at 21:xx checks FT-1 output and posts a combined X result if empty.
