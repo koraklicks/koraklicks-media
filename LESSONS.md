@@ -7,6 +7,8 @@ Newest first.
 
 ## Open lessons
 
+- **7 Nov 23:10 · FT-2 21:50 also left no post/log; standard searches return old seasons for FT lists, but an extended search with the full date + scorers found Sky/ESPN for Forest–City.** → For FT catch-up use extended mode with «date + score + scorers» in the query at once.
+
 - **7 Nov · FT-1 19:05 task left no post and no log line (Metricool 18–24h empty at 21:10); the 2h cycle caught it.** → Every FT task appends POSTED/HOLD even on failure; the 2h cycle at 21:xx checks FT-1 output and posts a combined X result if empty.
 
 - **6 Nov night · the 23:57 night-results task logged SKIPPED on ESPN-only finals (Everton, Venezia, Hamburg, Toulouse) with no retry; no post from 14:30 to 24:00.** → Before logging SKIPPED, re-arm once +25 min and run the extended search «<teams> final score report»; the 00:15 cycle must check it.
