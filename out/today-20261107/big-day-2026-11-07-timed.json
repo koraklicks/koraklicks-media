@@ -1,0 +1,22 @@
+{
+  "slug": "big-day-2026-11-07",
+  "scenes": [
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    },
+    {
+      "type": "x",
+      "duration": 3.871
+    }
+  ],
+  "audio": "big-day-2026-11-07-music.wav"
+}
