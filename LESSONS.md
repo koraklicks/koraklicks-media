@@ -7,6 +7,7 @@ Newest first.
 
 ## Open lessons
 
+- **8 Nov · «تقييم آخر اليوم» PENDING ~9 h again and the 7 Nov FT-1/FT-2 one-offs left no post/log; Real Madrid 3-0 Valencia (big) had X only until the watchdog.** → Watchdog 09:37 checks every BIG match of yesterday for a full package (story+TikTok photo+carousel+Reel/Short), not just an X post.
 - **7 Nov night · `story_short.py` also writes `<slug>-short.mp4` in the same OUT_DIR, so a motion_short spec with slug «X-short» collides with it.** → Give the motion_short spec a different slug (e.g. `fulltime-DATE`).
 
 - **7 Nov 23:10 · FT-2 21:50 also left no post/log; standard searches return old seasons for FT lists, but an extended search with the full date + scorers found Sky/ESPN for Forest–City.** → For FT catch-up use extended mode with «date + score + scorers» in the query at once.
