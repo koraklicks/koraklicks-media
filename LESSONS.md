@@ -7,6 +7,7 @@ Newest first.
 
 ## Open lessons
 
+- **8 Nov 23:58 · night-results task prompt said short → TikTok video, but the viral rule (21 Oct) says results go to TikTok as a PHOTO post; story_short.py also writes its own -short.mp4 in OUT_DIR.** → Build 3 TikTok slides (combined story + 2 two-match slides via story_short with slugs slide-a/b); use the motion_short mp4 only for Reels/YT.
 - **8 Nov 16:50 · search for «Salah injury Palace Liverpool» returned a Sky report «Liverpool 3-1 Palace, Salah injured» that was from APRIL 2026; ESPN showed today's game still 0-1 live.** → Before using any search hit about a fixture, check it against `espn_scores.py` for today's date/status; undated Sky/Goal URLs can be from an earlier season.
 - **8 Nov · «تقييم آخر اليوم» PENDING ~9 h again and the 7 Nov FT-1/FT-2 one-offs left no post/log; Real Madrid 3-0 Valencia (big) had X only until the watchdog.** → Watchdog 09:37 checks every BIG match of yesterday for a full package (story+TikTok photo+carousel+Reel/Short), not just an X post.
 - **7 Nov night · `story_short.py` also writes `<slug>-short.mp4` in the same OUT_DIR, so a motion_short spec with slug «X-short» collides with it.** → Give the motion_short spec a different slug (e.g. `fulltime-DATE`).
