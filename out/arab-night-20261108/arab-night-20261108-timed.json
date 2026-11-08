@@ -1,0 +1,16 @@
+{
+  "slug": "arab-night-20261108",
+  "scenes": [
+    {
+      "type": "list",
+      "duration": 3.664,
+      "sfx": "pop"
+    },
+    {
+      "type": "cta",
+      "duration": 3.664,
+      "sfx": "whoosh"
+    }
+  ],
+  "audio": "arab-night-20261108-music.wav"
+}
