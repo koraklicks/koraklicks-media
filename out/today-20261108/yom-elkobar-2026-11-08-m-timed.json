@@ -1,0 +1,35 @@
+{
+  "slug": "yom-elkobar-2026-11-08-m",
+  "scenes": [
+    {
+      "type": "versus",
+      "duration": 3.664,
+      "sfx": "impact",
+      "pops": [
+        0.45
+      ]
+    },
+    {
+      "type": "versus",
+      "duration": 3.664,
+      "sfx": "impact",
+      "pops": [
+        0.45
+      ]
+    },
+    {
+      "type": "versus",
+      "duration": 3.664,
+      "sfx": "impact",
+      "pops": [
+        0.45
+      ]
+    },
+    {
+      "type": "cta",
+      "duration": 3.664,
+      "sfx": "whoosh"
+    }
+  ],
+  "audio": "yom-elkobar-2026-11-08-m-music.wav"
+}
