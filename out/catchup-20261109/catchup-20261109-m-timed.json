@@ -1,0 +1,26 @@
+{
+  "slug": "catchup-20261109-m",
+  "scenes": [
+    {
+      "type": "score",
+      "duration": 3.664,
+      "sfx": "impact"
+    },
+    {
+      "type": "score",
+      "duration": 3.664,
+      "sfx": "impact"
+    },
+    {
+      "type": "score",
+      "duration": 3.664,
+      "sfx": "impact"
+    },
+    {
+      "type": "cta",
+      "duration": 3.664,
+      "sfx": "whoosh"
+    }
+  ],
+  "audio": "catchup-20261109-m-music.wav"
+}

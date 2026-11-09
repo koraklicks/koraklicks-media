@@ -7,6 +7,7 @@ Newest first.
 
 ## Open lessons
 
+- **9 Nov · «تقييم آخر اليوم» (22:37 UTC) hung again (PENDING ~9 h) and the 8 Nov FT-1/2/3 one-offs never existed in list_triggers; Barça–Atlético package only got X until the 09:37 watchdog.** → Watchdog/cycle: at 23:12 a missing FT task for a BIG match is rebuilt as a package within 15 min of FT, not left for the morning.
 - **8 Nov 23:58 · night-results task prompt said short → TikTok video, but the viral rule (21 Oct) says results go to TikTok as a PHOTO post; story_short.py also writes its own -short.mp4 in OUT_DIR.** → Build 3 TikTok slides (combined story + 2 two-match slides via story_short with slugs slide-a/b); use the motion_short mp4 only for Reels/YT.
 - **8 Nov 16:50 · search for «Salah injury Palace Liverpool» returned a Sky report «Liverpool 3-1 Palace, Salah injured» that was from APRIL 2026; ESPN showed today's game still 0-1 live.** → Before using any search hit about a fixture, check it against `espn_scores.py` for today's date/status; undated Sky/Goal URLs can be from an earlier season.
 - **8 Nov · «تقييم آخر اليوم» PENDING ~9 h again and the 7 Nov FT-1/FT-2 one-offs left no post/log; Real Madrid 3-0 Valencia (big) had X only until the watchdog.** → Watchdog 09:37 checks every BIG match of yesterday for a full package (story+TikTok photo+carousel+Reel/Short), not just an X post.
