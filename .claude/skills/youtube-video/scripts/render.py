@@ -231,7 +231,10 @@ html,body{{background:#0E1211;color:#F3F2EA}}
 .list li .n{{color:#A7BAFF}}
 .outro .cta{{background:#3155E7;color:#fff}}
 .outro .handles{{color:#8D9196}}
-.outro svg{{height:150px;width:auto;margin-bottom:24px}}
+.outro svg{{height:96px;width:auto;margin-bottom:18px}}
+.outro h1{{font-size:120px;line-height:1.2;max-width:1500px;text-align:center}}
+.outro .cta{{display:none}}  /* endcard.py adds the like/subscribe card */
+.outro{{justify-content:flex-start;padding-top:200px}}
 .crest.img{{display:flex;width:190px;height:190px;background:none;border:none;border-radius:0;align-items:center;justify-content:center;margin-bottom:6px}}
 .crest.img img{{max-width:100%;max-height:100%;object-fit:contain}}
 .credit{{position:absolute;left:140px;bottom:76px;font-size:20px;color:rgba(243,242,234,.75);direction:ltr;z-index:3;font-family:Cairo}}
