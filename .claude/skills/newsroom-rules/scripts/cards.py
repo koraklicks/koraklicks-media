@@ -37,6 +37,7 @@ import argparse, base64, html, json, os, sys
 from pathlib import Path
 
 FONTS = Path(__file__).resolve().parent.parent / "assets" / "fonts"
+LOGO = Path(__file__).resolve().parents[3] / "assets" / "logo" / "kk-mark-gold.svg"  # owner logo, 19 Nov 2026
 W, H = 1080, 1350
 C = dict(blue="#3155E7", ink="#0E1211", cream="#F3F2EA", peri="#A7BAFF", grey="#5B5F66", line_d="#2A2F33")
 AR_DIG = str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩")
@@ -94,7 +95,8 @@ def header(t, spec, n, color):
     sec = spec.get("section") or ("كرة القدم" if t.ar else "FOOTBALL")
     num = f"{n:02d}"
     brand = "كورة كليكس" if t.ar else "KORA KLICKS"
-    return (f'<div class="head" style="color:{color}"><div class="brand">{brand}</div>'
+    mark = LOGO.read_text().replace("<svg ", '<svg style="height:54px;width:auto;flex:none" ', 1)
+    return (f'<div class="head" style="color:{color}"><div class="brand" style="display:flex;align-items:center;gap:18px">{mark}<span>{brand}</span></div>'
             f'<div class="lbl">{t(sec)} / {t(num)}</div></div>')
 
 

@@ -94,7 +94,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#050608;color:#E
 
 
 # «Desk» palette (owner, 19 Nov 2026). The CSS above is written in the old hex codes; every theme maps them.
-_ICE, _BLK = "kora-klicks-wordmark-transparent-ice.svg", "kora-klicks-wordmark-transparent-black.svg"
+_ICE, _BLK = "kk-lockup-gold-cream.svg", "kk-lockup-gold-ink.svg"  # owner logo, 19 Nov 2026
 MAPS = {
     "dark": {"#050608": "#0E1211", "#0e1c27": "#16204A", "#E3F4FF": "#F3F2EA", "#8A97A3": "#8D9196",
              "#00C853": "#A7BAFF", "#22272E": "#2A2F33", "#0f1419": "#161B1E", "BARCOL": "#3155E7"},
@@ -134,7 +134,7 @@ def item_block(it):
 
 
 def page(spec, body, bars=0):
-    wm = (LOGO_DIR / "kora-klicks-wordmark-transparent-ice.svg").as_uri()
+    wm = (LOGO_DIR / "kk-lockup-gold-cream.svg").as_uri()
     bars_html = f'<div class=bars>{"".join("<i><b></b></i>" for _ in range(bars))}</div>' if bars else ""
     return (f'<html><head><meta charset=utf-8><style>{CSS}</style></head><body>'
             f'<div class=bg></div><div class=ghost id=ghost>{E(spec.get("ghost",""))}</div><div class=grain></div>'

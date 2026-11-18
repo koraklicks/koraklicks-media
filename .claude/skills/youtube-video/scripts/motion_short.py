@@ -48,13 +48,13 @@ E = html.escape
 THEMES = {  # «Desk» palette (owner, 19 Nov 2026): BLUE #3155E7 · INK #0E1211 · CREAM #F3F2EA · PERI #A7BAFF
     "dark": dict(bg="#0E1211", bg2="#16204A", bg3="#0E1211", fg="#F3F2EA", mute="#8D9196", acc="#3155E7", acct="#A7BAFF",
                  acc2="#A7BAFF", line="#2A2F33", card="#151A1D", cardb="#242A2E", ghost="#161B1E", shadow="none", bub="#1A2024",
-                 bub2="#3155E7", bub2fg="#ffffff", flash="#ffffff", logo="kora-klicks-wordmark-transparent-ice.svg"),
+                 bub2="#3155E7", bub2fg="#ffffff", flash="#ffffff", logo="kk-lockup-gold-cream.svg"),
     "light": dict(bg="#F3F2EA", bg2="#E2E7F8", bg3="#ECEBE2", fg="#0E1211", mute="#5B5F66", acc="#3155E7", acct="#3155E7",
                   acc2="#0E1211", line="#D3D2CA", card="#FFFFFF", cardb="#E2E1D8", ghost="#E9E8DF", shadow="0 18px 50px rgba(14,18,17,.10)",
-                  bub="#FFFFFF", bub2="#3155E7", bub2fg="#ffffff", flash="#ffffff", logo="kora-klicks-wordmark-transparent-black.svg"),
+                  bub="#FFFFFF", bub2="#3155E7", bub2fg="#ffffff", flash="#ffffff", logo="kk-lockup-gold-ink.svg"),
     "blue": dict(bg="#3155E7", bg2="#4466F0", bg3="#2A4BD6", fg="#FFFFFF", mute="#D3DBFB", acc="#0E1211", acct="#0E1211",
                  acc2="#0E1211", line="#6F88EE", card="#3D60EC", cardb="#5A78F0", ghost="#3A5DEA", shadow="none", bub="#4466F0",
-                 bub2="#0E1211", bub2fg="#ffffff", flash="#ffffff", logo="kora-klicks-wordmark-transparent-ice.svg"),
+                 bub2="#0E1211", bub2fg="#ffffff", flash="#ffffff", logo="kk-lockup-gold-cream.svg"),
 }
 
 DUR = {"hook": 1.9, "versus": 3.9, "score": 3.9, "stat": 3.9, "expect": 5.8, "when": 3.9, "pov": 3.9, "cta": 3.9}
