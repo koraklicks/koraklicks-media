@@ -75,6 +75,17 @@ Credit by name; add the link in the first comment (Facebook, Instagram) or in th
 
 ## 4. Brand look (for the creative agent)
 
+### «Desk» photo cards (owner, 19 Nov 2026) — DEFAULT for every photo post / slide / carousel
+Editorial cards in 3 colours: BLUE `#3155E7`, INK `#0E1211`, CREAM `#F3F2EA` (+ periwinkle `#A7BAFF` for the home
+team / handle). Thin rules instead of boxes, header «كورة كليكس · كرة القدم / ٠١», big headline ending with a full stop.
+Render ONLY with `python3 .claude/skills/newsroom-rules/scripts/cards.py spec.json OUT_DIR [--preview]` (1080x1350 JPG,
+Arabic RTL with Arabic-Indic digits by default, `"lang":"en"` for English). 4 templates:
+`breaking` (blue + ink footer: news) · `result` (ink: final score) · `preview` (cream + blue kick-off block: next match)
+· `roundup` (blue head + cream list of 2–3 stories). A carousel = several cards in one spec (slides 01, 02 …).
+Spec format in the script's docstring. Keep text short: the script prints OVERFLOW if a card is too full.
+
+### Older looks (videos still use them until the owner decides)
+
 - Colours: pitch green `#00C853`, deep navy `#0A1F44`, white, accent yellow `#FFD600` (live/goal moments only).
 - Fonts: Cairo (Arabic), Outfit (English labels).
 - **Logo (new, 11 Oct 2026):** wordmark «KORA KLICKS» in extra-bold condensed letters (Anton, thickened, stretched 1.22×) in ice-white #E3F4FF on black, with no symbols. Profile picture / mark: «KK» only, ice-white on black. Final files (SVG + PNG, outlined): `.claude/assets/logo/`. The old ball-and-cursor logo is retired.
