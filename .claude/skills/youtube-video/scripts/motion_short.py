@@ -60,10 +60,10 @@ THEMES = {  # «Desk» palette (owner, 19 Nov 2026): BLUE #3155E7 · INK #0E1211
 DUR = {"hook": 1.9, "versus": 3.9, "score": 3.9, "stat": 3.9, "expect": 5.8, "when": 3.9, "pov": 3.9, "cta": 3.9}
 
 CSS = """
-@font-face{font-family:LZ;src:url(FONTS/lalezar-arabic-400-normal.woff2)}
+@font-face{font-family:LZ;src:url(FONTS/changa-arabic-700-normal.woff2)}
 @font-face{font-family:AN;src:url(FONTS/anton-latin-400-normal.woff2)}
 @font-face{font-family:SM;src:url(FONTS/space-mono-latin-700-normal.woff2)}
-@font-face{font-family:CA;src:url(FONTS/cairo-arabic-800-normal.woff2)}
+@font-face{font-family:CA;src:url(FONTS/changa-arabic-700-normal.woff2)}
 @font-face{font-family:CA;src:url(FONTS/cairo-latin-900-normal.woff2);unicode-range:U+0000-00FF}
 EMOJICSS
 *{box-sizing:border-box;margin:0;padding:0}

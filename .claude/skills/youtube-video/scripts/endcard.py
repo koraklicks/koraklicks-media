@@ -53,7 +53,7 @@ def banner_html(kind, theme, vertical):
             bg, fg = t["soft"], t["fg"]
         pills.append(f'<span class=pill style="background:{bg};color:{fg}"><span class=e>{emoji}</span>{html.escape(text)}</span>')
     return f"""<!doctype html><html><head><meta charset=utf-8><style>
-@font-face{{font-family:CA;src:url({(FONTS/'cairo-arabic-900-normal.woff2').as_uri()})}}
+@font-face{{font-family:CA;src:url({(FONTS/'changa-arabic-700-normal.woff2').as_uri()})}}
 @font-face{{font-family:SM;src:url({(FONTS/'space-mono-latin-700-normal.woff2').as_uri()})}}
 @font-face{{font-family:EM;src:url({(FONTS/'emoji'/'NotoColorEmoji.ttf').as_uri()})}}
 html,body{{margin:0;background:transparent}}

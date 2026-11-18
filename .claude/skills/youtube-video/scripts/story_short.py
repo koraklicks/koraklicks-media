@@ -37,10 +37,10 @@ W, H = 1080, 1920
 E = html.escape
 
 CSS = """
-@font-face{font-family:LZ;src:url(FONTS/lalezar-arabic-400-normal.woff2)}
+@font-face{font-family:LZ;src:url(FONTS/changa-arabic-700-normal.woff2)}
 @font-face{font-family:AN;src:url(FONTS/anton-latin-400-normal.woff2)}
 @font-face{font-family:SM;src:url(FONTS/space-mono-latin-700-normal.woff2)}
-@font-face{font-family:CA;src:url(FONTS/cairo-arabic-800-normal.woff2)}
+@font-face{font-family:CA;src:url(FONTS/changa-arabic-700-normal.woff2)}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:1080px;height:1920px;overflow:hidden;background:#050608;color:#E3F4FF}
 .bg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,#0e1c27 0%,#050608 64%)}

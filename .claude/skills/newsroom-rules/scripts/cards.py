@@ -30,8 +30,8 @@ spec.json:
 Optional on any card: "source" (shown small above the footer as «📌 المصدر: ...»), "handle" (default @KORAKLICKS).
 Rules: real facts only (newsroom gate), no crests/photos needed, one idea per card, «\\n» = line break.
 Templates: breaking = blue bg + ink footer · result = ink bg, home row in periwinkle · preview = cream + blue
-kick-off block · roundup = blue head + cream list. Fonts: Barlow Condensed 800 (EN display), IBM Plex Sans
-Arabic 700/500 (AR), Inter 600/700 (labels). Palette: BLUE #3155E7 INK #0E1211 CREAM #F3F2EA PERI #A7BAFF.
+kick-off block · roundup = blue head + cream list. Fonts: Barlow Condensed 800 (EN display), Changa (AR,
+owner 19 Nov 2026), Inter 600/700 (labels). Palette: BLUE #3155E7 INK #0E1211 CREAM #F3F2EA PERI #A7BAFF.
 """
 import argparse, base64, html, json, os, sys
 from pathlib import Path
@@ -46,9 +46,9 @@ AR_DIG = str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩")
 def font_face():
     out = []
     for fam, f, wt in [("Barlow", "barlow-condensed-latin-800-normal.woff2", 800),
-                       ("Plex", "ibm-plex-sans-arabic-arabic-400-normal.woff2", 400),
-                       ("Plex", "ibm-plex-sans-arabic-arabic-500-normal.woff2", 500),
-                       ("Plex", "ibm-plex-sans-arabic-arabic-700-normal.woff2", 700),
+                       ("Plex", "changa-arabic-400-normal.woff2", 400),
+                       ("Plex", "changa-arabic-500-normal.woff2", 500),
+                       ("Plex", "changa-arabic-700-normal.woff2", 700),
                        ("Inter", "inter-latin-500-normal.woff2", 500), ("Inter", "inter-latin-600-normal.woff2", 600),
                        ("Inter", "inter-latin-700-normal.woff2", 700)]:
         b = base64.b64encode((FONTS / f).read_bytes()).decode()

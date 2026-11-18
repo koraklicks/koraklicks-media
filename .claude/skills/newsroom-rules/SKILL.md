@@ -87,7 +87,8 @@ Spec format in the script's docstring. Keep text short: the script prints OVERFL
 ### Videos on the same palette (owner, 19 Nov 2026)
 `motion_short.py`, `story_short.py` and `endcard.py` use the «Desk» palette: `--theme dark` = INK background + cream
 text + periwinkle/blue accents (nights, results) · `--theme light` = CREAM + ink + blue (daytime, previews, memes,
-tables) · `--theme blue` = BLUE + white + ink accents (breaking news, big announcements). Same fonts as before.
+tables) · `--theme blue` = BLUE + white + ink accents (breaking news, big announcements).
+**Arabic font everywhere = Changa 700/500 (owner, 19 Nov 2026)** — cards, Shorts, stories, end card (replaces Lalezar/Cairo/IBM Plex). Numbers/Latin: Anton in videos, Barlow Condensed + Inter in cards.
 **Logo (owner design, 19 Nov 2026):** interlocked outline «KK» monogram in gold `#CFAA6E`. Files in `.claude/assets/logo/`:
 `kk-mark-{gold,cream,ink,white,blue}.svg` (mark only), `kk-lockup-gold-cream.svg` / `kk-lockup-gold-ink.svg` (mark + KORA KLICKS,
 used by the videos), `kk-avatar-*.png` (1080 profile pictures). Cards show the gold mark next to «كورة كليكس». The old
