@@ -84,7 +84,13 @@ Arabic RTL with Arabic-Indic digits by default, `"lang":"en"` for English). 4 te
 · `roundup` (blue head + cream list of 2–3 stories). A carousel = several cards in one spec (slides 01, 02 …).
 Spec format in the script's docstring. Keep text short: the script prints OVERFLOW if a card is too full.
 
-### Older looks (videos still use them until the owner decides)
+### Videos on the same palette (owner, 19 Nov 2026)
+`motion_short.py`, `story_short.py` and `endcard.py` use the «Desk» palette: `--theme dark` = INK background + cream
+text + periwinkle/blue accents (nights, results) · `--theme light` = CREAM + ink + blue (daytime, previews, memes,
+tables) · `--theme blue` = BLUE + white + ink accents (breaking news, big announcements). Same fonts as before.
+Logo: still the ice/black wordmark until the owner sends the new logo design.
+
+### Older looks (retired 19 Nov 2026 — kept only as history; do not use the green/navy colours below)
 
 - Colours: pitch green `#00C853`, deep navy `#0A1F44`, white, accent yellow `#FFD600` (live/goal moments only).
 - Fonts: Cairo (Arabic), Outfit (English labels).

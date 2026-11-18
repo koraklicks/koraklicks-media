@@ -5,7 +5,7 @@ on original music from music.py with beat-synced camera punches, flashes and pop
 Two looks that live side by side: --theme dark (cinematic, nights/results) and
 --theme light (bright, daytime previews/memes/tables).
 
-  python3 motion_short.py spec.json OUT_DIR [--theme dark|light] [--fps 30] [--bpm 124] [--mood fun|drive|anthem|dark]
+  python3 motion_short.py spec.json OUT_DIR [--theme dark|light|blue] [--fps 30] [--bpm 124] [--mood fun|drive|anthem|dark]
 
 spec.json:
 {
@@ -45,13 +45,16 @@ LOGO_DIR = HERE.parent.parent.parent / "assets" / "logo"
 W, H = 1080, 1920
 E = html.escape
 
-THEMES = {
-    "dark": dict(bg="#050608", bg2="#0e1c27", bg3="#050608", fg="#E3F4FF", mute="#8A97A3", acc="#00C853", acc2="#5AC8FA",
-                 line="#22272E", card="#0d1218", cardb="#1b232c", ghost="#0f1419", shadow="none", bub="#14202b", bub2="#00C853",
-                 bub2fg="#03110a", flash="#ffffff", logo="kora-klicks-wordmark-transparent-ice.svg"),
-    "light": dict(bg="#F3F8FC", bg2="#DDF5E7", bg3="#DCEBFA", fg="#0B1620", mute="#5B6B7A", acc="#00A84F", acc2="#2F80ED",
-                  line="#D5E0EA", card="#FFFFFF", cardb="#E3ECF4", ghost="#E6EFF7", shadow="0 18px 50px rgba(20,60,90,.12)",
-                  bub="#FFFFFF", bub2="#00A84F", bub2fg="#ffffff", flash="#ffffff", logo="kora-klicks-wordmark-transparent-black.svg"),
+THEMES = {  # «Desk» palette (owner, 19 Nov 2026): BLUE #3155E7 · INK #0E1211 · CREAM #F3F2EA · PERI #A7BAFF
+    "dark": dict(bg="#0E1211", bg2="#16204A", bg3="#0E1211", fg="#F3F2EA", mute="#8D9196", acc="#3155E7", acct="#A7BAFF",
+                 acc2="#A7BAFF", line="#2A2F33", card="#151A1D", cardb="#242A2E", ghost="#161B1E", shadow="none", bub="#1A2024",
+                 bub2="#3155E7", bub2fg="#ffffff", flash="#ffffff", logo="kora-klicks-wordmark-transparent-ice.svg"),
+    "light": dict(bg="#F3F2EA", bg2="#E2E7F8", bg3="#ECEBE2", fg="#0E1211", mute="#5B5F66", acc="#3155E7", acct="#3155E7",
+                  acc2="#0E1211", line="#D3D2CA", card="#FFFFFF", cardb="#E2E1D8", ghost="#E9E8DF", shadow="0 18px 50px rgba(14,18,17,.10)",
+                  bub="#FFFFFF", bub2="#3155E7", bub2fg="#ffffff", flash="#ffffff", logo="kora-klicks-wordmark-transparent-black.svg"),
+    "blue": dict(bg="#3155E7", bg2="#4466F0", bg3="#2A4BD6", fg="#FFFFFF", mute="#D3DBFB", acc="#0E1211", acct="#0E1211",
+                 acc2="#0E1211", line="#6F88EE", card="#3D60EC", cardb="#5A78F0", ghost="#3A5DEA", shadow="none", bub="#4466F0",
+                 bub2="#0E1211", bub2fg="#ffffff", flash="#ffffff", logo="kora-klicks-wordmark-transparent-ice.svg"),
 }
 
 DUR = {"hook": 1.9, "versus": 3.9, "score": 3.9, "stat": 3.9, "expect": 5.8, "when": 3.9, "pov": 3.9, "cta": 3.9}
@@ -73,7 +76,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg);color:
 .ghost{position:absolute;left:50%;top:52%;font-family:AN;font-size:330px;line-height:.8;color:var(--ghost);white-space:nowrap}
 .top{position:absolute;top:150px;left:80px;right:80px;display:flex;justify-content:space-between;align-items:center;z-index:5}
 .top img{height:54px}
-.lab{font-family:SM;font-size:24px;letter-spacing:.22em;color:var(--acc)}
+.lab{font-family:SM;font-size:24px;letter-spacing:.22em;color:var(--acct)}
 .bars{position:absolute;top:110px;left:80px;right:80px;display:flex;gap:10px;z-index:5}
 .bars i{flex:1;height:6px;background:var(--line);border-radius:3px;overflow:hidden;position:relative}
 .bars i b{position:absolute;inset:0;width:0;background:var(--fg)}
@@ -94,7 +97,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg);color:
 .vs-wrap{position:relative;margin-top:44px}
 .vs-wrap .card + .card{margin-top:150px}
 .tn{font-family:LZ;font-size:110px;line-height:1.1}
-.star{font-family:CA,EM;font-size:40px;color:var(--acc);margin-top:6px}
+.star{font-family:CA,EM;font-size:40px;color:var(--acct);margin-top:6px}
 .vs{position:absolute;left:50%;top:50%;width:170px;height:170px;margin:-85px 0 0 -85px;border-radius:50%;background:var(--acc);color:#fff;
     font-family:AN;font-size:84px;line-height:170px;text-align:center;direction:ltr;z-index:3;box-shadow:0 0 0 14px var(--bg)}
 .tm{font-family:AN;font-size:200px;line-height:1;direction:ltr;text-align:right;margin-top:20px}
@@ -103,7 +106,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg);color:
 .ln + .ln{border-top:2px solid var(--line)}
 .ln .tn{font-size:100px}
 .sc{font-family:AN;font-size:190px;line-height:1;color:var(--fg)}
-.fig{font-family:AN;font-size:330px;line-height:1;color:var(--acc);direction:ltr;text-align:right}
+.fig{font-family:AN;font-size:330px;line-height:1;color:var(--acct);direction:ltr;text-align:right}
 .fl{font-family:LZ,EM;font-size:80px;line-height:1.2;margin-top:10px}
 .panel{position:relative;height:520px;display:flex;align-items:center;justify-content:space-between;gap:30px}
 .panel + .panel{margin-top:40px}
@@ -198,7 +201,7 @@ def scene_html(s):
         return (f'<div class=c style="top:380px"><div class=huge style="font-size:140px">{words(s["title"])}</div>'
                 f'{A("up", 0.2, cls="note", inner=E(s["sub"])) if s.get("sub") else ""}{rows}</div>')
     if t == "cta":
-        return (f'<div class=c style="top:640px"><div class=huge style="color:var(--acc);font-size:170px">{words(s["text"])}</div>'
+        return (f'<div class=c style="top:640px"><div class=huge style="color:var(--acct);font-size:170px">{words(s["text"])}</div>'
                 f'{A("up", 0.5, cls="sub", inner=E(s.get("sub","")))}'
                 f'{A("up", 0.8, cls="sub", extra="style=font-family:SM;font-size:40px;color:var(--fg);direction:ltr;text-align:right;margin-top:60px", inner="@koraklicks")}'
                 f'{A("bounce", 1.0, inner="<span class=arrow>👇</span>")}</div>')

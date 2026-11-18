@@ -80,7 +80,7 @@ fully drawn, so frame 0 = the score or the number. Put the fact in the YouTube t
 for memes/POV/chat. Best Shorts so far: «ليلة الأبطال» results 862 views, «رقم الجولة» 551, «أهم نتايج الجولة 8 من الليجا» 396.
 **TikTok exception (owner ✅ 21 Oct):** results and news go to TikTok as a PHOTO post (3–5 JPG slides), not as the video; see growth-playbook §0.7. The video still goes to Reels and YouTube Shorts.
 
-`scripts/motion_short.py spec.json OUT_DIR [--theme dark|light] [--mood fun|drive|anthem|dark] [--preview]`
+`scripts/motion_short.py spec.json OUT_DIR [--theme dark|light|blue] [--mood fun|drive|anthem|dark] [--preview]`
 makes a 15–30 s vertical short with kinetic text, beat-synced camera punches, flashes, pops and whooshes on original
 music (music.py; `fun` mood = bouncy pluck track for memes; `phonk` mood = drift-phonk style cowbell + 808, use `--bpm 140`, popular in football edits — approved by the owner 14 Oct). Scene types: `hook`, `versus`, `score`, `stat`, `expect`
 (expectation vs reality), `when` («لما…»), `chat` (fans' group chat), `pov`, `list`, `cta`. Spec format is in the
@@ -88,9 +88,10 @@ script's docstring. Always run `--preview` first and look at the sheet (one fram
 It writes `<slug>-short.mp4` and `<slug>-cover.jpg` (use the cover as Story/thumbnail).
 
 Two looks side by side (neither replaces the other):
-- `--theme dark` = the cinematic house look: night results, FT shorts, «ليلة الأبطال».
-- `--theme light` = bright version (ice/mint/sky, black wordmark): daytime previews, fixtures, memes, tables.
-  `story_short.py` also takes `--theme light`. Aim for about half of the day's shorts in each look.
+- «Desk» palette since 19 Nov 2026 (BLUE #3155E7 · INK #0E1211 · CREAM #F3F2EA). `--theme dark` = ink: night results, FT shorts, «ليلة الأبطال».
+- `--theme light` = cream + blue accents (black wordmark): daytime previews, fixtures, memes, tables.
+- `--theme blue` = blue background: breaking news and big announcements (at most one a day).
+  `story_short.py` also takes `--theme light|blue`. Aim for about half of the day's shorts in each look.
 
 Memes: original typographic + emoji jokes about the fan experience (late kick-offs, last-minute goals, predictions
 gone wrong, the group chat during the match). Never mock a club, player or fan base, never use film/series stills
@@ -101,7 +102,7 @@ or other people's photos, no crests, no betting; chat names are invented generic
 ## End card: like + subscribe / follow (owner request 18 Oct 2026)
 
 After the final render of ANY video (long video, short, reel, story short), run
-`python3 .claude/skills/youtube-video/scripts/endcard.py VIDEO.mp4 OUT_DIR --theme dark|light` (match the video's look).
+`python3 .claude/skills/youtube-video/scripts/endcard.py VIDEO.mp4 OUT_DIR --theme dark|light|blue` (match the video's look).
 It writes `<stem>-yt.mp4` («اعمل لايك 👍 · اشترك 🔔», for YouTube) and `<stem>-social.mp4` («اعمل لايك ❤️ · فولو ➕», for the
 Instagram Reel + TikTok post). Vertical: banner for the last 2.8 s; landscape: 4 s at ~30 % and the last 6 s. Length and music unchanged.
 Long videos: send the owner the `-yt.mp4` for approval. Generic calls only, never conditional bait («لايك لو…»).

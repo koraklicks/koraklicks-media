@@ -62,7 +62,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#050608;color:#E
 .team.a{text-align:left}
 .mid{font-family:AN;font-size:200px;line-height:1;text-align:center;direction:ltr;white-space:nowrap}
 .note{font-family:CA;font-size:40px;color:#8A97A3;margin-top:44px}
-.acc{width:180px;height:12px;background:#00C853;margin-top:50px}
+.acc{width:180px;height:12px;background:BARCOL;margin-top:50px}
 .foot{position:absolute;bottom:170px;left:80px;right:80px;display:flex;justify-content:space-between;align-items:center;border-top:2px solid #22272E;padding-top:30px}
 .foot .h{font-family:SM;font-size:24px;color:#8A97A3}
 .foot .s{font-family:CA;font-size:28px;color:#8A97A3;direction:rtl}
@@ -93,15 +93,22 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#050608;color:#E
 """.replace("FONTS", FONTS.as_uri())
 
 
-LIGHT = {"#050608": "#F3F8FC", "#0e1c27": "#DDF5E7", "#E3F4FF": "#0B1620", "#8A97A3": "#5B6B7A",
-         "#00C853": "#00A84F", "#22272E": "#D5E0EA", "#0f1419": "#E6EFF7", "opacity:.06": "opacity:.03",
-         "kora-klicks-wordmark-transparent-ice.svg": "kora-klicks-wordmark-transparent-black.svg"}
+# «Desk» palette (owner, 19 Nov 2026). The CSS above is written in the old hex codes; every theme maps them.
+_ICE, _BLK = "kora-klicks-wordmark-transparent-ice.svg", "kora-klicks-wordmark-transparent-black.svg"
+MAPS = {
+    "dark": {"#050608": "#0E1211", "#0e1c27": "#16204A", "#E3F4FF": "#F3F2EA", "#8A97A3": "#8D9196",
+             "#00C853": "#A7BAFF", "#22272E": "#2A2F33", "#0f1419": "#161B1E", "BARCOL": "#3155E7"},
+    "light": {"#050608": "#F3F2EA", "#0e1c27": "#E2E7F8", "#E3F4FF": "#0E1211", "#8A97A3": "#5B5F66",
+              "#00C853": "#3155E7", "#22272E": "#D3D2CA", "#0f1419": "#E9E8DF", "opacity:.06": "opacity:.03",
+              "BARCOL": "#3155E7", _ICE: _BLK},
+    "blue": {"#050608": "#3155E7", "#0e1c27": "#4466F0", "#E3F4FF": "#FFFFFF", "#8A97A3": "#D3DBFB",
+             "#00C853": "#0E1211", "#22272E": "#6F88EE", "#0f1419": "#3A5DEA", "BARCOL": "#0E1211"},
+}
 
 
 def themed(html_text, theme):
-    if theme == "light":
-        for a, b in LIGHT.items():
-            html_text = html_text.replace(a, b)
+    for a, b in MAPS[theme or "dark"].items():
+        html_text = html_text.replace(a, b)
     return html_text
 
 
@@ -190,7 +197,7 @@ def main():
     ap.add_argument("spec"); ap.add_argument("out_dir")
     ap.add_argument("--fps", type=int, default=30); ap.add_argument("--bpm", type=float, default=124)
     ap.add_argument("--mood", default="drive")
-    ap.add_argument("--theme", choices=["dark", "light"])
+    ap.add_argument("--theme", choices=["dark", "light", "blue"])
     a = ap.parse_args()
     spec = json.loads(Path(a.spec).read_text(encoding="utf-8"))
     theme = a.theme or spec.get("theme", "dark")

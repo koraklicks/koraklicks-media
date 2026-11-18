@@ -12,7 +12,7 @@ If you hit a new problem during a run, add one line to the top section of `LESSO
 - Long YouTube videos and anything involving money (sponsors, prices, paid credits) need the owner's ✅.
   The daily story + short Shorts (noon fixtures, night results) are published to YouTube Shorts automatically (owner decision, 11 Oct 2026).
 - Calm tone, mostly Egyptian dialect. No فرم / سحق / اكتسح / فضيحة. No betting or gambling promotion.
-- Photo posts/slides/carousels use the «Desk» cards (owner, 19 Nov 2026): `.claude/skills/newsroom-rules/scripts/cards.py` (breaking · result · preview · roundup). Details: newsroom-rules SKILL §4.
+- Photo posts/slides/carousels use the «Desk» cards (owner, 19 Nov 2026): `.claude/skills/newsroom-rules/scripts/cards.py` (breaking · result · preview · roundup); videos use the same palette (themes dark=ink, light=cream, blue). Details: newsroom-rules SKILL §4.
 - No match footage, licensed photos only, no real club crests. Never invent numbers or metrics.
 - No voice-over on videos unless the owner asks. Music (owner, 22 Oct 2026): the owner's track «Match Day Power» (`.claude/assets/music/house.mp3`, in the repo) in EVERY video; `music.py` uses it automatically (Shorts start on the drop at 22 s). Never other music.
 

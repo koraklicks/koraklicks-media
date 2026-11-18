@@ -24,9 +24,10 @@ CTA = {
     "yt": [("👍", "اعمل لايك", "soft"), ("🔔", "اشترك", "yt")],
     "social": [("❤️", "اعمل لايك", "soft"), ("➕", "فولو", "brand")],
 }
-THEME = {
-    "dark": dict(panel="rgba(5,6,8,.86)", edge="#22272E", fg="#E3F4FF", mute="#8A97A3", soft="#1b232c", brand="#00C853", brandfg="#03110a"),
-    "light": dict(panel="rgba(255,255,255,.94)", edge="#D5E0EA", fg="#0B1620", mute="#5B6B7A", soft="#EEF3F8", brand="#00A84F", brandfg="#ffffff"),
+THEME = {  # «Desk» palette (owner, 19 Nov 2026)
+    "dark": dict(panel="rgba(14,18,17,.88)", edge="#2A2F33", fg="#F3F2EA", mute="#8D9196", soft="#1A2024", brand="#3155E7", brandfg="#ffffff"),
+    "light": dict(panel="rgba(243,242,234,.96)", edge="#D3D2CA", fg="#0E1211", mute="#5B5F66", soft="#E2E1D8", brand="#3155E7", brandfg="#ffffff"),
+    "blue": dict(panel="rgba(49,85,231,.94)", edge="#6F88EE", fg="#FFFFFF", mute="#D3DBFB", soft="#4466F0", brand="#0E1211", brandfg="#ffffff"),
 }
 
 
