@@ -28,6 +28,9 @@ spec.json:
   ]
 }
 Optional on any card: "source" (shown small above the footer as «📌 المصدر: ...»), "handle" (default @KORAKLICKS).
+Club logos (owner 19 Nov 2026): "home_logo"/"away_logo" on result + preview = paths from scripts/media.py crests.
+Photo: "photo" + "photo_credit" on breaking = ONLY a free Wikimedia Commons photo from scripts/media.py photo (or an
+owner-supplied file); never from news sites/agencies/club accounts. The credit is printed on the card.
 Rules: real facts only (newsroom gate), no crests/photos needed, one idea per card, «\\n» = line break.
 Templates: breaking = blue bg + ink footer · result = ink bg, home row in periwinkle · preview = cream + blue
 kick-off block · roundup = blue head + cream list. Fonts: Barlow Condensed 800 (EN display), Changa (AR,
@@ -86,6 +89,7 @@ html,body{width:1080px;height:1350px;overflow:hidden}
 .foot{display:flex;justify-content:space-between;align-items:center;height:96px;margin-top:auto}
 .src{font-size:22px;font-weight:500;opacity:.75;padding:0 0 10px}
 .ar .src{font-size:24px}
+.ph>*:not(.layer){position:relative;z-index:1}
 .body{font-size:33px;font-weight:500;line-height:1.42}
 .ar .body{font-size:34px;line-height:1.55}
 """
@@ -104,6 +108,32 @@ def handle(card):
     return '<bdi dir="ltr">' + html.escape(card.get("handle", "@KORAKLICKS")) + '</bdi>'
 
 
+SPEC_DIR = Path(".")
+
+
+def data_uri(path):
+    f = (SPEC_DIR / path).resolve()
+    mime = "image/png" if f.suffix.lower() == ".png" else "image/svg+xml" if f.suffix.lower() == ".svg" else "image/jpeg"
+    return f"data:{mime};base64," + base64.b64encode(f.read_bytes()).decode()
+
+
+def logo(c, k, h):
+    return f'<img src="{data_uri(c[k])}" style="height:{h}px;width:{h}px;object-fit:contain;flex:none">' if c.get(k) else ""
+
+
+def photo_layers(c):
+    """Breaking card photo (owner 19 Nov 2026): ONLY free Commons photos from scripts/media.py or owner files, with credit."""
+    if not c.get("photo"):
+        return "", ""
+    if not c.get("photo_credit"):
+        sys.exit("photo without photo_credit: every photo needs its credit line (scripts/media.py photo gives it)")
+    u = data_uri(c["photo"])
+    return (f'<div class="layer" style="position:absolute;inset:0;background:url({u}) center 22%/cover;filter:grayscale(1) contrast(1.15)"></div>'
+            f'<div class="layer" style="position:absolute;inset:0;background:{C["blue"]};mix-blend-mode:multiply"></div>'
+            f'<div class="layer" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(49,85,231,.25) 0%,rgba(49,85,231,.35) 40%,rgba(49,85,231,.9) 72%)"></div>'), \
+           f'<div style="font-size:18px;opacity:.8;direction:ltr;text-align:left;padding-bottom:8px;font-family:Inter">{html.escape(c["photo_credit"])}</div>'
+
+
 def src(t, card, color):
     if not card.get("source"):
         return ""
@@ -112,7 +142,8 @@ def src(t, card, color):
 
 
 def breaking(t, spec, c, n):
-    return f"""<div class="card {'ar' if t.ar else ''}" style="background:{C['blue']};color:#fff">
+    layers, credit = photo_layers(c)
+    return f"""<div class="card {'ar' if t.ar else ''} {'ph' if layers else ''}" style="background:{C['blue']};color:#fff">{layers}
  {header(t, spec, n, '#fff')}
  <div class="row" style="margin-top:66px"><span class="lbl" style="background:{C['ink']};padding:16px 22px">{t(c.get('tag', 'خبر عاجل' if t.ar else 'BREAKING NEWS'))}</span>
    <span class="lbl">{t(c.get('corner', 'ورد الآن' if t.ar else 'JUST IN'))}</span></div>
@@ -120,17 +151,17 @@ def breaking(t, spec, c, n):
  <div style="width:150px;height:9px;background:#fff;margin:60px 0 50px"></div>
  <div class="disp" style="font-size:{70 if not t.ar else 60}px">{t(c.get('sub', ''))}</div>
  <div class="body" style="margin-top:26px">{t(c.get('body', ''))}</div>
- <div style="margin-top:auto">{src(t, c, '#fff')}</div>
+ <div style="margin-top:auto">{src(t, c, '#fff')}{credit}</div>
  <div style="margin:0 -64px;background:{C['ink']};padding:40px 64px 0;height:180px">
   <div class="disp" style="font-size:{40 if not t.ar else 38}px">{t(c.get('tagline', ''))}</div>
   <div class="row" style="margin-top:30px"><span class="lbl" style="color:{C['peri']}">{handle(c)}</span><span class="lbl">{t(c.get('label', ''))}</span></div>
  </div></div>"""
 
 
-def score_row(t, name, score, side, color, top_line):
+def score_row(t, name, score, side, color, top_line, lg=""):
     return f"""<div class="row" style="border-top:3px solid {top_line};height:252px">
-  <div><div class="disp" style="font-size:{94 if not t.ar else 84}px;color:{color}">{t(name)}</div>
-   <div class="lbl" style="color:{C['cream']};opacity:.85;margin-top:18px;font-size:18px">{side}</div></div>
+  <div style="display:flex;align-items:center;gap:30px">{lg}<div><div class="disp" style="font-size:{94 if not t.ar else 84}px;color:{color}">{t(name)}</div>
+   <div class="lbl" style="color:{C['cream']};opacity:.85;margin-top:18px;font-size:18px">{side}</div></div></div>
   <div class="disp" style="font-size:190px;color:{color};line-height:1">{t(score)}</div></div>"""
 
 
@@ -141,8 +172,8 @@ def result(t, spec, c, n):
  <div class="row" style="margin-top:66px"><span class="lbl" style="color:{C['peri']}">{t(c.get('status', 'نهاية المباراة' if t.ar else 'FULL TIME'))}</span>
    <span class="lbl">{t(c.get('comp', ''))}</span></div>
  <div class="disp" style="font-size:{c.get('size', 150 if not t.ar else 124)}px;margin:40px 0 58px">{t(c['headline'])}</div>
- {score_row(t, c['home'], c['home_score'], home_l, C['peri'], C['blue'])}
- {score_row(t, c['away'], c['away_score'], away_l, C['cream'], C['line_d'])}
+ {score_row(t, c['home'], c['home_score'], home_l, C['peri'], C['blue'], logo(c, 'home_logo', 124))}
+ {score_row(t, c['away'], c['away_score'], away_l, C['cream'], C['line_d'], logo(c, 'away_logo', 124))}
  <div style="border-top:3px solid {C['line_d']};padding-top:48px" class="disp"><span style="font-size:{44 if not t.ar else 40}px">{t(c.get('tagline', ''))}</span></div>
  <div style="margin-top:auto">{src(t, c, C['cream'])}</div>
  <div class="foot"><span class="lbl" style="color:{C['peri']}">{handle(c)}</span><span class="lbl">{t(c.get('label', ''))}</span></div></div>"""
@@ -154,10 +185,10 @@ def preview(t, spec, c, n):
  {header(t, spec, n, C['ink'])}
  <div class="row" style="margin-top:66px"><span class="lbl">{t(c.get('status', 'المباراة القادمة' if t.ar else 'UP NEXT'))}</span><span class="lbl">{t(c.get('comp', ''))}</span></div>
  <div class="disp" style="font-size:{c.get('size', 160 if not t.ar else 128)}px;margin:40px 0 50px">{t(c['headline'])}</div>
- <div style="border-top:4px solid {C['ink']};padding-top:44px" class="disp"><span style="font-size:{100 if not t.ar else 92}px">{t(c['home'])}</span></div>
+ <div style="border-top:4px solid {C['ink']};padding-top:44px" class="disp"><span style="font-size:{100 if not t.ar else 92}px;display:inline-flex;align-items:center;gap:30px">{logo(c, 'home_logo', 104)}{t(c['home'])}</span></div>
  <div class="row" style="margin:30px 0 40px;gap:28px"><span class="lbl" style="background:{C['ink']};color:#fff;padding:12px 22px;font-size:24px">{vs}</span>
    <span style="flex:1;height:2px;background:#C9C8C0"></span></div>
- <div class="disp"><span style="font-size:{100 if not t.ar else 92}px">{t(c['away'])}</span></div>
+ <div class="disp"><span style="font-size:{100 if not t.ar else 92}px;display:inline-flex;align-items:center;gap:30px">{logo(c, 'away_logo', 104)}{t(c['away'])}</span></div>
  <div style="margin-top:auto">{src(t, c, C['ink'])}</div>
  <div style="margin:0 -64px;background:{C['blue']};color:#fff;padding:46px 64px 0;height:300px">
   <div style="display:flex;height:150px">
@@ -194,6 +225,8 @@ def main():
     ap.add_argument("spec"); ap.add_argument("out_dir"); ap.add_argument("--preview", action="store_true")
     a = ap.parse_args()
     spec = json.loads(Path(a.spec).read_text())
+    global SPEC_DIR
+    SPEC_DIR = Path(a.spec).resolve().parent  # logo/photo paths are relative to the spec
     t, out = T(spec), Path(a.out_dir)
     out.mkdir(parents=True, exist_ok=True)
     ff = font_face()

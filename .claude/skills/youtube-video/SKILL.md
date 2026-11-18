@@ -15,6 +15,8 @@ metadata:
 
 Load the `newsroom-rules` skill first, then read `references/video-formats.md`.
 
+**Weekly series (owner, 19 Nov 2026):** 8 competitions + international breaks, see `references/weekly-series.md`. Long videos use `render.py` theme `desk`.
+
 ## Pipeline
 
 1. **Pick the format** from the argument; if none, ask BOSS which is due (Europe roundup after

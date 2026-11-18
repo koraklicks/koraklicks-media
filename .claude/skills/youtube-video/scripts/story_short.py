@@ -60,6 +60,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#050608;color:#E
 .row{display:flex;justify-content:space-between;align-items:center;direction:rtl;margin-top:50px}
 .team{font-family:LZ;font-size:92px;line-height:1.1;width:330px}
 .team.a{text-align:left}
+.lg{width:110px;height:110px;object-fit:contain;margin-bottom:10px}
 .mid{font-family:AN;font-size:200px;line-height:1;text-align:center;direction:ltr;white-space:nowrap}
 .note{font-family:CA;font-size:40px;color:#8A97A3;margin-top:44px}
 .acc{width:180px;height:12px;background:BARCOL;margin-top:50px}
@@ -129,8 +130,12 @@ def item_block(it):
     if "big" in it:
         return fact_block(it, 150)
     return (f'<div class=comp>{E(it.get("comp",""))}</div>'
-            f'<div class=row><div class=team>{E(it["home"])}</div><div class=mid>{mid_text(it)}</div>'
-            f'<div class="team a">{E(it["away"])}</div></div>')
+            f'<div class=row><div class=team>{LG(it, "home_logo")}{E(it["home"])}</div><div class=mid>{mid_text(it)}</div>'
+            f'<div class="team a">{LG(it, "away_logo")}{E(it["away"])}</div></div>')
+
+
+def LG(it, k):
+    return f'<img class=lg src="{it[k]}"><br>' if it.get(k) else ""
 
 
 def page(spec, body, bars=0):
@@ -200,6 +205,11 @@ def main():
     ap.add_argument("--theme", choices=["dark", "light", "blue"])
     a = ap.parse_args()
     spec = json.loads(Path(a.spec).read_text(encoding="utf-8"))
+    base = Path(a.spec).resolve().parent  # logo paths relative to the spec (scripts/media.py output)
+    for it in spec.get("items", []):
+        for k in ("home_logo", "away_logo"):
+            if it.get(k):
+                it[k] = (base / it[k]).resolve().as_uri()
     theme = a.theme or spec.get("theme", "dark")
     out = Path(a.out_dir).resolve(); out.mkdir(parents=True, exist_ok=True)
     slug = spec["slug"]

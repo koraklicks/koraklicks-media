@@ -8,12 +8,12 @@ If you hit a new problem during a run, add one line to the top section of `LESSO
 - Confirmed news (official source, or two independent Tier-1 outlets) is published automatically, always with «📌 المصدر:».
 - Unconfirmed news is **never** published without the owner's ✅. List it for the owner and stop there.
   Owner away (26 Oct 2026): an item waiting for his ✅ for more than 24 h is cancelled automatically (log «EXPIRED»), never published.
-- Long YouTube videos are PAUSED (owner 22 Oct 2026: 29 and 145 views, 11–57 s watched); instead, a round-up Short per league the morning after each round. Make a long video only if the owner asks.
-- Long YouTube videos and anything involving money (sponsors, prices, paid credits) need the owner's ✅.
+- Weekly YouTube series (owner, 19 Nov 2026): one long 16:9 video per week for each of: Premier League, La Liga, Serie A, Champions League (2–3 min, the longest), Egyptian league, Saudi league, Egyptian clubs in Africa, Saudi clubs in Asia; in international breaks one video of the top European + Arab national-team results. All others ~1 min. Made by the daily «مكتب اليوتيوب» task; rules: `.claude/skills/youtube-video/references/weekly-series.md`. Other long videos only if the owner asks.
+- Anything involving money (sponsors, prices, paid credits) and long YouTube videos outside the weekly series need the owner's ✅. The weekly-series videos are published automatically once confirmed (owner, 19 Nov 2026).
   The daily story + short Shorts (noon fixtures, night results) are published to YouTube Shorts automatically (owner decision, 11 Oct 2026).
 - Calm tone, mostly Egyptian dialect. No فرم / سحق / اكتسح / فضيحة. No betting or gambling promotion.
 - Photo posts/slides/carousels use the «Desk» cards (owner, 19 Nov 2026): `.claude/skills/newsroom-rules/scripts/cards.py` (breaking · result · preview · roundup); videos use the same palette (themes dark=ink, light=cream, blue). Details: newsroom-rules SKILL §4.
-- No match footage, licensed photos only, no real club crests. Never invent numbers or metrics.
+- No match footage. Photos (owner, 19 Nov 2026): ONLY free Wikimedia Commons photos via `scripts/media.py photo` with the credit printed on the image, or files the owner supplied; never photos from news sites, agencies or club accounts. Club logos ARE allowed on results and upcoming matches (owner, 19 Nov 2026), only from ESPN via `scripts/media.py crests`. Never invent numbers or metrics.
 - No voice-over on videos unless the owner asks. Music (owner, 22 Oct 2026): the owner's track «Match Day Power» (`.claude/assets/music/house.mp3`, in the repo) in EVERY video; `music.py` uses it automatically (Shorts start on the drop at 22 s). Never other music.
 
 ## Publishing

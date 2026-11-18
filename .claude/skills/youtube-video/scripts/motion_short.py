@@ -87,6 +87,9 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg);color:
 .scene{position:absolute;inset:0;opacity:0}
 .c{position:absolute;left:80px;right:80px;direction:rtl;text-align:right}
 .a{will-change:transform,opacity}
+.lg{width:96px;height:96px;object-fit:contain;flex:none;margin-left:26px}
+.card .lg{display:inline-block;vertical-align:middle;margin:0 0 10px 0}
+.ln .lg{margin:0 0 0 26px}
 .chip{display:inline-block;font-family:CA;font-size:36px;padding:10px 30px;border-radius:999px;background:var(--acc);color:#fff}
 .huge{font-family:LZ,EM;font-size:168px;line-height:1.08}
 .huge .w{display:inline-block;margin-left:26px}
@@ -153,20 +156,21 @@ def scene_html(s):
                 f'{A("up", 0.5, cls="sub", inner=E(s["sub"])) if s.get("sub") else ""}'
                 f'{A("bounce", 0.35, extra="style=margin-top:40px", inner="<span class=emo>"+E(s["emoji"])+"</span>") if s.get("emoji") else ""}</div>')
     if t == "versus":
+        LG = lambda k: f'<img class=lg src="{s[k]}">' if s.get(k) else ""
         hs = f'<div class=star>⭐ {E(s["home_star"])}</div>' if s.get("home_star") else ""
         as_ = f'<div class=star>⭐ {E(s["away_star"])}</div>' if s.get("away_star") else ""
         return (f'<div class=c style="top:400px">{A("up", 0, cls="comp", inner=E(s.get("comp","")))}'
-                f'<div class=vs-wrap>{A("right", 0.05, cls="card", inner="<div class=tn>"+E(s["home"])+"</div>"+hs)}'
-                f'{A("left", 0.2, cls="card", inner="<div class=tn>"+E(s["away"])+"</div>"+as_)}'
+                f'<div class=vs-wrap>{A("right", 0.05, cls="card", inner=LG("home_logo")+"<div class=tn>"+E(s["home"])+"</div>"+hs)}'
+                f'{A("left", 0.2, cls="card", inner=LG("away_logo")+"<div class=tn>"+E(s["away"])+"</div>"+as_)}'
                 f'{A("slam", 0.45, cls="vs", inner="VS")}</div>'
                 f'{A("up", 0.8, cls="tm", inner=E(s.get("time",""))) if s.get("time") else ""}'
                 f'{A("up", 1.0, cls="note", inner=E(s["note"])) if s.get("note") else ""}</div>')
     if t == "score":
-        def ln(team, sc, d):
-            return A("right", d, cls="ln", inner=f'<span class=tn>{E(team)}</span>'
+        def ln(team, sc, d, lg=None):
+            return A("right", d, cls="ln", inner=(f'<img class=lg src="{lg}">' if lg else "") + f'<span class=tn style="flex:1">{E(team)}</span>'
                      f'<span class="sc a" data-a="count" data-d="{d + 0.3}" data-n="{int(sc)}">0</span>')
         return (f'<div class=c style="top:470px">{A("up", 0, cls="comp", inner=E(s.get("comp","")))}'
-                f'<div class=card style="margin-top:36px;padding:20px 50px">{ln(s["home"], s["home_score"], 0.1)}{ln(s["away"], s["away_score"], 0.25)}</div>'
+                f'<div class=card style="margin-top:36px;padding:20px 50px">{ln(s["home"], s["home_score"], 0.1, s.get("home_logo"))}{ln(s["away"], s["away_score"], 0.25, s.get("away_logo"))}</div>'
                 f'{A("up", 1.0, cls="note", inner=E(s["note"])) if s.get("note") else ""}</div>')
     if t == "stat":
         big = str(s["big"])
@@ -272,6 +276,11 @@ def main():
                     help="also write <slug>-short-nomusic.mp4 (no audio) for the owner to add a trending sound by hand in the app")
     a = ap.parse_args()
     spec = json.loads(Path(a.spec).read_text(encoding="utf-8"))
+    base = Path(a.spec).resolve().parent  # logos/photos: paths relative to the spec (scripts/media.py output)
+    for sc_ in spec.get("scenes", []):
+        for k in ("home_logo", "away_logo"):
+            if sc_.get(k):
+                sc_[k] = (base / sc_[k]).resolve().as_uri()
     theme = a.theme or spec.get("theme", "dark")
     mood = a.mood or spec.get("mood", "fun" if theme == "light" else "drive")
     spec["_bpm"] = a.bpm

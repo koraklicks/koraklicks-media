@@ -11,7 +11,7 @@ Usage:
 
 Needs: python playwright (with Chromium) and ffmpeg.
 Scene types: intro, section, result, headline, table, stat, list, outro.
-Themes: "major" (default for Kora Klicks: black cinematic, giant condensed type) or "classic" (navy cards).
+Themes: "desk" (DEFAULT since 19 Nov 2026: ink/cream/blue, Changa, gold KK logo), "major" (old black cinematic) or "classic" (navy cards).
 Any scene may set "image": a licensed photo path (relative to the storyboard) shown full-bleed with a dark grade.
 See ../references/storyboard-schema.md for every field.
 """
@@ -193,6 +193,53 @@ html,body{{background:#050608;color:#E3F4FF}}
 .outro .handles{{font-family:Mono;color:#7F8B99}}
 """
 
+# «Desk» look (owner, 19 Nov 2026): ink/cream/blue/periwinkle, Changa Arabic, Anton numbers, gold KK logo. Default theme.
+DESK_CSS = f"""
+@font-face{{font-family:Display;src:url({FONTS}/changa-arabic-700-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+FB50-FDFF,U+FE70-FEFF,U+200C-200F}}
+@font-face{{font-family:Cairo;font-weight:700;src:url({FONTS}/changa-arabic-500-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+FB50-FDFF,U+FE70-FEFF,U+200C-200F}}
+@font-face{{font-family:Cairo;font-weight:800;src:url({FONTS}/changa-arabic-700-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+FB50-FDFF,U+FE70-FEFF,U+200C-200F}}
+@font-face{{font-family:Cairo;font-weight:900;src:url({FONTS}/changa-arabic-700-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+FB50-FDFF,U+FE70-FEFF,U+200C-200F}}
+html,body{{background:#0E1211;color:#F3F2EA}}
+.grain{{opacity:.05}}
+.vignette{{background:radial-gradient(ellipse at center,rgba(0,0,0,0) 55%,rgba(0,0,0,.55) 100%)}}
+.bokeh{{display:none}}
+.topbar{{color:#8D9196;border-bottom:2px solid #2A2F33;padding-bottom:22px}}
+.topbar .brand{{color:#F3F2EA;font-size:40px}}
+.topbar .brand svg{{height:44px;width:auto}}
+.topbar .mono{{color:#8D9196}}
+.ghost{{color:rgba(243,242,234,.035)}}
+.progress .seg{{background:#2A2F33}}
+.progress .fill{{background:#3155E7}}
+.src{{color:#8D9196}}
+.intro h1{{line-height:1.15}}
+.intro h2,.section h2,.comp,.stat .sub{{color:#A7BAFF}}
+.intro .date{{color:#8D9196}}
+.section h1{{line-height:1.15}}
+.score .dash{{color:#3155E7}}
+.team:first-child .tname{{color:#A7BAFF}}
+.scorers{{border-top:2px solid #2A2F33;color:#C9CCCF}}
+.note{{background:#3155E7;color:#fff}}
+.headline .tag{{background:#3155E7;color:#fff;border:none}}
+.headline .idx{{color:rgba(243,242,234,.05)}}
+.headline .bar{{background:#3155E7}}
+.headline p{{color:#B9BCC0}}
+.row{{border-bottom:2px solid #2A2F33}}
+.row .pos{{color:#8D9196}}
+.row.hl,.row.hl .pos{{color:#A7BAFF}}
+.stat .big{{color:#A7BAFF}}
+.list li{{border-bottom:2px solid #2A2F33}}
+.list li .n{{color:#A7BAFF}}
+.outro .cta{{background:#3155E7;color:#fff}}
+.outro .handles{{color:#8D9196}}
+.outro svg{{height:150px;width:auto;margin-bottom:24px}}
+.crest.img{{display:flex;width:190px;height:190px;background:none;border:none;border-radius:0;align-items:center;justify-content:center;margin-bottom:6px}}
+.crest.img img{{max-width:100%;max-height:100%;object-fit:contain}}
+.credit{{position:absolute;left:140px;bottom:76px;font-size:20px;color:rgba(243,242,234,.75);direction:ltr;z-index:3;font-family:Cairo}}
+.photo::after{{background:linear-gradient(90deg,rgba(14,18,17,.20) 0%,rgba(14,18,17,.60) 45%,rgba(14,18,17,.93) 100%)}}
+"""
+_MARK = (Path(__file__).resolve().parents[3] / "assets" / "logo" / "kk-mark-gold.svg")
+KK_GOLD = _MARK.read_text().replace("<svg ", '<svg class="logo" aria-hidden="true" ', 1) if _MARK.exists() else ""
+
 GRAIN = """<svg class="grain" xmlns="http://www.w3.org/2000/svg" width="2020" height="1180" aria-hidden="true"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>"""
 
 DEFAULT_GHOST = {"intro": "KORA", "result": "FT", "stat": None, "outro": "KORA"}
@@ -234,7 +281,11 @@ def build_scene(s, t0, idx):
                 return short
             n = name.strip()
             return (n[2:] if n.startswith("ال") and len(n) > 2 else n)[:1]
-        def team(name, off, short=None):
+        def team(name, off, short=None, logo=None):
+            if logo:
+                uri = (IMG_BASE / logo).resolve().as_uri() if IMG_BASE else logo
+                return (f'<div class="team in" style="{a(off, "pop", 0.7)}"><div class="crest img"><img src="{uri}"></div>'
+                        f'<div class="tname">{e(name)}</div></div>')
             return (f'<div class="team in" style="{a(off, "pop", 0.7)}"><div class="crest">{e(initial(name, short))}</div>'
                     f'<div class="tname">{e(name)}</div></div>')
         def sc(lst, off):
@@ -242,9 +293,9 @@ def build_scene(s, t0, idx):
             return f"<ul>{items}</ul>"
         has_sc = s.get("scorers_home") or s.get("scorers_away")
         body = ((f'<div class="comp in" style="{a(0.1)}">{e(s["competition"])}</div>' if s.get("competition") else "")
-                + f'<div class="board in" style="{a(0.2)}"><div class="teams">{team(s["home"], 0.4, s.get("home_short"))}'
+                + f'<div class="board in" style="{a(0.2)}"><div class="teams">{team(s["home"], 0.4, s.get("home_short"), s.get("home_logo"))}'
                 f'<div class="score num in" style="{a(0.9, "pop", 0.7)}"><span>{e(str(s["home_score"]))}</span><span class="dash">-</span><span>{e(str(s["away_score"]))}</span></div>'
-                f'{team(s["away"], 0.6, s.get("away_short"))}</div>'
+                f'{team(s["away"], 0.6, s.get("away_short"), s.get("away_logo"))}</div>'
                 + (f'<div class="scorers">{sc(s.get("scorers_home", []), 1.5)}{sc(s.get("scorers_away", []), 1.7)}</div>' if has_sc else "")
                 + "</div>"
                 + (f'<div class="note in" style="{a(2.2, "pop", 0.6)}">{e(s["note"])}</div>' if s.get("note") else ""))
@@ -268,17 +319,17 @@ def build_scene(s, t0, idx):
                 f'<div class="label in" style="{a(0.8)}">{e(s["label"])}</div>'
                 + (f'<div class="sub in" style="{a(1.1)}">{e(s["sub"])}</div>' if s.get("sub") else ""))
     elif typ == "list":
-        items = "".join(f'<li class="in" style="{a(0.5 + i * 0.35, "slideR", 0.5)}"><span class="n">{("#%02d" % (i + 1)) if THEME == "major" else (i + 1)}</span><span>{e(x)}</span></li>' for i, x in enumerate(s["items"]))
+        items = "".join(f'<li class="in" style="{a(0.5 + i * 0.35, "slideR", 0.5)}"><span class="n">{("#%02d" % (i + 1)) if THEME in ("major", "desk") else (i + 1)}</span><span>{e(x)}</span></li>' for i, x in enumerate(s["items"]))
         body = f'<h1 class="in" style="{a(0.1)}">{e(s["title"])}</h1><ol>{items}</ol>'
     elif typ == "outro":
-        body = (f'<div class="in" style="{a(0.1, "pop", 0.9)}">{KK_LOGO if THEME == "major" else LOGO}</div>'
+        body = (f'<div class="in" style="{a(0.1, "pop", 0.9)}">{(KK_GOLD if THEME == "desk" else KK_LOGO) if THEME in ("major", "desk") else LOGO}</div>'
                 f'<h1 class="in" style="{a(0.5)}">{e(s.get("title", "شكراً للمشاهدة"))}</h1>'
                 f'<div class="pill cta in" style="{a(0.9, "pop", 0.6)}">{e(s.get("cta", "اشترك وفعّل الجرس 🔔"))}</div>'
                 + (f'<div class="handles in" style="{a(1.3)}">{e(s["handles"])}</div>' if s.get("handles") else ""))
     else:
         raise ValueError(f"unknown scene type: {typ}")
     ghost = ""
-    if THEME == "major":
+    if THEME in ("major", "desk"):
         word = s.get("ghost", DEFAULT_GHOST.get(typ, s.get("title")))
         if word:
             ghost = f'<div class="ghost in" style="{a(0.0, "vis", 1.2)}"><span style="display:inline-block;{anim("zoom", t0, d, "linear")}">{e(str(word))}</span></div>'
@@ -286,12 +337,14 @@ def build_scene(s, t0, idx):
     if s.get("image"):
         uri = (IMG_BASE / s["image"]).resolve().as_uri() if IMG_BASE else s["image"]
         photo = f'<div class="photo" style="background-image:url(\'{uri}\');{anim("zoom", t0, d, "linear")}"></div>'
+        if s.get("image_credit"):
+            photo += f'<div class="credit">{e(s["image_credit"])}</div>'
     return f'<section class="scene {typ}" style="{scene_vis(t0, d)}">{photo}{ghost}{body}{src}</section>'
 
 
 def build_html(sb, theme=None):
     global THEME
-    THEME = theme or sb.get("theme", "major")
+    THEME = theme or sb.get("theme", "desk")
     t, scenes = 0.0, []
     for i, s in enumerate(sb["scenes"]):
         scenes.append(build_scene(s, t, i))
@@ -304,11 +357,11 @@ def build_html(sb, theme=None):
     bug = ('<div class="bug"><div><div class="name">كورة كليكس</div><div class="en">KORA KLICKS</div></div>'
            f'{LOGO}</div>')
     extra_css, extra = "", ""
-    if THEME == "major":
-        extra_css = MAJOR_CSS
+    if THEME in ("major", "desk"):
+        extra_css = MAJOR_CSS + (DESK_CSS if THEME == "desk" else "")
         glows = "".join(
             f'<div class="glow" style="width:{w}px;height:{w}px;left:{x}px;top:{y}px;background:{c};animation:drift {total:.2f}s linear 0s both"></div>'
-            for w, x, y, c in [(900, -250, 520, "#00C85333"), (700, 1350, -260, "#2E6BFF2B"), (420, 760, 820, "#E3F4FF14")])
+            for w, x, y, c in ([(900, -250, 520, "#3155E733"), (700, 1350, -260, "#3155E726"), (420, 760, 820, "#A7BAFF10")] if THEME == "desk" else [(900, -250, 520, "#00C85333"), (700, 1350, -260, "#2E6BFF2B"), (420, 760, 820, "#E3F4FF14")]))
         bokeh = "".join(
             f'<div class="bokeh" style="width:{r}px;height:{r}px;left:{x}px;top:{y}px;animation:drift {total:.2f}s linear 0s both"></div>'
             for r, x, y in [(90, 1580, 160), (60, 1720, 330), (120, 140, 120), (50, 300, 900), (80, 1400, 880), (40, 980, 120)])
@@ -327,7 +380,7 @@ def build_html(sb, theme=None):
             st += dd
         label = e(sb.get("episode", ""))
         extra = (f'{glows}{bokeh}<div class="vignette"></div>{GRAIN}'
-                 f'<div class="topbar"><div class="brand">{KK_LOGO}<span>كورة كليكس</span></div>'
+                 f'<div class="topbar"><div class="brand">{KK_GOLD if THEME == "desk" else KK_LOGO}<span>كورة كليكس</span></div>'
                  f'<div>{label}</div><div class="mono" style="position:relative;width:150px;height:28px">{counters}</div></div>'
                  f'<div class="progress">{segs}</div>')
     doc = (f'<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><style>{CSS}{extra_css}</style></head>'
@@ -343,7 +396,7 @@ def main():
     ap.add_argument("out_dir")
     ap.add_argument("--fps", type=int, default=25)
     ap.add_argument("--preview", action="store_true")
-    ap.add_argument("--theme", choices=["classic", "major"], help="visual style; default from storyboard 'theme' or major")
+    ap.add_argument("--theme", choices=["classic", "major", "desk"], help="visual style; default from storyboard 'theme' or desk")
     args = ap.parse_args()
     fps = 12 if args.preview else args.fps
 
