@@ -5,6 +5,7 @@ so runs never search for them again.
   python3 scripts/logo_library.py build          # refresh the catalog from ESPN (teams, ids, Arabic names, logo URLs)
   python3 scripts/logo_library.py fetch          # download every missing logo (256 px PNG); safe to re-run
   python3 scripts/logo_library.py find "الأهلي"   # path of a logo by Arabic or English name (prints NOT FOUND if missing)
+  python3 scripts/logo_library.py find "الدوري الإنجليزي dark"   # competition logo version for ink/blue backgrounds
   python3 scripts/logo_library.py status         # how many logos are in the library / missing
 
 Files: .claude/assets/crests/catalog.json · .claude/assets/crests/<espn_id>.png (teams)
@@ -168,7 +169,11 @@ def build():
         lg = {(tuple(x.get("rel") or [])[-1:] or ("",))[0]: x["href"] for x in L.get("logos", [])}
         ok = {k: v for k, v in lg.items() if "default-team-logo" not in v}
         cat["comps"][slug] = {"name": L.get("name", slug), "ar": ar, "logo_url": ok.get("default", ""),
-                              "logo_dark_url": ok.get("dark", ""), "file": f"comp-{slug}.png" if ok else ""}
+                              "logo_dark_url": ok.get("dark", ""), "file": f"comp-{slug}.png" if ok else "",
+                              "file_dark": f"comp-{slug}-dark.png" if ok.get("dark") else "",
+                              "short": {"uefa.champions": "Champions League", "uefa.europa": "Europa League",
+                                        "eng.1": "Premier League", "esp.1": "La Liga", "ita.1": "Serie A",
+                                        "ksa.1": "Roshn Saudi League"}.get(slug, "")}
     DIR.mkdir(parents=True, exist_ok=True)
     CAT.write_text(json.dumps(cat, ensure_ascii=False, indent=1, sort_keys=True))
     no_ar = sum(1 for v in T.values() if not v.get("ar"))
@@ -185,7 +190,8 @@ def _png(raw, path):
 def fetch():
     cat = load()
     jobs = [(v["logo_url"], DIR / v["file"]) for v in cat["teams"].values()] + \
-           [(v["logo_url"], DIR / v["file"]) for v in cat["comps"].values() if v.get("file")]
+           [(v["logo_url"], DIR / v["file"]) for v in cat["comps"].values() if v.get("file")] + \
+           [(v["logo_dark_url"], DIR / v["file_dark"]) for v in cat["comps"].values() if v.get("file_dark")]
     ok = fail = skip = 0
     for url, path in jobs:
         if path.exists():
@@ -196,7 +202,7 @@ def fetch():
             fail += 1
             if fail <= 3:
                 print(f"FAILED {path.name}: {type(e).__name__}: {e}")
-            if fail == 3 and ok == 0:
+            if fail == 3 and ok == 0 and "404" not in str(e):
                 print("Stopping: the logo server is not reachable (allow a.espncdn.com)."); break
     print(f"downloaded {ok} · already there {skip} · failed {fail}")
 
@@ -204,13 +210,25 @@ def fetch():
 def find(name):
     cat, low = load(), name.strip().lower()
     pools = list(cat["teams"].values()) + list(cat.get("extra", {}).values()) + list(cat["comps"].values())
-    for exact in (True, False):
-        for v in pools:
-            keys = [v.get("name", ""), v.get("short", ""), v.get("ar", ""), v.get("abbr", "")]
-            hit = any(low == k.lower() for k in keys if k) if exact else any(low in k.lower() for k in keys[:3] if k)
-            if hit and v.get("file") and (DIR / v["file"]).exists():
-                return DIR / v["file"]
-    return None
+    dark = low.endswith(" dark")
+    if dark:
+        low = low[:-5].strip()
+    best = None
+    for v in pools:
+        if not v.get("file") or not (DIR / v["file"]).exists():
+            continue
+        keys = [k for k in (v.get("name", ""), v.get("short", ""), v.get("ar", ""), v.get("abbr", "")) if k]
+        if any(low == k.lower() for k in keys):
+            best = (0, v); break
+        part = [len(k) for k in keys[:3] if low in k.lower()]
+        if part and (best is None or min(part) < best[0]):   # partial: the shortest matching name wins
+            best = (min(part), v)
+    if not best:
+        return None
+    v = best[1]
+    if dark and v.get("file_dark") and (DIR / v["file_dark"]).exists():   # competition logo for ink backgrounds
+        return DIR / v["file_dark"]
+    return DIR / v["file"]
 
 
 def status():

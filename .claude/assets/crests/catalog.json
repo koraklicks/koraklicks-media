@@ -3,114 +3,146 @@
   "afc.champions": {
    "ar": "دوري أبطال آسيا للنخبة",
    "file": "comp-afc.champions.png",
+   "file_dark": "comp-afc.champions-dark.png",
    "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/2200.png",
    "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/2200.png",
-   "name": "AFC Champions League Elite"
+   "name": "AFC Champions League Elite",
+   "short": ""
   },
   "afc.cup": {
    "ar": "دوري أبطال آسيا 2",
    "file": "comp-afc.cup.png",
+   "file_dark": "comp-afc.cup-dark.png",
    "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/2243.png",
    "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/2243.png",
-   "name": "AFC Champions League Two"
+   "name": "AFC Champions League Two",
+   "short": ""
   },
   "caf.champions": {
    "ar": "دوري أبطال أفريقيا",
    "file": "comp-caf.champions.png",
+   "file_dark": "comp-caf.champions-dark.png",
    "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/2391.png",
    "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/2391.png",
-   "name": "CAF Champions League"
+   "name": "CAF Champions League",
+   "short": ""
   },
   "caf.confed": {
    "ar": "الكونفدرالية الأفريقية",
    "file": "",
+   "file_dark": "",
    "logo_dark_url": "",
    "logo_url": "",
-   "name": "CAF Confederation Cup"
+   "name": "CAF Confederation Cup",
+   "short": ""
   },
   "eng.1": {
    "ar": "الدوري الإنجليزي",
    "file": "comp-eng.1.png",
+   "file_dark": "comp-eng.1-dark.png",
    "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/23.png",
    "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/23.png",
-   "name": "English Premier League"
+   "name": "English Premier League",
+   "short": "Premier League"
   },
   "esp.1": {
    "ar": "الدوري الإسباني",
    "file": "comp-esp.1.png",
+   "file_dark": "comp-esp.1-dark.png",
    "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/15.png",
    "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/15.png",
-   "name": "Spanish LALIGA"
+   "name": "Spanish LALIGA",
+   "short": "La Liga"
   },
   "fifa.friendly": {
    "ar": "مباريات ودية دولية",
    "file": "comp-fifa.friendly.png",
+   "file_dark": "comp-fifa.friendly-dark.png",
    "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/53.png",
    "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/53.png",
-   "name": "International Friendly"
+   "name": "International Friendly",
+   "short": ""
   },
   "fifa.world": {
    "ar": "كأس العالم",
    "file": "comp-fifa.world.png",
+   "file_dark": "comp-fifa.world-dark.png",
    "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/4.png",
    "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/4.png",
-   "name": "FIFA World Cup"
+   "name": "FIFA World Cup",
+   "short": ""
   },
   "fifa.worldq.afc": {
    "ar": "تصفيات كأس العالم · آسيا",
    "file": "comp-fifa.worldq.afc.png",
+   "file_dark": "comp-fifa.worldq.afc-dark.png",
    "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/62.png",
    "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/62.png",
-   "name": "FIFA World Cup Qualifying - AFC"
+   "name": "FIFA World Cup Qualifying - AFC",
+   "short": ""
   },
   "fifa.worldq.caf": {
    "ar": "تصفيات كأس العالم · أفريقيا",
    "file": "comp-fifa.worldq.caf.png",
+   "file_dark": "comp-fifa.worldq.caf-dark.png",
    "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/63.png",
    "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/63.png",
-   "name": "FIFA World Cup Qualifying - CAF"
+   "name": "FIFA World Cup Qualifying - CAF",
+   "short": ""
   },
   "fifa.worldq.uefa": {
    "ar": "تصفيات كأس العالم · أوروبا",
    "file": "comp-fifa.worldq.uefa.png",
+   "file_dark": "comp-fifa.worldq.uefa-dark.png",
    "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/67.png",
    "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/67.png",
-   "name": "FIFA World Cup Qualifying - UEFA"
+   "name": "FIFA World Cup Qualifying - UEFA",
+   "short": ""
   },
   "ita.1": {
    "ar": "الدوري الإيطالي",
    "file": "comp-ita.1.png",
+   "file_dark": "comp-ita.1-dark.png",
    "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/12.png",
    "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/12.png",
-   "name": "Italian Serie A"
+   "name": "Italian Serie A",
+   "short": "Serie A"
   },
   "ksa.1": {
    "ar": "الدوري السعودي",
    "file": "comp-ksa.1.png",
+   "file_dark": "comp-ksa.1-dark.png",
    "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/2488.png",
    "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/2488.png",
-   "name": "Saudi Pro League"
+   "name": "Saudi Pro League",
+   "short": "Roshn Saudi League"
   },
   "uefa.champions": {
    "ar": "دوري أبطال أوروبا",
    "file": "comp-uefa.champions.png",
+   "file_dark": "comp-uefa.champions-dark.png",
    "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/2.png",
    "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/2.png",
-   "name": "UEFA Champions League"
+   "name": "UEFA Champions League",
+   "short": "Champions League"
   },
   "uefa.europa": {
    "ar": "الدوري الأوروبي",
    "file": "comp-uefa.europa.png",
+   "file_dark": "comp-uefa.europa-dark.png",
    "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/2310.png",
    "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/2310.png",
-   "name": "UEFA Europa League"
+   "name": "UEFA Europa League",
+   "short": "Europa League"
   },
   "uefa.nations": {
    "ar": "دوري الأمم الأوروبية",
    "file": "comp-uefa.nations.png",
+   "file_dark": "comp-uefa.nations-dark.png",
    "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/2395.png",
    "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/2395.png",
-   "name": "UEFA Nations League"
+   "name": "UEFA Nations League",
+   "short": ""
   }
  },
  "extra": {},
