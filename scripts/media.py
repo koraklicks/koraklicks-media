@@ -4,6 +4,7 @@
   python3 scripts/media.py crests YYYYMMDD LEAGUE [LEAGUE ...]
       Downloads the logo of every team playing that day (ESPN scoreboard) into .claude/assets/crests/<espn_id>.png
       and prints one line per team:  <ESPN name> | <path>
+  (Prefer the logo library: python3 scripts/logo_library.py find "الأهلي" — all our teams are cached there.)
   python3 scripts/media.py crest "Team name" [LEAGUE]
       Path of a cached logo (searches the cache index); downloads via the league's team list if missing.
   python3 scripts/media.py photo "Mohamed Salah" [--n 5]
@@ -70,6 +71,13 @@ def crests(date, leagues):
 
 
 def crest(name, league=None):
+    try:  # the logo library first (scripts/logo_library.py, Arabic or English names)
+        import logo_library
+        hit = logo_library.find(name)
+        if hit:
+            return hit
+    except Exception:
+        pass
     ix, low = _index(), name.lower()
     for tid, v in ix.items():
         if low in (v["name"].lower(), v["short"].lower()) or low in v["name"].lower():

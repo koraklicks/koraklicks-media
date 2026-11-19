@@ -28,8 +28,8 @@ Rules
   UCL (2–3 min): intro → every match (5–6 s) → «ركن العرب» list (Arab players' confirmed goals/assists) →
   table top 8 + places 9–24 summary (official uefa.com table) → outro. Chapters in the description (first 0:00,
   each ≥ 10 s).
-- Look: `render.py` theme `desk` (default). Club logos: `python3 scripts/media.py crests <date> <league>` then
-  `home_logo`/`away_logo` per result scene. Photos (optional, intro or headline scene): ONLY
+- Look: `render.py` theme `desk` (default). Club logos: `python3 scripts/logo_library.py find "<team>"` (library in the repo) →
+  `home_logo`/`away_logo` per result scene; competition logo: `find "<competition>"`. Photos (optional, intro or headline scene): ONLY
   `python3 scripts/media.py photo "<player>"` (free Wikimedia Commons) with `image_credit`; never news/agency photos.
 - Music: `music.py` (owner track). Then `endcard.py VIDEO OUT --theme dark` → upload the `-yt.mp4`.
 - Title (≤ 70 chars, search words first): «نتايج الدوري الإنجليزي الجولة 12 | كل الأهداف والنتايج في دقيقة».

@@ -1,0 +1,4874 @@
+{
+ "comps": {
+  "afc.champions": {
+   "ar": "دوري أبطال آسيا للنخبة",
+   "file": "comp-afc.champions.png",
+   "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/2200.png",
+   "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/2200.png",
+   "name": "AFC Champions League Elite"
+  },
+  "afc.cup": {
+   "ar": "دوري أبطال آسيا 2",
+   "file": "comp-afc.cup.png",
+   "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/2243.png",
+   "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/2243.png",
+   "name": "AFC Champions League Two"
+  },
+  "caf.champions": {
+   "ar": "دوري أبطال أفريقيا",
+   "file": "comp-caf.champions.png",
+   "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/2391.png",
+   "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/2391.png",
+   "name": "CAF Champions League"
+  },
+  "caf.confed": {
+   "ar": "الكونفدرالية الأفريقية",
+   "file": "",
+   "logo_dark_url": "",
+   "logo_url": "",
+   "name": "CAF Confederation Cup"
+  },
+  "eng.1": {
+   "ar": "الدوري الإنجليزي",
+   "file": "comp-eng.1.png",
+   "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/23.png",
+   "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/23.png",
+   "name": "English Premier League"
+  },
+  "esp.1": {
+   "ar": "الدوري الإسباني",
+   "file": "comp-esp.1.png",
+   "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/15.png",
+   "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/15.png",
+   "name": "Spanish LALIGA"
+  },
+  "fifa.friendly": {
+   "ar": "مباريات ودية دولية",
+   "file": "comp-fifa.friendly.png",
+   "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/53.png",
+   "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/53.png",
+   "name": "International Friendly"
+  },
+  "fifa.world": {
+   "ar": "كأس العالم",
+   "file": "comp-fifa.world.png",
+   "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/4.png",
+   "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/4.png",
+   "name": "FIFA World Cup"
+  },
+  "fifa.worldq.afc": {
+   "ar": "تصفيات كأس العالم · آسيا",
+   "file": "comp-fifa.worldq.afc.png",
+   "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/62.png",
+   "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/62.png",
+   "name": "FIFA World Cup Qualifying - AFC"
+  },
+  "fifa.worldq.caf": {
+   "ar": "تصفيات كأس العالم · أفريقيا",
+   "file": "comp-fifa.worldq.caf.png",
+   "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/63.png",
+   "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/63.png",
+   "name": "FIFA World Cup Qualifying - CAF"
+  },
+  "fifa.worldq.uefa": {
+   "ar": "تصفيات كأس العالم · أوروبا",
+   "file": "comp-fifa.worldq.uefa.png",
+   "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/67.png",
+   "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/67.png",
+   "name": "FIFA World Cup Qualifying - UEFA"
+  },
+  "ita.1": {
+   "ar": "الدوري الإيطالي",
+   "file": "comp-ita.1.png",
+   "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/12.png",
+   "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/12.png",
+   "name": "Italian Serie A"
+  },
+  "ksa.1": {
+   "ar": "الدوري السعودي",
+   "file": "comp-ksa.1.png",
+   "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/2488.png",
+   "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/2488.png",
+   "name": "Saudi Pro League"
+  },
+  "uefa.champions": {
+   "ar": "دوري أبطال أوروبا",
+   "file": "comp-uefa.champions.png",
+   "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/2.png",
+   "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/2.png",
+   "name": "UEFA Champions League"
+  },
+  "uefa.europa": {
+   "ar": "الدوري الأوروبي",
+   "file": "comp-uefa.europa.png",
+   "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/2310.png",
+   "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/2310.png",
+   "name": "UEFA Europa League"
+  },
+  "uefa.nations": {
+   "ar": "دوري الأمم الأوروبية",
+   "file": "comp-uefa.nations.png",
+   "logo_dark_url": "https://a.espncdn.com/i/leaguelogos/soccer/500-dark/2395.png",
+   "logo_url": "https://a.espncdn.com/i/leaguelogos/soccer/500/2395.png",
+   "name": "UEFA Nations League"
+  }
+ },
+ "extra": {},
+ "teams": {
+  "101": {
+   "abbr": "RAY",
+   "ar": "رايو فاييكانو",
+   "comps": [
+    "esp.1"
+   ],
+   "file": "101.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
+   "name": "Rayo Vallecano",
+   "national": false,
+   "short": "Rayo"
+  },
+  "1010": {
+   "abbr": "OFI",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "1010.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/1010.png",
+   "name": "OFI Crete",
+   "national": false,
+   "short": "OFI Crete"
+  },
+  "102": {
+   "abbr": "VIL",
+   "ar": "فياريال",
+   "comps": [
+    "esp.1",
+    "uefa.champions"
+   ],
+   "file": "102.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
+   "name": "Villarreal",
+   "national": false,
+   "short": "Villarreal"
+  },
+  "10207": {
+   "abbr": "AHL",
+   "ar": "الأهلي",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "10207.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/10207.png",
+   "name": "Al Ahly",
+   "national": false,
+   "short": "Al Ahly"
+  },
+  "103": {
+   "abbr": "MIL",
+   "ar": "ميلان",
+   "comps": [
+    "ita.1",
+    "uefa.europa"
+   ],
+   "file": "103.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png",
+   "name": "AC Milan",
+   "national": false,
+   "short": "Milan"
+  },
+  "104": {
+   "abbr": "ROMA",
+   "ar": "روما",
+   "comps": [
+    "ita.1",
+    "uefa.champions"
+   ],
+   "file": "104.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
+   "name": "AS Roma",
+   "national": false,
+   "short": "AS Roma"
+  },
+  "105": {
+   "abbr": "ATA",
+   "ar": "أتالانتا",
+   "comps": [
+    "ita.1"
+   ],
+   "file": "105.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png",
+   "name": "Atalanta",
+   "national": false,
+   "short": "Atalanta"
+  },
+  "10674": {
+   "abbr": "TPM",
+   "ar": "مازيمبي",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "10674.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/10674.png",
+   "name": "TP Mazembe",
+   "national": false,
+   "short": "TP Mazembe"
+  },
+  "1068": {
+   "abbr": "ATM",
+   "ar": "أتلتيكو مدريد",
+   "comps": [
+    "esp.1",
+    "uefa.champions"
+   ],
+   "file": "1068.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+   "name": "Atlético Madrid",
+   "national": false,
+   "short": "Atlético"
+  },
+  "107": {
+   "abbr": "BOL",
+   "ar": "بولونيا",
+   "comps": [
+    "ita.1"
+   ],
+   "file": "107.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png",
+   "name": "Bologna",
+   "national": false,
+   "short": "Bologna"
+  },
+  "109": {
+   "abbr": "FIO",
+   "ar": "فيورنتينا",
+   "comps": [
+    "ita.1"
+   ],
+   "file": "109.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png",
+   "name": "Fiorentina",
+   "national": false,
+   "short": "Fiorentina"
+  },
+  "110": {
+   "abbr": "INT",
+   "ar": "إنتر ميلان",
+   "comps": [
+    "ita.1",
+    "uefa.champions"
+   ],
+   "file": "110.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
+   "name": "Internazionale",
+   "national": false,
+   "short": "Inter Milan"
+  },
+  "111": {
+   "abbr": "JUV",
+   "ar": "يوفنتوس",
+   "comps": [
+    "ita.1",
+    "uefa.europa"
+   ],
+   "file": "111.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png",
+   "name": "Juventus",
+   "national": false,
+   "short": "Juventus"
+  },
+  "112": {
+   "abbr": "LAZ",
+   "ar": "لاتسيو",
+   "comps": [
+    "ita.1"
+   ],
+   "file": "112.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
+   "name": "Lazio",
+   "national": false,
+   "short": "Lazio"
+  },
+  "113": {
+   "abbr": "LEC",
+   "ar": "ليتشي",
+   "comps": [
+    "ita.1"
+   ],
+   "file": "113.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png",
+   "name": "Lecce",
+   "national": false,
+   "short": "Lecce"
+  },
+  "114": {
+   "abbr": "NAP",
+   "ar": "نابولي",
+   "comps": [
+    "ita.1",
+    "uefa.champions"
+   ],
+   "file": "114.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
+   "name": "Napoli",
+   "national": false,
+   "short": "Napoli"
+  },
+  "11420": {
+   "abbr": "RBL",
+   "ar": "لايبزيج",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "11420.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
+   "name": "RB Leipzig",
+   "national": false,
+   "short": "RB Leipzig"
+  },
+  "115": {
+   "abbr": "PAR",
+   "ar": "بارما",
+   "comps": [
+    "ita.1"
+   ],
+   "file": "115.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png",
+   "name": "Parma",
+   "national": false,
+   "short": "Parma"
+  },
+  "11505": {
+   "abbr": "JAG",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "11505.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/11505.png",
+   "name": "Jagiellonia Bialystok",
+   "national": false,
+   "short": "Jagiellonia "
+  },
+  "11706": {
+   "abbr": "PLZ",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "11706.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/11706.png",
+   "name": "Viktoria Plzen",
+   "national": false,
+   "short": "Viktoria Plzen"
+  },
+  "118": {
+   "abbr": "UDI",
+   "ar": "أودينيزي",
+   "comps": [
+    "ita.1"
+   ],
+   "file": "118.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/118.png",
+   "name": "Udinese",
+   "national": false,
+   "short": "Udinese"
+  },
+  "124": {
+   "abbr": "DOR",
+   "ar": "بوروسيا دورتموند",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "124.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
+   "name": "Borussia Dortmund",
+   "national": false,
+   "short": "Dortmund"
+  },
+  "13033": {
+   "abbr": "FAT",
+   "ar": "الفتح",
+   "comps": [
+    "ksa.1"
+   ],
+   "file": "13033.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/13033.png",
+   "name": "Al Fateh",
+   "national": false,
+   "short": "Al Fateh"
+  },
+  "13083": {
+   "abbr": "HBE",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "13083.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/13083.png",
+   "name": "Hapoel Be'er",
+   "national": false,
+   "short": "Hapoel Be'er"
+  },
+  "130899": {
+   "abbr": "NEOM",
+   "ar": "نيوم",
+   "comps": [
+    "ksa.1"
+   ],
+   "file": "130899.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/130899.png",
+   "name": "Neom SC",
+   "national": false,
+   "short": "Neom SC"
+  },
+  "131": {
+   "abbr": "B04",
+   "ar": "باير ليفركوزن",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "131.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png",
+   "name": "Bayer Leverkusen",
+   "national": false,
+   "short": "Leverkusen"
+  },
+  "131373": {
+   "abbr": "GAN",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "131373.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/131373.png",
+   "name": "Gangwon FC",
+   "national": false,
+   "short": "Gangwon"
+  },
+  "131374": {
+   "abbr": "AFK",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "131374.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/131374.png",
+   "name": "Arkadag FK",
+   "national": false,
+   "short": "Arkadag FK"
+  },
+  "131375": {
+   "abbr": "CAHN",
+   "ar": "",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "131375.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/131375.png",
+   "name": "Cong An Ha Noi",
+   "national": false,
+   "short": "Cong An Ha Noi"
+  },
+  "131377": {
+   "abbr": "TPO",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "131377.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/131377.png",
+   "name": "Tai Po FC",
+   "national": false,
+   "short": "Tai Po"
+  },
+  "131549": {
+   "abbr": "SIN",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "131549.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/131549.png",
+   "name": "Singida Black Stars",
+   "national": false,
+   "short": "Singida"
+  },
+  "131551": {
+   "abbr": "AZAM",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "131551.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/131551.png",
+   "name": "Azam FC",
+   "national": false,
+   "short": "Azam"
+  },
+  "131746": {
+   "abbr": "DIR",
+   "ar": "الدرعية",
+   "comps": [
+    "ksa.1"
+   ],
+   "file": "131746.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/131746.png",
+   "name": "Al Diriyah",
+   "national": false,
+   "short": "Al Diriyah"
+  },
+  "132": {
+   "abbr": "MUN",
+   "ar": "بايرن ميونخ",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "132.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
+   "name": "Bayern Munich",
+   "national": false,
+   "short": "Bayern"
+  },
+  "132880": {
+   "abbr": "AFA",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "132880.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132880.png",
+   "name": "AFAD Plateau",
+   "national": false,
+   "short": "Plateau"
+  },
+  "132881": {
+   "abbr": "PSI",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "132881.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132881.png",
+   "name": "AS PSI",
+   "national": false,
+   "short": "PSI"
+  },
+  "132882": {
+   "abbr": "EEL",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "132882.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132882.png",
+   "name": "East End Lions",
+   "national": false,
+   "short": "East End"
+  },
+  "132883": {
+   "abbr": "ZED",
+   "ar": "زد",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "132883.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132883.png",
+   "name": "ZED FC",
+   "national": false,
+   "short": "ZED FC"
+  },
+  "132884": {
+   "abbr": "PAN",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "132884.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132884.png",
+   "name": "The Panthers FC",
+   "national": false,
+   "short": "Panthers"
+  },
+  "132885": {
+   "abbr": "HAF",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "132885.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132885.png",
+   "name": "Hafia",
+   "national": false,
+   "short": "Hafia"
+  },
+  "132886": {
+   "abbr": "RUK",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "132886.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132886.png",
+   "name": "Rukinzo",
+   "national": false,
+   "short": "Rukinzo"
+  },
+  "132888": {
+   "abbr": "MCC",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "132888.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132888.png",
+   "name": "Mogadishu City Club",
+   "national": false,
+   "short": "Mogadishu"
+  },
+  "132889": {
+   "abbr": "KMKM",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "132889.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132889.png",
+   "name": "KMKM FC",
+   "national": false,
+   "short": "KMKM"
+  },
+  "132890": {
+   "abbr": "GMB",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "132890.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132890.png",
+   "name": "Green Mamba",
+   "national": false,
+   "short": "Green Mamba"
+  },
+  "132891": {
+   "abbr": "DTC",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "132891.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132891.png",
+   "name": "Djibouti Télécom",
+   "national": false,
+   "short": "Télécom"
+  },
+  "132892": {
+   "abbr": "PAN",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "132892.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132892.png",
+   "name": "Panthere FC",
+   "national": false,
+   "short": "Panthere"
+  },
+  "132893": {
+   "abbr": "KOR",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "132893.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132893.png",
+   "name": "CO Korhogo",
+   "national": false,
+   "short": "Korhogo"
+  },
+  "132896": {
+   "abbr": "DIA",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "132896.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132896.png",
+   "name": "Diambars de Saly",
+   "national": false,
+   "short": "Diambars"
+  },
+  "132908": {
+   "abbr": "KARA",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "132908.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132908.png",
+   "name": "ASC Kara",
+   "national": false,
+   "short": "ASC Kara"
+  },
+  "132909": {
+   "abbr": "ANM",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "132909.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132909.png",
+   "name": "Aigle Noir Makamba",
+   "national": false,
+   "short": "AN Makamba"
+  },
+  "132910": {
+   "abbr": "LADC",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "132910.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132910.png",
+   "name": "FC Les Aigles Du Congo",
+   "national": false,
+   "short": "FC LADC"
+  },
+  "132911": {
+   "abbr": "COL",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "132911.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132911.png",
+   "name": "Colombe Sportiv Du Dja Et Lobo",
+   "national": false,
+   "short": "Colombe"
+  },
+  "132912": {
+   "abbr": "MAG",
+   "ar": "المغرب الفاسي",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "132912.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132912.png",
+   "name": "Maghreb As De Fès",
+   "national": false,
+   "short": "Maghreb"
+  },
+  "132913": {
+   "abbr": "RAH",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "132913.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132913.png",
+   "name": "Rahimo FC",
+   "national": false,
+   "short": "Rahimo"
+  },
+  "132914": {
+   "abbr": "WIL",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "132914.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132914.png",
+   "name": "Wiliete SC",
+   "national": false,
+   "short": "Wiliete"
+  },
+  "132915": {
+   "abbr": "NSI",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "132915.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132915.png",
+   "name": "Nsingizini Hotspurs",
+   "national": false,
+   "short": "Nsingizini"
+  },
+  "132916": {
+   "abbr": "APR",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "132916.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132916.png",
+   "name": "APR FC",
+   "national": false,
+   "short": "APR FC"
+  },
+  "132917": {
+   "abbr": "GAB",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "132917.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132917.png",
+   "name": "Gaborone United",
+   "national": false,
+   "short": "Gaborone"
+  },
+  "132918": {
+   "abbr": "ASM",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "132918.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132918.png",
+   "name": "AS Mangasport",
+   "national": false,
+   "short": "Mangasport"
+  },
+  "132919": {
+   "abbr": "AFRS",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "132919.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132919.png",
+   "name": "African Stars",
+   "national": false,
+   "short": "African Stars"
+  },
+  "132926": {
+   "abbr": "GGS",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "132926.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132926.png",
+   "name": "Gol Gohar Sirjan FC",
+   "national": false,
+   "short": "Gol Gohar"
+  },
+  "132930": {
+   "abbr": "FOM",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "132930.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132930.png",
+   "name": "Fomboni",
+   "national": false,
+   "short": "Fomboni"
+  },
+  "132931": {
+   "abbr": "AIG",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "132931.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132931.png",
+   "name": "Aiglons FC",
+   "national": false,
+   "short": "Aiglons"
+  },
+  "132932": {
+   "abbr": "15DA",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "132932.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132932.png",
+   "name": "15 de Agosto",
+   "national": false,
+   "short": "Agosto"
+  },
+  "132933": {
+   "abbr": "CAN",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "132933.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132933.png",
+   "name": "Canchungo",
+   "national": false,
+   "short": "Canchungo"
+  },
+  "132934": {
+   "abbr": "HEE",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "132934.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132934.png",
+   "name": "Heegan",
+   "national": false,
+   "short": "Heegan"
+  },
+  "132935": {
+   "abbr": "SSA",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "132935.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/132935.png",
+   "name": "Star Sport Academy",
+   "national": false,
+   "short": "Star Sport"
+  },
+  "133107": {
+   "abbr": "ZAR",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "133107.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133107.png",
+   "name": "Esperence Sportive de Zarzis",
+   "national": false,
+   "short": "Zarzis"
+  },
+  "133108": {
+   "abbr": "ATN",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "133108.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133108.png",
+   "name": "Atomic Ngomé",
+   "national": false,
+   "short": "Ngomé"
+  },
+  "133109": {
+   "abbr": "DIA",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "133109.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133109.png",
+   "name": "Diarra",
+   "national": false,
+   "short": "Diarra"
+  },
+  "133110": {
+   "abbr": "ZAM",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "133110.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133110.png",
+   "name": "AS ZAM",
+   "national": false,
+   "short": "AS ZAM"
+  },
+  "133111": {
+   "abbr": "UDI",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "133111.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133111.png",
+   "name": "UD Internacional",
+   "national": false,
+   "short": "UD Inter"
+  },
+  "133112": {
+   "abbr": "BAZ",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "133112.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133112.png",
+   "name": "Bazar Brothers",
+   "national": false,
+   "short": "Bazar Bros"
+  },
+  "133113": {
+   "abbr": "GHZ",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "133113.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133113.png",
+   "name": "Al-Ghazal FC",
+   "national": false,
+   "short": "Al-Ghazal"
+  },
+  "133114": {
+   "abbr": "WEL",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "133114.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133114.png",
+   "name": "Welwalo Adigrat",
+   "national": false,
+   "short": "Welwalo"
+  },
+  "133115": {
+   "abbr": "ASP",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "133115.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133115.png",
+   "name": "ASPAC",
+   "national": false,
+   "short": "ASPAC"
+  },
+  "133116": {
+   "abbr": "DOU",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "133116.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133116.png",
+   "name": "Douanes",
+   "national": false,
+   "short": "Douanes"
+  },
+  "133117": {
+   "abbr": "AWM",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "133117.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133117.png",
+   "name": "Al Ahli Wad Medani",
+   "national": false,
+   "short": "Al Ahli Medani"
+  },
+  "133118": {
+   "abbr": "EBR",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "133118.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133118.png",
+   "name": "Entente Boulet Rouge",
+   "national": false,
+   "short": "Rouge"
+  },
+  "133119": {
+   "abbr": "UNAM",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "133119.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133119.png",
+   "name": "UNAM",
+   "national": false,
+   "short": "UNAM"
+  },
+  "133120": {
+   "abbr": "KAB",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "133120.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133120.png",
+   "name": "Kabuscorp",
+   "national": false,
+   "short": "Kabuscorp"
+  },
+  "133121": {
+   "abbr": "VIT",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "133121.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133121.png",
+   "name": "Vitesse",
+   "national": false,
+   "short": "Vitesse"
+  },
+  "133122": {
+   "abbr": "VRG",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "133122.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133122.png",
+   "name": "DC Virunga",
+   "national": false,
+   "short": "Virunga"
+  },
+  "133123": {
+   "abbr": "AHPS",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "133123.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133123.png",
+   "name": "Al Hilal Port Sudan",
+   "national": false,
+   "short": "Al Hilal"
+  },
+  "133124": {
+   "abbr": "ASPL",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "133124.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133124.png",
+   "name": "ASPL 2000",
+   "national": false,
+   "short": "ASPL 2000"
+  },
+  "133171": {
+   "abbr": "DHC",
+   "ar": "",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "133171.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133171.png",
+   "name": "Daejeon Hana Citizen FC",
+   "national": false,
+   "short": "Daejeon"
+  },
+  "133210": {
+   "abbr": "PORT",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "133210.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133210.png",
+   "name": "AS Port",
+   "national": false,
+   "short": "AS Port"
+  },
+  "133213": {
+   "abbr": "FOR",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "133213.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133213.png",
+   "name": "Foresters",
+   "national": false,
+   "short": "Foresters"
+  },
+  "133214": {
+   "abbr": "WND",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "133214.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133214.png",
+   "name": "Mighty Wanderers",
+   "national": false,
+   "short": "Wanderers"
+  },
+  "133215": {
+   "abbr": "EMB",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "133215.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133215.png",
+   "name": "El Merriekh Bentiu",
+   "national": false,
+   "short": "Merriekh"
+  },
+  "133216": {
+   "abbr": "MED",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "133216.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133216.png",
+   "name": "Medina United",
+   "national": false,
+   "short": "Medina"
+  },
+  "133217": {
+   "abbr": "LIJ",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "133217.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133217.png",
+   "name": "Lijabatho",
+   "national": false,
+   "short": "Lijabatho"
+  },
+  "133218": {
+   "abbr": "LCW",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "133218.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133218.png",
+   "name": "La Cure Waves",
+   "national": false,
+   "short": "La Cure"
+  },
+  "133219": {
+   "abbr": "CFFA",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "133219.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133219.png",
+   "name": "CFFA",
+   "national": false,
+   "short": "CFFA"
+  },
+  "133220": {
+   "abbr": "SOB",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "133220.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133220.png",
+   "name": "AS Sobemap",
+   "national": false,
+   "short": "Sobemap"
+  },
+  "133221": {
+   "abbr": "NGL",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "133221.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133221.png",
+   "name": "Nigelec",
+   "national": false,
+   "short": "Nigelec"
+  },
+  "133222": {
+   "abbr": "ASW",
+   "ar": "السويحلي",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "133222.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133222.png",
+   "name": "Asswehly SC",
+   "national": false,
+   "short": "Asswehly"
+  },
+  "133223": {
+   "abbr": "KVZ",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "133223.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133223.png",
+   "name": "KVZ",
+   "national": false,
+   "short": "KVZ"
+  },
+  "133224": {
+   "abbr": "SID",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "133224.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133224.png",
+   "name": "Sidama Coffee",
+   "national": false,
+   "short": "Sidama"
+  },
+  "133293": {
+   "abbr": "PKR",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "133293.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/133293.png",
+   "name": "PKR Svay Rieng",
+   "national": false,
+   "short": "Svay Rieng"
+  },
+  "134": {
+   "abbr": "VFB",
+   "ar": "شتوتجارت",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "134.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
+   "name": "VfB Stuttgart",
+   "national": false,
+   "short": "Stuttgart"
+  },
+  "140": {
+   "abbr": "AZ",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "140.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/140.png",
+   "name": "AZ Alkmaar",
+   "national": false,
+   "short": "AZ Alkmaar"
+  },
+  "142": {
+   "abbr": "FEY",
+   "ar": "فينورد",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "142.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/142.png",
+   "name": "Feyenoord Rotterdam",
+   "national": false,
+   "short": "Feyenoord"
+  },
+  "147": {
+   "abbr": "NEC",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "147.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/147.png",
+   "name": "NEC Nijmegen",
+   "national": false,
+   "short": "NEC"
+  },
+  "148": {
+   "abbr": "PSV",
+   "ar": "آيندهوفن",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "148.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/148.png",
+   "name": "PSV Eindhoven",
+   "national": false,
+   "short": "PSV"
+  },
+  "15107": {
+   "abbr": "TRA",
+   "ar": "تراكتور",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "15107.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/15107.png",
+   "name": "Tractor",
+   "national": false,
+   "short": "Tractor"
+  },
+  "1538": {
+   "abbr": "LEV",
+   "ar": "ليفانتي",
+   "comps": [
+    "esp.1"
+   ],
+   "file": "1538.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
+   "name": "Levante",
+   "national": false,
+   "short": "Levante"
+  },
+  "15515": {
+   "abbr": "SHP",
+   "ar": "",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "15515.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/15515.png",
+   "name": "Shanghai Port FC",
+   "national": false,
+   "short": "Shanghai Port"
+  },
+  "160": {
+   "abbr": "PSG",
+   "ar": "باريس سان جيرمان",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "160.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
+   "name": "Paris Saint-Germain",
+   "national": false,
+   "short": "PSG"
+  },
+  "162": {
+   "abbr": "ITA",
+   "ar": "إيطاليا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "162.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/ita.png",
+   "name": "Italy",
+   "national": true,
+   "short": "Italy"
+  },
+  "164": {
+   "abbr": "ESP",
+   "ar": "إسبانيا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "164.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+   "name": "Spain",
+   "national": true,
+   "short": "Spain"
+  },
+  "166": {
+   "abbr": "LILL",
+   "ar": "ليل",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "166.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
+   "name": "Lille",
+   "national": false,
+   "short": "Lille"
+  },
+  "167": {
+   "abbr": "LYON",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "167.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png",
+   "name": "Lyon",
+   "national": false,
+   "short": "Lyon"
+  },
+  "16721": {
+   "abbr": "GIB",
+   "ar": "جبل طارق",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "16721.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/gib.png",
+   "name": "Gibraltar",
+   "national": true,
+   "short": "Gibraltar"
+  },
+  "169": {
+   "abbr": "REN",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "169.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
+   "name": "Stade Rennais",
+   "national": false,
+   "short": "Rennes"
+  },
+  "175": {
+   "abbr": "RCL",
+   "ar": "لانس",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "175.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
+   "name": "Lens",
+   "national": false,
+   "short": "Lens"
+  },
+  "17530": {
+   "abbr": "VEN",
+   "ar": "فينيسيا",
+   "comps": [
+    "ita.1"
+   ],
+   "file": "17530.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/17530.png",
+   "name": "Venezia",
+   "national": false,
+   "short": "Venezia"
+  },
+  "176": {
+   "abbr": "OLM",
+   "ar": "مارسيليا",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "176.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
+   "name": "Marseille",
+   "national": false,
+   "short": "Marseille"
+  },
+  "17686": {
+   "abbr": "KIT",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "17686.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/17686.png",
+   "name": "Kitchee SC",
+   "national": false,
+   "short": "Kitchee SC"
+  },
+  "17689": {
+   "abbr": "JDT",
+   "ar": "",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "17689.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/17689.png",
+   "name": "Johor Darul Ta'zim",
+   "national": false,
+   "short": "Darul Ta'zim"
+  },
+  "17757": {
+   "abbr": "PORT",
+   "ar": "",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "17757.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/17757.png",
+   "name": "Port FC",
+   "national": false,
+   "short": "Port FC"
+  },
+  "17760": {
+   "abbr": "RCH",
+   "ar": "",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "17760.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/17760.png",
+   "name": "Ratchaburi FC",
+   "national": false,
+   "short": "Ratchaburi FC"
+  },
+  "17795": {
+   "abbr": "RUFC",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "17795.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/17795.png",
+   "name": "Rivers United FC",
+   "national": false,
+   "short": "Rivers Utd"
+  },
+  "17796": {
+   "abbr": "EKW",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "17796.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/17796.png",
+   "name": "El Kanemi Warriors",
+   "national": false,
+   "short": "El Kanemi"
+  },
+  "17797": {
+   "abbr": "RAN",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "17797.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/17797.png",
+   "name": "Rangers International",
+   "national": false,
+   "short": "Rangers"
+  },
+  "17807": {
+   "abbr": "SHO",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "17807.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/17807.png",
+   "name": "Shooting Stars SC",
+   "national": false,
+   "short": "Shooting Stars"
+  },
+  "18272": {
+   "abbr": "KOS",
+   "ar": "كوسوفو",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "18272.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/kosovo.png",
+   "name": "Kosovo",
+   "national": true,
+   "short": "Kosovo"
+  },
+  "18459": {
+   "abbr": "TAA",
+   "ar": "التعاون",
+   "comps": [
+    "ksa.1",
+    "afc.cup"
+   ],
+   "file": "18459.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/18459.png",
+   "name": "Al Taawoun",
+   "national": false,
+   "short": "Al Taawoun"
+  },
+  "18601": {
+   "abbr": "MED",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "18601.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/18601.png",
+   "name": "Medeama",
+   "national": false,
+   "short": "Medeama"
+  },
+  "18628": {
+   "abbr": "VIP",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "18628.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/18628.png",
+   "name": "Vipers SC",
+   "national": false,
+   "short": "Vipers SC"
+  },
+  "18816": {
+   "abbr": "AFR",
+   "ar": "النادي الإفريقي",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "18816.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/18816.png",
+   "name": "Club Africain",
+   "national": false,
+   "short": "C. Africain"
+  },
+  "18822": {
+   "abbr": "HOR",
+   "ar": "حوريا",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "18822.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/18822.png",
+   "name": "Horoya",
+   "national": false,
+   "short": "Horoya"
+  },
+  "18827": {
+   "abbr": "AAT",
+   "ar": "الأهلي طرابلس",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "18827.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/18827.png",
+   "name": "Al Ahli Tripoli",
+   "national": false,
+   "short": "Al Ahli Tripoli"
+  },
+  "18831": {
+   "abbr": "ALM",
+   "ar": "المريخ السوداني",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "18831.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/18831.png",
+   "name": "Al-Merrikh",
+   "national": false,
+   "short": "Al-Merrikh"
+  },
+  "18832": {
+   "abbr": "AHO",
+   "ar": "الهلال السوداني",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "18832.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/18832.png",
+   "name": "Al Hilal Omdurman",
+   "national": false,
+   "short": "Omdurman"
+  },
+  "1895": {
+   "abbr": "BES",
+   "ar": "بشكتاش",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "1895.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/1895.png",
+   "name": "Besiktas",
+   "national": false,
+   "short": "Besiktas"
+  },
+  "19159": {
+   "abbr": "CPA",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "19159.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/19159.png",
+   "name": "CD Primeiro de Agosto",
+   "national": false,
+   "short": "CD Primeiro"
+  },
+  "19217": {
+   "abbr": "ASEC",
+   "ar": "أسيك ميموزا",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "19217.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/19217.png",
+   "name": "ASEC Mimosas",
+   "national": false,
+   "short": "ASEC Mimosas"
+  },
+  "19220": {
+   "abbr": "DJO",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "19220.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/19220.png",
+   "name": "Djoliba",
+   "national": false,
+   "short": "Djoliba"
+  },
+  "19221": {
+   "abbr": "RSB",
+   "ar": "نهضة بركان",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "19221.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/19221.png",
+   "name": "RSB Berkane",
+   "national": false,
+   "short": "RSB Berkane"
+  },
+  "19222": {
+   "abbr": "UDS",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "19222.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/19222.png",
+   "name": "UD Songo",
+   "national": false,
+   "short": "UD Songo"
+  },
+  "19223": {
+   "abbr": "YASC",
+   "ar": "يانج أفريكانز",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "19223.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/19223.png",
+   "name": "Young Africans",
+   "national": false,
+   "short": "Young Africans"
+  },
+  "1929": {
+   "abbr": "SLB",
+   "ar": "بنفيكا",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "1929.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/1929.png",
+   "name": "Benfica",
+   "national": false,
+   "short": "Benfica"
+  },
+  "19414": {
+   "abbr": "SIM",
+   "ar": "سيمبا",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "19414.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/19414.png",
+   "name": "Simba SC",
+   "national": false,
+   "short": "Simba"
+  },
+  "19417": {
+   "abbr": "JSS",
+   "ar": "شبيبة الساورة",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "19417.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/19417.png",
+   "name": "JS Saoura",
+   "national": false,
+   "short": "JS Saoura"
+  },
+  "19436": {
+   "abbr": "PTR",
+   "ar": "بترو أتلتيكو",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "19436.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/19436.png",
+   "name": "Petro de Luanda",
+   "national": false,
+   "short": "Petro de Luanda"
+  },
+  "20024": {
+   "abbr": "ARA",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "20024.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/20024.png",
+   "name": "Ararat-Armenia",
+   "national": false,
+   "short": "Ararat-Armenia"
+  },
+  "202": {
+   "abbr": "ARG",
+   "ar": "الأرجنتين",
+   "comps": [
+    "nt.world"
+   ],
+   "file": "202.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+   "name": "Argentina",
+   "national": true,
+   "short": "Argentina"
+  },
+  "20216": {
+   "abbr": "FCSP",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "20216.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/20216.png",
+   "name": "San Pédro",
+   "national": false,
+   "short": "San Pédro"
+  },
+  "20219": {
+   "abbr": "NOU",
+   "ar": "نواذيبو",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "20219.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/20219.png",
+   "name": "FC Nouadhibou",
+   "national": false,
+   "short": "FC Nouadhibo"
+  },
+  "20220": {
+   "abbr": "PYR",
+   "ar": "بيراميدز",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "20220.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/20220.png",
+   "name": "Pyramids FC",
+   "national": false,
+   "short": "Pyramids FC"
+  },
+  "203": {
+   "abbr": "MEX",
+   "ar": "المكسيك",
+   "comps": [
+    "nt.world"
+   ],
+   "file": "203.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+   "name": "Mexico",
+   "national": true,
+   "short": "Mexico"
+  },
+  "205": {
+   "abbr": "BRA",
+   "ar": "البرازيل",
+   "comps": [
+    "nt.world"
+   ],
+   "file": "205.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+   "name": "Brazil",
+   "national": true,
+   "short": "Brazil"
+  },
+  "2052": {
+   "abbr": "BEI",
+   "ar": "",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "2052.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/2052.png",
+   "name": "Beijing Guoan",
+   "national": false,
+   "short": "Beijing"
+  },
+  "208": {
+   "abbr": "COL",
+   "ar": "كولومبيا",
+   "comps": [
+    "nt.world"
+   ],
+   "file": "208.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+   "name": "Colombia",
+   "national": true,
+   "short": "Colombia"
+  },
+  "20839": {
+   "abbr": "KIT",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "20839.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/20839.png",
+   "name": "Kitara FC",
+   "national": false,
+   "short": "Kitara FC"
+  },
+  "20853": {
+   "abbr": "CRB",
+   "ar": "شباب بلوزداد",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "20853.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/20853.png",
+   "name": "CR Belouizdad",
+   "national": false,
+   "short": "Belouizdad"
+  },
+  "20854": {
+   "abbr": "TEU",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "20854.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/20854.png",
+   "name": "Teungueth",
+   "national": false,
+   "short": "Teungueth"
+  },
+  "20863": {
+   "abbr": "TCV",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "20863.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/20863.png",
+   "name": "The Cong-Viettel FC",
+   "national": false,
+   "short": "The Cong-Viettel"
+  },
+  "20912": {
+   "abbr": "AQAJ",
+   "ar": "القوة الجوية",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "20912.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/20912.png",
+   "name": "Al-Quwa Al-Jawiya",
+   "national": false,
+   "short": "Al-Quwa"
+  },
+  "21006": {
+   "abbr": "ALM",
+   "ar": "المحرق",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "21006.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21006.png",
+   "name": "Al-Muharraq SC",
+   "national": false,
+   "short": "Al-Muharraq SC"
+  },
+  "21008": {
+   "abbr": "KSC",
+   "ar": "الكويت",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "21008.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21008.png",
+   "name": "Kuwait SC",
+   "national": false,
+   "short": "Kuwait SC"
+  },
+  "21024": {
+   "abbr": "ALF",
+   "ar": "الفيصلي الأردني",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "21024.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21024.png",
+   "name": "Al-Faisaly SC",
+   "national": false,
+   "short": "Al-Faisaly SC"
+  },
+  "212": {
+   "abbr": "URU",
+   "ar": "أوروجواي",
+   "comps": [
+    "nt.world"
+   ],
+   "file": "212.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+   "name": "Uruguay",
+   "national": true,
+   "short": "Uruguay"
+  },
+  "21361": {
+   "abbr": "KYO",
+   "ar": "",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "21361.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21361.png",
+   "name": "Kyoto Sanga",
+   "national": false,
+   "short": "Kyoto Sanga"
+  },
+  "21363": {
+   "abbr": "JWG",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "21363.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21363.png",
+   "name": "Jwaneng Galaxy",
+   "national": false,
+   "short": "Jwaneng"
+  },
+  "21432": {
+   "abbr": "PPC",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "21432.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21432.png",
+   "name": "Phnom Penh Crown FC",
+   "national": false,
+   "short": "Phnom Penh"
+  },
+  "21438": {
+   "abbr": "SEEB",
+   "ar": "السيب",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "21438.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21438.png",
+   "name": "Al-Seeb Club",
+   "national": false,
+   "short": "Al-Seeb Club"
+  },
+  "21446": {
+   "abbr": "ALF",
+   "ar": "الفيصلي",
+   "comps": [
+    "ksa.1"
+   ],
+   "file": "21446.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21446.png",
+   "name": "Al Faisaly",
+   "national": false,
+   "short": "Al Faisaly"
+  },
+  "21575": {
+   "abbr": "ALS",
+   "ar": "الشمال",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "21575.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21575.png",
+   "name": "Al-Shamal",
+   "national": false,
+   "short": "Al-Shamal"
+  },
+  "21615": {
+   "abbr": "TOR",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "21615.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21615.png",
+   "name": "Torreense",
+   "national": false,
+   "short": "Torreense"
+  },
+  "21800": {
+   "abbr": "RBM",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "21800.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21800.png",
+   "name": "Réal Bamako",
+   "national": false,
+   "short": "Réal Bamako"
+  },
+  "21801": {
+   "abbr": "FAR",
+   "ar": "الجيش الملكي",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "21801.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21801.png",
+   "name": "AS FAR",
+   "national": false,
+   "short": "AS FAR"
+  },
+  "21806": {
+   "abbr": "ASKO",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "21806.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21806.png",
+   "name": "ASKO Kara",
+   "national": false,
+   "short": "ASKO Kara"
+  },
+  "21827": {
+   "abbr": "FAY",
+   "ar": "الفيحاء",
+   "comps": [
+    "ksa.1"
+   ],
+   "file": "21827.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21827.png",
+   "name": "Al Fayha",
+   "national": false,
+   "short": "Al Fayha"
+  },
+  "21829": {
+   "abbr": "KHA",
+   "ar": "الخليج",
+   "comps": [
+    "ksa.1"
+   ],
+   "file": "21829.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21829.png",
+   "name": "Al Khaleej",
+   "national": false,
+   "short": "Al Khaleej"
+  },
+  "21833": {
+   "abbr": "ABH",
+   "ar": "أبها",
+   "comps": [
+    "ksa.1"
+   ],
+   "file": "21833.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21833.png",
+   "name": "Abha",
+   "national": false,
+   "short": "Abha"
+  },
+  "21844": {
+   "abbr": "KUC",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "21844.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21844.png",
+   "name": "Kuching City",
+   "national": false,
+   "short": "Kuching"
+  },
+  "21922": {
+   "abbr": "SAB",
+   "ar": "صباح",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "21922.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21922.png",
+   "name": "Sabah FK",
+   "national": false,
+   "short": "Sabah"
+  },
+  "21964": {
+   "abbr": "HAZ",
+   "ar": "الحزم",
+   "comps": [
+    "ksa.1"
+   ],
+   "file": "21964.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21964.png",
+   "name": "Al Hazem",
+   "national": false,
+   "short": "Al Hazem"
+  },
+  "21965": {
+   "abbr": "RIY",
+   "ar": "الرياض",
+   "comps": [
+    "ksa.1"
+   ],
+   "file": "21965.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21965.png",
+   "name": "Al Riyadh",
+   "national": false,
+   "short": "Al Riyadh"
+  },
+  "21984": {
+   "abbr": "NAT",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "21984.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21984.png",
+   "name": "Nations",
+   "national": false,
+   "short": "Nations"
+  },
+  "21994": {
+   "abbr": "ALN",
+   "ar": "النهضة",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "21994.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/21994.png",
+   "name": "Al-Nahda Club",
+   "national": false,
+   "short": "Al-Nahda Club"
+  },
+  "22022": {
+   "abbr": "QAD",
+   "ar": "القادسية",
+   "comps": [
+    "ksa.1",
+    "afc.champions"
+   ],
+   "file": "22022.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/22022.png",
+   "name": "Al Qadsiah",
+   "national": false,
+   "short": "Al Qadsiah"
+  },
+  "22028": {
+   "abbr": "KHO",
+   "ar": "الخلود",
+   "comps": [
+    "ksa.1"
+   ],
+   "file": "22028.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/22028.png",
+   "name": "Al Kholood",
+   "national": false,
+   "short": "Al Kholood"
+  },
+  "22077": {
+   "abbr": "MAL",
+   "ar": "الملعب المالي",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "22077.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/22077.png",
+   "name": "Stade Malien",
+   "national": false,
+   "short": "Stade Malien"
+  },
+  "22167": {
+   "abbr": "ZEL",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "22167.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/22167.png",
+   "name": "Machida Zelvia",
+   "national": false,
+   "short": "Machida Zelvia"
+  },
+  "22348": {
+   "abbr": "DUR",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "22348.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/22348.png",
+   "name": "Durban City",
+   "national": false,
+   "short": "Durban"
+  },
+  "22354": {
+   "abbr": "ALK",
+   "ar": "الخالدية",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "22354.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/22354.png",
+   "name": "Al-Khaldiya SC",
+   "national": false,
+   "short": "Al-Khaldiya SC"
+  },
+  "22355": {
+   "abbr": "ALH",
+   "ar": "الحسين إربد",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "22355.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/22355.png",
+   "name": "Al-Hussein SC",
+   "national": false,
+   "short": "Al-Hussein SC"
+  },
+  "22425": {
+   "abbr": "BLA",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "22425.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/22425.png",
+   "name": "Associação Black Bulls",
+   "national": false,
+   "short": "Black Bulls"
+  },
+  "22429": {
+   "abbr": "MAU",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "22429.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/22429.png",
+   "name": "AS Maniema Union",
+   "national": false,
+   "short": "Maniema Union"
+  },
+  "2250": {
+   "abbr": "SCP",
+   "ar": "سبورتينج لشبونة",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "2250.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png",
+   "name": "Sporting CP",
+   "national": false,
+   "short": "Sporting"
+  },
+  "22563": {
+   "abbr": "SCM",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "22563.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/22563.png",
+   "name": "Scottland Mabvuku",
+   "national": false,
+   "short": "Scottland"
+  },
+  "2276": {
+   "abbr": "ITT",
+   "ar": "الاتحاد",
+   "comps": [
+    "ksa.1",
+    "afc.champions"
+   ],
+   "file": "2276.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/2276.png",
+   "name": "Al Ittihad",
+   "national": false,
+   "short": "Al Ittihad"
+  },
+  "239": {
+   "abbr": "TOR",
+   "ar": "تورينو",
+   "comps": [
+    "ita.1"
+   ],
+   "file": "239.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/239.png",
+   "name": "Torino",
+   "national": false,
+   "short": "Torino"
+  },
+  "243": {
+   "abbr": "SEV",
+   "ar": "إشبيلية",
+   "comps": [
+    "esp.1"
+   ],
+   "file": "243.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
+   "name": "Sevilla",
+   "national": false,
+   "short": "Sevilla"
+  },
+  "244": {
+   "abbr": "BET",
+   "ar": "ريال بيتيس",
+   "comps": [
+    "esp.1",
+    "uefa.champions"
+   ],
+   "file": "244.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
+   "name": "Real Betis",
+   "national": false,
+   "short": "Betis"
+  },
+  "256": {
+   "abbr": "CEL",
+   "ar": "سيلتيك",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "256.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/256.png",
+   "name": "Celtic",
+   "national": false,
+   "short": "Celtic"
+  },
+  "2572": {
+   "abbr": "COMO",
+   "ar": "كومو",
+   "comps": [
+    "ita.1",
+    "uefa.champions"
+   ],
+   "file": "2572.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
+   "name": "Como",
+   "national": false,
+   "short": "Como"
+  },
+  "2619": {
+   "abbr": "KAZ",
+   "ar": "كازاخستان",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "2619.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/kaz.png",
+   "name": "Kazakhstan",
+   "national": true,
+   "short": "Kazakhstan"
+  },
+  "2620": {
+   "abbr": "EGY",
+   "ar": "مصر",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "2620.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+   "name": "Egypt",
+   "national": true,
+   "short": "Egypt"
+  },
+  "2621": {
+   "abbr": "LBY",
+   "ar": "ليبيا",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "2621.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/lby.png",
+   "name": "Libya",
+   "national": true,
+   "short": "Libya"
+  },
+  "2790": {
+   "abbr": "SLZ",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "2790.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/2790.png",
+   "name": "RB Salzburg",
+   "national": false,
+   "short": "RB Salzburg"
+  },
+  "2841": {
+   "abbr": "OMA",
+   "ar": "عُمان",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "2841.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/oma.png",
+   "name": "Oman",
+   "national": true,
+   "short": "Oman"
+  },
+  "2869": {
+   "abbr": "MAR",
+   "ar": "المغرب",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "2869.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+   "name": "Morocco",
+   "national": true,
+   "short": "Morocco"
+  },
+  "2917": {
+   "abbr": "JOR",
+   "ar": "الأردن",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "2917.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
+   "name": "Jordan",
+   "national": true,
+   "short": "Jordan"
+  },
+  "2922": {
+   "abbr": "GET",
+   "ar": "خيتافي",
+   "comps": [
+    "esp.1"
+   ],
+   "file": "2922.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png",
+   "name": "Getafe",
+   "national": false,
+   "short": "Getafe"
+  },
+  "2925": {
+   "abbr": "CAG",
+   "ar": "كالياري",
+   "comps": [
+    "ita.1"
+   ],
+   "file": "2925.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png",
+   "name": "Cagliari",
+   "national": false,
+   "short": "Cagliari"
+  },
+  "2980": {
+   "abbr": "BODO",
+   "ar": "بودو جليمت",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "2980.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/2980.png",
+   "name": "Bodo/Glimt",
+   "national": false,
+   "short": "Bodo/Glimt"
+  },
+  "2990": {
+   "abbr": "LECH",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "2990.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/2990.png",
+   "name": "Lech Poznan",
+   "national": false,
+   "short": "Lech Poznan"
+  },
+  "306": {
+   "abbr": "HUL",
+   "ar": "هال سيتي",
+   "comps": [
+    "eng.1"
+   ],
+   "file": "306.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/306.png",
+   "name": "Hull City",
+   "national": false,
+   "short": "Hull"
+  },
+  "3263": {
+   "abbr": "GEN",
+   "ar": "جنوى",
+   "comps": [
+    "ita.1"
+   ],
+   "file": "3263.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png",
+   "name": "Genoa",
+   "national": false,
+   "short": "Genoa"
+  },
+  "331": {
+   "abbr": "BHA",
+   "ar": "برايتون",
+   "comps": [
+    "eng.1"
+   ],
+   "file": "331.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png",
+   "name": "Brighton & Hove Albion",
+   "national": false,
+   "short": "Brighton"
+  },
+  "3362": {
+   "abbr": "NKC",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "3362.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/3362.png",
+   "name": "NK Celje",
+   "national": false,
+   "short": "NK Celje"
+  },
+  "337": {
+   "abbr": "BRE",
+   "ar": "برينتفورد",
+   "comps": [
+    "eng.1"
+   ],
+   "file": "337.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png",
+   "name": "Brentford",
+   "national": false,
+   "short": "Brentford"
+  },
+  "349": {
+   "abbr": "BOU",
+   "ar": "بورنموث",
+   "comps": [
+    "eng.1",
+    "uefa.europa"
+   ],
+   "file": "349.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
+   "name": "AFC Bournemouth",
+   "national": false,
+   "short": "Bournemouth"
+  },
+  "357": {
+   "abbr": "LEE",
+   "ar": "ليدز",
+   "comps": [
+    "eng.1"
+   ],
+   "file": "357.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
+   "name": "Leeds United",
+   "national": false,
+   "short": "Leeds"
+  },
+  "359": {
+   "abbr": "ARS",
+   "ar": "آرسنال",
+   "comps": [
+    "eng.1",
+    "uefa.champions"
+   ],
+   "file": "359.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+   "name": "Arsenal",
+   "national": false,
+   "short": "Arsenal"
+  },
+  "360": {
+   "abbr": "MAN",
+   "ar": "مانشستر يونايتد",
+   "comps": [
+    "eng.1",
+    "uefa.champions"
+   ],
+   "file": "360.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
+   "name": "Manchester United",
+   "national": false,
+   "short": "Man Utd"
+  },
+  "361": {
+   "abbr": "NEW",
+   "ar": "نيوكاسل",
+   "comps": [
+    "eng.1"
+   ],
+   "file": "361.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png",
+   "name": "Newcastle United",
+   "national": false,
+   "short": "Newcastle"
+  },
+  "362": {
+   "abbr": "AVL",
+   "ar": "أستون فيلا",
+   "comps": [
+    "eng.1",
+    "uefa.champions"
+   ],
+   "file": "362.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
+   "name": "Aston Villa",
+   "national": false,
+   "short": "Aston Villa"
+  },
+  "363": {
+   "abbr": "CHE",
+   "ar": "تشيلسي",
+   "comps": [
+    "eng.1"
+   ],
+   "file": "363.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
+   "name": "Chelsea",
+   "national": false,
+   "short": "Chelsea"
+  },
+  "364": {
+   "abbr": "LIV",
+   "ar": "ليفربول",
+   "comps": [
+    "eng.1",
+    "uefa.champions"
+   ],
+   "file": "364.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
+   "name": "Liverpool",
+   "national": false,
+   "short": "Liverpool"
+  },
+  "366": {
+   "abbr": "SUN",
+   "ar": "سندرلاند",
+   "comps": [
+    "eng.1",
+    "uefa.europa"
+   ],
+   "file": "366.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
+   "name": "Sunderland",
+   "national": false,
+   "short": "Sunderland"
+  },
+  "367": {
+   "abbr": "TOT",
+   "ar": "توتنهام",
+   "comps": [
+    "eng.1"
+   ],
+   "file": "367.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png",
+   "name": "Tottenham Hotspur",
+   "national": false,
+   "short": "Spurs"
+  },
+  "368": {
+   "abbr": "EVE",
+   "ar": "إيفرتون",
+   "comps": [
+    "eng.1"
+   ],
+   "file": "368.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png",
+   "name": "Everton",
+   "national": false,
+   "short": "Everton"
+  },
+  "370": {
+   "abbr": "FUL",
+   "ar": "فولهام",
+   "comps": [
+    "eng.1"
+   ],
+   "file": "370.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/370.png",
+   "name": "Fulham",
+   "national": false,
+   "short": "Fulham"
+  },
+  "373": {
+   "abbr": "IPS",
+   "ar": "إبسويتش",
+   "comps": [
+    "eng.1"
+   ],
+   "file": "373.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png",
+   "name": "Ipswich Town",
+   "national": false,
+   "short": "Ipswich"
+  },
+  "3746": {
+   "abbr": "STG",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "3746.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/3746.png",
+   "name": "SK Sturm Graz",
+   "national": false,
+   "short": "Sturm Graz"
+  },
+  "3751": {
+   "abbr": "ELC",
+   "ar": "إلتشي",
+   "comps": [
+    "esp.1"
+   ],
+   "file": "3751.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png",
+   "name": "Elche",
+   "national": false,
+   "short": "Elche"
+  },
+  "382": {
+   "abbr": "MNC",
+   "ar": "مانشستر سيتي",
+   "comps": [
+    "eng.1",
+    "uefa.champions"
+   ],
+   "file": "382.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+   "name": "Manchester City",
+   "national": false,
+   "short": "Man City"
+  },
+  "384": {
+   "abbr": "CRY",
+   "ar": "كريستال بالاس",
+   "comps": [
+    "eng.1",
+    "uefa.europa"
+   ],
+   "file": "384.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
+   "name": "Crystal Palace",
+   "national": false,
+   "short": "C Palace"
+  },
+  "388": {
+   "abbr": "COV",
+   "ar": "كوفنتري",
+   "comps": [
+    "eng.1"
+   ],
+   "file": "388.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
+   "name": "Coventry City",
+   "national": false,
+   "short": "Coventry"
+  },
+  "393": {
+   "abbr": "NFO",
+   "ar": "نوتنجهام فورست",
+   "comps": [
+    "eng.1"
+   ],
+   "file": "393.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
+   "name": "Nottingham Forest",
+   "national": false,
+   "short": "Nottm Forest"
+  },
+  "3997": {
+   "abbr": "SAS",
+   "ar": "ساسولو",
+   "comps": [
+    "ita.1"
+   ],
+   "file": "3997.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png",
+   "name": "Sassuolo",
+   "national": false,
+   "short": "Sassuolo"
+  },
+  "4007": {
+   "abbr": "MON",
+   "ar": "مونزا",
+   "comps": [
+    "ita.1"
+   ],
+   "file": "4007.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/4007.png",
+   "name": "Monza",
+   "national": false,
+   "short": "Monza"
+  },
+  "4057": {
+   "abbr": "FRO",
+   "ar": "فروزينوني",
+   "comps": [
+    "ita.1"
+   ],
+   "file": "4057.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/4057.png",
+   "name": "Frosinone",
+   "national": false,
+   "short": "Frosinone"
+  },
+  "4319": {
+   "abbr": "SUD",
+   "ar": "السودان",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "4319.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/sud.png",
+   "name": "Sudan",
+   "national": true,
+   "short": "Sudan"
+  },
+  "432": {
+   "abbr": "GAL",
+   "ar": "جالطة سراي",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "432.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png",
+   "name": "Galatasaray",
+   "national": false,
+   "short": "Galatasaray"
+  },
+  "433": {
+   "abbr": "SPP",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "433.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/433.png",
+   "name": "Sparta Prague",
+   "national": false,
+   "short": "Sparta"
+  },
+  "435": {
+   "abbr": "OLY",
+   "ar": "أولمبياكوس",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "435.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/435.png",
+   "name": "Olympiacos",
+   "national": false,
+   "short": "Olympiacos"
+  },
+  "436": {
+   "abbr": "FEN",
+   "ar": "فنربخشة",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "436.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/436.png",
+   "name": "Fenerbahce",
+   "national": false,
+   "short": "Fenerbahce"
+  },
+  "437": {
+   "abbr": "FCP",
+   "ar": "بورتو",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "437.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/437.png",
+   "name": "FC Porto",
+   "national": false,
+   "short": "FC Porto"
+  },
+  "4375": {
+   "abbr": "IRQ",
+   "ar": "العراق",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "4375.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
+   "name": "Iraq",
+   "national": true,
+   "short": "Iraq"
+  },
+  "4380": {
+   "abbr": "SYR",
+   "ar": "سوريا",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "4380.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/syr.png",
+   "name": "Syria",
+   "national": true,
+   "short": "Syria"
+  },
+  "4381": {
+   "abbr": "BHR",
+   "ar": "البحرين",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "4381.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/bhr.png",
+   "name": "Bahrain",
+   "national": true,
+   "short": "Bahrain"
+  },
+  "4388": {
+   "abbr": "LIB",
+   "ar": "لبنان",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "4388.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/lib.png",
+   "name": "Lebanon",
+   "national": true,
+   "short": "Lebanon"
+  },
+  "4397": {
+   "abbr": "UAE",
+   "ar": "الإمارات",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "4397.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/uae.png",
+   "name": "United Arab Emirates",
+   "national": true,
+   "short": "UAE"
+  },
+  "4398": {
+   "abbr": "QAT",
+   "ar": "قطر",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "4398.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
+   "name": "Qatar",
+   "national": true,
+   "short": "Qatar"
+  },
+  "441": {
+   "abbr": "AND",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "441.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/441.png",
+   "name": "Anderlecht",
+   "national": false,
+   "short": "Anderlecht"
+  },
+  "4411": {
+   "abbr": "LAS",
+   "ar": "لاسك لينز",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "4411.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/4411.png",
+   "name": "LASK Linz",
+   "national": false,
+   "short": "LASK Linz"
+  },
+  "444": {
+   "abbr": "EST",
+   "ar": "إستونيا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "444.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/est.png",
+   "name": "Estonia",
+   "national": true,
+   "short": "Estonia"
+  },
+  "445": {
+   "abbr": "CYP",
+   "ar": "قبرص",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "445.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/cyp.png",
+   "name": "Cyprus",
+   "national": true,
+   "short": "Cyprus"
+  },
+  "4469": {
+   "abbr": "GHA",
+   "ar": "غانا",
+   "comps": [
+    "nt.world"
+   ],
+   "file": "4469.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
+   "name": "Ghana",
+   "national": true,
+   "short": "Ghana"
+  },
+  "447": {
+   "abbr": "FRO",
+   "ar": "جزر فارو",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "447.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/fro.png",
+   "name": "Faroe Islands",
+   "national": true,
+   "short": "Faroe Islands"
+  },
+  "448": {
+   "abbr": "ENG",
+   "ar": "إنجلترا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "448.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+   "name": "England",
+   "national": true,
+   "short": "England"
+  },
+  "449": {
+   "abbr": "NED",
+   "ar": "هولندا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "449.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+   "name": "Netherlands",
+   "national": true,
+   "short": "Netherlands"
+  },
+  "450": {
+   "abbr": "CZE",
+   "ar": "التشيك",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "450.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+   "name": "Czechia",
+   "national": true,
+   "short": "Czechia"
+  },
+  "451": {
+   "abbr": "KOR",
+   "ar": "كوريا الجنوبية",
+   "comps": [
+    "nt.world"
+   ],
+   "file": "451.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+   "name": "South Korea",
+   "national": true,
+   "short": "South Korea"
+  },
+  "452": {
+   "abbr": "BIH",
+   "ar": "البوسنة والهرسك",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "452.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
+   "name": "Bosnia-Herzegovina",
+   "national": true,
+   "short": "Bosnia-Herz"
+  },
+  "453": {
+   "abbr": "MLT",
+   "ar": "مالطا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "453.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/mlt.png",
+   "name": "Malta",
+   "national": true,
+   "short": "Malta"
+  },
+  "455": {
+   "abbr": "GRE",
+   "ar": "اليونان",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "455.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/gre.png",
+   "name": "Greece",
+   "national": true,
+   "short": "Greece"
+  },
+  "456": {
+   "abbr": "LVA",
+   "ar": "لاتفيا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "456.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/lva.png",
+   "name": "Latvia",
+   "national": true,
+   "short": "Latvia"
+  },
+  "457": {
+   "abbr": "UKR",
+   "ar": "أوكرانيا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "457.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/ukr.png",
+   "name": "Ukraine",
+   "national": true,
+   "short": "Ukraine"
+  },
+  "458": {
+   "abbr": "FIN",
+   "ar": "فنلندا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "458.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/fin.png",
+   "name": "Finland",
+   "national": true,
+   "short": "Finland"
+  },
+  "459": {
+   "abbr": "BEL",
+   "ar": "بلجيكا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "459.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+   "name": "Belgium",
+   "national": true,
+   "short": "Belgium"
+  },
+  "460": {
+   "abbr": "LTU",
+   "ar": "ليتوانيا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "460.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/ltu.png",
+   "name": "Lithuania",
+   "national": true,
+   "short": "Lithuania"
+  },
+  "461": {
+   "abbr": "ISR",
+   "ar": "إسرائيل",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "461.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/isr.png",
+   "name": "Israel",
+   "national": true,
+   "short": "Israel"
+  },
+  "462": {
+   "abbr": "BUL",
+   "ar": "بلغاريا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "462.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/bul.png",
+   "name": "Bulgaria",
+   "national": true,
+   "short": "Bulgaria"
+  },
+  "463": {
+   "abbr": "MKD",
+   "ar": "مقدونيا الشمالية",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "463.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/mkd.png",
+   "name": "North Macedonia",
+   "national": true,
+   "short": "North Macedonia"
+  },
+  "464": {
+   "abbr": "NOR",
+   "ar": "النرويج",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "464.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+   "name": "Norway",
+   "national": true,
+   "short": "Norway"
+  },
+  "465": {
+   "abbr": "TUR",
+   "ar": "تركيا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "465.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
+   "name": "Türkiye",
+   "national": true,
+   "short": "Türkiye"
+  },
+  "466": {
+   "abbr": "SWE",
+   "ar": "السويد",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "466.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
+   "name": "Sweden",
+   "national": true,
+   "short": "Sweden"
+  },
+  "468": {
+   "abbr": "SVK",
+   "ar": "سلوفاكيا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "468.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/svk.png",
+   "name": "Slovakia",
+   "national": true,
+   "short": "Slovakia"
+  },
+  "469": {
+   "abbr": "IRN",
+   "ar": "إيران",
+   "comps": [
+    "nt.world"
+   ],
+   "file": "469.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+   "name": "Iran",
+   "national": true,
+   "short": "Iran"
+  },
+  "470": {
+   "abbr": "ISL",
+   "ar": "آيسلندا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "470.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/isl.png",
+   "name": "Iceland",
+   "national": true,
+   "short": "Iceland"
+  },
+  "471": {
+   "abbr": "POL",
+   "ar": "بولندا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "471.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/pol.png",
+   "name": "Poland",
+   "national": true,
+   "short": "Poland"
+  },
+  "472": {
+   "abbr": "SVN",
+   "ar": "سلوفينيا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "472.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/svn.png",
+   "name": "Slovenia",
+   "national": true,
+   "short": "Slovenia"
+  },
+  "473": {
+   "abbr": "ROU",
+   "ar": "رومانيا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "473.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/rom.png",
+   "name": "Romania",
+   "national": true,
+   "short": "Romania"
+  },
+  "474": {
+   "abbr": "AUT",
+   "ar": "النمسا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "474.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
+   "name": "Austria",
+   "national": true,
+   "short": "Austria"
+  },
+  "475": {
+   "abbr": "SUI",
+   "ar": "سويسرا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "475.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+   "name": "Switzerland",
+   "national": true,
+   "short": "Switzerland"
+  },
+  "476": {
+   "abbr": "IRL",
+   "ar": "أيرلندا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "476.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/irl.png",
+   "name": "Republic of Ireland",
+   "national": true,
+   "short": "Rep Ireland"
+  },
+  "477": {
+   "abbr": "CRO",
+   "ar": "كرواتيا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "477.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+   "name": "Croatia",
+   "national": true,
+   "short": "Croatia"
+  },
+  "478": {
+   "abbr": "FRA",
+   "ar": "فرنسا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "478.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+   "name": "France",
+   "national": true,
+   "short": "France"
+  },
+  "4789": {
+   "abbr": "CIV",
+   "ar": "كوت ديفوار",
+   "comps": [
+    "nt.world"
+   ],
+   "file": "4789.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
+   "name": "Ivory Coast",
+   "national": true,
+   "short": "Ivory Coast"
+  },
+  "479": {
+   "abbr": "DEN",
+   "ar": "الدنمارك",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "479.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/den.png",
+   "name": "Denmark",
+   "national": true,
+   "short": "Denmark"
+  },
+  "480": {
+   "abbr": "HUN",
+   "ar": "المجر",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "480.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/hun.png",
+   "name": "Hungary",
+   "national": true,
+   "short": "Hungary"
+  },
+  "481": {
+   "abbr": "GER",
+   "ar": "ألمانيا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "481.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
+   "name": "Germany",
+   "national": true,
+   "short": "Germany"
+  },
+  "482": {
+   "abbr": "POR",
+   "ar": "البرتغال",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "482.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+   "name": "Portugal",
+   "national": true,
+   "short": "Portugal"
+  },
+  "483": {
+   "abbr": "MDA",
+   "ar": "مولدوفا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "483.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/mda.png",
+   "name": "Moldova",
+   "national": true,
+   "short": "Moldova"
+  },
+  "490": {
+   "abbr": "LEV",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "490.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/490.png",
+   "name": "Levski Sofia",
+   "national": false,
+   "short": "Levski Sofia"
+  },
+  "493": {
+   "abbr": "SHK",
+   "ar": "شاختار دونيتسك",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "493.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/493.png",
+   "name": "Shakhtar Donetsk",
+   "national": false,
+   "short": "Shakhtar"
+  },
+  "494": {
+   "abbr": "SLP",
+   "ar": "سلافيا براج",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "494.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/494.png",
+   "name": "Slavia Prague",
+   "national": false,
+   "short": "Slavia Prague"
+  },
+  "510": {
+   "abbr": "VFK",
+   "ar": "فايكنج",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "510.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/510.png",
+   "name": "Viking FK",
+   "national": false,
+   "short": "Viking FK"
+  },
+  "521": {
+   "abbr": "SLB",
+   "ar": "سلوفان براتيسلافا",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "521.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/521.png",
+   "name": "Slovan Bratislava",
+   "national": false,
+   "short": "S Bratislava"
+  },
+  "5321": {
+   "abbr": "ADL",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "5321.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/5321.png",
+   "name": "Adelaide United FC",
+   "national": false,
+   "short": "Adelaide Utd"
+  },
+  "5323": {
+   "abbr": "NEW",
+   "ar": "",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "5323.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/5323.png",
+   "name": "Newcastle Jets",
+   "national": false,
+   "short": "Newcastle Jets"
+  },
+  "5328": {
+   "abbr": "MBV",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "5328.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/5328.png",
+   "name": "Melbourne Victory",
+   "national": false,
+   "short": "Melbourne V"
+  },
+  "570": {
+   "abbr": "BRU",
+   "ar": "كلوب بروج",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "570.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/570.png",
+   "name": "Club Brugge",
+   "national": false,
+   "short": "Club Brugge"
+  },
+  "5775": {
+   "abbr": "DJI",
+   "ar": "جيبوتي",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "5775.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/dji.png",
+   "name": "Djibouti",
+   "national": true,
+   "short": "Djibouti"
+  },
+  "578": {
+   "abbr": "WAL",
+   "ar": "ويلز",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "578.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/wal.png",
+   "name": "Wales",
+   "national": true,
+   "short": "Wales"
+  },
+  "579": {
+   "abbr": "ARM",
+   "ar": "أرمينيا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "579.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/fifa.armenia.png",
+   "name": "Armenia",
+   "national": true,
+   "short": "Armenia"
+  },
+  "580": {
+   "abbr": "SCO",
+   "ar": "اسكتلندا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "580.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+   "name": "Scotland",
+   "national": true,
+   "short": "Scotland"
+  },
+  "5807": {
+   "abbr": "USG",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "5807.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/5807.png",
+   "name": "Union St.-Gilloise",
+   "national": false,
+   "short": "Union SG"
+  },
+  "581": {
+   "abbr": "AZE",
+   "ar": "أذربيجان",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "581.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/aze.png",
+   "name": "Azerbaijan",
+   "national": true,
+   "short": "Azerbaijan"
+  },
+  "582": {
+   "abbr": "LUX",
+   "ar": "لوكسمبورج",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "582.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/lux.png",
+   "name": "Luxembourg",
+   "national": true,
+   "short": "Luxembourg"
+  },
+  "583": {
+   "abbr": "BLR",
+   "ar": "بيلاروسيا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "583.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/blr.png",
+   "name": "Belarus",
+   "national": true,
+   "short": "Belarus"
+  },
+  "584": {
+   "abbr": "GEO",
+   "ar": "جورجيا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "584.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/geo.png",
+   "name": "Georgia",
+   "national": true,
+   "short": "Georgia"
+  },
+  "585": {
+   "abbr": "ALB",
+   "ar": "ألبانيا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "585.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/alb.png",
+   "name": "Albania",
+   "national": true,
+   "short": "Albania"
+  },
+  "586": {
+   "abbr": "NIR",
+   "ar": "أيرلندا الشمالية",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "586.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/nir.png",
+   "name": "Northern Ireland",
+   "national": true,
+   "short": "N Ireland"
+  },
+  "587": {
+   "abbr": "AND",
+   "ar": "أندورا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "587.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/and.png",
+   "name": "Andorra",
+   "national": true,
+   "short": "Andorra"
+  },
+  "588": {
+   "abbr": "SMR",
+   "ar": "سان مارينو",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "588.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/smr.png",
+   "name": "San Marino",
+   "national": true,
+   "short": "San Marino"
+  },
+  "589": {
+   "abbr": "LIE",
+   "ar": "ليختنشتاين",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "589.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/lie.png",
+   "name": "Liechtenstein",
+   "national": true,
+   "short": "Liechtenstein"
+  },
+  "597": {
+   "abbr": "DZG",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "597.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/597.png",
+   "name": "Dinamo Zagreb",
+   "national": false,
+   "short": "Dinamo Zagreb"
+  },
+  "6014": {
+   "abbr": "YEM",
+   "ar": "اليمن",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "6014.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/yem.png",
+   "name": "Yemen",
+   "national": true,
+   "short": "Yemen"
+  },
+  "6167": {
+   "abbr": "PLE",
+   "ar": "فلسطين",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "6167.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/pal.png",
+   "name": "Palestine",
+   "national": true,
+   "short": "Palestine"
+  },
+  "617": {
+   "abbr": "OMON",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "617.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/617.png",
+   "name": "Omonia Nicosia",
+   "national": false,
+   "short": "Omonia"
+  },
+  "622": {
+   "abbr": "FER",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "622.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/622.png",
+   "name": "Ferencvaros",
+   "national": false,
+   "short": "Ferencvaros"
+  },
+  "624": {
+   "abbr": "ALG",
+   "ar": "الجزائر",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "624.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
+   "name": "Algeria",
+   "national": true,
+   "short": "Algeria"
+  },
+  "627": {
+   "abbr": "JPN",
+   "ar": "اليابان",
+   "comps": [
+    "nt.world"
+   ],
+   "file": "627.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+   "name": "Japan",
+   "national": true,
+   "short": "Japan"
+  },
+  "628": {
+   "abbr": "AUS",
+   "ar": "أستراليا",
+   "comps": [
+    "nt.world"
+   ],
+   "file": "628.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+   "name": "Australia",
+   "national": true,
+   "short": "Australia"
+  },
+  "654": {
+   "abbr": "SEN",
+   "ar": "السنغال",
+   "comps": [
+    "nt.world"
+   ],
+   "file": "654.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+   "name": "Senegal",
+   "national": true,
+   "short": "Senegal"
+  },
+  "655": {
+   "abbr": "KSA",
+   "ar": "السعودية",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "655.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
+   "name": "Saudi Arabia",
+   "national": true,
+   "short": "Saudi Arabia"
+  },
+  "656": {
+   "abbr": "CMR",
+   "ar": "الكاميرون",
+   "comps": [
+    "nt.world"
+   ],
+   "file": "656.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/crm.png",
+   "name": "Cameroon",
+   "national": true,
+   "short": "Cameroon"
+  },
+  "657": {
+   "abbr": "NGA",
+   "ar": "نيجيريا",
+   "comps": [
+    "nt.world"
+   ],
+   "file": "657.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/nga.png",
+   "name": "Nigeria",
+   "national": true,
+   "short": "Nigeria"
+  },
+  "659": {
+   "abbr": "TUN",
+   "ar": "تونس",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "659.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
+   "name": "Tunisia",
+   "national": true,
+   "short": "Tunisia"
+  },
+  "660": {
+   "abbr": "USA",
+   "ar": "أمريكا",
+   "comps": [
+    "nt.world"
+   ],
+   "file": "660.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+   "name": "United States",
+   "national": true,
+   "short": "USA"
+  },
+  "6757": {
+   "abbr": "SRB",
+   "ar": "صربيا",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "6757.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/sba.png",
+   "name": "Serbia",
+   "national": true,
+   "short": "Serbia"
+  },
+  "6775": {
+   "abbr": "MNE",
+   "ar": "الجبل الأسود",
+   "comps": [
+    "nt.europe"
+   ],
+   "file": "6775.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/mtg.png",
+   "name": "Montenegro",
+   "national": true,
+   "short": "Montenegro"
+  },
+  "6972": {
+   "abbr": "SEO",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "6972.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/6972.png",
+   "name": "FC Seoul",
+   "national": false,
+   "short": "FC Seoul"
+  },
+  "7081": {
+   "abbr": "KAI",
+   "ar": "كايزر تشيفز",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "7081.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7081.png",
+   "name": "Kaizer Chiefs",
+   "national": false,
+   "short": "Kaizer Chiefs"
+  },
+  "7084": {
+   "abbr": "MSU",
+   "ar": "صن داونز",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "7084.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7084.png",
+   "name": "Mamelodi Sundowns",
+   "national": false,
+   "short": "M Sundowns"
+  },
+  "7085": {
+   "abbr": "ORL",
+   "ar": "أورلاندو بايرتس",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "7085.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7085.png",
+   "name": "Orlando Pirates",
+   "national": false,
+   "short": "O Pirates"
+  },
+  "7102": {
+   "abbr": "GAM",
+   "ar": "",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "7102.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7102.png",
+   "name": "Gamba Osaka",
+   "national": false,
+   "short": "Gamba Osaka"
+  },
+  "7115": {
+   "abbr": "KAN",
+   "ar": "",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "7115.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7115.png",
+   "name": "Kashima Antlers",
+   "national": false,
+   "short": "Kashima"
+  },
+  "7119": {
+   "abbr": "JHM",
+   "ar": "",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "7119.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7119.png",
+   "name": "Jeonbuk Hyundai Motors",
+   "national": false,
+   "short": "Jeonbuk"
+  },
+  "7123": {
+   "abbr": "PAK",
+   "ar": "",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "7123.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7123.png",
+   "name": "Pakhtakor",
+   "national": false,
+   "short": "Pakhtakor"
+  },
+  "7128": {
+   "abbr": "AlN",
+   "ar": "العين",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "7128.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7128.png",
+   "name": "Al Ain",
+   "national": false,
+   "short": "Al Ain"
+  },
+  "7129": {
+   "abbr": "ALG",
+   "ar": "الغرافة",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "7129.png",
+   "logo_url": "https://a.espncdn.com/guid/a0ee48aa-0d67-c802-ac49-7492db10d894/logos/default.png",
+   "name": "Al-Gharafa",
+   "national": false,
+   "short": "Al-Gharafa"
+  },
+  "7134": {
+   "abbr": "AWFC",
+   "ar": "الوحدة",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "7134.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7134.png",
+   "name": "Al Wahda FC",
+   "national": false,
+   "short": "Al Wahda FC"
+  },
+  "7135": {
+   "abbr": "ALS",
+   "ar": "السد",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "7135.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7135.png",
+   "name": "Al Sadd",
+   "national": false,
+   "short": "Al Sadd"
+  },
+  "7138": {
+   "abbr": "BUR",
+   "ar": "",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "7138.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7138.png",
+   "name": "Buriram United",
+   "national": false,
+   "short": "Buriram"
+  },
+  "7476": {
+   "abbr": "KRE",
+   "ar": "",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "7476.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7476.png",
+   "name": "Kashiwa Reysol",
+   "national": false,
+   "short": "Kashiwa"
+  },
+  "7477": {
+   "abbr": "VIS",
+   "ar": "",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "7477.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7477.png",
+   "name": "Vissel Kobe",
+   "national": false,
+   "short": "Vissel Kobe"
+  },
+  "7501": {
+   "abbr": "ALG",
+   "ar": "مولودية الجزائر",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "7501.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7501.png",
+   "name": "MC Alger",
+   "national": false,
+   "short": "MC Alger"
+  },
+  "7517": {
+   "abbr": "USMA",
+   "ar": "اتحاد العاصمة",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "7517.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7517.png",
+   "name": "USM Alger",
+   "national": false,
+   "short": "USM Alger"
+  },
+  "7525": {
+   "abbr": "EST",
+   "ar": "استقلال طهران",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "7525.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7525.png",
+   "name": "Esteghlal FC",
+   "national": false,
+   "short": "Esteghlal FC"
+  },
+  "7527": {
+   "abbr": "ALR",
+   "ar": "الريان",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "7527.png",
+   "logo_url": "https://a.espncdn.com/guid/3537b0de-4d7e-d529-f36e-58888e65e902/logos/default.png",
+   "name": "Al-Rayyan SC",
+   "national": false,
+   "short": "Al-Rayyan SC"
+  },
+  "7530": {
+   "abbr": "NEF",
+   "ar": "",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "7530.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7530.png",
+   "name": "Neftchi Fergana",
+   "national": false,
+   "short": "Neftchi Fergana"
+  },
+  "790": {
+   "abbr": "SAA",
+   "ar": "شباب الأهلي",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "790.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/790.png",
+   "name": "Shabab Al Ahli",
+   "national": false,
+   "short": "Shabab Al Ahli"
+  },
+  "7911": {
+   "abbr": "TSG",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "7911.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png",
+   "name": "TSG Hoffenheim",
+   "national": false,
+   "short": "Hoffenheim"
+  },
+  "793": {
+   "abbr": "SHA",
+   "ar": "الشباب",
+   "comps": [
+    "ksa.1"
+   ],
+   "file": "793.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/793.png",
+   "name": "Al Shabab",
+   "national": false,
+   "short": "Al Shabab"
+  },
+  "7979": {
+   "abbr": "RAY",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "7979.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7979.png",
+   "name": "Rayon Sport",
+   "national": false,
+   "short": "Rayon Sport"
+  },
+  "7998": {
+   "abbr": "TAM",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "7998.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/7998.png",
+   "name": "Tampines Rovers FC",
+   "national": false,
+   "short": "Tampines Rovers"
+  },
+  "8004": {
+   "abbr": "GOR",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "8004.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/8004.png",
+   "name": "Gor Mahia",
+   "national": false,
+   "short": "Gor Mahia"
+  },
+  "8040": {
+   "abbr": "LCS",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "8040.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/8040.png",
+   "name": "Lion City Sailors FC",
+   "national": false,
+   "short": "LC Sailors"
+  },
+  "8054": {
+   "abbr": "POW",
+   "ar": "",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "8054.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/8054.png",
+   "name": "Power Dynamos",
+   "national": false,
+   "short": "Power Dynamos"
+  },
+  "8062": {
+   "abbr": "RED",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "8062.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/8062.png",
+   "name": "Red Arrows",
+   "national": false,
+   "short": "Red Arrows"
+  },
+  "817": {
+   "abbr": "NSR",
+   "ar": "النصر",
+   "comps": [
+    "ksa.1",
+    "afc.champions"
+   ],
+   "file": "817.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/817.png",
+   "name": "Al Nassr",
+   "national": false,
+   "short": "Al Nassr"
+  },
+  "8217": {
+   "abbr": "NAS",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "8217.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/8217.png",
+   "name": "FC Nasaf",
+   "national": false,
+   "short": "FC Nasaf"
+  },
+  "8293": {
+   "abbr": "SIB",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "8293.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/8293.png",
+   "name": "Persib Bandung",
+   "national": false,
+   "short": "Persib Bandung"
+  },
+  "83": {
+   "abbr": "BAR",
+   "ar": "برشلونة",
+   "comps": [
+    "esp.1",
+    "uefa.champions"
+   ],
+   "file": "83.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+   "name": "Barcelona",
+   "national": false,
+   "short": "Barcelona"
+  },
+  "8346": {
+   "abbr": "AHL",
+   "ar": "الأهلي السعودي",
+   "comps": [
+    "ksa.1",
+    "afc.champions"
+   ],
+   "file": "8346.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/8346.png",
+   "name": "Al Ahli",
+   "national": false,
+   "short": "Al Ahli"
+  },
+  "8363": {
+   "abbr": "ETT",
+   "ar": "الاتفاق",
+   "comps": [
+    "ksa.1"
+   ],
+   "file": "8363.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/8363.png",
+   "name": "Al Ettifaq",
+   "national": false,
+   "short": "Al Ettifaq"
+  },
+  "8364": {
+   "abbr": "ALJ",
+   "ar": "الجزيرة",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "8364.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/8364.png",
+   "name": "Al Jazira Club",
+   "national": false,
+   "short": "Al Jazira"
+  },
+  "8365": {
+   "abbr": "WAS",
+   "ar": "الوصل",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "8365.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/8365.png",
+   "name": "Al Wasl",
+   "national": false,
+   "short": "Al Wasl"
+  },
+  "8377": {
+   "abbr": "EST",
+   "ar": "الترجي",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "8377.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/8377.png",
+   "name": "Esperance Sportive de Tunis",
+   "national": false,
+   "short": "ES Tunis"
+  },
+  "8380": {
+   "abbr": "CSS",
+   "ar": "الصفاقسي",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "8380.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/8380.png",
+   "name": "Club Sportif Sfaxien",
+   "national": false,
+   "short": "Club Sportif"
+  },
+  "8392": {
+   "abbr": "ZAM",
+   "ar": "الزمالك",
+   "comps": [
+    "caf.champions"
+   ],
+   "file": "8392.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/8392.png",
+   "name": "Zamalek",
+   "national": false,
+   "short": "Zamalek"
+  },
+  "841": {
+   "abbr": "KUW",
+   "ar": "الكويت",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "841.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/kuw.png",
+   "name": "Kuwait",
+   "national": true,
+   "short": "Kuwait"
+  },
+  "85": {
+   "abbr": "CEL",
+   "ar": "سيلتا فيجو",
+   "comps": [
+    "esp.1",
+    "uefa.europa"
+   ],
+   "file": "85.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png",
+   "name": "Celta Vigo",
+   "national": false,
+   "short": "Celta Vigo"
+  },
+  "8519": {
+   "abbr": "BGPU",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "8519.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/8519.png",
+   "name": "BG Pathum United",
+   "national": false,
+   "short": "BG Pathum Utd"
+  },
+  "8534": {
+   "abbr": "TUS",
+   "ar": "",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "8534.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/8534.png",
+   "name": "Tusker FC",
+   "national": false,
+   "short": "Tusker FC"
+  },
+  "86": {
+   "abbr": "RMA",
+   "ar": "ريال مدريد",
+   "comps": [
+    "esp.1",
+    "uefa.champions"
+   ],
+   "file": "86.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+   "name": "Real Madrid",
+   "national": false,
+   "short": "Real Madrid"
+  },
+  "8601": {
+   "abbr": "COM",
+   "ar": "جزر القمر",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "8601.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/com.png",
+   "name": "Comoros",
+   "national": true,
+   "short": "Comoros"
+  },
+  "8618": {
+   "abbr": "RAJA",
+   "ar": "الرجاء",
+   "comps": [
+    "caf.confed"
+   ],
+   "file": "8618.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/8618.png",
+   "name": "Raja Casablanca",
+   "national": false,
+   "short": "Raja"
+  },
+  "87": {
+   "abbr": "RAC",
+   "ar": "راسينج سانتاندير",
+   "comps": [
+    "esp.1"
+   ],
+   "file": "87.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
+   "name": "Racing Santander",
+   "national": false,
+   "short": "Racing"
+  },
+  "88": {
+   "abbr": "ESP",
+   "ar": "إسبانيول",
+   "comps": [
+    "esp.1"
+   ],
+   "file": "88.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png",
+   "name": "Espanyol",
+   "national": false,
+   "short": "Espanyol"
+  },
+  "887": {
+   "abbr": "AEK",
+   "ar": "أيك أثينا",
+   "comps": [
+    "uefa.champions"
+   ],
+   "file": "887.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/887.png",
+   "name": "AEK Athens",
+   "national": false,
+   "short": "AEK Athens"
+  },
+  "8897": {
+   "abbr": "EBFC",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "8897.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/8897.png",
+   "name": "East Bengal FC",
+   "national": false,
+   "short": "East Bengal"
+  },
+  "89": {
+   "abbr": "RSO",
+   "ar": "ريال سوسيداد",
+   "comps": [
+    "esp.1",
+    "uefa.europa"
+   ],
+   "file": "89.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
+   "name": "Real Sociedad",
+   "national": false,
+   "short": "Real Sociedad"
+  },
+  "8940": {
+   "abbr": "MTN",
+   "ar": "موريتانيا",
+   "comps": [
+    "nt.arab"
+   ],
+   "file": "8940.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/countries/500/mtn.png",
+   "name": "Mauritania",
+   "national": true,
+   "short": "Mauritania"
+  },
+  "90": {
+   "abbr": "DEP",
+   "ar": "ديبورتيفو لاكورونيا",
+   "comps": [
+    "esp.1"
+   ],
+   "file": "90.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png",
+   "name": "Deportivo",
+   "national": false,
+   "short": "Deportivo"
+  },
+  "929": {
+   "abbr": "HIL",
+   "ar": "الهلال",
+   "comps": [
+    "ksa.1",
+    "afc.champions"
+   ],
+   "file": "929.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/929.png",
+   "name": "Al Hilal",
+   "national": false,
+   "short": "Al Hilal"
+  },
+  "93": {
+   "abbr": "ATH",
+   "ar": "أتلتيك بيلباو",
+   "comps": [
+    "esp.1"
+   ],
+   "file": "93.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
+   "name": "Athletic Club",
+   "national": false,
+   "short": "Athletic"
+  },
+  "94": {
+   "abbr": "VAL",
+   "ar": "فالنسيا",
+   "comps": [
+    "esp.1"
+   ],
+   "file": "94.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png",
+   "name": "Valencia",
+   "national": false,
+   "short": "Valencia"
+  },
+  "96": {
+   "abbr": "ALA",
+   "ar": "ألافيس",
+   "comps": [
+    "esp.1"
+   ],
+   "file": "96.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
+   "name": "Alavés",
+   "national": false,
+   "short": "Alavés"
+  },
+  "9655": {
+   "abbr": "SHO",
+   "ar": "الشرطة",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "9655.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/9655.png",
+   "name": "Al-Shorta SC",
+   "national": false,
+   "short": "Al-Shorta SC"
+  },
+  "9693": {
+   "abbr": "POH",
+   "ar": "",
+   "comps": [
+    "afc.champions"
+   ],
+   "file": "9693.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/9693.png",
+   "name": "Pohang Steelers",
+   "national": false,
+   "short": "Pohang Steelers"
+  },
+  "97": {
+   "abbr": "OSA",
+   "ar": "أوساسونا",
+   "comps": [
+    "esp.1"
+   ],
+   "file": "97.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png",
+   "name": "Osasuna",
+   "national": false,
+   "short": "Osasuna"
+  },
+  "977": {
+   "abbr": "SFC",
+   "ar": "",
+   "comps": [
+    "afc.cup"
+   ],
+   "file": "977.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/977.png",
+   "name": "Shanghai Shenhua FC",
+   "national": false,
+   "short": "Shanghai Shenhua"
+  },
+  "987": {
+   "abbr": "LSK",
+   "ar": "",
+   "comps": [
+    "uefa.europa"
+   ],
+   "file": "987.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/987.png",
+   "name": "Lillestrom",
+   "national": false,
+   "short": "Lillestrom"
+  },
+  "99": {
+   "abbr": "MCF",
+   "ar": "مالاجا",
+   "comps": [
+    "esp.1"
+   ],
+   "file": "99.png",
+   "logo_url": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png",
+   "name": "Málaga",
+   "national": false,
+   "short": "Málaga"
+  }
+ }
+}
