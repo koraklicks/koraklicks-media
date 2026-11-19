@@ -11,10 +11,10 @@ so runs never search for them again.
 Files: .claude/assets/crests/catalog.json · .claude/assets/crests/<espn_id>.png (teams)
        .claude/assets/crests/comp-<slug>.png (competitions)
 Use in specs: "home_logo": "<path from find>" (cards.py / motion_short.py / story_short.py / render.py).
-Source: ESPN only (owner rule). Logos are used unedited. Egyptian league clubs that are not in a CAF competition are
-not on ESPN: they have no logo here (show the name only) unless the owner supplies a file — put it in the folder as
-<any-id>.png and add it to catalog.json "extra".
-Needs a.espncdn.com allowed (claude.ai Settings > Capabilities); `build` only needs site.api.espn.com.
+Sources (owner rules): ESPN first; teams ESPN has no logo for (Egyptian league, many CAF/AFC clubs) come from the
+Kooora/Goal crest server cdn.sportfeeds.io (owner, 19 Nov 2026), stored in catalog.json "extra" (ids from goal.com
+standings pages). Logos are used unedited. Owner-supplied files: put them here and add an "extra" entry.
+Needs a.espncdn.com and cdn.sportfeeds.io allowed (claude.ai Settings > Capabilities).
 """
 import io, json, sys, urllib.request, gzip
 from pathlib import Path
@@ -191,7 +191,8 @@ def fetch():
     cat = load()
     jobs = [(v["logo_url"], DIR / v["file"]) for v in cat["teams"].values()] + \
            [(v["logo_url"], DIR / v["file"]) for v in cat["comps"].values() if v.get("file")] + \
-           [(v["logo_dark_url"], DIR / v["file_dark"]) for v in cat["comps"].values() if v.get("file_dark")]
+           [(v["logo_dark_url"], DIR / v["file_dark"]) for v in cat["comps"].values() if v.get("file_dark")] + \
+           [(v["logo_url"], DIR / v["file"]) for v in cat.get("extra", {}).values() if v.get("logo_url")]
     ok = fail = skip = 0
     for url, path in jobs:
         if path.exists():
