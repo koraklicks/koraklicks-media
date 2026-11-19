@@ -28,7 +28,7 @@ Rules
   UCL (2–3 min): intro → every match (5–6 s) → «ركن العرب» list (Arab players' confirmed goals/assists) →
   table top 8 + places 9–24 summary (official uefa.com table) → outro. Chapters in the description (first 0:00,
   each ≥ 10 s).
-- Look: `render.py` theme `desk` (default). Club logos: `python3 scripts/logo_library.py find "<team>"` (library in the repo) →
+- Look: `render.py` theme `desk` (default). Club logos: `python3 scripts/logo_library.py find "<team> dark"` on ink/blue backgrounds (library in the repo; " dark" puts near-black logos on a cream circle) →
   `home_logo`/`away_logo` per result scene; competition logo: `find "<competition>"`. Photos (optional, intro or headline scene): ONLY
   `python3 scripts/media.py photo "<player>"` (free Wikimedia Commons) with `image_credit`; never news/agency photos.
 - Music: `music.py` (owner track). Then `endcard.py VIDEO OUT --theme dark` → upload the `-yt.mp4`.

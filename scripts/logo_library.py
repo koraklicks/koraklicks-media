@@ -5,7 +5,8 @@ so runs never search for them again.
   python3 scripts/logo_library.py build          # refresh the catalog from ESPN (teams, ids, Arabic names, logo URLs)
   python3 scripts/logo_library.py fetch          # download every missing logo (256 px PNG); safe to re-run
   python3 scripts/logo_library.py find "الأهلي"   # path of a logo by Arabic or English name (prints NOT FOUND if missing)
-  python3 scripts/logo_library.py find "الدوري الإنجليزي dark"   # competition logo version for ink/blue backgrounds
+  python3 scripts/logo_library.py find "الدوري الإنجليزي dark"   # add " dark" for ink/blue backgrounds: the competition's
+                                                               # dark version, or a cream circle behind near-black team logos
   python3 scripts/logo_library.py status         # how many logos are in the library / missing
 
 Files: .claude/assets/crests/catalog.json · .claude/assets/crests/<espn_id>.png (teams)
@@ -208,6 +209,35 @@ def fetch():
     print(f"downloaded {ok} · already there {skip} · failed {fail}")
 
 
+def is_dark(path):
+    """True when the logo is mostly very dark (it would vanish on the ink background)."""
+    from PIL import Image
+    im = Image.open(path).convert("RGBA").resize((64, 64))
+    data = im.get_flattened_data() if hasattr(im, "get_flattened_data") else im.getdata()
+    px = [(r, g, b) for r, g, b, a in data if a > 128]
+    if not px:
+        return False
+    lum = sorted(0.2126 * r + 0.7152 * g + 0.0722 * b for r, g, b in px)
+    return lum[int(len(lum) * 0.75)] < 70   # 75 % of the logo is near-black
+
+
+def plate(path):
+    """Logo on a cream circle, for dark logos on ink/blue backgrounds (cached as <file>-plate.png)."""
+    from PIL import Image, ImageDraw
+    out = path.with_name(path.stem + "-plate.png")
+    if not out.exists():
+        im = Image.open(path).convert("RGBA")
+        S = 256
+        base = Image.new("RGBA", (S, S), (0, 0, 0, 0))
+        ImageDraw.Draw(base).ellipse((0, 0, S - 1, S - 1), fill=(243, 242, 234, 255))
+        im.thumbnail((int(S * .7), int(S * .7)), Image.LANCZOS) if im.width >= S * .7 else None
+        if im.width < S * .7:
+            im = im.resize((int(S * .7), int(S * .7 * im.height / im.width)), Image.LANCZOS)
+        base.alpha_composite(im, ((S - im.width) // 2, (S - im.height) // 2))
+        base.save(out)
+    return out
+
+
 def find(name):
     cat, low = load(), name.strip().lower()
     pools = list(cat["teams"].values()) + list(cat.get("extra", {}).values()) + list(cat["comps"].values())
@@ -229,6 +259,8 @@ def find(name):
     v = best[1]
     if dark and v.get("file_dark") and (DIR / v["file_dark"]).exists():   # competition logo for ink backgrounds
         return DIR / v["file_dark"]
+    if dark and is_dark(DIR / v["file"]):   # black team logo on an ink/blue background → cream circle version
+        return plate(DIR / v["file"])
     return DIR / v["file"]
 
 

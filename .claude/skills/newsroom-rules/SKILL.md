@@ -100,7 +100,7 @@ Anton «KK»/wordmark files are retired.
 - Fonts: Cairo (Arabic), Outfit (English labels).
 - **Logo (new, 11 Oct 2026):** wordmark «KORA KLICKS» in extra-bold condensed letters (Anton, thickened, stretched 1.22×) in ice-white #E3F4FF on black, with no symbols. Profile picture / mark: «KK» only, ice-white on black. Final files (SVG + PNG, outlined): `.claude/assets/logo/`. The old ball-and-cursor logo is retired.
 - Template families: **News** (navy + yellow «خبر عاجل» tag), **Live** (navy + yellow «مباشر LIVE» pill, optional «هدف! GOAL» banner), **Result** (green + navy «النتيجة النهائية FT»).
-- Club logos (owner, 19 Nov 2026): allowed on results/upcoming matches, from ESPN or Kooora (owner, 19 Nov 2026), via the logo library `scripts/logo_library.py find "<team>"` (Arabic or English name), unedited. No logo for an Egyptian league club that is not in a CAF competition → name only. Photos: only free Wikimedia Commons (`scripts/media.py photo`, credit on the image) or owner files — never news/agency/club-account photos.
+- Club logos (owner, 19 Nov 2026): allowed on results/upcoming matches, from ESPN or Kooora (owner, 19 Nov 2026), via the logo library `scripts/logo_library.py find "<team>"` (Arabic or English name; add " dark" on ink/blue backgrounds), unedited. No logo for an Egyptian league club that is not in a CAF competition → name only. Photos: only free Wikimedia Commons (`scripts/media.py photo`, credit on the image) or owner files — never news/agency/club-account photos.
 
 ### Cinematic style (default for new work)
 
