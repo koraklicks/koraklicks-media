@@ -17,7 +17,7 @@ Kooora/Goal crest server cdn.sportfeeds.io (owner, 19 Nov 2026), stored in catal
 standings pages). Logos are used unedited. Owner-supplied files: put them here and add an "extra" entry.
 Needs a.espncdn.com and cdn.sportfeeds.io allowed (claude.ai Settings > Capabilities).
 """
-import io, json, sys, urllib.request, gzip
+import io, json, re, sys, urllib.request, gzip
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -251,7 +251,8 @@ def find(name):
         keys = [k for k in (v.get("name", ""), v.get("short", ""), v.get("ar", ""), v.get("abbr", "")) if k]
         if any(low == k.lower() for k in keys):
             best = (0, v); break
-        part = [len(k) for k in keys[:3] if low in k.lower()]
+        # partial match only on whole words ("Niger" must never match "Nigeria")
+        part = [len(k) for k in keys[:3] if re.search(r"(?<!\w)" + re.escape(low) + r"(?!\w)", k.lower())]
         if part and (best is None or min(part) < best[0]):   # partial: the shortest matching name wins
             best = (min(part), v)
     if not best:

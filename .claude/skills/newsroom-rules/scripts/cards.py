@@ -9,8 +9,8 @@ Writes OUT_DIR/<slug>-01.jpg, -02.jpg ... (1080x1350, 4:5) = TikTok photo post +
 spec.json:
 {
   "slug": "ucl-2026-11-25",
-  "lang": "ar",                     # "ar" (default, RTL, Arabic-Indic digits) or "en"
-  "latin_digits": false,            # true = keep 0-9 in Arabic cards
+  "lang": "ar",                     # "ar" (default, RTL) or "en"
+  "arabic_digits": false,           # true = Arabic-Indic digits (default: 0-9, easier to read at score size)
   "section": "كرة القدم",           # header right/left label, slide number is added: «كرة القدم / ٠١»
   "cards": [
     {"t": "breaking", "tag": "خبر عاجل", "corner": "ورد الآن",
@@ -36,7 +36,7 @@ Templates: breaking = blue bg + ink footer · result = ink bg, home row in periw
 kick-off block · roundup = blue head + cream list. Fonts: Barlow Condensed 800 (EN display), Changa (AR,
 owner 19 Nov 2026), Inter 600/700 (labels). Palette: BLUE #3155E7 INK #0E1211 CREAM #F3F2EA PERI #A7BAFF.
 """
-import argparse, base64, html, json, os, sys
+import argparse, base64, html, json, os, re, sys
 from pathlib import Path
 
 FONTS = Path(__file__).resolve().parent.parent / "assets" / "fonts"
@@ -62,12 +62,16 @@ def font_face():
 class T:
     def __init__(self, spec):
         self.ar = spec.get("lang", "ar") == "ar"
-        self.dig = self.ar and not spec.get("latin_digits")
+        # Western digits by default (owner review 20 Nov 2026: the Arabic-Indic zero «٠» is a dot at score size);
+        # "arabic_digits": true switches to ٠١٢٣.
+        self.dig = self.ar and bool(spec.get("arabic_digits"))
 
     def __call__(self, s, br=True):
         s = "" if s is None else str(s)
         if self.dig:
             s = s.translate(AR_DIG)
+        if self.ar:   # «مصر 5-0 مالاوي»: an en dash keeps each score next to its team in RTL text
+            s = re.sub(r"([0-9٠-٩])\s*-\s*([0-9٠-٩])", "\\1 – \\2", s)
         s = html.escape(s)
         return s.replace("\\n", "<br>").replace("\n", "<br>") if br else s
 
